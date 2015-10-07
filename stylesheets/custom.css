@@ -3,22 +3,7 @@
     margin: 50px;
 }
 
-#nav-link:hover {
-    text-decoration: none;
-}
 
-#navbar {
-    vertical-align: middle;
-    text-align: center;
-    background-color: #5C97BF;
-    border-radius: 0 !important;
-}
-#navbar p {
-    padding-top: 15px;
-    font-weight: 700;
-    letter-spacing: .6px;
-    color: #fff;
-}
 
 h1 {
     font-size: 28px;
@@ -48,6 +33,7 @@ p {
     line-height: 1.5em;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+    font-size: 16px;
 }
 
 .headline {
