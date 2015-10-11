@@ -20,6 +20,7 @@ h1 {
   font-weight: 400;
   font-size: 22px;
 }
+
 h2 {
     font-family: 'Merriweather', serif;
     font-weight: 700;
@@ -51,6 +52,13 @@ p {
 
 .section {
     padding: 0 20px 40px 0;
+}
+
+#reading {
+  line-height: 2em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 #social {
