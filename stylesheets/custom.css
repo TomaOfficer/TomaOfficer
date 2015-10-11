@@ -15,6 +15,7 @@ h1 {
     font-weight: 900;
     font-size: 35px;
 }
+
 #title {
   font-weight: 400;
   font-size: 22px;
@@ -62,5 +63,9 @@ p {
 }
 
 #social a {
-    color: #B2B2B2;
+    color: #333333;
+}
+#social p {
+  color: #B2B2B2;
+  padding-top: 20px;
 }
