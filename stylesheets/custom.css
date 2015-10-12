@@ -42,13 +42,11 @@ p {
 .section {
   padding: 0 20px 40px 0;
 }
-
-#list {
-  line-height: 2em;
+.btn {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 16px;
 }
+
 #social {
   list-style: none;
   padding: 50px;
