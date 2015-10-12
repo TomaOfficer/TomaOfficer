@@ -1,77 +1,63 @@
-
 #banner {
-    margin: 50px;
+  margin: 50px;
 }
-
-
-
 h1 {
-    font-size: 28px;
-    font-family: 'Merriweather', serif;
+  font-size: 28px;
+  font-family: 'Merriweather', serif;
 }
-
 #name {
-    line-height: 1.4em;
-    font-weight: 900;
-    font-size: 35px;
+  line-height: 1.4em;
+  font-weight: 900;
+  font-size: 35px;
 }
-
 #title {
   font-weight: 400;
   font-size: 22px;
 }
 
 h2 {
-    font-family: 'Merriweather', serif;
-    font-weight: 700;
-    font-size: 22px;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 22px;
 }
-
 h3 {
-    font-size: 18px;
+  font-size: 18px;
 }
-
 p {
-    line-height: 1.5em;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
+  line-height: 1.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
 }
-
 .headline {
-    margin-top: 0;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #D9D9D9;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+  margin-top: 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #D9D9D9;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
-
 .col-md-6 {
-    padding: 0 50px 50px 50px;
+  padding: 0 50px 50px 50px;
 }
-
 .section {
-    padding: 0 20px 40px 0;
+  padding: 0 20px 40px 0;
 }
-
-#reading {
+#list {
   line-height: 2em;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 16px;
 }
-
 #social {
-    list-style: none;
-    padding: 50px;
+  list-style: none;
+  padding: 50px;
 }
 #social li {
-    display: inline;
-    letter-spacing: 50px;
+  display: inline;
+  letter-spacing: 50px;
 }
-
 #social a {
-    color: #333333;
+  color: #333333;
 }
 #social p {
   color: #B2B2B2;
