@@ -10,6 +10,7 @@ h1 {
   font-weight: 900;
   font-size: 35px;
 }
+
 #title {
   font-weight: 400;
   font-size: 22px;
@@ -42,23 +43,31 @@ p {
 .section {
   padding: 0 20px 40px 0;
 }
+
 .btn {
   font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  color: #428bca;
+  font-size: 11px;
+  padding: 15px 27px;
   font-weight: 300;
 }
 
-#social {
+#footer {
   list-style: none;
   padding: 50px;
 }
-#social li {
+#footer li {
   display: inline;
   letter-spacing: 50px;
 }
 #social a {
   color: #333333;
 }
-#social p {
+#footer p {
   color: #B2B2B2;
   padding-top: 20px;
+}
+#copyright {
+  color: #B2B2B2;
 }
