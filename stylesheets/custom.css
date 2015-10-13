@@ -30,6 +30,12 @@ p {
   font-weight: 300;
   font-size: 16px;
 }
+ul {
+  line-height: 1.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
 .headline {
   margin-top: 0;
   padding-bottom: 25px;
