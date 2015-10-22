@@ -1,21 +1,22 @@
 #banner {
   margin: 50px;
 }
-h1 {
-  font-size: 28px;
-  font-family: 'Merriweather', serif;
-}
 #name {
   line-height: 1.4em;
   font-weight: 900;
   font-size: 35px;
 }
 
+h1 {
+  font-size: 28px;
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+}
 #title {
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 22px;
 }
-
 h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
@@ -49,15 +50,13 @@ ul {
 .section {
   padding: 0 20px 40px 0;
 }
-
 .btn {
   font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
-  font-size: 11px;
-  padding: 15px 27px;
+  padding: 3px 15px;
+  font-size: 12px;
   font-weight: 300;
+  box-shadow: 0 1px 0 #888888;
 }
-
 #footer {
   list-style: none;
   padding: 50px;
