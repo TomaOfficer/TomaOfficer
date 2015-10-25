@@ -58,11 +58,18 @@ ul {
 }
 .btn {
   font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #E4F1FE; 
+}
+#resume {
+  font-family: 'Lato', sans-serif;
   padding: 3px 20px;
   font-size: 12px;
   font-weight: 300;
+  background-color: #fff;
+  color: #333;
   box-shadow: 0 1px 0 #888888;
-
 }
 cite {
   font-weight: 300;
