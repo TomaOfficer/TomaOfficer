@@ -5,9 +5,7 @@
   line-height: 1.2em;
   font-weight: 900;
   font-size: 60px;
-
   font-family: 'Alegreya', serif;
-
 }
 h1 {
   font-size: 28px;
@@ -58,13 +56,13 @@ ul {
 }
 .btn {
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 300;
-  background-color: #E4F1FE; 
+  padding: 5px 20px;
 }
 #resume {
   font-family: 'Lato', sans-serif;
-  padding: 3px 20px;
+  padding: 5px 20px;
   font-size: 12px;
   font-weight: 300;
   background-color: #fff;
