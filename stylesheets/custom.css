@@ -26,8 +26,12 @@ h2 {
 h3 {
   font-size: 16px;
 }
+
 #quote {
   margin-top: 25px;
+}
+#talk-workshop {
+  font-weight: 300;
 }
 p {
   line-height: 1.5em;
