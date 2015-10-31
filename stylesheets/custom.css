@@ -1,11 +1,11 @@
 #banner {
-  margin: 50px;
+  margin: 100px;
 }
 #name {
   line-height: 1.2em;
   font-weight: 900;
   font-size: 60px;
-  font-family: 'Alegreya', serif;
+  font-family: 'Overlock', cursive;
 }
 h1 {
   font-size: 28px;
