@@ -1,11 +1,13 @@
 #banner {
-  margin: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 50px;
 }
 #name {
   line-height: 1.2em;
   font-weight: 900;
-  font-size: 60px;
-  font-family: 'Overlock', cursive;
+  font-size: 40px;
+  font-family: 'Lato', sans-serif;
 }
 h1 {
   font-size: 28px;
