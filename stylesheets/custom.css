@@ -104,8 +104,11 @@ footer {
     margin: 60px;
 
   }
+  #banner h2 {
+    font-size: 20px;
+  }
   #name {
-    font-size: 40px;
+    font-size: 30px;
   }
   h1 {
     font-size: 24px;
