@@ -37,7 +37,7 @@ h3 {
 }
 #quote {
   margin-top: 25px;
-  border-color: #fff;
+  border: none;
 }
 #talk-workshop {
   font-weight: 300;
