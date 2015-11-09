@@ -1,31 +1,34 @@
+body {
+  color: #333;
+  background-color: #f1ede7;
+}
 #banner {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: 50px;
 }
 #banner h2 {
-  color: #AEAEAE;
-  font-weight: 400;
+  color: #1E824C;
+  font-weight: 300;
+}
+a {
+  color: #1E824C;
 }
 #name {
   line-height: 1.2em;
   font-weight: 900;
   font-size: 40px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Serif Pro', serif;
+
 }
 h1 {
   font-size: 28px;
-  font-family: 'Lato', serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 900;
 }
-#title {
-  font-family: 'Lato', sans-serif;
-  text-transform: none;
-  font-weight: 400;
-  font-size: 22px;
-}
+
 h2 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 900;
   font-size: 22px;
 }
@@ -34,28 +37,30 @@ h3 {
 }
 #quote {
   margin-top: 25px;
+  border-color: #fff;
 }
 #talk-workshop {
   font-weight: 300;
 }
 p {
   line-height: 1.5em;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Serif Pro', serif;
   font-weight: 300;
   font-size: 16px;
 }
 ul {
   line-height: 1.5em;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 16px;
 }
 .headline {
   margin-top: 0;
   padding-bottom: 25px;
-  border-bottom: 1px solid #D9D9D9;
-  font-family: 'Lato', sans-serif;
+  border-bottom: 1px solid #1E824C;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+  color: #1E824C;
 }
 .col-md-6 {
   padding: 0 50px 50px 50px;
@@ -64,14 +69,21 @@ ul {
   padding: 0 20px 40px 0;
 }
 .btn {
-  font-family: 'Lato', sans-serif;
-  font-size: 12px;
-  font-weight: 300;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 14px;
+  font-weight: 600;
   padding: 5px 20px;
-  box-shadow: 0 1px 0 #888888;
+  border-color: #1E824C;
+  box-shadow: 0 0 0 2px #1E824C;
+  outline:solid #f1ede7 1px;
+  border-style: double;
+  border-radius: 0;
+  background-color: #f1ede7;
+  color: #1E824C;
+  text-transform: uppercase;
 }
 footer {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
 #footer {
@@ -98,6 +110,7 @@ footer {
 @media screen and (max-width: 650px){
   .container {
     padding: 0;
+    margin: 0;
 
   }
   #banner {
@@ -106,9 +119,11 @@ footer {
   }
   #banner h2 {
     font-size: 20px;
+    text-align: center;
   }
   #name {
     font-size: 30px;
+    text-align: center;
   }
   h1 {
     font-size: 24px;
