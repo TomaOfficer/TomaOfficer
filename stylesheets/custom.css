@@ -1,7 +1,11 @@
 body {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
   color: #333;
-  background-color: #f1ede7;
+  background-image: url(symphony.png);
+
 }
 #banner {
   margin-top: 100px;
@@ -9,7 +13,7 @@ body {
   margin-left: 50px;
 }
 #banner h2 {
-  color: #1E824C;
+  color: #333;
   font-weight: 300;
 }
 a {
@@ -58,10 +62,10 @@ ul {
 .headline {
   margin-top: 0;
   padding-bottom: 25px;
-  border-bottom: 1px solid #1E824C;
+  border-bottom: 1px solid #333;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
-  color: #1E824C;
+  color: #333;
 }
 .col-md-6 {
   padding: 0 50px 50px 50px;
@@ -70,17 +74,17 @@ ul {
   padding: 0 20px 40px 0;
 }
 .btn {
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   font-weight: 600;
   padding: 5px 20px;
-  border-color: #1E824C;
-  box-shadow: 0 0 0 2px #1E824C;
-  outline:solid #f1ede7 1px;
+  border-color: #003d50;
+  box-shadow: 0 0 0 3px #003d50;
+  outline:solid #f1f1f1 2px;
   border-style: double;
   border-radius: 0;
-  background-color: #f1ede7;
-  color: #1E824C;
+  background-color: #4183D7;
+  color: #ffffff;
   text-transform: uppercase;
 }
 footer {
@@ -137,6 +141,7 @@ footer {
   }
 
 }
+<<<<<<< HEAD
 =======
     font-family: 'Merriweather', serif;
 }
@@ -221,4 +226,6 @@ p {
     color: #903;
 }
 
+>>>>>>> master
+=======
 >>>>>>> master
