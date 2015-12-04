@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
     font-family: 'Merriweather', serif;
 }
 
@@ -82,3 +83,142 @@ p {
     color: #903;
 }
 
+=======
+  color: #333;
+  background-color: #f1f1f1;
+}
+#banner {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 50px;
+}
+#banner h2 {
+  color: #333;
+  font-weight: 300;
+}
+a {
+  color: #1E824C;
+}
+#name {
+  line-height: 1.2em;
+  font-weight: 900;
+  font-size: 40px;
+  font-family: 'Source Serif Pro', serif;
+
+}
+h1 {
+  font-size: 28px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+}
+h3 {
+  font-size: 16px;
+}
+#quote {
+  margin-top: 25px;
+  border: none;
+}
+#talk-workshop {
+  font-weight: 300;
+}
+p {
+  line-height: 1.5em;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+ul {
+  line-height: 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+.headline {
+  margin-top: 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #333;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+.col-md-6 {
+  padding: 0 50px 50px 50px;
+}
+.section {
+  padding: 0 20px 40px 0;
+}
+.btn {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 20px;
+  border-color: #003d50;
+  box-shadow: 0 0 0 3px #003d50;
+  outline:solid #f1f1f1 2px;
+  border-style: double;
+  border-radius: 0;
+  background-color: #4183D7;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+footer {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+#footer {
+  list-style: none;
+  padding: 50px;
+}
+#footer li {
+  display: inline;
+  letter-spacing: 50px;
+}
+#social a {
+  color: #333333;
+}
+#footer p {
+  color: #B2B2B2;
+  padding-top: 20px;
+}
+#copyright {
+  color: #B2B2B2;
+}
+
+/* small screen */
+
+@media screen and (max-width: 650px){
+  .container {
+    padding: 0;
+    margin: 0;
+
+  }
+  #banner {
+    margin: 60px;
+
+  }
+  #banner h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  #name {
+    font-size: 30px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  #footer {
+    padding-top: 0px;
+  }
+  #footer li {
+    letter-spacing: 25px;
+  }
+
+}
+>>>>>>> cleaning-up
