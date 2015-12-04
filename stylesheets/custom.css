@@ -1,11 +1,6 @@
 body {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
   color: #333;
   background-image: url(symphony.png);
-
 }
 #banner {
   margin-top: 100px;
@@ -24,7 +19,6 @@ a {
   font-weight: 900;
   font-size: 40px;
   font-family: 'Source Serif Pro', serif;
-
 }
 h1 {
   font-size: 28px;
@@ -140,11 +134,7 @@ footer {
     letter-spacing: 25px;
   }
 
-}
-<<<<<<< HEAD
-=======
-    font-family: 'Merriweather', serif;
-}
+
 
 #banner {
     margin: 50px;
