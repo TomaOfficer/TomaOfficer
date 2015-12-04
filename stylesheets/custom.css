@@ -1,6 +1,6 @@
 body {
   color: #333;
-  background-image: url(symphony.png);
+  background-image: url(brushed.png);
 }
 #banner {
   margin-top: 100px;
@@ -29,7 +29,7 @@ h1 {
 h2 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 20px;
 }
 h3 {
   font-size: 16px;
@@ -161,7 +161,7 @@ h1 {
 }
 
 #banner h1 {
-    color: #D9D9D9;
+    color: #333;
     line-height: 1.4em;
     font-weight: 900;
 }
@@ -205,17 +205,10 @@ p {
 }
 
 #social a {
-    color: #B2B2B2;
+    color: #333;
 }
 
 #product {
     border-bottom: solid 2px #903;
     color: #D9D9D9;
 }
-#designer {
-    color: #903;
-}
-
->>>>>>> master
-=======
->>>>>>> master
