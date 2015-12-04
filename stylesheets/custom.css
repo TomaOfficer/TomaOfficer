@@ -1,92 +1,7 @@
 body {
-<<<<<<< HEAD
-    font-family: 'Merriweather', serif;
-}
-
-#banner {
-    margin: 50px;
-}
-
-#nav-link:hover {
-    text-decoration: none;
-}
-
-#navbar {
-    vertical-align: middle;
-    text-align: center;
-    background-color: #5C97BF;
-}
-#navbar p {
-    padding-top: 15px;
-    font-weight: 700;
-    letter-spacing: .6px;
-    color: #fff;
-}
-
-h1 {
-    font-size: 28px;
-}
-
-#banner h1 {
-    color: #D9D9D9;
-    line-height: 1.4em;
-    font-weight: 900;
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 22px;
-}
-
-h3 {
-    font-size: 18px;
-}
-
-p {
-    line-height: 1.5em;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-}
-
-.headline {
-    margin-top: 0;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #D9D9D9;
-}
-
-.col-md-6 {
-    padding: 0 50px 50px 50px;
-}
-
-.section {
-    padding: 0 20px 40px 0;
-}
-
-#social {
-    list-style: none;
-    padding: 50px;
-}
-#social li {
-    display: inline;
-    letter-spacing: 50px;
-}
-
-#social a {
-    color: #B2B2B2;
-}
-
-#product {
-    border-bottom: solid 2px #903;
-    color: #D9D9D9;
-}
-#designer {
-    color: #903;
-}
-
-=======
   color: #333;
   background-image: url(symphony.png);
-  
+
 }
 #banner {
   margin-top: 100px;
@@ -222,4 +137,3 @@ footer {
   }
 
 }
->>>>>>> cleaning-up
