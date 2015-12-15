@@ -1,12 +1,12 @@
 body {
   color: #333;
-  background-image: url(brushed.png);
+  background-color: #eaeaea;
 }
 #banner {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: 50px;
-  
+
 }
 #banner h2 {
   color: #333;
@@ -80,10 +80,10 @@ ul {
   padding: 5px 20px;
   border-color: #003d50;
   box-shadow: 0 0 0 3px #003d50;
-  outline:solid #f1f1f1 2px;
+  outline:solid #eaeaea 2px;
   border-style: double;
   border-radius: 0;
-  background-color: #4183D7;
+  background-color: #eaeaea;
   color: #ffffff;
   text-transform: uppercase;
 }
