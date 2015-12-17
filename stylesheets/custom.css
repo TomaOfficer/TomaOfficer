@@ -69,13 +69,10 @@
     padding: 0 50px 50px 50px;
   }
   .section {
-    padding: 0 20px 40px 0;
+    padding: 20px 20px 40px 0;
+
   }
-  #sketch {
-    height: 250px;
-    border: solid;
-    border-color: #333;
-  }
+
   .btn {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
@@ -92,19 +89,23 @@
     text-decoration: none;
   }
   #dribbble-button {
-    background-color: #ea4c89;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #ea4c89;
+    border-color: #003d50;
+    box-shadow: 0 0 0 3px #003d50;
   }
   #dribbble-button:hover {
     background-color: #ffffff;
-    color: #ea4c89;
     outline: solid #ea4c89 2px;
     border-color: #ffffff;
-    box-shadow: 0 0 0 3px #ffffff;
+    box-shadow: 0 0 0 3px #ea4c89;
   }
   #dribbble {
     padding-left: 25px;
     padding-right: 25px;
+  }
+  #dribbble-logo {
+    height: 25px;
   }
   #resume {
     background-color: #f1f1f1;
