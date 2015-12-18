@@ -46,10 +46,10 @@
     font-weight: 300;
   }
   p {
-    line-height: 1.5em;
+    line-height: 1.75em;
     font-family: 'Source Serif Pro', serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
   }
   ul {
     line-height: 1.5em;
@@ -91,8 +91,8 @@
   #dribbble-button {
     background-color: #ffffff;
     color: #ea4c89;
-    border-color: #003d50;
-    box-shadow: 0 0 0 3px #003d50;
+    border-color: #ea4c89;
+    box-shadow: 0 0 0 3px #ea4c89;
   }
   #dribbble-button:hover {
     background-color: #ffffff;
@@ -157,6 +157,9 @@
     }
     h1 {
       font-size: 24px;
+    }
+    p {
+      font-size: 16px;
     }
     #sketch {
       height: 150px;
