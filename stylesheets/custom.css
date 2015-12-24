@@ -29,7 +29,6 @@ h3 {
 }
 
 /* header */
-
 #header {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -45,7 +44,6 @@ h3 {
 }
 
 /* main sections */
-
 .headline {
   margin-top: 0;
   padding-bottom: 25px;
@@ -59,6 +57,10 @@ h3 {
 }
 .section {
   padding: 20px 20px 40px 0;
+}
+.section h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
 }
 
 /* buttons */
@@ -80,14 +82,23 @@ h3 {
   border-color: #ea4c89;
   box-shadow: 0 0 0 3px #ea4c89;
 }
+#dribbble-button img {
+  height: 25px;
+}
 #dribbble-button:hover {
-  background-color: #ffffff;
+  background-color: #ea4c89;
   outline: solid #ea4c89 2px;
   border-color: #ffffff;
   box-shadow: 0 0 0 3px #ea4c89;
 }
-#dribbble-logo {
-  height: 25px;
+#dribbble-button .pink {
+  display: none;
+}
+#dribbble-button:hover .pink {
+  display: inline-block;
+}
+#dribbble-button:hover .black {
+  display: none;
 }
 #resume:hover {
   background-color: #003d50;
