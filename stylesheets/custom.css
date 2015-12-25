@@ -29,21 +29,32 @@ h3 {
 }
 
 /* header */
+
 #header {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   margin-left: 50px;
+  margin-right: 50px;
+}
+#header a {
+  margin-left: 5px;
+  position: relative;
+  top: 16px;
 }
 #header h1 {
   font-weight: 900;
   font-size: 40px;
   font-family: 'Source Serif Pro', serif;
 }
-#header h2 {
+#header h1 span {
   font-weight: 300;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 5px;
 }
 
 /* main sections */
+
 .headline {
   margin-top: 0;
   padding-bottom: 25px;
@@ -56,7 +67,7 @@ h3 {
   padding: 0 50px 50px 50px;
 }
 .section {
-  padding: 20px 20px 40px 0;
+  padding: 10px 20px 10px 0;
 }
 .section h3 {
   font-family: 'Source Sans Pro', sans-serif;
@@ -77,6 +88,10 @@ h3 {
   border-radius: 0;
   text-transform: uppercase;
   text-decoration: none;
+}
+.btn:hover {
+  background-color: #003d50;
+  color: #ffffff;
 }
 #dribbble-button {
   border-color: #ea4c89;
@@ -99,10 +114,6 @@ h3 {
 }
 #dribbble-button:hover .black {
   display: none;
-}
-#resume:hover {
-  background-color: #003d50;
-  color: #ffffff;
 }
 
 /* footer */
