@@ -88,6 +88,12 @@ h3 {
 #portfolio {
   border-bottom: 1px dashed #cccccc;
 }
+#portfolio img {
+  height: 250px;
+}
+#disco {
+  padding-top: 40px;
+}
 #about {
   padding-bottom: 10px;
 }
@@ -178,7 +184,7 @@ footer p {
     font-size: 30px;
   }
   .section {
-    padding: 10px 0px 10px 0;
+    padding: 10px 0px 40px 0;
   }
   h1 {
     font-size: 24px;
@@ -191,5 +197,8 @@ footer p {
   }
   footer li {
     letter-spacing: 45px;
+  }
+  #portfolio img {
+    height: 150px;
   }
 }
