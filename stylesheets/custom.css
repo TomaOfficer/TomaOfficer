@@ -67,11 +67,33 @@ h3 {
   padding: 0 50px 50px 50px;
 }
 .section {
-  padding: 10px 20px 10px 0;
+  padding: 10px 20px 50px 0;
+}
+.section li {
+  padding-top: 10px;
+}
+.section li span{
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 10px;
 }
 .section h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+}
+#dribbble-section {
+  padding-top: 50px;
+  border: none;
+}
+#portfolio {
+  border-bottom: 1px dashed #cccccc;
+}
+#about {
+  padding-bottom: 10px;
+}
+#about ul {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 /* buttons */
@@ -80,31 +102,31 @@ h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   font-weight: 600;
-  padding: 5px 20px;
-  border-color: #333;
-  box-shadow: 0 0 0 3px #333;
-  outline: solid #ffffff 2px;
-  border-style: double;
-  border-radius: 0;
+  border: solid 1px #737373;
+  padding: 10px 30px;
+  box-shadow: 0px 2px 0px #4d4d4d;
+  border-radius: 4px;
   text-transform: uppercase;
   text-decoration: none;
 }
 .btn:hover {
-  background-color: #003d50;
+  background-color: #59ABE3;
   color: #ffffff;
+  box-shadow: 0px 0px 0px;
 }
 #dribbble-button {
-  border-color: #ea4c89;
-  box-shadow: 0 0 0 3px #ea4c89;
+  background-color: #ea4c89;
+  border-style: none;
+  border: solid 1px #333;
 }
 #dribbble-button img {
   height: 25px;
 }
 #dribbble-button:hover {
-  background-color: #ea4c89;
-  outline: solid #ea4c89 2px;
-  border-color: #ffffff;
-  box-shadow: 0 0 0 3px #ea4c89;
+  background-color: #ffffff;
+  border: solid 2px #ea4c89;
+  box-shadow: none;
+  box-shadow: 0px 0px 0px;
 }
 #dribbble-button .pink {
   display: none;
