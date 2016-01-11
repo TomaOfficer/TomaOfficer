@@ -12,7 +12,7 @@ a {
 p {
   line-height: 1.75em;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
 }
 h1 {
   font-size: 28px;
@@ -39,7 +39,7 @@ h3 {
 #header a {
   margin-left: 5px;
   position: relative;
-  top: 16px;
+  top: 14px;
 }
 #header h1 {
   font-weight: 900;
@@ -109,19 +109,20 @@ h3 {
   font-size: 14px;
   font-weight: 600;
   border: solid 1px #737373;
-  padding: 10px 30px;
-  box-shadow: 0px 2px 0px #4d4d4d;
-  border-radius: 4px;
+  padding: 5px 20px;
+  box-shadow: 0px 2px 0px #404040;
+  border-radius: 2px;
   text-transform: uppercase;
   text-decoration: none;
 }
 .btn:hover {
-  background-color: #59ABE3;
+  background-color: #404040;
   color: #ffffff;
   box-shadow: 0px 0px 0px;
+  border: solid 1px #404040;
 }
 #dribbble-button {
-  background-color: #ea4c89;
+  background-color: #ffffff;
   border-style: none;
   border: solid 1px #333;
 }
@@ -129,7 +130,7 @@ h3 {
   height: 25px;
 }
 #dribbble-button:hover {
-  background-color: #ffffff;
+  background-color: #ea4c89;
   border: solid 2px #ea4c89;
   box-shadow: none;
   box-shadow: 0px 0px 0px;
