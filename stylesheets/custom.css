@@ -9,6 +9,10 @@ a {
   color: #333;
   text-decoration: underline;
 }
+a:hover {
+  color: #333;
+}
+
 p {
   line-height: 1.75em;
   font-weight: 300;
@@ -66,13 +70,14 @@ h3 {
 .col-md-6 {
   padding: 0 50px 50px 50px;
 }
+
 .section {
   padding: 10px 20px 50px 0;
 }
 .section li {
   padding-top: 10px;
 }
-.section li span{
+.section li span {
   font-size: 16px;
   font-weight: 300;
   padding-left: 10px;
@@ -81,19 +86,6 @@ h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
-#dribbble-section {
-  padding-top: 50px;
-  border: none;
-}
-#portfolio {
-  border-bottom: 1px dashed #cccccc;
-}
-#portfolio img {
-  height: 250px;
-}
-#disco {
-  padding-top: 40px;
-}
 #about {
   padding-bottom: 10px;
 }
@@ -101,6 +93,10 @@ h3 {
   font-size: 18px;
   font-weight: 700;
 }
+.author {
+  font-weight: 300;
+}
+
 
 /* buttons */
 
@@ -199,7 +195,55 @@ footer p {
   footer li {
     letter-spacing: 45px;
   }
-  #portfolio img {
-    height: 150px;
-  }
+
+}
+
+/* cap/sure portfolio page */
+
+.portfolio {
+  padding: 0 50px 50px 50px;
+}
+.portfolio-header {
+  margin-bottom: 45px;
+}
+.portfolio-secondary-header {
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+#small-header {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#small-header h1 {
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Source Serif Pro', serif;
+}
+#small-header h1 span {
+  font-weight: 300;
+  font-size: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 5px;
+}
+.project-tags {
+  text-align: center;
+}
+.tag {
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #bfbfbf;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 6px;
+  margin-right: 6px;
 }
