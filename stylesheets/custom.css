@@ -91,10 +91,11 @@ h3 {
 }
 #about ul {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .author {
   font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 
