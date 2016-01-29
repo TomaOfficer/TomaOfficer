@@ -15,7 +15,10 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
-
+p {
+  line-height: 1.75em;
+  font-size: 18px;
+}
 
 /** ----- NAVBAR ----- **/
 
@@ -57,6 +60,11 @@ body {
 }
 .navbar-list-link a {
   color: #333;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+.navbar-list-link a:hover {
+  text-decoration: none;
 }
 .navbar-list-link a.active {
   text-decoration: none;
@@ -64,8 +72,8 @@ body {
   padding-bottom: 21px;
 }
 
-
 /** ----- RESPONSIVE ----- **/
+
 @media screen and (max-width: 650px) {
   body {
     font-size: 16px;
@@ -88,15 +96,13 @@ body {
   }
   .about-header p {
     max-width: 750px;
-    line-height: 1.3em;
   }
-
   /** NAVBAR **/
   .name {
     margin-left: 16px;
     margin-top: 14px;
   }
-  .navbar-container{
+  .navbar-container {
     height: 80px;
   }
   .navbar-list li {
@@ -109,10 +115,7 @@ body {
   .navbar-list-link a.active {
     padding: 31px 10px 28px 10px;
   }
-
 }
-
-
 
 /**
 .navbar {
@@ -152,7 +155,6 @@ body {
 }
 .about-header p {
   max-width: 750px;
-  line-height: 1.75em;
 }
 
 /** ----- WORK IMAGES ------ **/
@@ -189,9 +191,11 @@ a.btn i {
 }
 
 /** ------ CASE STUDY ------ **/
-
+.case-body {
+  background-color: #ffffff;
+}
 .content {
-  max-width: 750px;
+  max-width: 650px;
   margin: auto;
 }
 .disco-header h1 {
@@ -219,6 +223,18 @@ a.btn i {
 .content h3 {
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 25px;
+  margin-top: 0px;
+}
+.content p {
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+.content h4 {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #F9690E;
 }
 
 /** ------ FOOTER ------ **/
