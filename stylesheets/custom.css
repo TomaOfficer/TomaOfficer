@@ -4,13 +4,94 @@ body {
   line-height: 1.3;
   background: #f5f5ef;
 }
+.body {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 100px;
+}
 .container {
   padding-left: 0;
   padding-right: 0;
 }
 
+
 /** ----- NAVBAR ----- **/
 
+.navbar-container {
+  width: 100%;
+  height: 70px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.navbar-left {
+  margin-top: 16px;
+  float: left;
+}
+.name {
+  text-transform: uppercase;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 7px;
+  color: #2A2A2A;
+  font-weight: 700;
+}
+.navbar-right {
+  margin-top: 16px;
+  float: right;
+}
+.navbar-list li {
+  margin-top: 7px;
+  display: inline-block;
+  margin-left: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.navbar-list li:nth-child(2) {
+  margin-right: 30px;
+}
+.navbar-list-link a {
+  color: #333;
+}
+.navbar-list-link a.active {
+  text-decoration: none;
+  border-bottom: 4px solid #333;
+  padding-bottom: 21px;
+}
+
+@media screen and (max-width: 650px) {
+  .name {
+    margin-left: 16px;
+    margin-top: 14px;
+  }
+  .navbar-container{
+    height: 80px;
+  }
+  .navbar-list li {
+    margin-top: 14px;
+    margin-left: 16px;
+  }
+  .navbar-list li:nth-child(2) {
+    margin-right: 16px;
+  }
+  .navbar-list-link a.active {
+    padding-bottom: 31px;
+    background-color: #d9d9d9;
+    border: none;
+    padding: 31px 10px 28px 10px;
+
+  }
+
+}
+
+
+
+/**
 .navbar {
   background-color: transparent;
   border: none;
@@ -33,6 +114,8 @@ body {
 #tagline {
   font-weight: 300;
 }
+**/
+
 
 /** ----- HEADERS & COPY ----- **/
 
@@ -50,12 +133,8 @@ body {
 
 /** ----- WORK IMAGES ------ **/
 
-.portfolio-images {
-
-}
 .shot {
   margin-top: 25px;
-
 }
 figcaption {
   position: absolute;
@@ -63,7 +142,6 @@ figcaption {
   margin-left: 1em;
   color: white;
 }
-
 
 /** ------ DRIBBBLE BTN ------ **/
 
@@ -86,17 +164,44 @@ a.btn i {
   margin-right: 4px;
 }
 
-/** ------ SECTION ------ **/
+/** ------ CASE STUDY ------ **/
 
-.section {
+.content {
   max-width: 750px;
+  margin: auto;
+}
+.disco-header h1 {
+  font-size: 64px;
+  font-family: 'Alegreya', serif;
+  font-weight: 700;
+  color: #F9690E;
+}
+.disco-header h2 {
+  margin-bottom: 45px;
+}
+.project-tags {
+  list-style: none;
+  margin-bottom: 45px
+}
+.project-tag {
+  display: inline-block;
+  margin-right: 6px;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.content h3 {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /** ------ FOOTER ------ **/
 
 footer {
-  margin-top: 25px;
-
+  margin-top: 50px;
+  text-align: center;
 }
 footer a {
   color: #333;
@@ -113,7 +218,6 @@ footer li {
   display: inline;
   letter-spacing: 25px;
 }
-
 
 /** @small media screen
 
