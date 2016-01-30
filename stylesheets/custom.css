@@ -9,7 +9,7 @@ body {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 .container {
   padding-left: 0;
@@ -115,6 +115,11 @@ p {
   .navbar-list-link a.active {
     padding: 31px 10px 28px 10px;
   }
+  /** ABOUT **/
+  .about-content p {
+    font-size: 16px;
+  }
+
 }
 
 /**
@@ -157,11 +162,39 @@ p {
   max-width: 750px;
 }
 
-/** ----- WORK IMAGES ------ **/
+/** ----- INDEX IMAGES ------ **/
 
+.caption p {
+  line-height: 1.5em;
+  font-size: 16px;
+}
+.caption h2 {
+  font-weight: 700;
+  font-size: 22px;
+}
+.thumbnail {
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.thumbnail a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+/**
 .shot {
   margin-top: 25px;
+  margin-left: 135px;
+  padding: 8px 8px 120px 8px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  max-width: 700px;
 }
+**/
+
 figcaption {
   position: absolute;
   margin-top: .75em;
@@ -169,29 +202,55 @@ figcaption {
   color: white;
 }
 
-/** ------ DRIBBBLE BTN ------ **/
+/** ------ BUTTONS ------ **/
 
 #dribbble .btn {
   color: #333;
   padding: 8px 1.5em;
-  border-radius: 0px;
+  border-radius: 75px;
   background-color: #ffffff;
   border: 1px solid #333;
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 300;
 }
 #dribbble .btn:hover {
   color: #ffffff;
   background-color: #ea4c89;
   border: none;
 }
-#dribbble {
-  margin-top: 50px;
+.box-end {
+  margin-top: 100px;
 }
 a.btn i {
-  margin-right: 4px;
+  margin-right: 8px;
+}
+#resume .btn {
+  color: #333;
+  padding: 8px 1.5em;
+  border-radius: 75px;
+  background-color: #ffffff;
+  border: 1px solid #333;
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 300;
+}
+#resume .btn:hover {
+  color: #ffffff;
+  background-color: #22313F;
+  border: none;
+}
+/** ABOUT **/
+
+.about-content {
+  max-width: 650px;
+  margin: auto;
+  margin-top: 50px;
 }
 
+
 /** ------ CASE STUDY ------ **/
-.case-body {
+.white-body {
   background-color: #ffffff;
 }
 .content {
@@ -206,6 +265,9 @@ a.btn i {
 }
 .disco-header h2 {
   margin-bottom: 45px;
+}
+.project-link:hover {
+  text-decoration: none;
 }
 .project-tags {
   list-style: none;
@@ -240,19 +302,20 @@ a.btn i {
 /** ------ FOOTER ------ **/
 
 footer {
-  margin-top: 50px;
+  margin-top: 70px;
   text-align: center;
+  background-color: #22313F;
 }
 footer a {
-  color: #333;
+  color: #ffffff;
 }
 footer a:hover {
-  color: #333;
+  color: red;
 }
 footer ul {
   list-style: none;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 footer li {
   display: inline;

@@ -20,31 +20,33 @@
 
 </head>
 
-<body>
+<body class="case-body">
 
-  <nav class="navbar navbar-default">
+
+  <nav class="navbar-container">
     <div class="container">
-
-      <div class="navbar-header">
-
-        <a href="index.html" class="navbar-brand">
-          Thomas Officer
+      <div class="navbar-left">
+        <a href="index.html">
+          <div class="navbar-logo">
+            <div class="logo"></div>
+            <div class="name">Thomas Officer</div>
+          </div>
         </a>
-        <p id="tagline">
-          Product designer
-        </p>
       </div>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">Work</a></li>
-        <li>
-          <li><a href="about.html">About</a></li>
-      </ul>
-
+      <div class="navbar-right">
+        <ul class="navbar-list">
+          <li class="navbar-list-link">
+            <a class="active" href="index.html">Work</a>
+          </li>
+          <li class="navbar-list-link">
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container body">
 
     <div class="content">
 
@@ -65,31 +67,44 @@
             Architecture
           </li>
           <li class="project-tag">
-            UI
+            Mockups
           </li>
         </ul>
       </div>
 
+      <!-- New Section -->
+      <img src="images/disco-2.png" class="img-responsive" alt="Responsive image">
       <h3>Project Summary</h3>
-      
+      <p>
+        DISCO is a web and mobile app I built while enrolled in the Bloc UX/UI program. It’s a tool for building itineraries and it’s helpful for traveling or changing your routine.
+      </p>
 
+      <!-- New Section -->
+      <h4>The Challenge</h4>
+      <h3>Simplifying an Idea</h3>
+      <p>
+        DISCO started out as a hackathon project. In October 2015, I went to New Orleans to participate in a 54-hour hackathon called Startup Weekend. I joined a team that said it was going to work on the issue of traveling and finding things to do. This appealed
+        to me because it seemed, at its core, to be an issue about sincerity and engagement.
+      </p>
 
     </div>
 
   </div>
 
   <footer>
-    <ul class="text-center">
-      <li><a href="https://dribbble.com/TomaOfficer" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-      <li><a href="https://twitter.com/TomaOfficer" target="_blank"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="https://github.com/TomaOfficer" target="_blank"><i class="fa fa-github"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/thomasofficer" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-    </ul>
-
+    <div class="container">
+      <ul>
+        <li><a href="https://dribbble.com/TomaOfficer" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+        <li><a href="https://twitter.com/TomaOfficer" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://github.com/TomaOfficer" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/thomasofficer" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
   </footer>
 
 
-  </div>
+
+
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
