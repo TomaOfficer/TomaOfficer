@@ -179,8 +179,8 @@ p {
   margin-top: 30px;
 }
 .thumbnail a {
-  text-decoration: none;
   color: #333;
+  text-decoration: underline;
 }
 
 
