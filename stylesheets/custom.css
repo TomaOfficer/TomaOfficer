@@ -5,7 +5,7 @@ body {
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
   line-height: 1.3;
-  background: rgb(235, 235, 235);
+  background: #ffffff;
   height: 100%;
   position: relative;
 }
@@ -30,7 +30,7 @@ p {
 .navbar-container {
   width: 100%;
   height: 70px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 5px;
   background-color: #ffffff;
   position: fixed;
   top: 0;
@@ -77,30 +77,6 @@ p {
   padding-bottom: 21px;
 }
 
-/**
-.navbar {
-  background-color: transparent;
-  border: none;
-  padding-top: 25px;
-}
-
-.navbar-default .navbar-nav>.active>a {
-  background-color: transparent;
-  text-decoration: underline;
-}
-.navbar-default .navbar-nav>.active>a:hover {
-  background-color: transparent;
-}
-.navbar-default .navbar-brand {
-  font-weight: 700;
-  font-size: 24px;
-  color: #333;
-  text-transform: uppercase;
-}
-#tagline {
-  font-weight: 300;
-}
-**/
 
 
 /** ----- HEADERS & COPY ----- **/
@@ -136,6 +112,8 @@ p {
 .caption p {
   line-height: 1.5em;
   font-size: 18px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .caption h2 {
   font-weight: 700;
@@ -144,9 +122,9 @@ p {
 .thumbnail {
   padding: 10px;
   border-radius: 8px;
-  margin-left: 20px;
   margin-top: 30px;
   min-height: 540px;
+  border: none;
 }
 .thumbnail a {
   color: #333;
@@ -157,23 +135,6 @@ p {
   font-weight: 700;
 }
 
-/**
-.shot {
-  margin-top: 25px;
-  margin-left: 135px;
-  padding: 8px 8px 120px 8px;
-  background-color: #ffffff;
-  border-radius: 6px;
-  max-width: 700px;
-}
-**/
-
-figcaption {
-  position: absolute;
-  margin-top: .75em;
-  margin-left: 1em;
-  color: white;
-}
 
 /** ------ BUTTONS ------ **/
 
@@ -217,6 +178,8 @@ a.btn i {
   text-decoration: none;
   text-transform: uppercase;
   padding: 10px 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-weight: 700;
   background-color: #ffffff;
   color: #333;
@@ -358,7 +321,6 @@ footer li {
   body {
     font-size: 16px;
     line-height: 1.3;
-    background: #f5f5ef;
   }
   .body {
     margin-right: auto;
