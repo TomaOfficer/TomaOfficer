@@ -346,7 +346,17 @@ footer li {
     padding-right: 16px;
     margin-top: 80px;
   }
-
+  #title h1 {
+    font-size: 25px;
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    color: #22313F;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+#title {
+  margin-top: 50px;
+}
   .about-header {
     margin-top: 5px;
     margin-bottom: 25px;
