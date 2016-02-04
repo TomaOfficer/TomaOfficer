@@ -108,6 +108,23 @@ p {
 }
 
 /** ----- INDEX ------ **/
+#title h1 {
+  font-size: 42px;
+  font-family: 'Alegreya', serif;
+  font-weight: 700;
+  color: #22313F;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.divider {
+  height: 1px;
+  max-width:300px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
 
 .caption p {
   line-height: 1.5em;
