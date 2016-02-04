@@ -253,6 +253,15 @@ a.btn i {
 .disco-header h2 {
   margin-bottom: 45px;
 }
+.vantage-header h1 {
+    color: #333;
+    font-size: 64px;
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+}
+.vantage-header h2 {
+  margin-bottom: 45px;
+}
 .project-link:hover {
   text-decoration: none;
 }
