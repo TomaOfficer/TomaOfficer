@@ -109,7 +109,7 @@ p {
 
 /** ----- INDEX ------ **/
 #title h1 {
-  font-size: 42px;
+  font-size: 24px;
   font-family: 'Alegreya', serif;
   font-weight: 700;
   color: #22313F;
@@ -273,6 +273,9 @@ a.btn i {
   margin-bottom: 5px;
   font-weight: 700;
   color: #F9690E;
+}
+.content ul {
+  padding-left: 0;
 }
 .case-block {
   margin-top: 40px;
