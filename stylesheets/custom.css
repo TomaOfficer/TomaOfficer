@@ -42,7 +42,7 @@ p {
 .name {
   text-transform: uppercase;
   font-size: 20px;
-  display: inline-block;
+
   margin-left: 10px;
   margin-top: 7px;
   color: #2A2A2A;
@@ -121,15 +121,16 @@ a.btn i {
  padding: 10px 30px;
  margin-top: 20px;
  margin-bottom: 10px;
- font-weight: 700;
- background-color: #ffffff;
- color: #333;
+ border-radius: 75px;
+ font-weight: 400;
+ background-color: #87D37C;
+ color: #ffffff;
+ font-family: sans-serif;
  border: none;
 }
 .caption .btn-default:hover {
- background-color: rgb(235, 235, 235);
+ background-color: #5DA253;
  border: none;
- color: #333;
 }
 #foundationlab {
   background-color: #59ABE3;
