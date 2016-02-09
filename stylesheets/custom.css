@@ -262,7 +262,7 @@ footer li {
   padding-top: 15px;
 }
 .content ul {
-  
+
   padding: 0;
 }
 .content ul span {
@@ -422,9 +422,11 @@ a .btn {
     margin-bottom: 25px;
     margin-top: 50px;
   }
-  .title {
+  #title {
     margin-top: 50px;
-
+  }
+  #title h1 {
+    font-size: 22px;
   }
   #project-header {
     font-size: 22px;
