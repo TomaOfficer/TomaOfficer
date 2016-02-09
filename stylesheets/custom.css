@@ -140,7 +140,7 @@ a.btn i {
   background-color: #3A539B;
   color: #ffffff;
 }
-.about-content .btn {
+.content .btn {
   background-color: #55acee;
   color: #ffffff;
   border: none;
@@ -149,7 +149,7 @@ a.btn i {
   margin-top: 15px;
   margin-bottom: 50px;
 }
-.about-content .btn:hover {
+.content .btn:hover {
   background-color: #3D8AC5;
 }
 
@@ -241,64 +241,48 @@ footer li {
   font-weight: 700;
 }
 
-/** ----- ABOUT ----- **/
+/** ----- ABOUT + CASE STUDIES ----- **/
 
-.about-content {
-  max-width: 800px;
+.content {
+  max-width: 600px;
   margin: auto;
-  margin-top: 50px;
 }
-.about-content h1 {
+.content h1 {
   font-weight: 700;
+  padding-top: 25px;
 }
-.about-content h2 {
+.content h2 {
   padding-top: 25px;
   font-weight: 700;
   font-size: 22px;
   color: #333;
 }
-.about-content p {
+.content p {
   max-width: 750px;
   padding-top: 15px;
 }
-.about-content ul {
-  list-style: none;
+.content ul {
+  
   padding: 0;
 }
-.about-content ul span {
+.content ul span {
   font-weight: 700;
   font-size: 22px;
 }
-.about-content li {
+.content li {
   padding-top: 20px;
   line-height: 1.5em;
   font-size: 18px;
 }
-
-
-.about-header {
-  padding-bottom: 50px;
+.main-casestudy {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0px;
 }
-.about-header h1 {
-
-}
 
 
- /** ------ ALL CASE STUDIES ------ **/
-
- .content {
-   max-width: 600px;
-   margin: auto;
- }
-
- .content h2 {
-   margin-top: 100px;
-   font-weight: 700;
-   font-size: 26px;
- }
- .content p {
-   margin-top: 50px;
- }
 
  /**----- Startup Review CASE STUDY  -----**/
  #sreview-jumbo{
