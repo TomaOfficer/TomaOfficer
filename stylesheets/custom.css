@@ -61,7 +61,7 @@ p {
   text-transform: uppercase;
   font-weight: 700;
 }
-.navbar-list li:nth-child(2) {
+.navbar-list li:nth-child(3) {
   margin-right: 30px;
 }
 .navbar-list-link a {
@@ -264,12 +264,11 @@ footer li {
   padding-top: 15px;
 }
 .content ul {
-  list-style: none;
+
 }
 .content ul span {
   font-weight: 700;
   font-size: 22px;
-  padding-right: 10px;
 }
 .content li {
   padding-top: 20px;
