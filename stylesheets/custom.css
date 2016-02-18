@@ -16,9 +16,10 @@ body {
 
 .navbar-container {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #373D49;
   font-family: sans-serif;
   font-size: 14px;
+
 }
 .navbar-left {
   margin-top: 16px;
@@ -29,11 +30,10 @@ body {
 }
 .name {
   margin-left: 10px;
-  margin-top: 7px;
-  color: #333;
+  color: #ffffff;
 }
 .navbar-right {
-  margin-top: 16px;
+  margin-top: 8px;
   float: right;
 }
 .navbar-list li {
@@ -45,7 +45,7 @@ body {
   margin-right: 30px;
 }
 .navbar-list-link a {
-  color: #333;
+  color: #ffffff;
   padding-bottom: 24px;
   padding-top: 24px;
   font-weight: 300;
@@ -54,13 +54,16 @@ body {
   text-decoration: none;
 }
 .navbar-list-link a.active {
-  font-weight: bold;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 650px) {
   .name {
     margin-left: 0px;
-    margin-top: 14px;
     font-size: 16px;
+  }
+  .navbar-right {
+    margin-top: 3px;
+    float: right;
   }
   .navbar-list li {
     margin-top: 14px;
@@ -132,13 +135,17 @@ section.portfolio_row a {
   }
 }
 #startup_review {
-  background-color: #ffffff;
-  /**background-image: url(../images/diamond.png); **/
-  color: #333;
+
 }
 #disco {
-  background-color: #ffffff;
-  color: #333;
+
+}
+#berrill {
+
+}
+
+#foundationlab {
+
 }
 /** ----- ABOUT ----- **/
 
@@ -315,13 +322,13 @@ section.portfolio_row a {
 /** ----- FOOTER ----- **/
 
 footer {
-  padding-top: 50px;
+  margin-top: 50px;
+  padding-top: 25px;
   padding-bottom: 25px;
-  text-align: center;
-  background-color: #ffffff;
+  background-color: #373D49;
 }
 footer a {
-  color: #333;
+  color: #ffffff;
   font-weight: 100;
   font-size: 14px;
 }
@@ -330,11 +337,24 @@ footer a:hover {
 }
 footer ul {
   list-style: none;
-  margin-top: 25px;
-  margin-bottom: 50px;
   padding-left: 0;
 }
 footer li {
   display: inline;
   padding-left: 10px;
+}
+footer p {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  text-align: right;
+}
+@media screen and (max-width: 990px) {
+  footer {
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
+  }
 }
