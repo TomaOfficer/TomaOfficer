@@ -261,6 +261,9 @@ section.portfolio_row a {
   #sr_review {
     margin-top: 25px;
   }
+  .smaller_img {
+    max-width: none;
+  }
 }
 /** ----- FOUNDATIONLAB ----- **/
 
