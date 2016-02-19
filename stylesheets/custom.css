@@ -317,6 +317,19 @@ section.portfolio_row .btn:hover {
 #fl_paragraphs p {
   padding-top: 10px;
 }
+#fl_paragraphs .back {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+#fl_paragraphs .back .btn {
+  border-radius: 0;
+  text-decoration: none;
+  border: none;
+  border: 1px solid #333;
+  color: #333;
+  padding: 10px 30px;
+}
 #final_fl_paragraph {
   padding-bottom: 50px;
 }
