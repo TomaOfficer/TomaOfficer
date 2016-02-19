@@ -98,7 +98,6 @@ section.portfolio_row h2 {
   font-size: 1em;
   font-family: sans-serif;
   margin-top: 0;
-
 }
 section.portfolio_row h2 span {
   font-style: italic;
@@ -113,6 +112,18 @@ section.portfolio_row a {
   font-weight: 100;
   text-decoration: underline;
 }
+section.portfolio_row .btn {
+  border-radius: 0;
+  text-decoration: none;
+  border: none;
+  background-color: #f16850;
+  color: #ffffff;
+  padding: 10px 30px;
+}
+section.portfolio_row .btn:hover {
+  background-color: #D95640;
+}
+
 @media screen and (max-width: 990px) {
   section.portfolio_row .row {
     padding-top: 20px;
