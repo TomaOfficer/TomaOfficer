@@ -54,7 +54,7 @@ body {
   text-decoration: none;
 }
 .navbar-list-link a.active {
-  text-transform: uppercase;
+  
 }
 @media screen and (max-width: 650px) {
   .name {
