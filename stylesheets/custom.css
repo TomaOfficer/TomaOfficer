@@ -54,7 +54,7 @@ body {
   text-decoration: none;
 }
 .navbar-list-link a.active {
-  
+
 }
 @media screen and (max-width: 650px) {
   .name {
@@ -256,9 +256,7 @@ section.portfolio_row .btn:hover {
   color: #333;
   text-decoration: underline;
 }
-.smaller_img {
-  max-width: 550px;
-}
+
 #sr_h2 {
   margin-bottom: 0px;
   font-size: 1.2em;
@@ -271,9 +269,6 @@ section.portfolio_row .btn:hover {
 @media screen and (max-width: 650px) {
   #sr_review {
     margin-top: 25px;
-  }
-  .smaller_img {
-    max-width: none;
   }
 }
 /** ----- FOUNDATIONLAB ----- **/
