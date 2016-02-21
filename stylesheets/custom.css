@@ -1,7 +1,7 @@
 /** ----- UNIVERSAL ----- **/
 
 body {
-  font-family: sans-serif;
+  font-family: 'Alegreya', serif;
   font-size: 16px;
   line-height: 1.6;
   font-weight: 100;
@@ -17,20 +17,20 @@ body {
 .navbar-container {
   width: 100%;
   background-color: #373D49;
-  font-family: sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 14px;
-
 }
 .navbar-left {
   margin-top: 16px;
   float: left;
+  text-transform: uppercase;
 }
 .navbar-left a:hover {
   text-decoration: none;
 }
 .name {
   margin-left: 10px;
-  color: #ffffff;
+  color: #bfbfbf;
 }
 .navbar-right {
   margin-top: 8px;
@@ -51,7 +51,7 @@ body {
   font-weight: 300;
 }
 .navbar-list-link a:hover {
-  text-decoration: none;
+
 }
 .navbar-list-link a.active {
 
@@ -89,14 +89,14 @@ section.portfolio_row .row {
 }
 section.portfolio_row h1 {
   font-size: 1.6em;
-  font-family: sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-weight: bold;
   padding-bottom: 5px;
   margin-top: 0;
 }
 section.portfolio_row h2 {
   font-size: 1em;
-  font-family: sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   margin-top: 0;
 }
 section.portfolio_row h2 span {
@@ -119,6 +119,7 @@ section.portfolio_row .btn {
   background-color: #f16850;
   color: #ffffff;
   padding: 10px 30px;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 section.portfolio_row .btn:hover {
   background-color: #D95640;
@@ -145,18 +146,20 @@ section.portfolio_row .btn:hover {
     font-size: 18px;
   }
 }
+#portfolio_header {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background-color: #34495E;
+  font-size: 20px;
+  color: #ffffff;
+}
 #startup_review {
-
 }
 #disco {
-
 }
 #berrill {
-
 }
-
 #foundationlab {
-
 }
 /** ----- ABOUT ----- **/
 
@@ -171,7 +174,7 @@ section.portfolio_row .btn:hover {
 #about_paragraphs h1 {
   padding-top: 25px;
   font-size: 1.6em;
-  font-family: sans-serif;
+font-family: 'Alegreya Sans', sans-serif;
   font-weight: bold;
 }
 #about_paragraphs h1:first-child {
@@ -236,7 +239,7 @@ section.portfolio_row .btn:hover {
 #sr_paragraphs h1 {
   padding-top: 50px;
   font-size: 1.6em;
-  font-family: sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-weight: bold;
 }
 #sr_paragraphs h1:first-child {
@@ -288,8 +291,7 @@ section.portfolio_row .btn:hover {
 }
 #fl h1 {
   font-size: 2em;
-  font-family: sans-serif;
-
+  font-family: 'Alegreya Sans', sans-serif;
 }
 #fl h2 {
   font-size: 1.4em;
@@ -348,6 +350,7 @@ footer {
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: #373D49;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 footer a {
   color: #ffffff;
@@ -369,7 +372,6 @@ footer p {
   color: #ffffff;
   font-size: 14px;
   letter-spacing: .5px;
-  text-transform: uppercase;
   text-align: right;
 }
 @media screen and (max-width: 990px) {
