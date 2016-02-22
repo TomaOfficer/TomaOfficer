@@ -103,10 +103,7 @@ section.portfolio_row h2 {
   font-size: 1.414em;
   font-family: 'Alegreya Sans', sans-serif;
   margin-top: 0;
-}
-section.portfolio_row h2 span {
-
-
+  text-transform: uppercase;
 }
 section.portfolio_row p {
   padding-bottom: 10px;
