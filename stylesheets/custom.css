@@ -32,7 +32,6 @@ h1, h2, h3, h4 {
   text-decoration: none;
 }
 .name {
-
   color: #bfbfbf;
   font-size: 1em;
 }
@@ -156,7 +155,7 @@ section.portfolio_row .btn:hover {
   }
 }
 #portfolio_header  {
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 25px;
   background-color: #DADFE1;
   color: #333;;
