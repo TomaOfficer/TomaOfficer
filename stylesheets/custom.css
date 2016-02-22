@@ -2,14 +2,17 @@
 
 body {
   font-family: 'Alegreya', serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 1.414em;
+  line-height: 1.45;
   font-weight: 100;
+}
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  line-height: 1.2;
 }
 @media screen and (max-width: 650px) {
   body {
-    font-size: 18px;
-    line-height: 1.58;
+
   }
 }
 /** ----- NAVBAR ----- **/
@@ -18,7 +21,7 @@ body {
   width: 100%;
   background-color: #373D49;
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: 14px;
+  font-size: 1em;
 }
 .navbar-left {
   margin-top: 16px;
@@ -29,14 +32,16 @@ body {
   text-decoration: none;
 }
 .name {
-  margin-left: 10px;
+
   color: #bfbfbf;
+  font-size: 1.414em;
 }
 .navbar-right {
   margin-top: 8px;
   float: right;
 }
 .navbar-list li {
+  font-size: 1.414em;
   margin-top: 7px;
   display: inline-block;
   margin-left: 30px;
@@ -59,7 +64,7 @@ body {
 @media screen and (max-width: 650px) {
   .name {
     margin-left: 0px;
-    font-size: 16px;
+    font-size: 1.414em;
   }
   .navbar-right {
     margin-top: 3px;
@@ -88,23 +93,25 @@ section.portfolio_row .row {
   padding-right: 50px;
 }
 section.portfolio_row h1 {
-  font-size: 1.6em;
+  font-size: 2.827em;
+
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: bold;
   padding-bottom: 5px;
   margin-top: 0;
 }
 section.portfolio_row h2 {
-  font-size: 1em;
+  font-size: 1.999em;
   font-family: 'Alegreya Sans', sans-serif;
   margin-top: 0;
 }
 section.portfolio_row h2 span {
-  font-style: italic;
+
 
 }
 section.portfolio_row p {
   padding-bottom: 10px;
+  font-size: 1.414em;
 }
 section.portfolio_row a {
   margin-bottom: 50px;
@@ -113,8 +120,10 @@ section.portfolio_row a {
   text-decoration: underline;
 }
 section.portfolio_row .btn {
+  font-size: 1em;
   border-radius: 0;
   text-decoration: none;
+  text-transform: uppercase;
   border: none;
   background-color: #f16850;
   color: #ffffff;
@@ -139,19 +148,27 @@ section.portfolio_row .btn:hover {
     padding-top: 30px;
   }
   section.portfolio_row h1 {
-    font-size: 22px;
+
     padding-bottom: 10px;
   }
   section.portfolio_row p {
-    font-size: 18px;
+
   }
 }
-#portfolio_header {
+#portfolio_header  {
   padding-top: 40px;
-  padding-bottom: 10px;
-  background-color: #34495E;
-  font-size: 20px;
-  color: #ffffff;
+  padding-bottom: 25px;
+  background-color: #DADFE1;
+  color: #333;;
+}
+#portfolio_header h1 {
+  font-size: 2.827em;
+}
+#portfolio_header p {
+  font-size: 1.414em;
+}
+#portfolio_header .container {
+  max-width:
 }
 #startup_review {
 }
@@ -165,7 +182,7 @@ section.portfolio_row .btn:hover {
 
 #about_paragraphs {
   max-width: 800px;
-  margin-top: 75px;
+  margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -173,7 +190,7 @@ section.portfolio_row .btn:hover {
 }
 #about_paragraphs h1 {
   padding-top: 25px;
-  font-size: 1.6em;
+  font-size: 2.827em;
 font-family: 'Alegreya Sans', sans-serif;
   font-weight: bold;
 }
@@ -182,6 +199,7 @@ font-family: 'Alegreya Sans', sans-serif;
 }
 #about_paragraphs p {
   padding-top: 10px;
+  font-size: 1.414em;
 }
 #final_about_paragraph {
   padding-bottom: 50px;
@@ -192,6 +210,7 @@ font-family: 'Alegreya Sans', sans-serif;
 }
 #about_paragraphs li {
   padding-top: 5px;
+  font-size: 1.414em;
 }
 #about_paragraphs li:first-child {
   padding-top: 10px;
@@ -210,8 +229,8 @@ font-family: 'Alegreya Sans', sans-serif;
 #sr {
   background-color: rgba(8,50,125,0.8);
   color: #fbfbfb;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 5px;
+  padding-bottom: 25px;
 }
 #sr_jumbo {
   max-width: 800px;
@@ -221,11 +240,11 @@ font-family: 'Alegreya Sans', sans-serif;
   padding-right: 15px;
 }
 #sr h1 {
-  font-size: 2em;
+  font-size: 2.827em;
   font-family: sans-serif;
 }
-#sr h2 {
-  font-size: 1.4em;
+#sr p {
+  font-size: 1.414em;
   font-weight: 100;
 }
 #sr_paragraphs {
@@ -238,15 +257,19 @@ font-family: 'Alegreya Sans', sans-serif;
 }
 #sr_paragraphs h1 {
   padding-top: 50px;
-  font-size: 1.6em;
+  font-size: 2.827em;
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: bold;
 }
 #sr_paragraphs h1:first-child {
-  padding-top: 25px;
+
 }
 #sr_paragraphs p {
   padding-top: 10px;
+  font-size: 1.414em;
+}
+#sr_paragraphs ul {
+  font-size: 1.4em;
 }
 #final_sr_paragraph {
   padding-bottom: 50px;
@@ -262,8 +285,7 @@ font-family: 'Alegreya Sans', sans-serif;
 
 #sr_h2 {
   margin-bottom: 0px;
-  font-size: 1.2em;
-  color: rgba(8,50,125,0.8);
+  font-size: 1.999em;
   border-radius: 3px;
   padding-top: 40px;
   font-weight: bold;
@@ -279,8 +301,8 @@ font-family: 'Alegreya Sans', sans-serif;
 #fl {
   background-color: #4DAF7C;
   color: #ffffff;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 5px;
+  padding-bottom: 25px;
 }
 #fl_jumbo {
   max-width: 800px;
@@ -290,10 +312,10 @@ font-family: 'Alegreya Sans', sans-serif;
   padding-right: 15px;
 }
 #fl h1 {
-  font-size: 2em;
+  font-size: 2.827em;
   font-family: 'Alegreya Sans', sans-serif;
 }
-#fl h2 {
+#fl p {
   font-size: 1.4em;
   font-weight: 100;
 }
@@ -307,12 +329,13 @@ font-family: 'Alegreya Sans', sans-serif;
 }
 #fl_paragraphs h1 {
   padding-top: 25px;
-  font-size: 1.6em;
+  font-size: 2.827em;
   font-family: sans-serif;
   font-weight: bold;
 }
 #fl_paragraphs p {
   padding-top: 10px;
+  font-size: 1.4em;
 }
 #fl_paragraphs .back {
   text-align: center;
@@ -343,6 +366,80 @@ font-family: 'Alegreya Sans', sans-serif;
     margin-top: 25px;
   }
 }
+
+/** ------ Berrill Farms -----**/
+#bf {
+  background-color: #2D3B40;
+  color: #ffffff;
+  padding-top: 5px;
+  padding-bottom: 25px;
+}
+#bf_jumbo {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#bf h1 {
+  font-size: 2.827em;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+#bf p {
+  font-size: 1.4em;
+  font-weight: 100;
+}
+#bf_paragraphs {
+  max-width: 800px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#bf_paragraphs h1 {
+  padding-top: 25px;
+  font-size: 2.827em;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#bf_paragraphs p {
+  padding-top: 10px;
+  font-size: 1.4em;
+}
+#bf_paragraphs .back {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+#bf_paragraphs .back .btn {
+  border-radius: 0;
+  text-decoration: none;
+  border: none;
+  border: 1px solid #333;
+  color: #333;
+  padding: 10px 30px;
+}
+#final_bf_paragraph {
+  padding-bottom: 50px;
+}
+#bf_paragraphs img {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+#bf_paragraphs a {
+  color: #333;
+  text-decoration: underline;
+}
+@media screen and (max-width: 650px) {
+  #bf_review {
+    margin-top: 25px;
+  }
+}
+
+
+
+
 /** ----- FOOTER ----- **/
 
 footer {
@@ -355,22 +452,24 @@ footer {
 footer a {
   color: #ffffff;
   font-weight: 100;
-  font-size: 14px;
+  font-size: 1.414em;
 }
 footer a:hover {
   color: #ffffff;
 }
 footer ul {
+
   list-style: none;
   padding-left: 0;
 }
 footer li {
+
   display: inline;
   padding-left: 10px;
 }
 footer p {
+  font-size: 1.414em;
   color: #ffffff;
-  font-size: 14px;
   letter-spacing: .5px;
   text-align: right;
 }
