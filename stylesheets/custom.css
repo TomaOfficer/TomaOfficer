@@ -1,7 +1,7 @@
 /** ----- UNIVERSAL ----- **/
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alegreya', serif;
   line-height: 1.45;
   font-weight: 100;
 }
@@ -19,7 +19,7 @@ h1, h2, h3, h4 {
 .navbar-container {
   width: 100%;
   background-color: #373D49;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 1em;
 }
 .navbar-left {
@@ -92,14 +92,14 @@ section.portfolio_row .row {
 }
 section.portfolio_row h1 {
   font-size: 1.999em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-weight: bold;
   padding-bottom: 5px;
   margin-top: 0;
 }
 section.portfolio_row h2 {
   font-size: 1.414em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   margin-top: 0;
   text-transform: uppercase;
 }
@@ -122,7 +122,7 @@ section.portfolio_row .btn {
   background-color: #f16850;
   color: #ffffff;
   padding: 10px 30px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 section.portfolio_row .btn:hover {
   background-color: #D95640;
@@ -183,7 +183,7 @@ section.portfolio_row .btn:hover {
 #about_paragraphs h1 {
   padding-top: 25px;
   font-size: 1.999em;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Alegreya Sans', sans-serif;
   font-weight: bold;
 }
 #about_paragraphs h1:first-child {
@@ -233,7 +233,7 @@ font-family: 'Open Sans', sans-serif;
 }
 #sr h1 {
   font-size: 2.827em;
-  font-family: sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 #sr p {
   font-size: 1.414em;
@@ -250,7 +250,7 @@ font-family: 'Open Sans', sans-serif;
 #sr_paragraphs h1 {
   padding-top: 50px;
   font-size: 1.999em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-weight: bold;
 }
 #sr_paragraphs h1:first-child {
@@ -306,7 +306,7 @@ font-family: 'Open Sans', sans-serif;
 }
 #fl h1 {
   font-size: 2.827em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 #fl p {
   font-size: 1.4em;
@@ -376,7 +376,7 @@ font-family: 'Open Sans', sans-serif;
 }
 #bf h1 {
   font-size: 2.827em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 #bf p {
   font-size: 1.4em;
@@ -440,7 +440,7 @@ footer {
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: #373D49;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 footer a {
   color: #ffffff;
