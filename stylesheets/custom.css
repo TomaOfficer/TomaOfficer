@@ -152,8 +152,8 @@ section.portfolio_row .btn:hover {
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #DADFE1;
-  color: #333;;
-
+  color: #333;
+  text-align: center;
 }
 #portfolio_header h1 {
   font-size: 1.999em;
