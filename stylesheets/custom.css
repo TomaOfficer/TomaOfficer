@@ -79,6 +79,11 @@ h1, h2, h3, h4 {
     padding: 31px 8px 9px 8px;
   }
 }
+/** ----- HOMEPAGE ----- **/
+
+
+
+
 /** ----- SECTIONS ----- **/
 
 section.portfolio_row {
@@ -149,17 +154,17 @@ section.portfolio_row .btn:hover {
 
 }
 #portfolio_header  {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  background-color: #DADFE1;
+  height: 600px;
   color: #333;
+  overflow: hidden;
   text-align: center;
 }
 #portfolio_header h1 {
-  font-size: 1.999em;
+  font-size: 3.998em;
+  padding-top: 175px;
 }
 #portfolio_header p {
-  font-size: 1.414em;
+  font-size: 1.999em;
 }
 
 #startup_review {
