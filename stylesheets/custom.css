@@ -5,10 +5,13 @@ body {
   line-height: 1.45;
   font-weight: 100;
 }
+
+/**
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
   line-height: 1.2;
 }
+**/
 @media screen and (max-width: 650px) {
   body {
 
@@ -153,18 +156,27 @@ section.portfolio_row .btn:hover {
   }
 
 }
+#portfolio_header .container {
+  width: 65%;
+}
 #portfolio_header  {
   height: 600px;
   color: #333;
   overflow: hidden;
   text-align: center;
+  padding-top: 150px;
 }
 #portfolio_header h1 {
   font-size: 3.998em;
-  padding-top: 175px;
+  padding-top: 20px;
 }
 #portfolio_header p {
-  font-size: 1.999em;
+  font-size: 22px;
+  color: #858585;
+}
+#portfolio_header img {
+  margin: auto;
+  height: 100px;
 }
 
 #startup_review {
