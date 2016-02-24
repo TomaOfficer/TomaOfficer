@@ -139,10 +139,14 @@ section.portfolio_row .btn:hover {
 @media screen and (max-width: 990px) {
   section.portfolio_row .row {
     padding-top: 20px;
+    text-align: center;
   }
   section.portfolio_row img {
     padding-top: 25px;
     padding-bottom: 50px;
+  }
+  .portfolio_row .col-md-5 {
+    padding-right: 15px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -154,25 +158,26 @@ section.portfolio_row .btn:hover {
   }
   section.portfolio_row p {
   }
-
 }
+
 #portfolio_header .container {
   width: 65%;
 }
 #portfolio_header  {
-  height: 600px;
   color: #333;
-  overflow: hidden;
   text-align: center;
   padding-top: 150px;
 }
 #portfolio_header h1 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 700;
   font-size: 3.998em;
   padding-top: 20px;
 }
 #portfolio_header p {
   font-size: 22px;
   color: #858585;
+  padding-bottom: 100px;
 }
 #portfolio_header img {
   margin: auto;
@@ -186,6 +191,25 @@ section.portfolio_row .btn:hover {
 #berrill {
 }
 #foundationlab {
+}
+@media screen and (max-width: 990px) {
+  
+  #portfolio_header {
+    padding-top: 50px;
+  }
+  #portfolio_header h1 {
+    font-size: 32px;
+  }
+  #portfolio_header p {
+    font-size: 18px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #portfolio_header .container {
+    width: 95%;
+  }
 }
 /** ----- ABOUT ----- **/
 
