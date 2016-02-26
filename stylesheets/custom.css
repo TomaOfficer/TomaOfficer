@@ -36,6 +36,7 @@ h1, h2, h3, h4 {
 .name {
   color: #333;
   font-size: 1em;
+  font-weight:
 }
 .navbar-right {
   margin-top: 8px;
@@ -193,12 +194,7 @@ section.portfolio_row .btn:hover {
 }
 #foundationlab {
 }
-@media screen and (max-width: 1600px) {
-  #portfolio_header {
-    width: 33%;
 
-  }
-}
 
 @media screen and (max-width: 990px) {
 
@@ -217,8 +213,15 @@ section.portfolio_row .btn:hover {
 @media screen and (max-width: 650px) {
   #portfolio_header .container {
     width: 95%;
+    padding-top: 90px;
+  }
+  #portfolio_header {
+    height: 500px;
+    padding-top: 0px;
+
   }
 }
+
 /** ----- ABOUT ----- **/
 
 #about_paragraphs {
