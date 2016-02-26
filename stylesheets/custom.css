@@ -1,24 +1,58 @@
 /** ----- UNIVERSAL ----- **/
 
 body {
-  font-family: 'Alegreya', serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.45;
   font-weight: 100;
 }
-
-/**
-h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
-  line-height: 1.2;
-}
-**/
 @media screen and (max-width: 650px) {
-  body {
-
-  }
+  body {}
 }
+
 /** ----- NAVBAR ----- **/
 
+.navbar {
+  border: none;
+}
+.navbar .container-fluid {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  background-color: #333;
+}
+.navbar-brand {
+  padding-left: 20px;
+}
+.navbar-right li {
+  margin-top: 5px;
+  padding-right: 10px;
+  font-weight: 400;
+}
+.navbar-right li:nth-child(2) {
+  padding-right: 40px;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #ffffff;
+}
+#hireme_btn {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 7px 25px 7px 25px;
+  color: #ffffff;
+  border: solid 1px #ffffff;
+  border-radius: 0px;
+  background-color: #333;
+}
+.navbar-default .navbar-collapse {
+  border: none;
+
+}
+
+
+
+/**
 .navbar-container {
   width: 100%;
   background-color: #fff;
@@ -28,15 +62,22 @@ h1, h2, h3, h4 {
 .navbar-left {
   margin-top: 16px;
   float: left;
-  text-transform: uppercase;
 }
 .navbar-left a:hover {
   text-decoration: none;
 }
 .name {
   color: #333;
-  font-size: 1em;
-  font-weight:
+  font-size: 1.414em;
+  font-weight: 700;
+  display: inline-block;
+  padding-left: 10px;
+}
+.navbar-logo img {
+  height: 40px;
+}
+#hireme_btn {
+  display: inline-block;
 }
 .navbar-right {
   margin-top: 8px;
@@ -51,18 +92,7 @@ h1, h2, h3, h4 {
 .navbar-list li:nth-child(2) {
   margin-right: 30px;
 }
-.navbar-list-link a {
-  color: #333;
-  padding-bottom: 24px;
-  padding-top: 24px;
-  font-weight: 700;
-}
-.navbar-list-link a:hover {
 
-}
-.navbar-list-link a.active {
-
-}
 @media screen and (max-width: 650px) {
   .name {
     margin-left: 0px;
@@ -83,9 +113,8 @@ h1, h2, h3, h4 {
     padding: 31px 8px 9px 8px;
   }
 }
-/** ----- HOMEPAGE ----- **/
 
-
+**/
 
 
 /** ----- SECTIONS ----- **/
@@ -96,8 +125,9 @@ section.portfolio_row {
 section.portfolio_row .row {
   padding-top: 75px;
 }
-.portfolio_row .col-md-5 {
+.portfolio_row .col-md-4 {
   padding-right: 50px;
+  text-align: center;
 }
 section.portfolio_row h1 {
   font-size: 1.999em;
@@ -107,36 +137,32 @@ section.portfolio_row h1 {
   margin-top: 0;
 }
 section.portfolio_row h2 {
-  font-size: 1.414em;
+  font-size: 1em;
   font-family: 'Lato', sans-serif;
   margin-top: 0;
   text-transform: uppercase;
 }
 section.portfolio_row p {
-  padding-bottom: 10px;
+  color: #a6a6a6;
   font-size: 1.333em;
 }
-section.portfolio_row a {
-  margin-bottom: 50px;
-  color: #333;
-  font-weight: 100;
-  text-decoration: underline;
-}
+
 section.portfolio_row .btn {
   font-size: 1em;
-  border-radius: 0;
+  font-weight: 400;
+  border-radius: 0px;
   text-decoration: none;
   text-transform: uppercase;
   border: none;
-  background-color: #f16850;
-  color: #ffffff;
+  border: 1px solid #333;
+  color: #333;
   padding: 10px 30px;
   font-family: 'Lato', sans-serif;
+  margin-top: 10px;
 }
 section.portfolio_row .btn:hover {
   background-color: #D95640;
 }
-
 @media screen and (max-width: 990px) {
   section.portfolio_row .row {
     padding-top: 20px;
@@ -157,15 +183,12 @@ section.portfolio_row .btn:hover {
   section.portfolio_row h1 {
     padding-bottom: 10px;
   }
-  section.portfolio_row p {
-  }
+  section.portfolio_row p {}
 }
-
 #portfolio_header .container {
-  width: 55%;
-  padding-top: 150px;
+  padding-top: 200px;
 }
-#portfolio_header  {
+#portfolio_header {
   color: #333;
   text-align: center;
   height: 700px;
@@ -175,50 +198,42 @@ section.portfolio_row .btn:hover {
   font-weight: 700;
   font-size: 3.998em;
   padding-top: 20px;
+  padding-bottom: 30px;
 }
 #portfolio_header p {
   font-size: 22px;
   color: #858585;
-
+  font-family: 'Lato', sans-serif;
 }
 #portfolio_header img {
-
   height: 100px;
 }
-
-#startup_review {
-}
-#disco {
-}
-#berrill {
-}
-#foundationlab {
-}
-
-
+#startup_review {}
+#disco {}
+#berrill {}
+#foundationlab {}
 @media screen and (max-width: 990px) {
-
   #portfolio_header {
-    padding-top: 50px;
-  }
-  #portfolio_header h1 {
-    font-size: 32px;
+    padding-top: 25px;
   }
   #portfolio_header p {
     font-size: 18px;
-    padding-bottom: 25px;
+    padding-bottom: 5px;
   }
 }
-
 @media screen and (max-width: 650px) {
   #portfolio_header .container {
-    width: 95%;
     padding-top: 90px;
   }
   #portfolio_header {
     height: 500px;
     padding-top: 0px;
-
+  }
+  #portfolio_header h1 {
+    font-size: 2.827em;
+  }
+  #portfolio_header p {
+    padding-bottom: 0;
   }
 }
 
@@ -226,7 +241,7 @@ section.portfolio_row .btn:hover {
 
 #about_paragraphs {
   max-width: 800px;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -235,13 +250,14 @@ section.portfolio_row .btn:hover {
 #about_paragraphs h1 {
   padding-top: 25px;
   font-size: 1.999em;
-font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
 }
 #about_paragraphs h1:first-child {
   padding-top: 0px;
 }
 #about_paragraphs p {
+
   padding-top: 10px;
   font-size: 1.414em;
 }
@@ -251,6 +267,7 @@ font-family: 'Lato', sans-serif;
 #about_paragraphs img {
   margin-top: 25px;
   border: none;
+
 }
 #about_paragraphs li {
   padding-top: 5px;
@@ -268,12 +285,13 @@ font-family: 'Lato', sans-serif;
     margin-top: 25px;
   }
 }
+
 /** ----- STARTUPREVIEW ----- **/
 
 #sr {
-  background-color: rgba(8,50,125,0.8);
+  background-color: rgba(8, 50, 125, 0.8);
   color: #fbfbfb;
-  padding-top: 5px;
+  padding-top: 100px;
   padding-bottom: 25px;
 }
 #sr_jumbo {
@@ -305,9 +323,7 @@ font-family: 'Lato', sans-serif;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
 }
-#sr_paragraphs h1:first-child {
-
-}
+#sr_paragraphs h1:first-child {}
 #sr_paragraphs p {
   padding-top: 10px;
   font-size: 1.414em;
@@ -327,7 +343,6 @@ font-family: 'Lato', sans-serif;
   color: #333;
   text-decoration: underline;
 }
-
 #sr_h2 {
   margin-bottom: 0px;
   font-size: 1.999em;
@@ -336,18 +351,18 @@ font-family: 'Lato', sans-serif;
   font-weight: bold;
   color: #a6a6a6;
 }
-
 @media screen and (max-width: 650px) {
   #sr_review {
     margin-top: 25px;
   }
 }
+
 /** ----- FOUNDATIONLAB ----- **/
 
 #fl {
   background-color: #4DAF7C;
   color: #ffffff;
-  padding-top: 5px;
+  padding-top: 100px;
   padding-bottom: 25px;
 }
 #fl_jumbo {
@@ -414,10 +429,11 @@ font-family: 'Lato', sans-serif;
 }
 
 /** ------ Berrill Farms -----**/
+
 #bf {
   background-color: #34495E;
   color: #ffffff;
-  padding-top: 5px;
+  padding-top: 100px;
   padding-bottom: 25px;
 }
 #bf_jumbo {
@@ -483,41 +499,37 @@ font-family: 'Lato', sans-serif;
   }
 }
 
-
-
-
 /** ----- FOOTER ----- **/
 
 footer {
-  margin-top: 50px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: #373D49;
-  font-family: 'Alegreya Sans', sans-serif;
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
 }
 footer a {
-  color: #ffffff;
-  font-weight: 100;
+  color: #333;
+  font-weight: 400;
   font-size: 1em;
 }
 footer a:hover {
-  color: #ffffff;
+  color: #333;
 }
 footer ul {
-
   list-style: none;
   padding-left: 0;
 }
 footer li {
-
   display: inline;
   padding-left: 10px;
 }
 footer p {
   font-size: 1em;
-  color: #ffffff;
+  color: #333;
   letter-spacing: .5px;
   text-align: right;
+  font-weight: 400;
 }
 @media screen and (max-width: 990px) {
   footer {
