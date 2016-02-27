@@ -36,7 +36,7 @@ body {
 .navbar-default .navbar-nav > li > a:hover {
   color: #ffffff;
 }
-#hireme_btn {
+#hire_btn {
   margin-top: 10px;
   margin-left: 10px;
   padding: 7px 25px 7px 25px;
@@ -45,77 +45,16 @@ body {
   border-radius: 0px;
   background-color: #333;
 }
+
 .navbar-default .navbar-collapse {
   border: none;
+}
+.list_label {
 
+  padding-left: 25px;
+  color: #ccc;
+  font-size: 14px;
 }
-
-
-
-/**
-.navbar-container {
-  width: 100%;
-  background-color: #fff;
-  font-family: 'Lato', sans-serif;
-  font-size: 1em;
-}
-.navbar-left {
-  margin-top: 16px;
-  float: left;
-}
-.navbar-left a:hover {
-  text-decoration: none;
-}
-.name {
-  color: #333;
-  font-size: 1.414em;
-  font-weight: 700;
-  display: inline-block;
-  padding-left: 10px;
-}
-.navbar-logo img {
-  height: 40px;
-}
-#hireme_btn {
-  display: inline-block;
-}
-.navbar-right {
-  margin-top: 8px;
-  float: right;
-}
-.navbar-list li {
-  font-size: 1em;
-  margin-top: 7px;
-  display: inline-block;
-  margin-left: 30px;
-}
-.navbar-list li:nth-child(2) {
-  margin-right: 30px;
-}
-
-@media screen and (max-width: 650px) {
-  .name {
-    margin-left: 0px;
-    font-size: 1em;
-  }
-  .navbar-right {
-    margin-top: 3px;
-    float: right;
-  }
-  .navbar-list li {
-    margin-top: 14px;
-    margin-left: 16px;
-  }
-  .navbar-list li:nth-child(2) {
-    margin-right: 0px;
-  }
-  .navbar-list-link a.active {
-    padding: 31px 8px 9px 8px;
-  }
-}
-
-**/
-
 
 /** ----- SECTIONS ----- **/
 
@@ -146,7 +85,6 @@ section.portfolio_row p {
   color: #a6a6a6;
   font-size: 1.333em;
 }
-
 section.portfolio_row .btn {
   font-size: 1em;
   font-weight: 400;
@@ -257,7 +195,6 @@ section.portfolio_row .btn:hover {
   padding-top: 0px;
 }
 #about_paragraphs p {
-
   padding-top: 10px;
   font-size: 1.414em;
 }
@@ -267,7 +204,7 @@ section.portfolio_row .btn:hover {
 #about_paragraphs img {
   margin-top: 25px;
   border: none;
-
+  height: 300px;
 }
 #about_paragraphs li {
   padding-top: 5px;
@@ -280,8 +217,104 @@ section.portfolio_row .btn:hover {
   color: #333;
   text-decoration: underline;
 }
+
+@media screen and (max-width:990px) {
+  #about_paragraphs img {
+    height: 200px;
+  }
+}
+
 @media screen and (max-width: 650px) {
   #about_paragraphs {
+    margin-top: 25px;
+  }
+  #about_paragraphs img {
+    margin-top: 100px;
+    height: 150px;
+  }
+}
+
+/** ----- HIRE ME ----- **/
+
+#hire_btn_dark {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 7px 25px 7px 25px;
+  color: #ffffff;
+  border: solid 1px #ffffff;
+  border-radius: 0px;
+  background-color: #333;
+}
+
+
+#hire_body {
+  background-color: #333;
+  color: #333;
+}
+#hire_module {
+
+}
+#hire_paragraphs {
+  max-width: 700px;
+  margin-top: 100px;
+  text-align: center;
+  background-color: #f9f9fa;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#hire_paragraphs .fa-times {
+  padding-top: 12px;
+  padding-right: 2px;
+}
+#hire_paragraphs h1 {
+  padding-top: 50px;
+  font-size: 1.999em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+#hire_paragraphs .fa-heart {
+  color: #CF000F;
+}
+#hire_paragraphs p {
+  padding-top: 10px;
+  font-size: 1.414em;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+#hire_paragraphs .btn {
+  padding: 12px 30px 12px 30px;
+  margin-top: 25px;
+  margin-bottom: 75px;
+  text-decoration: none;
+}
+#final_hire_paragraph {
+  padding-bottom: 50px;
+}
+#hire_paragraphs a {
+  color: #333;
+  text-decoration: underline;
+}
+#hire_footer {
+  background-color: #333;
+}
+#hire_footer a {
+  color: #333;
+  font-weight: 400;
+  font-size: 1em;
+}
+#hire_footer a:hover {
+  color: #333;
+}
+#hire_footer p {
+  font-size: 1em;
+  color: #333;
+  letter-spacing: .5px;
+  text-align: right;
+  font-weight: 400;
+}
+@media screen and (max-width: 650px) {
+  #hire_paragraphs {
     margin-top: 25px;
   }
 }

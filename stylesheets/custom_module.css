@@ -1,0 +1,92 @@
+/** ----- UNIVERSAL ----- **/
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.45;
+  font-weight: 100;
+}
+@media screen and (max-width: 650px) {
+  body {}
+}
+
+
+/** ----- HIRE ME MODULE CONTENT ----- **/
+
+#hire_btn_dark {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 7px 25px 7px 25px;
+  color: #333;
+  border: 1px solid #808080;
+  border-radius: 0px;
+  background-color: #808080;
+}
+
+
+#hire_body {
+  background-color: #333;
+  color: #333;
+}
+#hire_module {
+  margin-bottom: 100px;
+}
+#hire_paragraphs {
+  max-width: 700px;
+  margin-top: 100px;
+  text-align: center;
+  background-color: #f9f9fa;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#hire_paragraphs .fa-times {
+  padding-top: 12px;
+  padding-right: 2px;
+}
+#hire_paragraphs h1 {
+  padding-top: 50px;
+  font-size: 1.999em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+#hire_paragraphs .fa-heart {
+  color: #CF000F;
+}
+#hire_paragraphs p {
+  padding-top: 10px;
+  font-size: 1.414em;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+#hire_paragraphs .btn {
+  padding: 12px 30px 12px 30px;
+  margin-top: 25px;
+  margin-bottom: 75px;
+  text-decoration: none;
+  background-color: #446CB3;
+  color: #ffffff;
+  border: none;
+}
+
+#hire_paragraphs a {
+  color: #333;
+}
+
+
+@media screen and (max-width:990px) {
+
+}
+@media screen and (max-width: 650px) {
+  #hire_paragraphs {
+    margin-top: auto;
+    height:100vh;
+  }
+  #hire_paragraphs p {
+    font-size: 1.2em;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #hire_module {
+    margin-bottom: 0px;
+  }
+}
