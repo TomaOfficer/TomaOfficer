@@ -51,13 +51,7 @@ body {
 #hire_paragraphs .fa-heart {
   color: #CF000F;
 }
-#hire_paragraphs p {
-  padding-top: 10px;
-  font-size: 1.414em;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 10px;
-}
+
 #hire_paragraphs .btn {
   padding: 12px 30px 12px 30px;
   margin-top: 25px;
