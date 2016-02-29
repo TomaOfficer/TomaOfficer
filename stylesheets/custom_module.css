@@ -38,15 +38,17 @@ body {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
+#hire_paragraphs a {
+  padding-bottom: 25px;
+}
+
 #hire_paragraphs .fa-times {
   padding-top: 12px;
   padding-right: 2px;
 }
-#hire_paragraphs h1 {
+
+#hire_paragraphs p {
   padding-top: 50px;
-  font-size: 1.999em;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
 }
 #hire_paragraphs .fa-heart {
   color: #CF000F;
