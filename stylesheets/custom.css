@@ -91,7 +91,8 @@ section.portfolio_row .btn {
   margin-top: 10px;
 }
 section.portfolio_row .btn:hover {
-  background-color: #D95640;
+  background-color: #DADFE1;
+  transition: all 0.3s ease 0s
 }
 @media screen and (max-width: 990px) {
   section.portfolio_row .row {
@@ -184,8 +185,8 @@ section.portfolio_row .btn:hover {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
 }
-#about_paragraphs h1:first-child {
-  padding-top: 0px;
+#about_paragraphs h1:nth-child(2) {
+  padding-top: 50px;
 }
 #about_paragraphs p {
   padding-top: 10px;
@@ -197,7 +198,7 @@ section.portfolio_row .btn:hover {
 #about_paragraphs img {
   margin-top: 25px;
   border: none;
-  height: 250px;
+  height: 200px;
 }
 #about_paragraphs li {
   padding-top: 5px;
