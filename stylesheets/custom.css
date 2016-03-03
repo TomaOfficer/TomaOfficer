@@ -19,9 +19,13 @@ body {
   font-size: 1em;
   background-color: #333;
 }
-.navbar-brand {
+.navbar-default .navbar-brand {
   padding-left: 20px;
   font-weight: 700;
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover {
+  color: #ffffff;
 }
 .navbar-right li {
   padding-right: 10px;
@@ -42,7 +46,6 @@ body {
   border: none;
 }
 .list_label {
-
   padding-left: 25px;
   color: #ccc;
   font-size: 14px;
