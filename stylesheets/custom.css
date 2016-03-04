@@ -54,11 +54,9 @@ body {
 /** ----- SECTIONS ----- **/
 
 section.portfolio_row {
-  padding-top: 20px;
+  padding-top: 250px;
 }
-section.portfolio_row .row {
-  padding-top: 75px;
-}
+
 .portfolio_row .col-md-4 {
   padding-right: 50px;
   text-align: center;
@@ -142,6 +140,9 @@ section.portfolio_row .btn:hover {
 }
 #portfolio_header img {
   height: 100px;
+}
+#forward {
+  padding-top: 0px;
 }
 #startup_review {}
 #disco {}
