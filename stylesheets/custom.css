@@ -150,8 +150,12 @@ h3 {
     padding-top: 20px;
     font-size: 1.414em;
 }
-#footer a {
+#footer i {
     padding-right: 20px;
+}
+#footer li a {
+    text-decoration: underline;
+
 }
 #copyright {
     color: #B2B2B2;
