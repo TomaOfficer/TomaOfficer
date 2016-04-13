@@ -2,17 +2,18 @@ body {
     color: #333;
 }
 p {
-    line-height: 1.5em;
+
+    line-height: 1.8em;
     font-family: 'Alegreya', serif;
     font-weight: 400;
-    font-size: 1.414em;
+    font-size: 1.777em;
 }
 a {
     color: #1E824C;
 }
 #banner {
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 125px;
     margin-left: 26.5%;
 }
 #banner h1 {
@@ -32,23 +33,24 @@ a {
 }
 .title-block {
     display: block;
-
     text-align: right;
      text-transform: lowercase;
+     padding-right: 50px;
 }
 .title-block h2 {
     font-size: 1.999em;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 700;
+    margin-top: 0px;
+    padding-top: 7px;
 }
 .section {
     padding: 0 20px 40px 0;
     display: block;
-
     float: right;
 }
 .section p {
-    padding-top: .75em;
+
 
 }
 
@@ -108,12 +110,7 @@ h3 {
 #talk-workshop {
     font-weight: 300;
 }
-ul {
-    line-height: 1.5em;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-}
+
 
 .btn {
     font-family: 'Source Sans Pro', sans-serif;
@@ -129,17 +126,25 @@ ul {
     color: #333;
     text-transform: uppercase;
 }
-footer {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-}
+
 #footer {
+ font-family: 'Source Sans Pro', sans-serif;
+ font-weight: 300;
+ margin-top: 100px;
     list-style: none;
-    padding: 50px;
+    padding: 0px;
+}
+#footer ul {
+ padding-left: 0px;
+ list-style: none;
+ font-size: 1.414em;
 }
 #footer li {
-    display: inline;
     letter-spacing: 50px;
+    line-height: 80px;
+    padding-left: 0px;
+    margin-left: 0;
+    font-size:
 }
 #social a {
     color: #333333;
@@ -147,6 +152,7 @@ footer {
 #footer p {
     color: #B2B2B2;
     padding-top: 20px;
+    font-size: 1.414em;
 }
 #copyright {
     color: #B2B2B2;
@@ -160,18 +166,18 @@ footer {
         margin: 0;
     }
     #banner {
-        margin: 60px;
+
     }
     #banner h2 {
-        font-size: 20px;
+        font-size: ;
         text-align: center;
     }
     #name {
-        font-size: 30px;
+        font-size: ;
         text-align: center;
     }
     h1 {
-        font-size: 24px;
+        font-size: ;
     }
     #footer {
         padding-top: 0px;
