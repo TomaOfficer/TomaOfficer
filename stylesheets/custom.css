@@ -38,7 +38,7 @@ a {
     padding-right: 20px;
 }
 .title-block h2 {
-    font-size: 1.999em;
+    font-size: 1.414em;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 700;
     margin-top: 0px;
@@ -91,8 +91,6 @@ a {
 #footer ul {
     padding-left: 0px;
     list-style: none;
-    font-size: 1.777em;
-    font-size: 1.414em;
     font-family: 'Alegreya Sans', sans-serif;
 }
 #footer li {
@@ -107,10 +105,11 @@ a {
 #footer p {
     color: #B2B2B2;
     padding-top: 120px;
-    font-size: 1.414em;
+    font-size: 1em;
 }
 #footer i {
     padding-right: 20px;
+    font-size: 1.414em;
 }
 #footer li a {
     text-decoration: underline;
