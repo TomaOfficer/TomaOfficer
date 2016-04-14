@@ -1,10 +1,11 @@
 body {
     color: #333;
+    font-size: 18px;
 }
 p {
     line-height: 1.8em;
     font-family: 'Alegreya', serif;
-    font-size: 1.777em;
+    font-size: 1.414em;
 }
 a {
     color: #1E824C;
@@ -15,17 +16,18 @@ a {
     margin-left: 26.5%;
 }
 #banner h1 {
-    font-weight: 900;
+    font-weight: 400;
     font-size: 3.998em;
-    font-family: 'Overlock', cursive;
-    margin-left: -10px;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin: 0px 0px 0px -10px;
+
 }
 #banner h2 {
     color: #333;
     font-weight: 300;
     margin: 0px 0px 0px 0px;
-    padding-top: .5em;
-    font-size: 1.999em;
+    padding-top: .25em;
+    font-size: 1.414em;
     text-transform: lowercase;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
@@ -43,66 +45,23 @@ a {
     padding-top: 7px;
 }
 .title-block p {
-    font-size: 1.414em;
-    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1em;
     line-height: 1.5em;
 }
 .content-block {
-    padding: 0 20px 40px 0;
+    padding: 0px 20px 120px 0;
     display: block;
-    float: right;
+}
+.content-block h1 {
+    margin: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2.827em;
 }
 .content-block p {}
-
-/**
-.headline {
-    margin-top: 0;
-    padding-bottom: 25px;
-    font-size: 1.999em;
-    font-weight: 300;
-    color: #333;
+.content-block img {
+    max-width: 450px;
 }
-
-
-.section {
-    padding: 0 20px 40px 0;
-    font-family: 'Alegreya Sans SC', sans-serif;
-}
-.section h1 {
-    font-size: 2.827em;
-    font-weight: 700;
-}
-.section h2 {
-    font-weight: 800;
-    font-size: 1.414em;
-    display: inline;
-    text-align: margin-left: -65px;
-    padding-right: 10px;
-}
-.section h3 {
-
-}
-.section p {
-    display: inline-block;
-    padding-top: 10px;
-    font-size: 1.414em
-}
-h1 {}
-h2 {
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-weight: 800;
-    font-size: 1.414em;
-    display: inline;
-    margin-left: -65px;
-    padding-right: 10px;
-}
-h3 {
-    font-size: 1.414em;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    display: inline;
-}
-**/
-
 #quote {
     margin-top: 25px;
     border: none;
@@ -111,7 +70,7 @@ h3 {
     font-weight: 300;
 }
 .btn {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
     font-size: 14px;
     font-weight: 600;
     padding: 5px 20px;
@@ -125,7 +84,7 @@ h3 {
     text-transform: uppercase;
 }
 #footer {
-    margin: 100px 0px 50px;
+    margin: 50px 0px 50px;
     list-style: none;
     padding: 0px;
 }
@@ -147,7 +106,7 @@ h3 {
 }
 #footer p {
     color: #B2B2B2;
-    padding-top: 20px;
+    padding-top: 120px;
     font-size: 1.414em;
 }
 #footer i {
@@ -155,7 +114,6 @@ h3 {
 }
 #footer li a {
     text-decoration: underline;
-
 }
 #copyright {
     color: #B2B2B2;
