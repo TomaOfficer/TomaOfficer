@@ -1,12 +1,12 @@
 body {
     color: #333;
     font-size: 18px;
-
 }
 p {
-    line-height: 1.6em;
-  font-family: 'Alegreya Sans', sans-serif;
+    line-height: 1.5em;
+    font-family: 'Alegreya Sans', sans-serif;
     font-size: 1.414em;
+    margin-bottom: 40px;
 }
 a {
     color: #1E824C;
@@ -36,15 +36,15 @@ a {
 .title-block {
     display: block;
     text-align: right;
-    text-transform: lowercase;
     padding: 4px 20px 0px;
 }
 .title-block h2 {
     font-size: 1.414em;
-    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
     font-weight: 700;
     margin-top: 0px;
     padding-top: 0px;
+    letter-spacing: .05em;
 }
 .title-block p {
     font-size: 1em;
@@ -62,11 +62,11 @@ a {
     padding: 0px 0px 20px;
 }
 .content-block p {
-    padding: 0px 0px 20px;
+    padding: 0px 0px 0px;
 }
 .content-block img {
     max-width: 400px;
-    padding: 0px 0px 20px;
+    padding: 40px 0px 40px;
 }
 .row {
     margin-bottom: 70px;
@@ -86,27 +86,25 @@ a {
     text-transform: uppercase;
 }
 #footer {
-    margin: 50px 0px ;
+    margin: 50px 0px 0px 70px;
     list-style: none;
-
+    border-top: 1px solid #B2B2B2;
 }
 #footer ul {
     list-style: none;
     font-family: 'Alegreya Sans', sans-serif;
-    padding-left: 70px;
+    padding: 40px 0px 0px 0px;
 }
 #footer li {
-    line-height: 80px;
     padding-left: 0px;
-    margin-left: 0;
-    font-size:
+    margin: 0px 25px 0px 0px;
+    display: inline;
 }
 #social a {
     color: #333333;
 }
 #footer p {
-    color: #B2B2B2;
-    padding: 120px 0px 0px 70px;
+    padding: 25px 0px 0px 0px;
     font-size: 1em;
 }
 #footer i {
@@ -115,9 +113,6 @@ a {
 }
 #footer li a {
     text-decoration: underline;
-}
-#copyright {
-    color: #B2B2B2;
 }
 
 /** small screen **/
