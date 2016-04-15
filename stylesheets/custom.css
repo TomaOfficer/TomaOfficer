@@ -1,27 +1,26 @@
 body {
     color: #333;
     font-size: 18px;
-    background-color: #F4F1EC;
+
 }
 p {
-    line-height: 1.8em;
-    font-family: 'Alegreya', serif;
+    line-height: 1.6em;
+  font-family: 'Alegreya Sans', sans-serif;
     font-size: 1.414em;
 }
 a {
     color: #1E824C;
 }
 #banner {
-    margin-top: 100px;
-    margin-bottom: 125px;
-    margin-left: 26.5%;
+    margin-top: 150px;
 }
+
+/**
 #banner h1 {
     font-weight: 800;
-    font-size: 3.998em;
+    font-size: 2.827em;
     font-family: 'Alegreya Sans', sans-serif;
     margin: 0px 0px 0px -10px;
-
 }
 #banner h2 {
     color: #333;
@@ -32,11 +31,13 @@ a {
     text-transform: lowercase;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
+**/
+
 .title-block {
     display: block;
     text-align: right;
     text-transform: lowercase;
-    padding-right: 20px;
+    padding: 4px 20px 0px;
 }
 .title-block h2 {
     font-size: 1.414em;
@@ -50,7 +51,7 @@ a {
     line-height: 1.5em;
 }
 .content-block {
-    padding: 0px 20px 120px 0;
+    padding: 0px 0px 0px 70px;
     display: block;
 }
 .content-block h1 {
@@ -61,17 +62,14 @@ a {
     padding: 0px 0px 20px;
 }
 .content-block p {
-  padding: 0px 0px 20px;
+    padding: 0px 0px 20px;
 }
 .content-block img {
-
+    max-width: 400px;
+    padding: 0px 0px 20px;
 }
-#quote {
-    margin-top: 25px;
-    border: none;
-}
-#talk-workshop {
-    font-weight: 300;
+.row {
+    margin-bottom: 70px;
 }
 .btn {
     font-family: 'Alegreya Sans', sans-serif;
@@ -88,14 +86,14 @@ a {
     text-transform: uppercase;
 }
 #footer {
-    margin: 50px 0px 50px;
+    margin: 50px 0px ;
     list-style: none;
-    padding: 0px;
+
 }
 #footer ul {
-    padding-left: 0px;
     list-style: none;
     font-family: 'Alegreya Sans', sans-serif;
+    padding-left: 70px;
 }
 #footer li {
     line-height: 80px;
@@ -108,7 +106,7 @@ a {
 }
 #footer p {
     color: #B2B2B2;
-    padding-top: 120px;
+    padding: 120px 0px 0px 70px;
     font-size: 1em;
 }
 #footer i {
