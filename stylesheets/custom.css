@@ -1,6 +1,6 @@
 body {
     color: #333;
-    font-size: 18px;
+    font-size: 16px;
 }
 p {
     line-height: 1.5em;
@@ -14,25 +14,6 @@ a {
 #banner {
     margin-top: 150px;
 }
-
-/**
-#banner h1 {
-    font-weight: 800;
-    font-size: 2.827em;
-    font-family: 'Alegreya Sans', sans-serif;
-    margin: 0px 0px 0px -10px;
-}
-#banner h2 {
-    color: #333;
-    font-weight: 300;
-    margin: 0px 0px 0px 0px;
-    padding-top: .25em;
-    font-size: 1.414em;
-    text-transform: lowercase;
-    font-family: 'Alegreya Sans SC', sans-serif;
-}
-**/
-
 .title-block {
     display: block;
     text-align: right;
@@ -86,14 +67,15 @@ a {
     text-transform: uppercase;
 }
 #footer {
-    margin: 50px 0px 0px 70px;
+    margin: 150px 0px 0px 70px;
     list-style: none;
-    border-top: 1px solid #B2B2B2;
+    border-top: 1px solid #d9d9d9;
 }
 #footer ul {
     list-style: none;
     font-family: 'Alegreya Sans', sans-serif;
     padding: 40px 0px 0px 0px;
+
 }
 #footer li {
     padding-left: 0px;
@@ -106,6 +88,7 @@ a {
 #footer p {
     padding: 25px 0px 0px 0px;
     font-size: 1em;
+
 }
 #footer i {
     padding-right: 20px;
