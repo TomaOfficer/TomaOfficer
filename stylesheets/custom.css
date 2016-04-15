@@ -11,6 +11,12 @@ p {
 a {
     color: #1E824C;
 }
+
+/** ---- navbar ---- **/
+
+.navbar {
+    margin-bottom: 0px;
+}
 #banner {
     margin-top: 150px;
 }
@@ -67,15 +73,16 @@ a {
     text-transform: uppercase;
 }
 #footer {
-    margin: 150px 0px 0px 70px;
+    margin: 150px 0px 70px 70px;
+    padding-top: 40px;
     list-style: none;
     border-top: 1px solid #d9d9d9;
 }
 #footer ul {
     list-style: none;
     font-family: 'Alegreya Sans', sans-serif;
-    padding: 40px 0px 0px 0px;
-
+    padding-left: 0px;
+    display: inline-block;
 }
 #footer li {
     padding-left: 0px;
@@ -86,9 +93,9 @@ a {
     color: #333333;
 }
 #footer p {
-    padding: 25px 0px 0px 0px;
     font-size: 1em;
-
+    display: inline-block;
+    float: right;
 }
 #footer i {
     padding-right: 20px;
@@ -98,29 +105,10 @@ a {
     text-decoration: underline;
 }
 
-/** small screen **/
+/* Portrait tablets and small desktops */
 
-@media screen and (max-width: 650px) {
-    .container {
-        padding: 0;
-        margin: 0;
-    }
-    #banner {}
-    #banner h2 {
-        font-size: ;
-        text-align: center;
-    }
-    #name {
-        font-size: ;
-        text-align: center;
-    }
-    h1 {
-        font-size: ;
-    }
-    #footer {
-        padding-top: 0px;
-    }
-    #footer li {
-        letter-spacing: 25px;
+@media (max-width: 765px) {
+    .title-block {
+        text-align: left;
     }
 }
