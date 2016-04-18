@@ -22,7 +22,7 @@ a {
     text-transform: uppercase;
     background-color: #F4F1EC;
     border-top: 0;
-    border-bottom: 1px solid #979797;
+    border-bottom: 0px solid #979797;
     border-radius: 0px;
 }
 
@@ -72,6 +72,9 @@ a {
 .row {
     margin-bottom: 25px;
 }
+.small_img {
+
+}
 
 #headshot {
   float: left;
@@ -97,6 +100,19 @@ a {
     color: #333;
     text-transform: uppercase;
 }
+
+/** ---- portfolio ---- **/
+.portfolio_hero {
+  background: url(../images/sketch.jpg) no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 400px;
+  margin: 25px 0px 50px;
+}
+
+
+
+/** ---- footer ---- **/
 #footer {
     margin: 150px 0px 70px 70px;
     padding-top: 20px;
