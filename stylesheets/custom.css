@@ -75,6 +75,10 @@ a {
 .small_img {
 
 }
+.link img {
+  width: 95%;
+
+}
 
 #headshot {
   float: left;
@@ -109,8 +113,6 @@ a {
   height: 400px;
   margin: 25px 0px 50px;
 }
-
-
 
 /** ---- footer ---- **/
 #footer {
