@@ -1,6 +1,6 @@
 body {
     color: #282365;
-    font-size: 16px;
+    font-size: 18px;
     background-color: #F4F1EC;
 }
 p {
@@ -65,6 +65,8 @@ a {
 .content-block p {
     padding: 0px 0px 0px;
     max-width: 30em;
+    color: #333;
+    font-family: 'Alegreya', serif;
 }
 .content-block img {
     max-width: 400px;
@@ -121,6 +123,7 @@ a {
     padding-top: 20px;
     border-top: 1px solid #d9d9d9;
     max-width: 30em;
+
 }
 
 #social {
@@ -137,6 +140,7 @@ a {
 }
 #footer p {
     font-size: 1em;
+      color: #282365;
 }
 #social i {
     padding-right: 10px;
