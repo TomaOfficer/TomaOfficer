@@ -49,6 +49,7 @@ a {
 .title-block p {
     font-size: 1em;
     line-height: 1.5em;
+    padding-right: 3px;
 }
 .content-block {
     padding: 0px 0px 0px 70px;
@@ -116,36 +117,36 @@ a {
 
 /** ---- footer ---- **/
 #footer {
-    margin: 150px 0px 70px 70px;
+    margin: 150px 0px;
     padding-top: 20px;
-    list-style: none;
     border-top: 1px solid #d9d9d9;
+    max-width: 30em;
 }
-#footer ul {
+
+#social {
     list-style: none;
     font-family: 'Alegreya Sans', sans-serif;
-    padding-left: 0px;
     display: inline-block;
 }
-#footer li {
-    padding-left: 0px;
-    margin: 0px 25px 0px 0px;
-    display: inline;
+#social li {
+    margin: 25px 0px 0px 0px;
+
 }
 #social a {
-    color: #333333;
+    color: #282365;
 }
 #footer p {
     font-size: 1em;
-    display: inline-block;
-    float: right;
 }
-#footer i {
-    padding-right: 20px;
-    font-size: 1em;
+#social i {
+    padding-right: 10px;
+
 }
 #footer li a {
     text-decoration: underline;
+}
+#copyright {
+  color: #282365;
 }
 
 /* Portrait tablets and small desktops */
