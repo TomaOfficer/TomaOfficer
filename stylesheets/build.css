@@ -7,31 +7,89 @@ p {
     line-height: 1.5em;
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 1.333em;
-
 }
 a {
     color: #1E824C;
 }
+.container {
+  max-width: 100rem;
+}
+
 
 #banner {
     margin-top: 50px;
     text-align: center;
 }
+#banner h2 {
+  font-size: 1.414em;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 700;
+  margin-top: 0px;
+  padding-top: 0px;
+  letter-spacing: .05em;
+}
 
 #nav {
     font-size: 1em;
-    text-transform: uppercase;
+    padding-left: 0;
+    font-family: 'Alegreya SC', serif;
+    font-weight: 400;
+}
+#nav ul {
+  padding-left: 0;
 }
 #nav li{
     display: inline;
-    font-family: 'Alegreya Sans', sans-serif;
-    padding: 0px;
-    margin: 0px;
-
+    padding: 0px 20px;
 }
 #nav a {
   color: #333;
 }
+#nav a.active {
+  border-bottom: 2px solid #333;
+}
+#nav a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+
+#first_row {
+  margin-top: 80px;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 20px;
+}
+
+.title-block {
+    display: block;
+
+
+}
+.title-block h2 {
+    font-size: 1em;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 0px;
+    padding-top: 0px;
+    letter-spacing: 0.05em;
+}
+.title-block p {
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-right: 3px;
+}
+
+.col-sm-9 {
+  padding: 0;
+}
+.col-sm-6 {
+  padding: 0;
+}
+.col-sm-3 {
+  padding: 0;
+}
+
+
 
 
 #social {
@@ -41,7 +99,6 @@ a {
 #social li {
     margin: 25px 40px 0px 0px;
     display: inline;
-
 }
 #social i {
     padding-right: 10px;
