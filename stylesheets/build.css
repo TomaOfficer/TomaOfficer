@@ -1,0 +1,51 @@
+body {
+    color: #282365;
+    font-size: 18px;
+    background-color: #F4F1EC;
+}
+p {
+    line-height: 1.5em;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.333em;
+
+}
+a {
+    color: #1E824C;
+}
+
+#banner {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#nav {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+#nav li{
+    display: inline;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+
+}
+#nav a {
+  color: #333;
+}
+
+
+#social {
+    list-style: none;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+#social li {
+    margin: 25px 40px 0px 0px;
+    display: inline;
+
+}
+#social i {
+    padding-right: 10px;
+}
+#social a {
+  color: #333;
+}
