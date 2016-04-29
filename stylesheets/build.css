@@ -130,27 +130,29 @@ footer {
 
 }
 #email {
-
+  display: inline;
   color: #b8b8b8;
 }
 #email p {
   font-size: 1em;
   color: #b8b8b8;
+  display: inline;
 }
-#email h2 {
-  font-size: 1.414em;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-weight: 700;
-}
+
 #social {
     color: #b8b8b8;
     list-style: none;
     font-family: 'Alegreya Sans', sans-serif;
     padding-left: 0;
+    display: inline;
+    float: right;
+}
+#social ul {
+  display: inline;
 }
 #social li {
     margin: 25px 40px 0px 0px;
-    display: block;
+    display: inline;
     font-size: .90em;
 }
 #social i {
