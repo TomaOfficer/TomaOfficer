@@ -5,31 +5,28 @@ body {
 }
 p {
     line-height: 1.5em;
-    font-family: 'Neuton', serif;
+    font-family: 'Alegreya', serif;
     font-size: 1.333em;
-    color: black;
+    margin: 0;
 }
 a {
     color: #1E824C;
 }
 .container {
-  max-width: 100rem;
+    max-width: 100rem;
 }
-
-
 #banner {
     margin-top: 50px;
     text-align: center;
 }
 #banner h2 {
-  font-size: 1.333em;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-weight: 700;
-  margin-top: 0px;
-  padding-top: 0px;
-  letter-spacing: .05em;
+    font-size: 1.333em;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 0px;
+    padding-top: 0px;
+    letter-spacing: .05em;
 }
-
 #nav {
     font-size: 1em;
     padding-left: 0;
@@ -37,78 +34,72 @@ a {
     font-weight: 400;
 }
 #nav ul {
-  padding-left: 0;
+    padding-left: 0;
 }
-#nav li{
+#nav li {
     display: inline;
     padding: 0px 20px;
 }
 #nav a {
-  color: #333;
+    color: #333;
 }
 #nav a.active {
-  border-bottom: 2px solid #333;
+    border-bottom: 2px solid #333;
 }
 #nav a:hover {
-  text-decoration: none;
-  color: red;
+    text-decoration: none;
+    color: red;
 }
-
 section.text {
-  margin: 0 auto;
-  max-width: 75rem;
-  padding: 1rem;
-  text-align: justify;
+    margin: 0 auto;
+    max-width: 75rem;
+    padding: 1rem;
+    text-align: justify;
 }
-
 .hero {
-  margin: auto;
-  padding-top: 40px;
-  max-width: 40em;
-  text-align: center;
+    margin: auto;
+    padding-top: 5rem;
+    max-width: 30em;
+    text-align: center;
 }
 img#headshot {
-  max-width: 10em;
-  display: inline-block;
-  padding-bottom: 40px;
+    max-width: 10em;
+    display: inline-block;
+    padding-bottom: 40px;
 }
 #first_row {
-  margin-top: 80px;
-  padding-top: 20px;
+    margin-top: 80px;
 }
-div.grid {
-
-}
+div.grid {}
 .row {
-  margin: 0;
+    margin: 5rem 0;
 }
-.grid img{
-  max-width: 95%;
-  padding-bottom: .5em;
+.grid img {
+    max-width: 95%;
+    padding-bottom: .5em;
 }
 .grid h3 {
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 1em;
-  margin: 0;
-  font-weight: 700;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    font-weight: 700;
 }
 .caption {
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 1em;
-  color: #737373;
-  margin: 0;
-  padding-bottom: 1em;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1em;
+    color: #737373;
+    margin: 0;
+    padding-bottom: 1em;
 }
 .title-block {
     display: block;
 }
 .title-block h2 {
     font-size: 1em;
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Alegreya SC', serif;
     font-weight: 700;
     margin-top: 2px;
     padding: 0px;
-    letter-spacing:;
 
 }
 .title-block p {
@@ -116,35 +107,31 @@ div.grid {
     line-height: 1.5em;
     padding-right: 3px;
 }
-
 .col-sm-9 {
-  padding: 0;
+    padding: 0;
 }
 .col-sm-6 {
-  padding: 0;
+    padding: 0;
 }
 .col-sm-3 {
-  padding: 0;
+    padding: 0;
 }
-
-
+img#big {}
 footer {
-  margin-top: 80px;
-  border-top: 1px solid #A19FB3;
-  padding: 30px 0px 30px;
-  background-color: #333;
-
+    margin-top: 80px;
+    border-top: 1px solid #A19FB3;
+    padding: 30px 0px 30px;
+    background-color: #333;
 }
 #email {
-  display: inline;
-  color: #b8b8b8;
+    display: inline;
+    color: #b8b8b8;
 }
 #email p {
-  font-size: 1em;
-  color: #b8b8b8;
-  display: inline;
+    font-size: 1em;
+    color: #b8b8b8;
+    display: inline;
 }
-
 #social {
     color: #b8b8b8;
     list-style: none;
@@ -154,7 +141,7 @@ footer {
     float: right;
 }
 #social ul {
-  display: inline;
+    display: inline;
 }
 #social li {
     margin: 25px 40px 0px 0px;
@@ -166,5 +153,5 @@ footer {
     color: #b8b8b8;
 }
 #social a {
-  color: #b8b8b8;
+    color: #b8b8b8;
 }
