@@ -59,20 +59,21 @@ a {
     max-width: 35em;
     text-align: center;
 }
-.hero p {
+.hero h2 {
   font-size: 1.777em;
   font-family: 'Alegreya Sans', sans-serif;
   line-height: 1.514em;
   font-weight: 700;
+  margin: 0;
+  padding-top: .5em;
 }
 
 img#headshot {
-    max-width: 10em;
+    max-width: 12em;
     display: inline-block;
-    padding-bottom: 40px;
 }
 #first_row {
-    padding-top: 2rem;
+    padding-top: 2em;
     margin-top: 10rem;
     border-top: solid 1px rgba(0,0,0,.2);
 }
@@ -91,9 +92,12 @@ div.grid {}
     font-weight: 700;
     color: #222;
 }
+
 .grid a:hover {
   text-decoration: none;
+  color: red;
 }
+
 .caption {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 1em;
@@ -108,11 +112,12 @@ div.grid {}
     display: block;
 }
 .title-block h2 {
-    font-size: 1.333em;
-    font-family: 'Alegreya Sans', serif;
-    font-weight: 700;
+    font-size: 1em;
+    font-family: 'Alegreya SC', serif;
+    font-weight: 400;
     margin-top: 2px;
     padding: 0px;
+
 }
 .title-block p {
     font-size: 1em;
@@ -135,7 +140,7 @@ section.text {
     text-align: justify;
 }
 .text p:first-child {
-  margin-top: 0rem;
+  margin-top: 5rem;
 }
 .text p {
   margin-top: 2.5rem;
