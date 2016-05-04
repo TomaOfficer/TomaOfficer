@@ -1,7 +1,7 @@
 body {
-    color: #282365;
+    color: #222;
     font-size: 18px;
-    background-color: #F4F1EC;
+    background-color: #fafafa;
 }
 p {
     line-height: 1.5em;
@@ -22,7 +22,7 @@ a {
     text-align: center;
 }
 #banner h2 {
-  font-size: 1.414em;
+  font-size: 1.333em;
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 700;
   margin-top: 0px;
@@ -54,6 +54,13 @@ a {
   color: red;
 }
 
+section.text {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 1rem;
+  text-align: justify;
+}
+
 .hero {
   margin: auto;
   padding-top: 40px;
@@ -67,7 +74,6 @@ img#headshot {
 }
 #first_row {
   margin-top: 80px;
-
   padding-top: 20px;
 }
 div.grid {
