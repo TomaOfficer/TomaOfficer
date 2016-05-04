@@ -4,7 +4,7 @@ body {
     background-color: #fafafa;
 }
 p {
-    line-height: 1.5em;
+    line-height: 1.45em;
     font-family: 'Alegreya', serif;
     font-size: 1em;
     margin: 0;
@@ -60,16 +60,21 @@ a {
     text-align: center;
 }
 .hero p {
-  font-size: 1.333em;
+  font-size: 1.777em;
   font-family: 'Alegreya Sans', sans-serif;
+  line-height: 1.514em;
+  font-weight: 700;
 }
+
 img#headshot {
     max-width: 10em;
     display: inline-block;
     padding-bottom: 40px;
 }
 #first_row {
+    padding-top: 2rem;
     margin-top: 10rem;
+    border-top: solid 1px rgba(0,0,0,.2);
 }
 div.grid {}
 .row {
@@ -138,9 +143,12 @@ section.text {
 a#mediumPosts {
     text-align: left;
     padding: 1em 1em .5em 1.5em;
-    border: 1px solid #828282;
+    border: 1px solid rgba(0,0,0,.2);
     display: block;
     color: #222;
+}
+a#mediumPosts:hover {
+  background-color: rgba(0,0,0,.05);
 }
 #mediumPosts h2 {
     font-family: 'Alegreya Sans', sans-serif;
