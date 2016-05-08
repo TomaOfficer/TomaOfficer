@@ -6,7 +6,7 @@ body {
 p {
     line-height: 1.45em;
     font-family: 'Alegreya', serif;
-    font-size: 1em;
+    font-size: 1.333em;
     margin: 0;
     color: #222;
 }
@@ -72,11 +72,16 @@ img#headshot {
     padding-right: 7rem;
 }
 .title-block h2 {
-    font-size: 1.333em;
+    font-size: 1em;
     font-family: 'Alegreya Sans', serif;
     font-weight: 700;
     margin: 0 0 .8rem;
     padding: 0px;
+    color: grey;
+}
+.title-block h2.primary {
+  font-size: 1.333em;
+  color: #222;
 }
 .title-block p {
     font-family: 'Alegreya Sans', sans-serif;
