@@ -81,10 +81,7 @@ img#headshot {
     padding: 0px;
     color: grey;
 }
-.title-block h2.primary {
-    font-size: 1em;
-    color: grey;
-}
+
 .title-block p {
     font-size: 1em;
     color: #737373;
@@ -99,7 +96,7 @@ img#headshot {
     padding-top: 5rem;
 }
 .content_block img {
-    padding-top: 5rem;
+
 }
 section.text {
     margin: 0 auto;
@@ -116,40 +113,38 @@ section.text {
 footer {
     margin-top: 10rem;
     border-top: 1px solid #A19FB3;
-    padding: 30px 0px 30px;
+    padding: 5rem 0 5rem;
     background-color: #e5e5e5;
     color: grey;
 }
-
 footer ul {
     list-style: none;
     padding-left: 0;
 }
 footer li {
     padding-top: 1rem;
+    display: inline-block;
+}
+footer p {
+  font-size: .85em;
+  line-height: 1.6em;
 }
 footer h3 {
-    font-size: 1em;
-    color: #222;
-    font-family: 'Alegreya SC', serif;
-    font-weight: 400;
-    margin: 0;
+  margin: .5em 0;
+  font-size: 1.333em;
+  color: #222;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 800;
 }
 footer a {
     color: grey;
-    font-size: .75em;
-    font-family: 'Alegreya Sans', sans-serif;
 }
 footer a:hover {
     color: red;
-    text-decoration: none;
 }
 footer i {
-    padding-right: .5rem;
+  padding-left: 2rem;
 }
-footer p {
-    padding-top: 1rem;
-    font-size: .75em;
-    color: grey;
-    line-height: 1.45em;
+div#footer_right {
+  text-align: right;
 }
