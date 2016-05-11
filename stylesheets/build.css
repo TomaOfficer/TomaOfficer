@@ -3,7 +3,7 @@ body {
     background-color: #fafafa;
     font-size: 18px;
     line-height: 1.45em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Alegreya', serif;
 }
 p {
     font-size: 1em;
@@ -81,23 +81,25 @@ img#headshot {
     padding: 0px;
     color: grey;
 }
-
-.title-block p {
-    font-size: 1em;
-    color: #737373;
-    margin: 0;
-    padding: 15em 0em 1em;
-}
 .content_block p {
-
     padding-bottom: 1.3em;
+}
+p.caption_text  {
+  padding: .5em 0 0;
+  font-weight: 700;
+  font-size: 1.333em;
+}
+p.caption_date {
+  color: grey;
 }
 .content_block ol {
     padding-top: 5rem;
 }
 .content_block img {
-
+  padding-bottom: 5rem;
 }
+
+
 section.text {
     margin: 0 auto;
     max-width: 60rem;
