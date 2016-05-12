@@ -10,7 +10,10 @@ p {
     margin: 0;
 }
 a {
-    color: #1E824C;
+    color: #3F7FD9;
+}
+a:hover {
+    color: red;
 }
 .container {
     max-width: 100rem;
@@ -84,7 +87,7 @@ img#headshot {
     font-family: 'Alegreya', serif;
     font-weight: 300;
     font-style: italic;
-    margin: 0 0 .8rem;
+    margin: .5rem 0;
     padding: 0px;
     color: grey;
 }
@@ -104,7 +107,10 @@ p.caption_date {
   color: grey;
 }
 .content_block ol {
-    padding-top: 5rem;
+    padding: 0;
+}
+.content_block li {
+  padding-bottom: 2rem;
 }
 .content_block img {
   padding-bottom: 2rem;
@@ -139,12 +145,7 @@ footer li {
     display: inline-block;
 
 }
-footer a {
-    color: #3F7FD9;
-}
-footer a:hover {
-    color: red;
-}
+
 #copyright {
   font-size: .75em;
   text-align: right;
