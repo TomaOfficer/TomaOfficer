@@ -109,7 +109,7 @@ section.text {
     margin: 0 auto;
     max-width: 60rem;
     padding: 1rem;
-    text-align: justify;
+
 }
 .text p:first-child {
     margin-top: 5rem;
@@ -119,11 +119,10 @@ section.text {
 }
 footer {
     margin-top: 10rem;
-    border-top: 1px solid #A19FB3;
+    border-top: 1px solid #d5d4dd;
     padding: 5rem 0 5rem;
     background-color: #e5e5e5;
     color: grey;
-    text-align: center;
 }
 footer ul {
     list-style: none;
@@ -132,13 +131,15 @@ footer ul {
 }
 footer li {
     display: inline-block;
+
 }
 footer a {
-    color: grey;
+    color: #3F7FD9;
 }
 footer a:hover {
     color: red;
 }
-footer i {
-  padding-right: 5rem;
+#copyright {
+  font-size: .75em;
+  text-align: right;
 }
