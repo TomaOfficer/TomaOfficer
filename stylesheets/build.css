@@ -63,6 +63,12 @@ a {
 #top_row {
     margin-top: 10rem;
 }
+#intro p {
+  font-size: 1.777em;
+  line-height: 1.45em;
+  font-weight: 700;
+  font-family: 'Alegreya Sans';
+}
 img#headshot {
     max-width: 12em;
     margin: auto;
