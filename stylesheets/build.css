@@ -63,14 +63,20 @@ a:hover {
 .row {
     margin: 5rem 0;
 }
-#top_row {
-    margin-top: 10rem;
+
+#header_deep {
+  text-align: center;
+  margin-bottom: 10rem;
 }
-#intro p {
-  font-size: 1.777em;
+#header_deep p {
+  font-size: 1.333em;
   line-height: 1.45em;
   font-weight: 700;
-  font-family: 'Alegreya Sans';  
+  font-family: 'Alegreya Sans';
+  margin-top: 2rem;
+}
+#header_shallow {
+  margin-bottom: 5rem;
 }
 img#headshot {
     max-width: 12em;
@@ -95,17 +101,24 @@ img#headshot {
   font-style: normal;
   padding-left: .3em;
 }
+div.content_block {
+  padding-bottom: 1.3em;
+}
 .content_block p {
-    padding-bottom: 1.3em;
+    padding:0 0 1.3em;
+    margin: 0;
 }
-p.caption_text  {
-  padding: .5em 0 0;
-  font-weight: 700;
+#final {
+  padding-bottom: 0;
+}
+.content_block h2 {
   font-size: 1.333em;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
 }
-p.caption_date {
-  color: grey;
-}
+
 .content_block ol {
     padding: 0;
 }
@@ -117,17 +130,14 @@ p.caption_date {
 }
 
 
-section.text {
+div.single_col {
     margin: 0 auto;
     max-width: 60rem;
     padding: 1rem;
-
 }
-.text p:first-child {
-    margin-top: 5rem;
-}
-.text p {
-    margin-top: 2.5rem;
+.single_col p {
+  padding:0 0 1.3em;
+  margin: 0;
 }
 footer {
     margin-top: 10rem;
