@@ -15,11 +15,16 @@ a {
 a:hover {
     color: red;
 }
+a.subtle {
+    color: grey;
+}
+a.subtle:hover {
+    color: red;
+}
 .container {
     max-width: 80rem;
     padding: 0 2em 0 2em;
 }
-
 .col-sm-8 {
     padding: 0;
 }
@@ -31,6 +36,19 @@ a:hover {
     text-align: center;
 }
 #banner h2 {
+    font-size: 1.333em;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 0 0 .3em;
+    letter-spacing: .05em;
+}
+#caseStudy_banner {
+    margin-top: 50px;
+    text-align: center;
+    background-color: black;
+}
+#caseStudy_banner h2 {
     font-size: 1.333em;
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 800;
@@ -65,18 +83,18 @@ a:hover {
     margin: 5rem 0;
 }
 #header {
-  text-align: center;
-  margin-bottom: 7rem;
+    text-align: center;
+    margin-bottom: 7rem;
 }
 #header p {
-  font-size: 1.333em;
-  line-height: 1.45em;
-  font-weight: 700;
-  font-family: 'Alegreya Sans';
-  margin-top: 2rem;
+    font-size: 1.333em;
+    line-height: 1.45em;
+    font-weight: 700;
+    font-family: 'Alegreya Sans';
+    margin-top: 2rem;
 }
 #header_shallow {
-  margin-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 img#headshot {
     max-width: 12em;
@@ -98,41 +116,38 @@ img#headshot {
     color: grey;
 }
 .title-block span {
-  font-style: normal;
-  padding-left: .3em;
+    font-style: normal;
+    padding-left: .3em;
 }
 div.content_block {
-  padding-bottom: 1.3em;
+    padding-bottom: 1.3em;
 }
 .content_block p {
-    padding:0 0 1.3em;
+    padding: 0 0 1.3em;
     margin: 0;
 }
 #final {
-  padding-bottom: 0;
+    padding-bottom: 0;
 }
 .content_block h2 {
-  font-size: 1.333em;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-weight: 700;
-  padding: 0;
-  margin: 0;
+    font-size: 1.333em;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
 }
-
 .content_block ol {
     padding: 0;
 }
 .content_block li {
-  padding-bottom: 2rem;
+    padding-bottom: 2rem;
 }
-.content_block img {
-
-}
+.content_block img {}
 div.divider {
-  height: 1px;
-  width: 30px;
-  background-color: rgba(0,0,0,0.2);
-  margin: .3em 0 1.3em;
+    height: 1px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: .3em 0 1.3em;
 }
 div.single_col {
     margin: 0 auto;
@@ -140,12 +155,17 @@ div.single_col {
     padding: 1rem;
 }
 .single_col p {
-  padding:0 0 1.3em;
-  margin: 0;
-  line-height: 1.65em;
+    padding: 0 0 1.3em;
+    margin: 0;
+    line-height: 1.65em;
 }
-.single_col p:first-child:first-letter { float: left; color: #903; font-size: 4em; line-height: .5; margin: 0.205em 0.153em 0 0;}
-
+.single_col p:first-child:first-letter {
+    float: left;
+    color: #903;
+    font-size: 4em;
+    line-height: .5;
+    margin: 0.205em 0.153em 0 0;
+}
 footer {
     margin-top: 10rem;
     border-top: 1px solid #d5d4dd;
@@ -159,8 +179,38 @@ footer ul {
 footer li {
     display: inline-block;
 }
-
 #copyright {
-  font-size: .75em;
-  text-align: right;
+    font-size: .75em;
+    text-align: right;
+}
+
+/** caseStudy page **/
+header {
+  text-align: center;
+  padding: 4rem;
+}
+a.name {
+  font-size: 1.333em;
+  font-family: 'Alegreya Sans', sans-serif;
+  color: #222;
+  font-weight: 800;
+  margin: 0;
+  padding: 0 0 .3em;
+  letter-spacing: .05em;
+}
+a.name:hover {
+  text-decoration: none;
+}
+header.caseStudy {
+  background-color: #151515;
+}
+body.caseStudy a.name {
+  color: white;
+}
+body.caseStudy #nav a {
+  color: grey;
+}
+body.caseStudy #nav a.active {
+  color: white;
+  border-bottom: 2px solid #aaa;
 }
