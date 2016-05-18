@@ -16,9 +16,10 @@ a:hover {
     color: red;
 }
 .container {
-    max-width: 100rem;
+    max-width: 80rem;
     padding: 0 2em 0 2em;
 }
+
 .col-sm-8 {
     padding: 0;
 }
@@ -132,28 +133,28 @@ div.content_block {
 
 div.single_col {
     margin: 0 auto;
-    max-width: 60rem;
+    max-width: 65rem;
     padding: 1rem;
 }
 .single_col p {
   padding:0 0 1.3em;
   margin: 0;
+  line-height: 1.65em;
 }
+.single_col p:first-child:first-letter { float: left; color: #903; font-size: 4em; line-height: .5; margin: 0.205em 0.153em 0 0;}
+
 footer {
     margin-top: 10rem;
     border-top: 1px solid #d5d4dd;
     padding: 5rem 0 5rem;
     background-color: #e5e5e5;
-    color: grey;
 }
 footer ul {
     list-style: none;
     padding-left: 0;
-
 }
 footer li {
     display: inline-block;
-
 }
 
 #copyright {
