@@ -214,3 +214,9 @@ body.caseStudy #nav a.active {
   color: white;
   border-bottom: 2px solid #aaa;
 }
+div.displaySection {
+  text-align: center;
+}
+div.displaySection img {
+  width: 50em;
+}
