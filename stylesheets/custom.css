@@ -127,7 +127,13 @@ div.content_block {
   padding-bottom: 2rem;
 }
 .content_block img {
-  padding-bottom: 2rem;
+
+}
+div.divider {
+  height: 1px;
+  width: 30px;
+  background-color: rgba(0,0,0,0.2);
+  margin: .3em 0 1.3em;
 }
 div.single_col {
     margin: 0 auto;
