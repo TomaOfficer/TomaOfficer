@@ -103,8 +103,6 @@ img#headshot {
 }
 .title-block {
     display: block;
-
-  
 }
 .title-block h2 {
     font-size: 1em;
@@ -170,7 +168,8 @@ footer {
     margin-top: 10rem;
     border-top: 1px solid #d5d4dd;
     padding: 5rem 0 5rem;
-    background-color: #e5e5e5;
+    background-color: #151515;
+    color: white;
 }
 footer ul {
     list-style: none;
@@ -181,7 +180,8 @@ footer li {
 }
 #copyright {
     font-size: .75em;
-    text-align: right;
+    text-align: center;
+    color: grey;
 }
 
 /** caseStudy page **/
