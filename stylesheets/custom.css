@@ -89,7 +89,7 @@ a.subtle:hover {
 #header p {
     font-size: 1.333em;
     line-height: 1.45em;
-    font-weight: 700;
+    font-weight: 400;
     font-family: 'Alegreya Sans';
     margin-top: 2rem;
 }
@@ -107,11 +107,11 @@ img#headshot {
 .title-block h2 {
     font-size: 1em;
     font-family: 'Alegreya', serif;
-    font-weight: 300;
+    font-weight: 700;
     font-style: italic;
     margin: .5rem 0;
     padding: 0px;
-    color: grey;
+    color: #222;
 }
 .title-block span {
     font-style: normal;
@@ -182,6 +182,16 @@ footer li {
     font-size: .75em;
     text-align: center;
     color: grey;
+    padding-top: 3em;
+}
+footer .title-block h2 {
+  color: #cccccc;
+}
+/** buttons **/
+.btn-default {
+  color: white;
+  background-color: #3F7FD9;
+  border: none;
 }
 
 /** caseStudy page **/
