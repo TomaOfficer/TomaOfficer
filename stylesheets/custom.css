@@ -10,17 +10,13 @@ p {
     margin: 0;
 }
 a {
-    color: #3F7FD9;
+    color: #2D68BA;
 }
 a:hover {
     color: red;
 }
-a.subtle {
-    color: grey;
-}
-a.subtle:hover {
-    color: red;
-}
+
+
 .container {
     max-width: 80rem;
     padding: 0 2em 0 2em;
@@ -189,9 +185,10 @@ footer .title-block h2 {
 }
 /** buttons **/
 .btn-default {
-  color: white;
-  background-color: #3F7FD9;
-  border: none;
+  color: #222;
+  background-color: #fafafa;
+  border: 1px solid grey;
+  margin-top: 1em;
 }
 
 /** caseStudy page **/
