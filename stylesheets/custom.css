@@ -1,16 +1,17 @@
 body {
     color: #222;
-    background-color: #fafafa;
+    background-color: #F4F1EC;
     font-size: 18px;
-    line-height: 1.45em;
-    font-family: 'Alegreya', serif;
+    line-height: 1.55em;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 p {
     font-size: 1em;
     margin: 0;
 }
 a {
-    color: #1D4987;
+    color: grey;
+    text-decoration: underline;
 }
 a:hover {
     color: red;
@@ -67,6 +68,7 @@ a:hover {
 }
 #nav a {
     color: #333;
+    text-decoration: none;
 }
 #nav a.active {
     border-bottom: 2px solid #333;
@@ -152,6 +154,7 @@ div.single_col {
     padding: 0 0 1.3em;
     margin: 0;
     line-height: 1.65em;
+    font-family: 'Alegreya', serif;
 }
 .single_col p:first-child:first-letter {
     float: left;
@@ -165,7 +168,7 @@ footer {
     border-top: 1px solid #d5d4dd;
     padding: 5rem 0 5rem;
     background-color: #151515;
-    color: white;
+    color: #fafafa;
 }
 footer ul {
     list-style: none;
@@ -190,6 +193,7 @@ footer .title-block h2 {
   border: 1px solid grey;
   margin-top: 1em;
   box-shadow: 0px 1px 0px grey;
+  text-decoration: none;
 }
 
 /** caseStudy page **/
