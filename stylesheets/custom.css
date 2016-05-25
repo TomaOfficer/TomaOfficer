@@ -90,6 +90,9 @@ a:hover {
     font-weight: 400;
     font-family: 'Alegreya Sans';
     margin-top: 2rem;
+    max-width: 20em;
+    margin-left: auto;
+    margin-right: auto;
 }
 #header_shallow {
     margin-bottom: 5rem;
@@ -156,13 +159,14 @@ div.single_col {
     line-height: 1.65em;
     font-family: 'Alegreya', serif;
 }
+/**
 .single_col p:first-child:first-letter {
     float: left;
     color: #903;
     font-size: 4em;
-    line-height: .5;
     margin: 0.205em 0.153em 0 0;
 }
+**/
 footer {
     margin-top: 10rem;
     border-top: 1px solid #d5d4dd;
