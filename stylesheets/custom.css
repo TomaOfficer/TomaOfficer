@@ -10,7 +10,7 @@ p {
     margin: 0;
 }
 a {
-    color: #2D68BA;
+    color: #1D4987;
 }
 a:hover {
     color: red;
@@ -189,6 +189,7 @@ footer .title-block h2 {
   background-color: #fafafa;
   border: 1px solid grey;
   margin-top: 1em;
+  box-shadow: 0px 1px 0px grey;
 }
 
 /** caseStudy page **/
