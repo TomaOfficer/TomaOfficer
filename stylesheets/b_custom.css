@@ -1,0 +1,54 @@
+body {
+  padding: 3em 2em 2em 2em;
+  font-size: 18px;
+  color: #222;
+}
+a {
+  color: #222;
+}
+a:hover {
+  color: #ccc;
+  text-decoration: line-through;
+}
+a.active {
+  text-decoration: line-through;
+}
+a.inactive:hover {
+  text-decoration: none;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.right ul {
+  list-style: none;
+}
+.right li {
+  display: inline-block;
+}
+nav div {
+  display: inline-block;
+}
+nav .right {
+  padding-left: 3em;
+}
+div.text_block {
+  padding-top: 1.3em;
+}
+div.project_block {
+  padding: 1em;
+  border: 1px #222 solid;
+  margin-top: 3em;
+}
