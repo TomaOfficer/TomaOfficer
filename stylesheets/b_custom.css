@@ -2,6 +2,7 @@ body {
   padding: 2em;
   font-size: 16px;
   color: #222;
+  font-family: sans-serif;
 }
 a {
   color: #222;
@@ -28,12 +29,28 @@ ul {
   padding: 0;
 }
 li {
-  margin: 0;
+  margin: 1em 0;
   padding: 0;
+  line-height: 1.6em;
 }
 p {
   margin: 0;
   padding: 0;
+  line-height: 1.6em;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  margin: 0rem 0 2rem;
+  padding: 0;
+  font-size: 1em;
+  font-weight: bold;
 }
 .right ul {
   list-style: none;
@@ -44,17 +61,27 @@ p {
 nav div {
   display: inline-block;
 }
-nav p {
-  color: #222;
-}
 nav .right {
-  padding-left: 3em;
+  padding-left: 2em;
 }
 div.block {
-  padding-top: 1em;
+  padding-top: 2em;
+  max-width: 40em;
 }
 div.project_block {
   padding: 1em;
   border: 1px #222 solid;
   margin-top: 3em;
+}
+img#headshot {
+  max-width: 10em;
+  padding-top: 1em;
+}
+p#intro {
+  font-style: italic;
+}
+h1#name {
+  font-family: serif;
+  font-weight: bolder;
+  color: #222;
 }
