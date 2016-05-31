@@ -1,6 +1,6 @@
 body {
-  padding: 3em 2em 2em 2em;
-  font-size: 18px;
+  padding: 2em;
+  font-size: 16px;
   color: #222;
 }
 a {
@@ -8,10 +8,13 @@ a {
 }
 a:hover {
   color: #ccc;
-  text-decoration: line-through;
+  text-decoration: underline;
 }
 a.active {
-  text-decoration: line-through;
+  text-decoration: underline;;
+}
+a.inactive {
+  color: grey;
 }
 a.inactive:hover {
   text-decoration: none;
@@ -41,11 +44,14 @@ p {
 nav div {
   display: inline-block;
 }
+nav p {
+  color: #222;
+}
 nav .right {
   padding-left: 3em;
 }
-div.text_block {
-  padding-top: 1.3em;
+div.block {
+  padding-top: 1em;
 }
 div.project_block {
   padding: 1em;
