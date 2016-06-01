@@ -1,2 +1,0 @@
-# TomaOfficer
-My personal website. 
