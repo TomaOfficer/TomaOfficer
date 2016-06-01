@@ -1,0 +1,92 @@
+body {
+  padding: 2em;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+a {
+  color: #222;
+}
+a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+a.active {
+  text-decoration: underline;;
+}
+a.inactive {
+  color: grey;
+}
+a.inactive:hover {
+  text-decoration: none;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.333em;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 800;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 1em 0;
+  padding: 0;
+  line-height: 1.6em;
+}
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  margin: 0rem 0 2rem;
+  padding: 0;
+  font-size: 1em;
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  font-weight: 700;
+}
+.right ul {
+  list-style: none;
+}
+.right li {
+  display: inline-block;
+}
+nav div {
+  display: inline-block;
+}
+nav .right {
+  padding-left: 2em;
+}
+div.block {
+  padding-top: 2em;
+  max-width: 35em;
+}
+div.project_block {
+  padding: 1em;
+  border: 1px #222 solid;
+  margin-top: 3em;
+}
+div#header {
+  margin-top: 0em;
+  font-size: 1.333em;
+}
+img#headshot {
+  width: 10em;
+}
+h1#name {
+  font-weight: 900;
+  color: #222;
+  font-family: 'Alegreya Sans', sans-serif;
+}
