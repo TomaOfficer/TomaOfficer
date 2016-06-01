@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /** ----- UNIVERSAL ----- **/
 
 body {
@@ -569,4 +570,243 @@ footer p {
   footer p {
     text-align: center;
   }
+=======
+body {
+    color: #222;
+    background-color: #F4F1EC;
+    font-size: 18px;
+    line-height: 1.55em;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+p {
+    font-size: 1em;
+    margin: 0;
+}
+a {
+    color: grey;
+    text-decoration: underline;
+}
+a:hover {
+    color: red;
+}
+
+
+.container {
+    max-width: 80rem;
+    padding: 0 2em 0 2em;
+}
+.col-sm-8 {
+    padding: 0;
+}
+.col-sm-4 {
+    padding: 0;
+}
+#banner {
+    margin-top: 50px;
+    text-align: center;
+}
+#banner h2 {
+    font-size: 1.333em;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 0 0 .3em;
+    letter-spacing: .05em;
+}
+#caseStudy_banner {
+    margin-top: 50px;
+    text-align: center;
+    background-color: black;
+}
+#caseStudy_banner h2 {
+    font-size: 1.333em;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 800;
+    margin-top: 0px;
+    padding-top: 0px;
+    letter-spacing: .05em;
+}
+#nav {
+    font-size: 1em;
+    padding-left: 0;
+    font-family: 'Alegreya SC', serif;
+    font-weight: 400;
+}
+#nav ul {
+    padding-left: 0;
+}
+#nav li {
+    display: inline;
+    padding: 0px 20px;
+}
+#nav a {
+    color: #333;
+    text-decoration: none;
+}
+#nav a.active {
+    border-bottom: 2px solid #333;
+}
+#nav a:hover {
+    text-decoration: none;
+    color: red;
+}
+.row {
+    margin: 5rem 0;
+}
+#header {
+    text-align: center;
+    margin-bottom: 7rem;
+}
+#header p {
+    font-size: 1.333em;
+    line-height: 1.45em;
+    font-weight: 400;
+    font-family: 'Alegreya Sans';
+    margin-top: 2rem;
+    max-width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header_shallow {
+    margin-bottom: 5rem;
+}
+img#headshot {
+    max-width: 12em;
+    margin: auto;
+    margin-top: 5rem;
+}
+.title-block {
+    display: block;
+}
+.title-block h2 {
+    font-size: 1em;
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    font-style: italic;
+    margin: .5rem 0;
+    padding: 0px;
+    color: #222;
+}
+.title-block span {
+    font-style: normal;
+    padding-left: .3em;
+}
+div.content_block {
+    padding-bottom: 1.3em;
+}
+.content_block p {
+    padding: 0 0 1.3em;
+    margin: 0;
+}
+#final {
+    padding-bottom: 0;
+}
+.content_block h2 {
+    font-size: 1.333em;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+.content_block ol {
+    padding: 0;
+}
+.content_block li {
+    padding-bottom: 2rem;
+}
+.content_block img {}
+div.divider {
+    height: 1px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: .3em 0 1.3em;
+}
+div.single_col {
+    margin: 0 auto;
+    max-width: 65rem;
+    padding: 1rem;
+}
+.single_col p {
+    padding: 0 0 1.3em;
+    margin: 0;
+    line-height: 1.65em;
+    font-family: 'Alegreya', serif;
+}
+/**
+.single_col p:first-child:first-letter {
+    float: left;
+    color: #903;
+    font-size: 4em;
+    margin: 0.205em 0.153em 0 0;
+}
+**/
+footer {
+    margin-top: 10rem;
+    border-top: 1px solid #d5d4dd;
+    padding: 5rem 0 5rem;
+    background-color: #151515;
+    color: #fafafa;
+}
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer li {
+    display: inline-block;
+}
+#copyright {
+    font-size: .75em;
+    text-align: center;
+    color: grey;
+    padding-top: 3em;
+}
+footer .title-block h2 {
+  color: #cccccc;
+}
+/** buttons **/
+.btn-default {
+  color: #222;
+  background-color: #fafafa;
+  border: 1px solid grey;
+  margin-top: 1em;
+  box-shadow: 0px 1px 0px grey;
+  text-decoration: none;
+}
+
+/** caseStudy page **/
+header {
+  text-align: center;
+  padding: 4rem;
+}
+a.name {
+  font-size: 1.333em;
+  font-family: 'Alegreya Sans', sans-serif;
+  color: #222;
+  font-weight: 800;
+  margin: 0;
+  padding: 0 0 .3em;
+  letter-spacing: .05em;
+}
+a.name:hover {
+  text-decoration: none;
+}
+header.caseStudy {
+  background-color: #151515;
+}
+body.caseStudy a.name {
+  color: white;
+}
+body.caseStudy #nav a {
+  color: grey;
+}
+body.caseStudy #nav a.active {
+  color: white;
+  border-bottom: 2px solid #aaa;
+}
+div.displaySection {
+  text-align: center;
+}
+div.displaySection img {
+  width: 50em;
+>>>>>>> master
 }
