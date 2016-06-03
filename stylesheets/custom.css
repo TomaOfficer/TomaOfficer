@@ -1,9 +1,9 @@
 body {
-  padding: 2em;
-  margin: 0;
+  margin: 2em;
   font-size: 16px;
   color: #222;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: serif;
+  line-height: 1.5em;
 }
 a {
   color: #222;
@@ -15,8 +15,18 @@ a.active {
 
 h1 {
   margin: 0;
-  padding: 0;
-  font-family: 'Alegreya Sans', sans-serif;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+h2 {
+  margin: 0;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+h3 {
+  margin: 0;
+  padding: 1rem 0;
+  font-weight: bold;
 }
 ul {
   margin: 0;
@@ -34,56 +44,22 @@ li {
 p {
   margin: 0;
   padding: 0;
-  line-height: 1.5em;
+
 }
-h1 {
-  margin: 0;
-  padding: 0;
-}
-h2 {
-  margin: 0;
-  padding: 0;
-}
-h3 {
-  margin: 0;
-  padding: 0 0 1em;
-  font-size: 1em;
-  font-family: 'Alegreya', serif;
-  font-weight: bold;
-  font-weight: 700;
-}
-.right ul {
+nav ul {
   list-style: none;
 }
-.right li {
+nav li {
   display: inline-block;
+  margin: 0;
+  padding: 0;
 }
-nav div {
-  display: inline-block;
-}
-nav div.right {
-  padding-left: 2em;
-}
+
+
 div.block {
   padding-top: 1em;
   max-width: 35em;
-}
-div.project_block {
-  padding: 1em;
-  border: 1px #222 solid;
-  margin-top: 3em;
-}
-header p {
-  max-width: 35em;
-}
-img#headshot {
-  width: 10em;
-}
-h1#name {
-  font-weight: 900;
-  font-size: 1em;
-  color: #222;
-  font-family: 'Alegreya Sans', sans-serif;
+  margin: 0 auto 0 auto;
 }
 div.showcase {
   padding-top: 1em;
