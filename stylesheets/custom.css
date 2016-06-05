@@ -59,14 +59,13 @@ p.emphasis {
 }
 nav ul {
   list-style: none;
+  padding: 0;
 }
 nav li {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-
-
 div.block {
   padding-top: 1em;
   max-width: 35em;
