@@ -1,94 +1,92 @@
 body {
-  margin: 2em;
-  font-size: 16px;
-  color: #222;
-  font-family: serif;
-  line-height: 1.5em;
+    margin: 2em;
+    font-size: 16px;
+    color: #222;
+    font-family: serif;
+    line-height: 1.5em;
 }
 a {
-  color: #222;
-  text-decoration: underline;
+    color: #222;
+    text-decoration: underline;
 }
 a.active {
-  color: blue;
+    color: blue;
 }
 a.inactive {
-  text-decoration: none;
+    text-decoration: none;
 }
 a:hover {
-  color: blue;
+    color: blue;
 }
-
 h1 {
-  font-size: 3.157em;
-  margin: 0;
-  padding: 2rem 0;
-  font-weight: bold;
+    font-size: 3.157em;
+    margin: 0;
+    padding: 2rem 0;
+    font-weight: bold;
 }
 h2 {
-  margin: 0;
-  padding: 2rem 0;
-  font-weight: bold;
-
+    margin: 0;
+    padding: 2rem 0;
+    font-weight: bold;
 }
 h3 {
-  margin: 0;
-  padding: 1.5rem 0;
-  font-weight: bold;
-  font-size: 1.333em;
+    margin: 0;
+    padding: 1.5rem 0;
+    font-weight: bold;
+    font-size: 1.333em;
 }
 ul {
-  margin: 0;
-  padding: 0 0 0 2.5em;
+    margin: 0;
+    padding: 0 0 0 2.5em;
 }
 ol {
-  margin: 0;
-  padding: 0 0 0 2.5em;
+    margin: 0;
+    padding: 0 0 0 2.5em;
 }
 li {
-  margin: 0 0 .5em;
-  padding: 0;
-  line-height: 1.5em;
+    margin: 0 0 .5em;
+    padding: 0;
+    line-height: 1.5em;
 }
 li.last {
-  margin: 0;
+    margin: 0;
 }
 p {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 p.emphasis {
-  font-style: italic;
+    font-style: italic;
 }
 nav ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 nav li {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
 }
 div.block {
-  padding-top: 1em;
-  max-width: 35em;
-  margin: 0 auto 0 auto;
+    padding-top: 1em;
+    max-width: 35em;
+    margin: 0 auto 0 auto;
 }
 div.showcase {
-  padding-top: 1em;
-  text-align: center;
+    padding-top: 1em;
+    text-align: center;
 }
 .showcase h2 {
-  padding-top: 1em;
-  text-align: center;
-  font-size: 2.369em;
+    padding-top: 1em;
+    text-align: center;
+    font-size: 2.369em;
 }
 .showcase p {
-  padding-bottom: 1em;
+    padding-bottom: 1em;
 }
 .showcase img {
-  margin: 0 auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 img#headshot {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
