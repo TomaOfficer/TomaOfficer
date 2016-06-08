@@ -90,3 +90,8 @@ div.showcase {
 img#headshot {
     margin-bottom: 2em;
 }
+@media(max-width:767px){
+  h1 {
+    font-size: 1.777em;
+  }
+}
