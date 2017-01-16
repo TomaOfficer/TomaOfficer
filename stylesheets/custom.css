@@ -40,7 +40,6 @@ header p {
 
 #portfolio_main {
   padding: 8em 0 4em;
-
 }
 #portfolio_main .container {
   max-width: 60em;
@@ -142,5 +141,8 @@ header p {
   }
   header {
     padding: 1em;
+  }
+  #portfolio_main {
+    padding: 6em 0 4em;
   }
 }
