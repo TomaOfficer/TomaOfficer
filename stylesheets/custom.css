@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  padding: 1em;
+  padding: 1em 3em 0 0;
   background-color: transparent;
   text-align: right;
   position: absolute;
@@ -23,9 +23,7 @@ header li {
   padding: 0;
   margin: 0;
 }
-header {
-  padding: 2em 3em 0 0;
-}
+
 header a {
   color: #222;
   font-size: 1em;
@@ -140,8 +138,9 @@ header p {
 }
 @media (max-width: 768px) {
   #portfolio_main h1 {
-
     font-size: 1.333em;
-
+  }
+  header {
+    padding: 1em;
   }
 }
