@@ -138,3 +138,10 @@ header p {
   max-width: 12em;
   margin: 0 0 2em 0;
 }
+@media (max-width: 768px) {
+  #portfolio_main h1 {
+
+    font-size: 1.333em;
+
+  }
+}
