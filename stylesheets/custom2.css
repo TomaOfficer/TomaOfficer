@@ -1,0 +1,148 @@
+body {
+  font-size: 17px;
+  color: #222;
+  background-color: #F4F1EC;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+header {
+  padding: 1em 3em 0 0;
+  background-color: transparent;
+  text-align: right;
+  position: absolute;
+  width: 100%;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+header a {
+  color: #222;
+  font-size: 1em;
+}
+header a:hover {
+
+  text-decoration: none;
+}
+header p {
+  display: inline-block;
+  font-size: 1.333em;
+
+}
+
+#portfolio_main {
+  padding: 8em 0 4em;
+}
+#portfolio_main .container {
+  max-width: 60em;
+  padding: 0 1em;
+}
+#portfolio_main h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 2.333em;
+  line-height: 1.5em;
+  max-width: 20em;
+  font-family: 'Libre Baskerville', serif;
+}
+#portfolio_main p {
+  padding: 2em 0 0;
+  margin: 0;
+  font-weight:
+}
+#portfolio_main h5 {
+  font-size: 1em;
+  margin: 0;
+  padding: 2em 0 0;
+  font-style: italic;
+
+  font-family: serif;
+  font-weight: lighter;
+}
+#portfolio_main ul {
+  list-style: none;
+  padding: 1em 0 0 1em;
+  margin: 0;
+}
+#portfolio_main ol {
+  padding: 1em 0 0 2em;
+  margin: 0;
+}
+#portfolio_main li {
+  padding: .75em 0 0;
+  margin: 0;
+}
+#portfolio_main a {
+  color: #3F7FD9;
+}
+#portfolio_main a:hover {
+  text-decoration: underline;
+}
+#portfolio_main img {
+  max-width: 100%;
+  margin: 2em 0;
+}
+#essay_main {
+  padding: 8em 0 4em;
+
+}
+#essay_main .container {
+  max-width: 60em;
+  padding: 0 1em;
+}
+#essay_main h1 {
+  padding: 1em 0;
+  margin: 0;
+  font-size: 1.777em;
+  line-height: 1.5em;
+  max-width: 23em;
+}
+#essay_main p {
+  font-size: 1em;
+  max-width: 35em;
+  line-height: 1.5em;
+  padding: 0 0 1em;
+  margin: 0;
+}
+#essay_main h5 {
+  font-size: 1em;
+  margin: 0;
+  padding: 2em 0 0;
+  font-style: italic;
+
+  font-family: serif;
+  font-weight: lighter;
+}
+#essay_main ul {
+  list-style: none;
+  padding: 1em 0 0 1em;
+  margin: 0;
+}
+#essay_main li {
+  padding: .75em 0 0;
+  margin: 0;
+
+}
+#essay_main img {
+  max-width: 12em;
+  margin: 0 0 2em 0;
+}
+@media (max-width: 768px) {
+  #portfolio_main h1 {
+    font-size: 1.333em;
+  }
+  header {
+    padding: 1em;
+  }
+  #portfolio_main {
+    padding: 6em 0 4em;
+  }
+}
