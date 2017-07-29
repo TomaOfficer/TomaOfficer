@@ -1,21 +1,99 @@
-body {
-  margin: 80px auto;
-  width: 460px;
-  font-size: 17px;
-  line-height: 24px;
-  color: #222;
+.nav {
+  background-color: #181818;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1em;
 }
-a {
-  color: #222;
-  text-decoration: underline;
+.nav_wrapper {
+  max-width: 950px;
+  margin: 0 auto;
 
 }
-h1.title {
-  font-size: 17px;
-  line-height: 24px;
-  padding: 0 0 5px;
+.nav .name {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 0;
   margin: 0;
 }
-section {
-  padding: 0 0 10px;
+.nav .title {
+  margin: 0;
+  padding: 0;
 }
+.nav_left {
+  float: left;
+}
+.nav_right {
+  float: right;
+}
+.nav_wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav_wrapper li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.nav_wrapper li:nth-child(2){
+  padding: 0 1.5em;
+}
+.nav_wrapper a {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  letter-spacing: .05em;
+}
+#home_hero {
+  background: url(../images/ocean.png) no-repeat center;
+  background-size: cover;
+
+}
+#home_hero .container {
+  max-width: 950px;
+  padding: 4em 0;
+}
+#home_hero h1 {
+  font-size: 3.222em;
+  line-height: 1.5em;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+#home_hero p {
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: .02em;
+}
+
+#home_showcase .container {
+  padding: 4em 0;
+  max-width: 950px;
+}
+#home_showcase .title {
+  padding: 0 0 3em;
+  margin: 0;
+  font-size: 1.2em;
+}
+#home_showcase img {
+  max-width: 28em;
+}
+#home_showcase .date {
+  padding: 0;
+  margin: 0;
+}
+#home_showcase .name {
+  font-size: 1.777em;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+#home_showcase .role {
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+
+font-family: 'Crimson Text', serif;
