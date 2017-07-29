@@ -1,0 +1,41 @@
+div.banner {
+  background-color: #ddd;
+  padding: 1em 0;
+}
+div.banner p {
+  display: inline-block;
+  padding: 0;
+  margin: 0 .5em 0 0;
+}
+div.banner p:last-child {
+  margin: 0 0 0 .5em;
+}
+
+nav {
+  padding: 2em 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+nav li:last-child {
+  margin-right: 0;
+}
+
+header {
+  padding: 2em 0;
+
+}
+header h1 {
+  max-width: 18em;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 980px;
+}
