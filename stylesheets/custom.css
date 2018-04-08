@@ -14,7 +14,7 @@ header {
   background: url(../images/angle-background.png);
   background-size: cover;
   */
-  border-right: 1px solid #B8BFC6;
+
 }
 
 p {
@@ -24,14 +24,14 @@ p {
 
 header .name {
   font-weight: 600;
-  color: #B8BFC6;
+
   display: block;
   margin-bottom: 5px;
   letter-spacing: .7px;
 }
 
 header a {
-  color: #B8BFC6;
+  color: #222;
 }
 
 header a.active {
