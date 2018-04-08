@@ -101,10 +101,11 @@ ul.social li {
 
 
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   article {
     padding: 0 15px;
   }
+  
   .main-section p.header {
     padding: 30px 0;
   }
