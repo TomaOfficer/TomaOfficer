@@ -24,7 +24,7 @@ p {
 
 header .name {
   font-weight: 600;
-
+  font-size: 20px;
   display: block;
   margin-bottom: 5px;
   letter-spacing: .7px;
@@ -35,7 +35,9 @@ header a {
 }
 
 header a.active {
+  /*
   border-bottom: 2px solid #B8BFC6;
+  */
 }
 
 header .icon span {
@@ -99,13 +101,31 @@ ul.social li {
   padding: 0 0 30px;
 }
 
+.main-section span.wave {
+  font-size: 2.777em;
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+
+.contact-block {
+  display: flex;
+}
+.contact-block .contact-label {
+  padding: 0 30px 0 0;
+}
+.contact-block p.subheader {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+}
+
 
 
 @media screen and (max-width: 400px) {
   article {
     padding: 0 15px;
   }
-  
   .main-section p.header {
     padding: 30px 0;
   }
@@ -132,6 +152,16 @@ ul.social li {
   }
 }
 
+@media (max-width: 1099px) {
+  header li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+
+
+
 @media screen and (min-width: 1100px) {
   body {
     margin-left: 240px;
@@ -142,7 +172,7 @@ ul.social li {
     left: 0;
     bottom: 0;
     width: 240px;
-    padding: 40px;
+    padding: 40px 0 40px 40px;
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
@@ -153,7 +183,5 @@ ul.social li {
   article {
     padding: 80px 40px 0;
   }
-  nav li {
-    margin: 0 0 12px;
-  }
+
 }
