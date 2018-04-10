@@ -23,11 +23,17 @@ p {
 }
 
 header .name {
-  font-weight: 600;
+  font-weight: 900;
   font-size: 20px;
   display: block;
   margin-bottom: 5px;
   letter-spacing: .7px;
+  font-family: 'Source Serif Pro', serif;
+}
+
+header .name:hover {
+  color: #222;
+  text-decoration: none;
 }
 
 header a {
@@ -91,10 +97,12 @@ ul.social li {
 }
 
 .main-section p.header {
-  font-size: 28px;
-  line-height: 1.5em;
+  font-size: 1.777em;
+  line-height: 1.3em;
   padding: 0;
+  font-weight: 800;
   margin: 0;
+  color: #323648;
 }
 
 .main-section p {
@@ -139,6 +147,7 @@ ul.social li {
     max-width: 900px;
     margin: 0 auto;
     display: flex;
+    padding-bottom: 40px;
   }
 
   article  .label-section {
