@@ -4,17 +4,24 @@ body {
   font-size: 17px;
   line-height: 26px;
   font-family: 'Source Serif Pro', serif;
+  margin-left: 240px;
 }
 
 header {
-  position: relative;
-  padding: 40px 20px;
   font-family: 'Source Sans Pro', sans-serif;
   /*
   background: url(../images/angle-background.png);
   background-size: cover;
   */
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  padding: 40px 0 40px 40px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
 }
 
 p {
@@ -26,7 +33,7 @@ header .name {
   font-weight: 900;
   font-size: 20px;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
   letter-spacing: .7px;
   font-family: 'Source Serif Pro', serif;
 }
@@ -51,6 +58,27 @@ header .icon span {
   font-size: 15px;
 }
 
+article {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 40px;
+}
+
+article:nth-child(2) {
+  padding-top: 80px;
+}
+
+article  .label-section {
+  flex-basis: 30%;
+  text-align: right;
+  margin: 0 60px 0 0;
+}
+
+article .main-section {
+  flex-basis: 70%;
+}
+
 .hero {
   margin: 0;
   height: 200px;
@@ -67,7 +95,6 @@ ul.social li {
   display: inline-block;
   padding: 0 15px 0 0;
 }
-
 
 .label-section h3 {
   padding: 0;
@@ -105,8 +132,8 @@ ul.social li {
   color: #323648;
 }
 
-.main-section p {
-  padding: 0 0 30px;
+.main-section p:nth-child(n+2) {
+  padding-top: 30px;
 }
 
 .main-section span.wave {
@@ -128,9 +155,15 @@ ul.social li {
   letter-spacing: .6px;
 }
 
-
-
-@media screen and (max-width: 400px) {
+@media (max-width: 1099px) {
+  body {
+    margin-left: 0;
+  }
+  header {
+    position: relative;
+    padding: 40px 20px;
+    width: auto;
+  }
   article {
     padding: 0 15px;
   }
@@ -140,57 +173,8 @@ ul.social li {
   .main-section p:first-child {
     padding: 15px 0 30px;
   }
-}
-
-@media screen and (min-width: 700px) {
-  article {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    padding-bottom: 40px;
-  }
-
-  article  .label-section {
-    flex-basis: 30%;
-    text-align: right;
-    margin: 0 60px 0 0;
-  }
-
-  article .main-section {
-    flex-basis: 70%;
-  }
-}
-
-@media (max-width: 1099px) {
   header li {
     display: inline-block;
     margin-right: 15px;
   }
-}
-
-
-
-
-@media screen and (min-width: 1100px) {
-  body {
-    margin-left: 240px;
-  }
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 240px;
-    padding: 40px 0 40px 40px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-  header .name {
-    margin-bottom: 30px;
-  }
-  article {
-    padding: 80px 40px 0;
-  }
-
 }
