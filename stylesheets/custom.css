@@ -81,6 +81,45 @@ h1.title {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+article.project-wrapper {
+  display: flex;
+}
+
+article.about-wrapper {
+  display: flex;
+}
+
+.section-label {
+  flex-basis: 25%;
+  padding: 0 30px 0 0;
+}
+
+.section-content {
+  flex-basis: 75%;
+  padding: 0 0 0 30px;
+}
+
+img.project-snapshot {
+  max-width: 100%;
+}
+
+img.headshot {
+  max-width: 100%;
+}
+
+p.title {
+  line-height: 1.3em;
+  font-weight: 600;
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p.subtitle {
+  font-size: 15px;
+  line-height: 1.3em;
+  padding: 10px 0 0 0;
+}
+
 
 
 @media (max-width: 1099px) {
