@@ -4,7 +4,7 @@ body {
   */
   color: #282365;
   font-size: 17px;
-  line-height: 1.6em;
+  line-height: 1.5em;
   margin-left: 240px;
   background-color: #F4F1EC;
   font-family: 'Source Serif Pro', serif;
@@ -99,6 +99,11 @@ article.about-wrapper {
   padding: 0 0 0 30px;
 }
 
+.section-content p {
+  padding: 0 0 15px;
+
+}
+
 img.project-snapshot {
   max-width: 100%;
 }
@@ -118,6 +123,11 @@ p.subtitle {
   font-size: 15px;
   line-height: 1.3em;
   padding: 10px 0 0 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 
