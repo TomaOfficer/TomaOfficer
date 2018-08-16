@@ -6,6 +6,8 @@ body {
   font-size: 17px;
   line-height: 1.6em;
   font-family: 'Alegreya Sans', sans-serif;
+}
+body.two-col {
   margin-left: 200px;
 }
 
@@ -82,16 +84,6 @@ ul.social li:last-child {
 ul.social i {
   padding: 0 7px 0 0;
 }
-ul.header {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-ul.header li {
-  padding: 0;
-  margin: 0 0 10px;
-}
-
 
 header a {
   color: #A3A6AA;
@@ -148,7 +140,6 @@ header .name {
   font-weight: 600;
   font-size: 20px;
   letter-spacing: .2px;
-
   margin-bottom: 30px;
   color: #838C98;
 }
@@ -162,6 +153,35 @@ header img {
 header .icon span {
   font-weight: 400;
   font-size: 15px;
+}
+ul.header {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.header li {
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.top-header {
+  background-color: #222E3E;
+  color: #BEBFC1;
+  padding: 15px 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+ul.top-header {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.top-header li {
+
+}
+.top-header img {
+  max-width: 70px;
 }
 
 article {
