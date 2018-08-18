@@ -6,10 +6,9 @@ body {
   font-size: 17px;
   line-height: 1.6em;
   font-family: 'Alegreya Sans', sans-serif;
-}
-body.two-col {
   margin-left: 200px;
 }
+
 
 p {
   padding: 0;
@@ -178,10 +177,14 @@ ul.top-header {
   margin: 0;
 }
 ul.top-header li {
-
+  margin: 0 0 0 10px;
 }
 .top-header img {
   max-width: 70px;
+  margin: 0 30px 0 0;
+}
+.top-header a {
+  color: #A3A6AA;
 }
 
 article {
@@ -192,7 +195,7 @@ article:nth-child(2) {
 }
 
 
-.about-wrapper {
+article.about {
   display: flex;
 }
 .section-label {
@@ -218,6 +221,12 @@ article:nth-child(2) {
   text-transform: uppercase;
   letter-spacing: .6px;
 }
+
+article.blog-post {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
 
 @media (max-width: 1099px) {
   body {
@@ -249,12 +258,29 @@ article:nth-child(2) {
 }
 
 @media (max-width: 600px) {
-  .about-wrapper {
+  img.headshot {
+    max-width: 50%;
+    margin: 0 15px 0 0;
+  }
+  article.about {
+    padding: 5% 15px;
     flex-direction: column;
   }
+  ul.social {
+    font-size: 15px;
+  }
+  ul.social li {
+    line-height: 1.2em;
+    padding: 0 0 10px;
+  }
   .section-label {
-    padding: 0 0 30px;
-    text-align: center;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+
+  }
+  .section-content {
+    padding: 30px 0 0 0;
   }
   .links-items {
     text-align: left;
