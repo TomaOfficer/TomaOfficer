@@ -1,14 +1,9 @@
 body {
   color: rgba(45,55,65,.85);
-  /*
-  background-color: #f7f7f7;
-  */
   font-size: 17px;
   line-height: 1.6em;
   font-family: 'Alegreya Sans', sans-serif;
-  margin-left: 200px;
 }
-
 
 p {
   padding: 0;
@@ -62,7 +57,6 @@ h3 {
   padding: 0 0 5px;
   font-size: 17px;
 }
-
 
 img.headshot {
   width: 100%;
@@ -126,22 +120,22 @@ article a:hover {
 header {
   background-color: #222E3E;
   color: #BEBFC1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 200px;
-  padding: 40px 0 30px 30px;
+  padding: 10px 0;
+}
+header .wrapper {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 0;
+  flex-direction: row;
+  max-width: 860px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
 }
 header .name {
   font-weight: 600;
   font-size: 20px;
   letter-spacing: .2px;
-  margin-bottom: 30px;
   color: #838C98;
+  margin: 0 15px 0 0;
 }
 header .name:hover {
   color: #222;
@@ -155,13 +149,15 @@ header .icon span {
   font-size: 15px;
 }
 ul.header {
+  display: flex;
+  flex-direction: row;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 ul.header li {
   padding: 0;
-  margin: 0 0 10px;
+  margin: 0 0 0 30px;
 }
 
 .top-header {
@@ -195,8 +191,11 @@ article:nth-child(2) {
   padding-top: 80px;
 }
 
-
-article.about {
+article .wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.about .wrapper {
   display: flex;
 }
 .section-label {
@@ -228,37 +227,13 @@ article.blog-post {
   max-width: 960px;
 }
 
-
-@media (max-width: 1099px) {
-  body {
-    margin-left: 0;
-  }
-  header {
-    position: relative;
-    padding: 20px 20px;
-    width: auto;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  header .name {
-    padding: 0;
-    margin: 0 30px 0 0;
-
-  }
-  ul.header li {
-    margin: 0 15px 0 0;
-  }
-  header li {
-    display: inline-block;
-    margin-right: 15px;
-  }
-  .about-wrapper {
-    padding: 30px 30px 30px;
-  }
-}
-
 @media (max-width: 600px) {
+  header {
+    padding: 10px 17px;
+  }
+  article .wrapper {
+    flex-direction: column;
+  }
   img.headshot {
     max-width: 50%;
     margin: 0 15px 0 0;
