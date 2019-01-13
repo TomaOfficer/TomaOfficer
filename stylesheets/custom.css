@@ -9,7 +9,7 @@ body {
 
 h1 {
   font-size: 32px;
-  padding: 0 0 28px;
+  padding: 0 0 48px;
   margin: 0;
   font-weight: 400;
   line-height: 1.3em;
@@ -77,13 +77,15 @@ a.navbar--link {
 
 article p {
   font-family: 'Crimson Text', serif;
-  padding: 0 0 12px;
+  padding: 0 0 16px;
   margin: 0;
 }
 
 img.headshot {
   width: 250px;
   margin: 0 0 20px;
+  padding: 4px;
+  border: 1px solid #ddd;
 }
 
 ul.contact-list {
@@ -93,11 +95,15 @@ ul.contact-list {
   font-family: 'Crimson Text', serif;
 }
 
+ul.contact-list:nth-child(3){
+  padding-bottom: 20px;
+}
+
 ul.contact-list li {
   padding: 0 0 5px;
 }
 
-ul.contact-list a {
+a.text-link {
   border-bottom: 1px solid rgba(45,55,65,0.25);
   text-decoration: none;
   color: #5C6775;
