@@ -4,7 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #222;
+  color: rgba(45,55,65,.85);
 }
 
 /* -- Variables -- */
@@ -21,6 +21,11 @@ body {
 .underline-link:hover {
   color: #5333ed;
 }
+.active-link {
+  border-bottom: 1px solid #5333ed;
+  color: #5333ed;
+  text-decoration: none;
+}
 h1 {
   font-size: 2.2rem;
   line-height: 1.2em;
@@ -28,11 +33,12 @@ h1 {
   margin: 0;
   font-family: 'Alegreya', serif;
   font-weight: 400;
+  color: #222;
 }
 p {
   padding: 0 0 1rem;
   margin: 0;
-  line-height: 1.6rem;
+  line-height: 1.7rem;
 }
 p.label {
   padding: 0 0 .75rem;
@@ -68,6 +74,8 @@ p.label {
 }
 .nav__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .nav__list li {
   display: inline-block;
@@ -102,6 +110,22 @@ p.label {
 .home-contact li {
   display: inline-block;
   padding: 0 1rem 0 0;
+}
+
+.about-main {
+  padding: 4.25rem 0 2.5rem;
+}
+.about-main__wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 1rem; 
+  display: flex;
+}
+.about-main img {
+  max-width: 13rem;
+}
+.about-main__col-left {
+  padding: 0 3rem 0 0;
 }
 
 
