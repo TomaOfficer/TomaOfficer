@@ -30,6 +30,12 @@ h1 {
   font-weight: 700;
   font-family: 'Source Serif Pro', serif;
 }
+h3 {
+  padding: 0 0 1rem;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
 p {
   padding: 0 0 1rem;
   margin: 0;
@@ -68,7 +74,7 @@ p.label {
 }
 .nav__list li {
   display: inline-block;
-  padding: 0 0 0 .75rem;
+  padding: 0 0 0 1rem;
 }
 
 
@@ -77,10 +83,8 @@ p.label {
   background-image: url("../images/dark-galaxy.png");
   background-size: cover;
 }
-
-
 .home-header {
-  padding: 2rem 0 5rem;
+  padding: 5rem 0 10rem;
 }
 .home-header__wrapper {
   max-width: 700px;
@@ -92,13 +96,12 @@ p.label {
 }
 
 .about-main {
-  padding: 4.25rem 0 2.5rem;
+  padding: 8rem 0 10rem;
 }
 .about-main__wrapper {
   max-width: 700px;
   margin: 0 auto;
   padding: 0 1rem; 
-
 }
 .about-main img {
   max-width: 10rem;
@@ -106,18 +109,73 @@ p.label {
   border-radius: 6px;
   padding: 0 2rem 2rem 0;
 }
-.about-main__col-left {
-  padding: 0 3rem 0 0;
+
+
+.reading-hero {
+  padding: 8rem 0 4rem;
+}
+.reading-hero__wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.reading-list {
+  padding: 0 0 10rem;
+}
+.reading-list__wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 1rem;
+}
+.reading-list__left-col {
+  flex-basis: 30%;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.raeding-list__right-col {
+  flex-basis: 70%;
+}
+.reading-list__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.reading-list__item {
+  display: flex;
+  padding: 0 0 1rem;
+}
+.reading-list__item--title {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 0 1rem;
+}
+.reading-list__title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 0 .5rem 0 0;
+}
+.reading-list__author {
+  color: #727C8E;
+  font-size: 1rem;
+  padding: 0;
+  align-self: flex-end;
+  line-height: 1.25rem;
 }
 
 .footer {
-  padding: 2rem 0 5rem;
+  padding: 0 0 5rem;
   font-size: 1.25rem;
 }
 .footer__wrapper {
   max-width: 700px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+.footer__copyright {
+  color: #727C8E;
 }
 .footer ul {
   list-style: none;
@@ -126,7 +184,7 @@ p.label {
 }
 .footer li {
   display: inline-block;
-  padding: 0 .5rem 0 .5rem;
+  padding: 0 .25rem 0 .25rem;
   margin: 0;
 }
 .footer li:first-child {
