@@ -34,6 +34,14 @@ h1 {
   font-family: 'Source Serif Pro', serif;
   color: #DDDDE0;
 }
+h2 {
+  font-size: 1.953em;
+  line-height: 1.3em;
+  padding: 0 0 1em;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -.5px;
+}
 h3 {
   padding: 0 0 1rem;
   margin: 0;
@@ -45,6 +53,23 @@ p {
   margin: 0;
   color: #DDDDE0;
 }
+p.primary-copy {
+  padding: 0 0 1.75rem;
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.85rem;
+  font-kerning: normal;
+  font-feature-settings: "kern" 1;
+  font-family: 'Source Serif Pro', serif;
+}
+p.secondary-copy {
+  padding: 0 0 1.75rem;
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.85rem;
+  font-kerning: normal;
+  font-feature-settings: "kern" 1;
+}
 p.label {
   padding: 0 0 .75rem;
   margin: 0;
@@ -52,6 +77,13 @@ p.label {
   font-weight: 600;
   letter-spacing: .05rem;
   text-transform: uppercase;
+}
+ul.primary-list {
+  font-size: 1.25rem;
+  line-height: 1.85rem;
+}
+ul.primary-list li {
+  padding: 0 0 .5em;
 }
 /* -- Nav -- */
 .nav {
@@ -101,11 +133,11 @@ p.label {
   font-size: 1.25rem;
   line-height: 1.9rem;
 }
-/* -- Article -- */
-.article {
+/* -- Reading -- */
+.reading-main {
   max-width: 730px;
   margin: 0 auto;
-  padding: 5% 19px;
+  padding: 8% 19px;
 }
 /* -- About -- */
 .about-main {
