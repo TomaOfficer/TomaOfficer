@@ -132,6 +132,7 @@ ul.primary-list li {
 .home-header p {
   font-size: 1.25rem;
   line-height: 1.9rem;
+  padding: 0 0 1em;
 }
 /* -- Reading -- */
 .reading-main {
