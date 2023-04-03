@@ -92,16 +92,23 @@ nav ul li {
 .blog__list {
   list-style: none;
 }
+.blog__list-item {
+  padding: 1.3333em 0;
+  margin: 0;
+  border-top: 1px solid #E7D9C5;
+  border-bottom: 1px solid #E7D9C5;
+}
+.blog__list-item:last-child {
+  border-top: none;
+}
 .blog__wrapper {
   max-width: 620px;
   margin: 0 auto;
 }
 
 .blog-post-snippet {
-  padding: 1.3333em 0;
+  padding: 0;
   margin: 0;
-  border-top: 1px solid #E7D9C5;
-  border-bottom: 1px solid #E7D9C5;
 }
 .blog-post-snippet__link {
   text-decoration: none;
@@ -116,6 +123,9 @@ nav ul li {
   font-size: 15px;
   padding: 0;
   margin: 0;
+}
+.blog__post img {
+  max-width: 100%;
 }
 
 footer {
