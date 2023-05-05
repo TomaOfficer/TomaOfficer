@@ -156,6 +156,7 @@ nav li {
   display: flex;
   flex-direction: row;
   padding: 0 0 .5em;
+  color: #8894a5;
 }
 .contact-row__leftCol {
   flex-basis: 30%;
@@ -163,7 +164,6 @@ nav li {
 }
 .contact-row__label {
   font-family: 'Alegreya Sans SC', sans-serif;
-  color: #8894a5;
 }
 .contact-row p {
   padding: 0;
