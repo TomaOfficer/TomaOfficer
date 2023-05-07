@@ -57,7 +57,7 @@ body {
 }
 /* --- Navigation --- */
 nav {
-  padding: 3em 0;
+  padding: 2em 0;
 }
 .nav__wrapper {
   max-width: 1200px;
@@ -92,6 +92,25 @@ nav li {
   opacity: .4;
 }
 /* --- Homepage --- */
+.homepage-newHero {
+  text-align: center;
+}
+.homepage-newHero__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.homepage-newHero h1 {
+  color: #fff;
+  font-size: 2.3333em;
+  padding: 0 0 .35em;
+  margin: 0;
+  letter-spacing: .05em;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 700;
+}
 .homepage-hero {
   padding: 2em 0 2em;
   text-align: center;
@@ -142,6 +161,8 @@ nav li {
 .homepage-hero__subtitle {
   font-size: 1.2em;
   color: #8894a5;
+  padding: 0;
+  margin: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
 }
 .homepage-hero__description {
