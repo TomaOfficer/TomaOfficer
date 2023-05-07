@@ -18,11 +18,10 @@ h3 {
 h5 {
   padding: 0;
   margin: 0;
-  font-size: .75em;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: sans-serif;
+  font-size: 1em;
+  font-family: 'Alegreya Sans SC', sans-serif;
   letter-spacing: .035em;
+  font-weight: 500;
 }
 p {
   padding: 0 0 1.2em;
@@ -173,14 +172,45 @@ nav li {
   height: 1em;
   display: block;
 }
-.contact-row {
+.secondRow {
+  border-bottom: 1px solid #000;
+}
+.secondRow h5 {
+  color: #8894a5;
+  padding: 0 0 1em;
+}
+.secondRow__mainCol {
+  flex-basis: 50%;
+  padding: 2em;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.secondRow__contactCol {
+  flex-basis: 20%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.secondRow__lastCol {
+  flex-basis: 30%;
+  padding: 2em;
+}
+.secondRow__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   flex-direction: row;
-  padding: 0 0 .5em;
+}
+.contact-row {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 1.5em;
   color: #8894a5;
 }
 .contact-row__leftCol {
-  flex-basis: 30%;
+  padding: 0;
   text-align: left;
 }
 .contact-row__label {
@@ -230,6 +260,15 @@ nav li {
   max-width: 680px;
   margin: 0 auto;
   padding: 0 20px;
+}
+/* --- Portfolio --- */
+.newspaper {
+  display: flex;
+  flex-direction: row;
+}
+.newspaper__main {
+  flex-basis: 33%;
+  border-right: 1px solid #000;
 }
 /* --- Blog --- */
 .blog {
