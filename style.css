@@ -37,6 +37,13 @@ body {
   margin: 0;
   text-rendering: optimizeLegibility;
 }
+.subtitle {
+  font-size: 1.2em;
+  color: #8894a5;
+  padding: 0;
+  margin: 0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
 .subtle-text-link {
   text-decoration: none;
   color: #8894a5;
@@ -104,7 +111,7 @@ nav li {
 .homepage-newHero h1 {
   color: #fff;
   font-size: 2.3333em;
-  padding: 0 0 .35em;
+  padding: 0 0 .25em;
   margin: 0;
   letter-spacing: .05em;
   font-family: 'Alegreya Sans SC', sans-serif;
@@ -157,13 +164,6 @@ nav li {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 700;
 }
-.homepage-hero__subtitle {
-  font-size: 1.2em;
-  color: #8894a5;
-  padding: 0;
-  margin: 0;
-  font-family: 'Alegreya Sans SC', sans-serif;
-}
 .homepage-hero__description {
   text-align: justify;
   color: #8894a5;
@@ -172,7 +172,7 @@ nav li {
   height: 1em;
   display: block;
 }
-.secondRow {
+.secondRow__wrapper {
   border-bottom: 1px solid #000;
 }
 .secondRow h5 {
@@ -219,38 +219,15 @@ nav li {
 .contact-row p {
   padding: 0;
 }
+
 @media screen and (max-width: 1100px){
-  .homepage-hero__row__leftCol {
-    flex-basis: 0%;
-  }
-  .homepage-hero__row__middleCol {
-    flex-basis: 45%;
-  }
-  .homepage-hero__row__rightCol {
-    flex-basis: 45%;
-  }
+
 }
 @media screen and (max-width: 820px){
-  .homepage-hero__row__leftCol {
-    flex-basis: 0%;
-  }
-  .homepage-hero__row__middleCol {
-    flex-basis: 55%;
-  }
-  .homepage-hero__row__rightCol {
-    flex-basis: 40%;
-  }
+
 }
 @media screen and (max-width: 650px){
-  .homepage-hero__row__leftCol {
-    flex-basis: 0%;
-  }
-  .homepage-hero__row__middleCol {
-    flex-basis: 100%;
-  }
-  .homepage-hero__row__rightCol {
-    flex-basis: 0%;
-  }
+
 }
 /* --- About --- */
 .about-main {
