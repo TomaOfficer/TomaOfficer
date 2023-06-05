@@ -116,6 +116,7 @@ nav li {
   letter-spacing: .05em;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .homepage-hero {
   padding: 2em 0 2em;
@@ -206,7 +207,7 @@ nav li {
 .contact-row {
   display: flex;
   flex-direction: column;
-  padding: 0 0 1.5em;
+  padding: 0 0 1em;
   color: #8894a5;
 }
 .contact-row__leftCol {
@@ -218,6 +219,44 @@ nav li {
 }
 .contact-row p {
   padding: 0;
+}
+.homepage-portfolio {
+  padding: 2em 0 6em;
+}
+.homepage-portfolio h3 {
+  font-size: 1.563em;
+  color: #222;
+  text-transform: none;
+  padding: 5em 0 .25em;
+}
+.homepage-portfolio p {
+  color: rgba(34, 34, 34, 0.8);
+  max-width: 250px;
+}
+.homepage-portfolio__wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.homepage-portfolio__card {
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 2em;
+  margin: 0 0 3em;
+
+}
+.homepage-portfolio__card__ap {
+  background-image: url('assets/ap-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.homepage-portfolio__ap-logo {
+  height: 35px;
+  border-radius: 6px;
 }
 
 @media screen and (max-width: 1100px){
