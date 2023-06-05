@@ -227,34 +227,39 @@ nav li {
   font-size: 1.563em;
   color: #222;
   text-transform: none;
-  padding: 5em 0 .25em;
+  padding: 2em 0 .25em;
 }
 .homepage-portfolio p {
   color: rgba(34, 34, 34, 0.8);
   max-width: 250px;
 }
 .homepage-portfolio__wrapper {
-  max-width: 680px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .homepage-portfolio__card {
   border-radius: 4px;
   background-color: #fff;
   padding: 2em;
   margin: 0 0 3em;
-
+  flex-grow: 1;
+  margin: 0 2em;
 }
 .homepage-portfolio__card__ap {
-  background-image: url('assets/ap-background.png');
+  /* background-image: url('assets/ap-background.png');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .homepage-portfolio__ap-logo {
+  height: 25px;
+  border-radius: 6px;
+}
+.homepage-portfolio__logo {
   height: 35px;
   border-radius: 6px;
 }
