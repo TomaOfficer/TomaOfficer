@@ -104,7 +104,7 @@ nav li {
 .homepage-newHero__wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4em 0;
+  padding: 3em 0;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
@@ -225,7 +225,7 @@ nav li {
 }
 .homepage-portfolio h3 {
   font-size: 1.563em;
-  color: #222;
+  color: #fff;
   text-transform: none;
   padding: 2em 0 .25em;
 }
@@ -248,15 +248,32 @@ nav li {
   margin: 0 0 3em;
   flex-grow: 1;
   margin: 0 2em;
+  text-decoration: none;
+  -webkit-box-shadow: -2px 12px 39px -14px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 12px 39px -14px rgba(0,0,0,0.75);
+  box-shadow: -2px 12px 39px -14px rgba(0,0,0,0.75);
+}
+.homepage-portfolio__card:hover {
+  opacity: .75;
+  box-shadow: none;
 }
 .homepage-portfolio__card__ap {
-  /* background-image: url('assets/ap-background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
+  background-color: #31393F;
+}
+.homepage-portfolio__card__nd {
+  background-color: #512BD3;
+}
+.homepage-portfolio__card__nd p {
+  color: #CDC3EF;
+}
+.homepage-portfolio__card__ap p {
+  color: #D8D8D8;
+}
+.homepage-portfolio__card__brl h3 {
+  color: #222;
 }
 .homepage-portfolio__ap-logo {
-  height: 25px;
+  height: 48px;
   border-radius: 6px;
 }
 .homepage-portfolio__logo {
@@ -307,7 +324,7 @@ nav li {
   border-bottom: 1px solid #404b58;
 }
 .blog__wrapper {
-  max-width: 620px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .blog-post-snippet {
@@ -329,6 +346,17 @@ nav li {
   margin: 0;
   color: #8894a5;
 }
-.blog__post img {
+.blog__showcase-image {
+  max-width: 100%;
+}
+.blog__post {
+  max-width: 620px;
+  margin: 0 auto;
+}
+.blog__showcase {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.blog__showcase img {
   max-width: 100%;
 }
