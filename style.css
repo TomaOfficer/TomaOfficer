@@ -315,17 +315,29 @@ nav li {
 .blog__list {
   list-style: none;
 }
-.blog__list-item {
+.blog-posts__list-item {
   padding: 1.3333em 0;
   margin: 0;
   border-top: 1px solid #404b58;
 }
-.blog__list-item:last-child {
+.blog-posts__list-item:last-child {
   border-bottom: 1px solid #404b58;
 }
 .blog__wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+.blog-posts {
+  padding: 3em 0;
+}
+.blog-posts__list {
+  list-style: none;
+}
+.blog-posts__wrapper {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 .blog-post-snippet {
   padding: 0;
