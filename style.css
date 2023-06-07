@@ -388,13 +388,21 @@ nav li {
  padding: 3em 0;
 }
 .showcase__wrapper {
-  max-width: 980px;
+  max-width: 860px;
   padding: 0 20px;
   margin: 0 auto;
 }
 .showcase__caption {
   color: #8894a5;
   font-family: 'Alegreya Sans SC', sans-serif;
+}
+.showcase__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.showcase__col {
+  flex-basis: 28%;
 }
 #lightbox {
   display: none;
@@ -428,6 +436,16 @@ nav li {
 .lightbox-trigger {
   text-decoration: none;
 }
+.lightbox-trigger:hover {
+  opacity: .7;
+}
 .lightbox-trigger img {
   max-width: 100%;
+  border-radius: 6px;
+  -webkit-box-shadow: -2px 12px 39px -14px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 12px 39px -14px rgba(0,0,0,0.75);
+  box-shadow: -2px 12px 39px -14px rgba(0,0,0,0.75);
+}
+.lightbox-trigger:hover img {
+  box-shadow: none;
 }
