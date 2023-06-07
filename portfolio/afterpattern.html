@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width">
   <title>Afterpattern</title>
   <link href="../style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,12 +34,15 @@
   <div class="blog">
     <div class="blog__wrapper">
       <div class="blog__post">
-        <h1>Afterpattern</h1>
+        <div class="blog__title-row">
+          <h1>afterpattern</h1>
+          <span class="blog__badge">Now NetDocuments <br> PatternBuilder</span>
+        </div>
         <p class="blog__date">
           2016 - 2021
         </p>
         <p class="blog__author">
-          Cofounder, designer, frontend developer
+          cofounder, designer, frontend developer
         </p>
         <p>
           The average billable rate for lawyers in the United States was $300 per hour in January 2021. In New York, it was $485 per hour (Clio, <a href="https://www.clio.com/resources/legal-trends/" class="text-link" target="_blank">2021 Legal Trends Report</a>). On LegalZoom, you can create an LLC for $79. You can create a basic will for $89. These differences are so dramatic because on LegalZoom you're buying software that has almost zero marginal cost, not a chunk of someone's time.
@@ -48,11 +54,59 @@
           What if law firms had the technical capabilities of LegalZoom? What if lawyers could transform their expensive expertise into affordable software products?
         </p>
       </div>
-      <div class="showcase">
-        <div class="showcase__wrapper">
+    </div>
+  </div>
+
+  <div class="showcase">
+    <p class="showcase__caption">
+      Design notes
+    </p>
+    <div class="showcase__wrapper">
+      <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
+        <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
+        <p class="lightbox-trigger__caption">
+          App builder 2021
+        </p>
+      </a>
+      <div id="lightbox">
+        <p class="lightbox__caption">Click to close</p>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="" />
+        </div>
+      </div>
+      <div class="showcase__row">
+        <div class="showcase__col">
           <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
             <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
-            <p class="showcase__caption">
+            <p class="lightbox-trigger__caption">
+              App builder 2021
+            </p>
+          </a>
+          <div id="lightbox">
+            <p class="lightbox__caption">Click to close</p>
+            <div class="lightbox-content">
+                <img id="lightbox-image" src="" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="showcase__col">
+          <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
+            <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
+            <p class="lightbox-trigger__caption">
+              App builder 2021
+            </p>
+          </a>
+          <div id="lightbox">
+            <p class="lightbox__caption">Click to close</p>
+            <div class="lightbox-content">
+                <img id="lightbox-image" src="" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="showcase__col">
+          <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
+            <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
+            <p class="lightbox-trigger__caption">
               App builder 2021
             </p>
           </a>
@@ -64,6 +118,11 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="blog">
+    <div class="blog__wrapper">
       <div class="blog__post">
         <p>
           Afterpattern allows legal professionals to transform their expertise into software, what we call legal apps. When it was acquired in November 2021, thousands of law firms, courts, and legal aids used Afterpattern to build game-changing, and occasionally award-winning, legal apps.
@@ -72,54 +131,11 @@
           The journey from insight to acquisition was long.
         </p>
       </div>
-      <div class="showcase">
-        <div class="showcase__wrapper">
-          <div class="showcase__row">
-            <div class="showcase__col">
-              <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
-                <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
-                <p class="showcase__caption">
-                  App builder 2021
-                </p>
-              </a>
-              <div id="lightbox">
-                <p class="lightbox__caption">Click to close</p>
-                <div class="lightbox-content">
-                    <img id="lightbox-image" src="" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="showcase__col">
-              <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
-                <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
-                <p class="showcase__caption">
-                  App builder 2021
-                </p>
-              </a>
-              <div id="lightbox">
-                <p class="lightbox__caption">Click to close</p>
-                <div class="lightbox-content">
-                    <img id="lightbox-image" src="" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="showcase__col">
-              <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
-                <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
-                <p class="showcase__caption">
-                  App builder 2021
-                </p>
-              </a>
-              <div id="lightbox">
-                <p class="lightbox__caption">Click to close</p>
-                <div class="lightbox-content">
-                    <img id="lightbox-image" src="" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
+
+  <div class="blog">
+    <div class="blog__wrapper">
       <div class="blog__post">
         <p>
           Afterpattern grew out of Community.lawyer, the product my cofounders and I built as Fellows in the 2016 cohort of the Blue Ridge Labs social impact technology incubator (read that case study for more details).
@@ -131,11 +147,27 @@
           Afterpattern ultimately grew beyond the no-code app builder to include document automation, databases, an app marketplace, and a portal for packaging multiple apps together.
         </p>
       </div>
-      <div class="showcase">
-        <div class="showcase__wrapper">
+    </div>
+  </div>
+  <div class="showcase">
+    <div class="showcase__wrapper">
+      <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
+        <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
+        <p class="lightbox-trigger__caption">
+          App builder 2021
+        </p>
+      </a>
+      <div id="lightbox">
+        <p class="lightbox__caption">Click to close</p>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="" />
+        </div>
+      </div>
+      <div class="showcase__row">
+        <div class="showcase__col">
           <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
             <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
-            <p class="showcase__caption">
+            <p class="lightbox-trigger__caption">
               App builder 2021
             </p>
           </a>
@@ -145,105 +177,97 @@
                 <img id="lightbox-image" src="" alt="" />
             </div>
           </div>
-          <div class="showcase__row">
-            <div class="showcase__col">
-              <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
-                <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
-                <p class="showcase__caption">
-                  App builder 2021
-                </p>
-              </a>
-              <div id="lightbox">
-                <p class="lightbox__caption">Click to close</p>
-                <div class="lightbox-content">
-                    <img id="lightbox-image" src="" alt="" />
-                </div>
-              </div>
+        </div>
+        <div class="showcase__col">
+          <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
+            <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
+            <p class="lightbox-trigger__caption">
+              App builder 2021
+            </p>
+          </a>
+          <div id="lightbox">
+            <p class="lightbox__caption">Click to close</p>
+            <div class="lightbox-content">
+                <img id="lightbox-image" src="" alt="" />
             </div>
-            <div class="showcase__col">
-              <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
-                <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
-                <p class="showcase__caption">
-                  App builder 2021
-                </p>
-              </a>
-              <div id="lightbox">
-                <p class="lightbox__caption">Click to close</p>
-                <div class="lightbox-content">
-                    <img id="lightbox-image" src="" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="showcase__col">
-              <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
-                <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
-                <p class="showcase__caption">
-                  App builder 2021
-                </p>
-              </a>
-              <div id="lightbox">
-                <p class="lightbox__caption">Click to close</p>
-                <div class="lightbox-content">
-                    <img id="lightbox-image" src="" alt="" />
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="showcase__col">
+          <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
+            <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
+            <p class="lightbox-trigger__caption">
+              App builder 2021
+            </p>
+          </a>
+          <div id="lightbox">
+            <p class="lightbox__caption">Click to close</p>
+            <div class="lightbox-content">
+                <img id="lightbox-image" src="" alt="" />
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="blog">
+    <div class="blog__wrapper">
       <div class="blog__post">
         <p>
           One of our biggest challenges was that Afterpattern was a new category of product. We couldn't approach law firms and say "you know that thing you do all the time? We help you do it faster/cheaper/easier." Our customers had never built legal apps before. Before we could train them how to do it (with our Afterpattern University, which I poured countless hours into), we had to convince them why they should do it.
         </p>
       </div>
-      <div class="showcase">
-        <div class="showcase__wrapper">
-          <div class="showcase__row">
-            <div class="showcase__col">
-              <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
-                <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
-                <p class="showcase__caption">
-                  App builder 2021
-                </p>
-              </a>
-              <div id="lightbox">
-                <p class="lightbox__caption">Click to close</p>
-                <div class="lightbox-content">
-                    <img id="lightbox-image" src="" alt="" />
-                </div>
-              </div>
+    </div>
+  </div>
+  <div class="showcase">
+    <div class="showcase__wrapper">
+      <div class="showcase__row">
+        <div class="showcase__col">
+          <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
+            <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
+            <p class="lightbox-trigger__caption">
+              App builder 2021
+            </p>
+          </a>
+          <div id="lightbox">
+            <p class="lightbox__caption">Click to close</p>
+            <div class="lightbox-content">
+                <img id="lightbox-image" src="" alt="" />
             </div>
-            <div class="showcase__col">
-              <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
-                <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
-                <p class="showcase__caption">
-                  App builder 2021
-                </p>
-              </a>
-              <div id="lightbox">
-                <p class="lightbox__caption">Click to close</p>
-                <div class="lightbox-content">
-                    <img id="lightbox-image" src="" alt="" />
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="showcase__col">
+          <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
+            <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
+            <p class="lightbox-trigger__caption">
+              App builder 2021
+            </p>
+          </a>
+          <div id="lightbox">
+            <p class="lightbox__caption">Click to close</p>
+            <div class="lightbox-content">
+                <img id="lightbox-image" src="" alt="" />
             </div>
-            <div class="showcase__col">
-              <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
-                <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
-                <p class="showcase__caption">
-                  App builder 2021
-                </p>
-              </a>
-              <div id="lightbox">
-                <p class="lightbox__caption">Click to close</p>
-                <div class="lightbox-content">
-                    <img id="lightbox-image" src="" alt="" />
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="showcase__col">
+          <a href="../assets/showcase-appbuilder.png" class="lightbox-trigger">
+            <img src="../assets/showcase-appbuilder.png" alt="Afterpattern app builder 2021">
+            <p class="lightbox-trigger__caption">
+              App builder 2021
+            </p>
+          </a>
+          <div id="lightbox">
+            <p class="lightbox__caption">Click to close</p>
+            <div class="lightbox-content">
+                <img id="lightbox-image" src="" alt="" />
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="blog">
+    <div class="blog__wrapper">
       <div class="blog__post">
         <p>
           Afterpattern's acquisition was a life-changing event. I'm tremendously thankful for my cofounders and our early-adopters. This was the best job I've ever had.
