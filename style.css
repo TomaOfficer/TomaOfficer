@@ -319,18 +319,12 @@ nav li {
   padding: 8em 0;
 }
 .blog__title-row {
-  display: flex;
-  flex-direction: row;
-  padding: 0 0 .25em;
-  justify-content: space-between;
+  padding: 0 0 .5em;
 }
 .blog__badge-link {
-  padding: 0 0 0 3em;
-  /* transform: rotate(-25deg); */
-  margin-top: .35em;
+  padding: .75em 0 0;
   text-decoration: none;
-  max-width: 180px;
-  text-align: right;
+  display: inline-block;
 }
 .blog__badge-link:hover {
   opacity: .7;
@@ -428,6 +422,10 @@ nav li {
 }
 .showcase p {
   color: #222;
+}
+.showcase__design-notes {
+  font-size: .98em;
+  line-height: 1.60em;
 }
 .showcase__leftCol {
   flex-basis: 35%;
