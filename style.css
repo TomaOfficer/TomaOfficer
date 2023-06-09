@@ -310,22 +310,33 @@ nav li {
 }
 /* --- Blog --- */
 .blog {
-  padding: 12em 0;
+  padding: 8em 0;
 }
 .blog__title-row {
   display: flex;
   flex-direction: row;
-  padding: 0 0 .5em;
+  padding: 0 0 .25em;
   justify-content: space-between;
 }
-.blog__badge {
+.blog__badge-link {
   padding: 0 0 0 3em;
+  /* transform: rotate(-25deg); */
+  margin-top: .35em;
+  text-decoration: none;
+  max-width: 180px;
+  text-align: right;
+}
+.blog__badge-link:hover {
+  opacity: .7;
+}
+.blog__badge-link p {
+  color: #fdcb6e;
+  line-height: 1.2em;
   font-family: sans-serif;
   font-size: 13px;
   letter-spacing: .025em;
-  /* transform: rotate(-25deg); */
-  line-height: 1.2em;
-  margin-top: .35em;
+  padding: 0;
+  margin: 0;
 }
 .blog h1 {
   color: #fff;
@@ -340,7 +351,7 @@ nav li {
   color: #8894a5;
   font-family: 'Alegreya Sans SC', sans-serif;
   padding: .5em 0 0;
-  font-size: ;
+  font-size: 1em;
   letter-spacing: .025em;
 }
 .blog__author {
@@ -398,31 +409,40 @@ nav li {
 }
 /* --- Showcase + Lightbox --- */
 .showcase {
- padding: 6em 0;
+ padding: 8em 0;
  background-color: #ccc;
  position: relative;
 }
 .showcase__wrapper {
-  max-width: 860px;
+  max-width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.showcase p {
+  color: #222;
+}
+.showcase__leftCol {
+  flex-basis: 35%;
+}
+.showcase__rightCol {
+  flex-basis: 57%;
 }
 .showcase__caption {
   position: absolute;
   padding: 1em;
   top: 0;
-  color: #8894a5;
+  color: #505e71 !important;
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 15px;
+  font-size: 1em;
   letter-spacing: .025em;
-  text-transform: uppercase;
-  font-weight: ;
 }
 .lightbox-trigger__caption {
-  color: #222;
   font-family: 'Alegreya Sans SC', sans-serif;
   padding: 0;
   font-size: 15px;
+  color: #505e71 !important;
 }
 .showcase__row {
   display: flex;
@@ -460,6 +480,7 @@ nav li {
   text-transform: uppercase;
   letter-spacing: .025em;
   font-size: 15px;
+  color: #fff !important;
 }
 .lightbox-trigger {
   text-decoration: none;
