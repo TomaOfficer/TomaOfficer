@@ -1,4 +1,14 @@
 /* --- Universal --- */
+body {
+  background-color: #131a22;
+  color: #e7e7ea;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  line-height: 1.6em;
+  padding: 0;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
 h1 {
   font-family: sans-serif;
   font-size: 1.333em;
@@ -27,15 +37,11 @@ p {
   padding: 0 0 1.2em;
   margin: 0;
 }
-body {
-  background-color: #131a22;
-  color: #e7e7ea;
-  font-family: Georgia, serif;
-  font-size: 17px;
-  line-height: 1.6em;
+.label {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: #8894a5;
   padding: 0;
   margin: 0;
-  text-rendering: optimizeLegibility;
 }
 .subtitle {
   font-size: 1.2em;
@@ -448,6 +454,7 @@ nav li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 3em;
 }
 .showcase__col {
   flex-basis: 28%;
@@ -473,6 +480,7 @@ nav li {
 .lightbox-content img {
   max-width: 100%;
   max-height: 100%;
+  border-radius: 6px;
 }
 .lightbox__caption  {
   font-family: 'Alegreya Sans SC', sans-serif;
@@ -484,10 +492,10 @@ nav li {
 }
 .lightbox-trigger {
   text-decoration: none;
-  transition: opacity .75s;
+  transition: opacity .5s;
 }
 .lightbox-trigger:hover {
-  opacity: .7;
+  opacity: .5;
 }
 .lightbox-trigger img {
   max-width: 100%;
@@ -498,4 +506,19 @@ nav li {
 }
 .lightbox-trigger:active img {
   box-shadow: none;
+}
+/* --- Footer --- */
+.footer__wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 4em 20px 6em;
+  border-top: 1px solid #000;
+}
+.footer__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__col {
+  flex-basis: 27%;
 }
