@@ -234,7 +234,7 @@ nav li {
   font-size: 1.563em;
   color: #fff;
   text-transform: none;
-  padding: 2em 0 .25em;
+  padding: 1.5em 0 .25em;
 }
 .homepage-portfolio p {
   color: rgba(34, 34, 34, 0.8);
@@ -255,9 +255,8 @@ nav li {
   border-radius: 4px;
   background-color: #fff;
   padding: 2em;
-  margin: 0 0 3em;
-  flex-grow: 1;
-  margin: 0 2em;
+  margin: 0 1.5em 3em;
+  flex-basis: 30%;
   text-decoration: none;
   -webkit-box-shadow: -2px 12px 39px -14px rgba(0,0,0,0.75);
   -moz-box-shadow: -2px 12px 39px -14px rgba(0,0,0,0.75);
@@ -266,6 +265,9 @@ nav li {
 .homepage-portfolio__card:hover {
   opacity: .75;
   box-shadow: none;
+}
+.homepage-portfolio__card__top {
+  margin-bottom: 1.5em;
 }
 .homepage-portfolio__card__ap {
   background-color: #31393F;
