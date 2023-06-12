@@ -10,7 +10,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-family: sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 1.333em;
   font-weight: bolder;
   padding: 0 0 .5em;
@@ -123,7 +123,6 @@ nav li {
   letter-spacing: .05em;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
 }
 .homepage-hero {
   padding: 2em 0 2em;
@@ -235,6 +234,7 @@ nav li {
   color: #fff;
   text-transform: none;
   padding: 1.5em 0 .25em;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 .homepage-portfolio p {
   color: rgba(34, 34, 34, 0.8);
@@ -267,7 +267,7 @@ nav li {
   box-shadow: none;
 }
 .homepage-portfolio__card__top {
-  margin-bottom: 1.5em;
+  margin-bottom: .75em;
 }
 .homepage-portfolio__card__ap {
   background-color: #31393F;
@@ -283,10 +283,6 @@ nav li {
 }
 .homepage-portfolio__card__brl h3 {
   color: #222;
-}
-.homepage-portfolio__card .label {
-  
-  
 }
 .homepage-portfolio__ap-logo {
   height: 48px;
