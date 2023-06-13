@@ -309,6 +309,12 @@ nav li {
   margin: 0 auto;
   padding: 0 20px;
 }
+.about-main__headshot {
+  width: 250px;
+  float: left;
+  margin: 0 2em 0 0;
+  border-radius: 6px;
+}
 /* --- Portfolio --- */
 .newspaper {
   display: flex;
