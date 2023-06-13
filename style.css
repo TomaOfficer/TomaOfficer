@@ -43,6 +43,8 @@ p {
   padding: 0;
   margin: 0;
   line-height: 1.4em;
+  font-style: normal;
+  font-size: 17px;
 }
 .subtitle {
   font-size: 1.2em;
@@ -179,12 +181,8 @@ nav li {
   height: 1em;
   display: block;
 }
-.secondRow__wrapper {
-  border-bottom: 1px solid #000;
-}
 .secondRow h5 {
   color: #8894a5;
-  padding: 0 0 1em;
 }
 .secondRow__mainCol {
   flex-basis: 50%;
@@ -413,6 +411,27 @@ nav li {
   max-width: 620px;
   margin: 0 auto;
 }
+.blog__symbol {
+  font-size: 3em;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  color: #8894a5;
+}
+.blog__quote {
+  padding: 0 2em 2em;
+  margin: 0;
+  position: relative;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+.blog__quote-text {
+  font-family: monospace;
+  padding: 0 0 .5em;
+}
+.blog__quote .text-link {
+  color: #8894a5;
+}
 /* --- Showcase + Lightbox --- */
 .showcase {
  padding: 8em 0;
@@ -426,13 +445,17 @@ nav li {
   display: flex;
   justify-content: space-between;
 }
-.showcase p {
-  color: #222;
-}
-.showcase__design-notes {
+.showcase__list {
   font-size: .9em;
   line-height: 1.60em;
   font-family: monospace;
+  color: #222;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.showcase__list li {
+  padding: 0 0 1.333em;
 }
 .showcase__leftCol {
   flex-basis: 35%;
@@ -454,6 +477,7 @@ nav li {
   padding: 0;
   font-size: 15px;
   color: #505e71 !important;
+  line-height: 1.5em;
 }
 .showcase__row {
   display: flex;
