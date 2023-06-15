@@ -111,7 +111,7 @@ nav li {
     padding: 0 0 0 1.25em;
   }
   .brand-link img {
-    width: 60px;
+    width: 50px;
   }
 }
 /* --- Homepage --- */
@@ -317,6 +317,9 @@ nav li {
   .homepage-portfolio__wrapper {
     flex-direction: column;
   }
+  .homepage-portfolio__card {
+    margin: 0 0 2em;
+  }
 }
 @media screen and (max-width: 650px){
 
@@ -467,6 +470,11 @@ nav li {
 .blog__showcase-image {
   max-width: 100%;
 }
+@media screen and (max-width: 820px) {
+  .blog {
+    padding: 4em 0;
+  }
+}
 /* --- Showcase + Lightbox --- */
 .showcase {
  padding: 8em 0;
@@ -572,6 +580,9 @@ nav li {
   box-shadow: none;
 }
 @media screen and (max-width: 820px) {
+  .showcase {
+    padding: 4em 0;
+  }
   .showcase__wrapper {
     flex-direction: column;
   }
@@ -600,4 +611,15 @@ nav li {
 }
 .footer__col {
   flex-basis: 27%;
+}
+footer p {
+  padding: 0;
+}
+@media screen and (max-width: 650px){
+  .footer__row {
+    flex-direction: column;
+  }
+  .footer__col {
+    padding: 0 0 1.5em;
+  }
 }
