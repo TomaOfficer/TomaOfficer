@@ -106,6 +106,14 @@ nav li {
 .brand-link img:hover {
   opacity: .4;
 }
+@media screen and (max-width: 650px) {
+  nav li {
+    padding: 0 0 0 1.25em;
+  }
+  .brand-link img {
+    width: 60px;
+  }
+}
 /* --- Homepage --- */
 .homepage-newHero {
   text-align: center;
