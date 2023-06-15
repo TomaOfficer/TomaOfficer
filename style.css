@@ -456,6 +456,9 @@ nav li {
 .blog__quote .text-link {
   color: #8894a5;
 }
+.blog__showcase-image {
+  max-width: 100%;
+}
 /* --- Showcase + Lightbox --- */
 .showcase {
  padding: 8em 0;
