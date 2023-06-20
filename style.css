@@ -66,9 +66,10 @@ p {
   color: #fff;
   border-bottom: 1px solid #8894a57a;
   text-decoration: none;
+  transition: .5s; 
 }
 .text-link:hover {
-  transition: .5s; 
+  opacity: .5;
 }
 /* --- Navigation --- */
 nav {
@@ -489,16 +490,13 @@ nav li {
   justify-content: space-between;
 }
 .showcase__list {
-  font-size: .9em;
-  line-height: 1.60em;
-  font-family: monospace;
   color: #222;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 .showcase__list li {
-  padding: 0 0 1.333em;
+  padding: 0 0 .75em;
 }
 .showcase__leftCol {
   flex-basis: 35%;
@@ -530,6 +528,9 @@ nav li {
 }
 .showcase__col {
   flex-basis: 28%;
+}
+.showcase .text-link {
+  color: #222;
 }
 #lightbox {
   display: none;
