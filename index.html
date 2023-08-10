@@ -14,34 +14,28 @@
 <body>
   <nav>
     <div class="nav__wrapper">
-      <a class="brand-link" href="/">
-        <img src="assets/tfo-brand.svg" alt="Thomas Felix Officer logo">
-      </a>
-      <ul>
-        <li>
-          <a href="index.html" class="nav__link active">portfolio</a>
-        </li>
-        <li>
-          <a href="about.html" class="nav__link">about</a>
-        </li>
-        <li>
-          <a href="blog.html" class="nav__link">blog</a>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/13M6zyxHFkd--DdqFPBV98A8CWeiNQeN4/view?usp=sharing" class="nav__link" target="_blank">resume</a>
-        </li>
-      </ul>
+      <div class="brand">
+        <a class="brand__link" href="/">
+          <img src="assets/tfo-brand-dark.svg" alt="Thomas Felix Officer logo">
+        </a>
+        <p class="brand__text">
+          Product Designer
+        </p>
+      </div>
     </div>
   </nav>
-  <div class="homepage-newHero">
-    <div class="homepage-newHero__wrapper">
-      <h1>
-        Thomas F Officer 
-      </h1>
-      <p class="subtitle">
-        product designer
-      </p>
-      <a href="https://calendly.com/thomas-officer/coffee-chat" target="_blank" class="primary-btn">Schedule call</a>
+  <div class="for-hire">
+    <div class="for-hire__wrapper">
+      <div class="status">
+        <img src="assets/thomas-headshot-small.png" alt="Headshot of Thomas Officer" class="status__headshot">
+        <div class="status__rightCol">
+          <p class="status__name">Thomas F. Officer</p>
+          <p class="subtitle">
+          available for new projects
+          </p>
+        </div>
+      </div>
+      <a href="https://www.tfodesign.com/" target="_blank" class="primary-btn">Design portfolio</a>
     </div>
   </div>
   <div class="secondRow">
@@ -54,7 +48,7 @@
             </p>
           </div>
           <div class="contact-row__rightCol">
-            <p style="color:#fff;">
+            <p>
               thomas.officer@gmail.com
             </p>
           </div>
@@ -90,58 +84,23 @@
       </div>
       <div class="secondRow__lastCol">
         <h5>
-          currently
+          blog
         </h5>
-        <p>
-          Available for new projects.
-        </p>
+        <ul class="blog-posts__list">
+          <li class="blog-posts__list-item">
+            <div class="blog-post-snippet">
+              <a class="blog-post-snippet__link" href="/blog/aicontext.html">An AI startup idea</a>
+              <p class="blog-post-snippet__date">July 2023</p>
+            </div>
+          </li>
+          <li class="blog-posts__list-item">
+            <div class="blog-post-snippet">
+              <a class="blog-post-snippet__link" href="/blog/legal-apps.html">Legal Apps</a>
+              <p class="blog-post-snippet__date">July 2022</p>
+            </div>
+          </li>
+        </ul>
       </div>
-    </div>
-  </div>
-  <div class="homepage-portfolio">
-    <div class="homepage-portfolio__wrapper">
-      <a href="/portfolio/netdocuments.html" class="homepage-portfolio__card homepage-portfolio__card__nd">
-        <div class="homepage-portfolio__card__top">
-          <img src="assets/nd-logo-square.png" alt="Afterpattern logo" class="homepage-portfolio__logo">
-          <h3>NetDocuments</h3>
-        </div>
-        <div class="homepage-portfolio__card__bottom">
-          <p class="label">
-            2021 - 2023
-          </p>
-          <p class="label">
-            product designer
-          </p>
-        </div>
-      </a>
-      <a href="/portfolio/afterpattern.html" class="homepage-portfolio__card homepage-portfolio__card__ap">
-        <div class="homepage-portfolio__card__top">
-          <img src="assets/ap-logo-square-dark.png" alt="Afterpattern logo" class="homepage-portfolio__ap-logo">
-          <h3>Afterpattern</h3>
-        </div>
-        <div class="homepage-portfolio__card__bottom">
-          <p class="label">
-            2016 - 2021
-          </p>
-          <p class="label">
-            cofounder, designer, fe developer
-          </p>
-        </div>
-      </a>
-      <a href="/portfolio/blueridgelabs.html" class="homepage-portfolio__card homepage-portfolio__card__brl">
-        <div class="homepage-portfolio__card__top">
-          <img src="assets/brl-logo-square.png" alt="Afterpattern logo" class="homepage-portfolio__logo">
-          <h3>Blue Ridge Labs</h3>
-        </div>
-        <div class="homepage-portfolio__card__bottom">
-          <p class="label">
-            2016
-          </p>
-          <p class="label">
-            design fellow
-          </p>
-        </div>
-      </a>
     </div>
   </div>
   <script src="script.js"></script>
