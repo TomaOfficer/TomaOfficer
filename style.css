@@ -342,7 +342,9 @@ nav li {
   }
 }
 @media screen and (max-width: 650px){
-
+  .about-design__showcase {
+    background-position: 80%;
+  }
 }
 /* --- About --- */
 .about-main {
