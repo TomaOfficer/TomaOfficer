@@ -8,52 +8,80 @@
   <link href="../style.css" rel="stylesheet" type="text/css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="small-nav">
-    <div class="nav__wrapper">
-      <div class="brand">
-        <a class="brand__link" href="/">
-          <img src="../assets/tfo-brand-dark.svg" alt="Thomas Felix Officer logo">
-        </a>
-      </div>
-      <div class="small-nav__breadcrumb">
-        <p class="brand__text">
-          <a href="../blog.html" class="text-link">Blog</a>
-        </p>
-        <span class="small-nav__breadcrumb__divider">/</span>
-        <p class="small-nav__breadcrumb__current-page">
-          AI chatbot
-        </p>
-      </div>
+  <div class="brand-badge">
+    <div class="brand-badge__wrapper">
+      <a class="brand-badge__link" href="/">
+        <img src="../assets/tfo-brand-dark.svg" alt="Thomas Felix Officer logo">
+      </a>
     </div>
-  </nav>
-    
+  </div>
   <div class="blog">
     <div class="blog__wrapper">
+      <div class="title">
+        <div class="title__wrapper">
+          <h1>
+            Quick and dirty guide to building an AI chatbot; it won't be perfect, but good enough to convince others to help you go further
+          </h1>
+        </div>
+      </div>
       <div class="blog__post">
-        <p class="blog__date">
-          August 2023
+        <div class="blog__header"> 
+          <div class="status">
+            <img src="../assets/thomas-headshot-small.png" alt="Headshot of Thomas Officer" class="status__headshot">
+            <div class="status__rightCol">
+              <p class="status__name">Thomas F. Officer</p>
+              <p class="subtitle">
+              product designer, for hire
+              </p>
+            </div>
+          </div>
+          <div>
+            <p class="blog__date">
+              August 2023
+            </p>
+          </div>
+        </div>
+        <p>This blog post is a living document for the next couple of weeks as I engage in Dan Shipper's class, <a href="https://www.chatbot-course.com/" class="text-link" target="_blank">How to Build an AI Chatbot</a>. If you're like me—someone who's not a software engineer but fascinated by AI—you'll be interested to know how easy it is to get an AI chatbot up and running.</p>
+        <p>When I mention an AI chatbot, I'm referring to a chat-like interface where you can communicate with large language models like GPT-4, GPT-3.5, Clod, or Palm-2. These models access a specific dataset provided by you. This is what makes it both magical and simple, producing amazing results.</p>
+        <p>As an example, I once built a chatbot using my resume as the dataset. Side note: I'm currently freelancing as a product designer and open to new projects. The mechanics of the chatbot are straightforward. You can interact with my resume or even swap it out with company documents like articles of incorporation or bylaws. Imagine chatting with the owner's manual for a Harley-Davidson, something I find appealing since I recently bought a motorcycle.</p>
+        <p>What's incredible is the ease with which this can be set up. Some say there are no barriers to starting an AI business, but I believe that the traditional challenges, like user experience and domain expertise, still apply. This whole process is not only fun but also highly accessible. We're far from saturation with AI chatbots, and the possibilities for creating engaging experiences are vast. That's the essence of this blog post—to share my journey and inspire others.</p>
+        <p>Let me direct you to a Repl.it project, accompanied by a video guide to help you get your chatbot up and running. It's a Python app using Flask, and even if you're not a Python developer, like me, you can easily modify it with basic HTML and CSS knowledge.</p>
+        <h3 class="setup__title">setup</h3>
+        <p class="setup__date">
+          as of sunday aug. 20, 2023
         </p>
-        <p class="blog__author">
-          Hanover, NH
-        </p>
-        <h1>
-          how to build an ai chatbot
-        </h1>
-        <h3>
-          Resources
-        </h3>
-        <ul> 
+        <ol>
           <li>
-            <a href="">OpenAI</a>: OpenAI will provide us with the large language model (LLM), e.g. gpt-3.5-turbo, that we'll use to generate responses to user input. You'll need to sign up with a payment to get an API key.
+            Fork this <a href="https://replit.com/@ThomasOfficer/Langchain-OpenAI-Python-Flask-app?v=1" class="text-link" target="_blank">Repl.it project</a>
           </li>
           <li>
-            <a href="">Langchain</a>: Open-source
+            Follow the instructions in this 4 minute video:
+            <div style="position: relative; padding-bottom: 62.5%; margin-top: 1em; height: 0;"><iframe src="https://www.loom.com/embed/b2475900a1d94fe7a756fddbc884ee0b?sid=2571b10e-84df-48cc-b012-c3a15388f9d8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+          </li>
+        </ol>
+        <p>Though I'm more familiar with front-end development, I managed to build this Python app by engaging with GPT-4 and watching some helpful videos. If I can do this, so can you! Follow me on Twitter to stay updated, and happy building!</p>
+      </div>
+      <div class="follow">
+        <p>
+          Up next:
+        </p>
+        <ul>
+          <li>
+            What kind of data makes for a viable business?
+          </li>
+          <li>
+            Is a pure chat interface the best way to get the end-user engaged?
           </li>
         </ul>
+        <a href="https://twitter.com/TomaOfficer" target="_blank" class="secondary-btn">
+          <img src="../assets/x-brand.svg" alt="X (formerly known as Twitter) logo">
+          follow me
+        </a>
       </div>
     </div>
   </div>
