@@ -426,14 +426,11 @@ nav li {
   list-style: none;
 }
 .blog-posts__list-item {
-  padding: .35em 0;
+  padding: 0 0 .25em;
   margin: 0;
 }
 .blog-posts__list-item:first-child {
   padding-top: 0;
-}
-.blog-posts__list-item:last-child {
-  padding: .35em 0;
 }
 .blog__wrapper {
   max-width: 1200px;
