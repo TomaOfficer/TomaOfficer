@@ -10,15 +10,17 @@ body {
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 1.333em;
-  font-weight: bolder;
-  padding: 0 0 .5em;
+  font-size: 3.052em;
   margin: 0;
-  line-height: .9em;
+  padding: 0 0 1.333em;
+  letter-spacing: .015em;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: -.015em;
 }
 h3 {
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   padding: 0 0 .5em;
   margin: 0;
   font-size: 1.777em;
@@ -109,19 +111,17 @@ ul li:last-child {
   transition: .2s;
   white-space: nowrap;
   color: #222;
+  border: 1px solid #EAE2DE;
   border-radius: .5em;
   text-decoration: none !important;
   font-family: sans-serif;
-  font-size: 1.2em;
+  font-size: 16px;
   font-weight: 500;
   background-color: #fff;
   box-sizing: border-box;
-  -webkit-box-shadow: 0px 2px 15px 0px rgba(26,29,33,0.43);
-  -moz-box-shadow: 0px 2px 15px 0px rgba(26,29,33,0.43);
-  box-shadow: 0px 2px 15px 0px rgba(26,29,33,0.43);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-shadow: 0px 2px 15px 0px rgba(26,29,33,0.13);
+  -moz-box-shadow: 0px 2px 15px 0px rgba(26,29,33,0.13);
+  box-shadow: 0px 2px 15px 0px rgba(26,29,33,0.13);
   font-family: 'Alegreya Sans SC', sans-serif;
 }
 .secondary-btn img {
@@ -169,11 +169,6 @@ nav li {
   display: flex;
   align-items: center;
 }
-.brand__text {
-  padding: 0 0 0 1.5em;
-  margin: 0;
-  font-size: 15px;
-}
 .brand__link {
   display: flex;
 }
@@ -189,7 +184,7 @@ nav li {
 .brand-badge__wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 .brand-badge img {
   width: 60px;
@@ -214,13 +209,14 @@ nav li {
   }
 }
 /* --- Homepage --- */
-.home-main {
-  margin-left: 380px;
-}
 .home-main__wrapper {
-  padding: 8em 20px;
+  padding: 0 20px;
   max-width: 620px;
   margin: 0 auto;
+}
+.home-main h5 {
+  color: #8894a5;
+  padding: 0 0 .5em;
 }
 .for-hire {
   padding: 2em 0 0 0;
@@ -228,6 +224,21 @@ nav li {
 .for-hire .primary-btn {
   width: 100%;
   text-align: center;
+}
+.about-design {
+  padding: 0 0 1.777em;
+}
+.about-design__showcase {
+  background-image: url(assets/sketch-chatbot.png);
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  padding: 2em;
+  border-radius: 6px;
+  border: 1.5px solid #EAE2DE;
+}
+.about-design__showcase p {
+  max-width: 80%;
 }
 .status {
   display: flex;
@@ -289,9 +300,12 @@ nav li {
 }
 .contact-row__label {
   font-family: 'Alegreya Sans SC', sans-serif;
-}
-.contact-row p {
+  font-size: .9em;
   padding: 0;
+}
+.contact-row__value {
+  padding: 0;
+  font-size: .9em;
 }
 @media screen and (max-width: 1100px){
 
@@ -370,13 +384,7 @@ nav li {
   padding: 0 20px;
 }
 .title h1 {
-  font-size: 3.052em;
-  margin: 0;
-  padding: 0 0 1.333em;
-  letter-spacing: .015em;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-weight: 600;
-  line-height: 1.2em;
+  
 }
 .blog {
   padding: 2em 0 6em;
@@ -419,6 +427,9 @@ nav li {
   padding: .35em 0;
   margin: 0;
 }
+.blog-posts__list-item:first-child {
+  padding-top: 0;
+}
 .blog-posts__list-item:last-child {
   padding: .35em 0;
 }
@@ -433,7 +444,7 @@ nav li {
 .blog-posts__list {
   list-style: none;
   padding: 0;
-  margin: 1em 0 0 0;
+  margin: 0;
 }
 .blog-posts__wrapper {
   max-width: 620px;
@@ -448,7 +459,6 @@ nav li {
   text-decoration: none;
   font-family: sans-serif;
   color: #6c5ce7;
-  font-size: 16px;
   padding: 0;
   margin: 0;
   line-height: 1.4em;
@@ -653,11 +663,14 @@ nav li {
   }
 }
 /* --- Footer --- */
+footer {
+  padding: 4em 0 6em;
+}
 .footer__wrapper {
   max-width: 720px;
   margin: 0 auto;
-  padding: 4em 20px 6em;
-  border-top: 1px solid #000;
+  padding: 0 20px;
+
 }
 .footer__row {
   display: flex;
