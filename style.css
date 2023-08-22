@@ -535,6 +535,15 @@ ul li:last-child {
     font-size: 15px;
     line-height: 1.6em;
   }
+  .title {
+    padding: 0 0 1em;
+  }
+  .title h1 {
+    font-size: 1.777em;
+  }
+  .blog {
+    padding-top: 1em;
+  }
 }
 /* --- Showcase + Lightbox --- */
 .showcase {
