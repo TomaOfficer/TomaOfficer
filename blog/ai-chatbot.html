@@ -13,23 +13,41 @@
 </head>
 
 <body>
-  <div class="brand-badge">
-    <div class="brand-badge__wrapper">
-      <a class="brand-badge__link" href="/">
+  <nav>
+    <div class="nav__wrapper">
+      <a href="/" class="nav__brand">
         <img src="../assets/tfo-brand-dark.svg" alt="Thomas Felix Officer logo">
       </a>
     </div>
-  </div>
-  <div class="blog">
-    <div class="blog__wrapper">
-      <div class="title">
-        <div class="title__wrapper">
-          <h1>
-            Quick and dirty guide to building an AI chatbot; it won't be perfect, but good enough to convince others to help you go further
-          </h1>
+  </nav>
+  <div class="blog-post">
+    <div class="blog-post__title">
+      <h1>
+        You should build an AI chatbot
+      </h1>
+      <h3>
+        The same basic mechanics that underlie every AI chatbot, and that you can learn in minutes (this post will show you how), can be used to launch a 1,000 new startups. All that's missing is a unique perspective, which is where you come in.
+      </h3>
+    </div>
+    <div class="blog-post__wrapper">
+      <div class="blog-post__leftCol">
+        <div class="table-of-contents" id="toc">
+          <h5 class="table-of-contents__label">
+            on this page
+          </h5>
+          <ul>
+            <li class="table-of-contents__item"><a href="#what-is-aichatbot">What is an AI chatbot?</a></li>
+            <li class="table-of-contents__item"><a href="#chatbot-mechanics">AI chatbot mechanics</a></li>
+            <li class="table-of-contents__item"><a href="#what-should-you-build">What kind of AI chatbot should you build?</a></li>
+            <li class="table-of-contents__indented-item"><a href="#law-students">For law students</a></li>
+            <li class="table-of-contents__indented-item"><a href="#product-designers">For product designers</a></li>
+            <li class="table-of-contents__item"><a href="#no-code">Build a chatbot in 1 minute using no-code tools</a></li>
+            <li class="table-of-contents__item"><a href="#actual-code">Build a chatbot in 30 minutes using actual code</a></li>
+            <li class="table-of-contents__item"><a href="#troubleshoot">How to troubleshoot any situation</a></li>
+          </ul>
         </div>
       </div>
-      <div class="blog__post">
+      <div class="blog-post__rightCol">
         <div class="blog__header"> 
           <div class="status">
             <img src="../assets/thomas-headshot-small.png" alt="Headshot of Thomas Officer" class="status__headshot">
@@ -42,49 +60,211 @@
           </div>
           <div>
             <p class="blog__date">
-              August 2023
+              September 2023
             </p>
           </div>
         </div>
-        <p>This blog post is a living document for the next couple of weeks as I engage in Dan Shipper's class, <a href="https://www.chatbot-course.com/" class="text-link" target="_blank">How to Build an AI Chatbot</a>. If you're like me—someone who's not a software engineer but fascinated by AI—you'll be interested to know how easy it is to get an AI chatbot up and running.</p>
-        <p>When I mention an AI chatbot, I'm referring to a chat-like interface where you can communicate with large language models like GPT-4, GPT-3.5, Clod, or Palm-2. These models access a specific dataset provided by you. This is what makes it both magical and simple, producing amazing results.</p>
-        <p>As an example, I once built a chatbot using my resume as the dataset. Side note: I'm currently freelancing as a product designer and open to new projects. The mechanics of the chatbot are straightforward. You can interact with my resume or even swap it out with company documents like articles of incorporation or bylaws. Imagine chatting with the owner's manual for a Harley-Davidson, something I find appealing since I recently bought a motorcycle.</p>
-        <p>What's incredible is the ease with which this can be set up. Some say there are no barriers to starting an AI business, but I believe that the traditional challenges, like user experience and domain expertise, still apply. This whole process is not only fun but also highly accessible. We're far from saturation with AI chatbots, and the possibilities for creating engaging experiences are vast. That's the essence of this blog post—to share my journey and inspire others.</p>
-        <p>Let me direct you to a Repl.it project, accompanied by a video guide to help you get your chatbot up and running. It's a Python app using Flask, and even if you're not a Python developer, like me, you can easily modify it with basic HTML and CSS knowledge.</p>
-        <h3 class="setup__title">setup</h3>
-        <p class="setup__date">
-          as of sunday aug. 20, 2023
-        </p>
-        <ol>
-          <li>
-            Fork this <a href="https://replit.com/@ThomasOfficer/Langchain-OpenAI-Python-Flask-app?v=1" class="text-link" target="_blank">Repl.it project</a>
-          </li>
-          <li>
-            Follow the instructions in this 4 minute video:
-            <div style="position: relative; padding-bottom: 62.5%; margin-top: 1em; height: 0;"><iframe src="https://www.loom.com/embed/b2475900a1d94fe7a756fddbc884ee0b?sid=2571b10e-84df-48cc-b012-c3a15388f9d8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-          </li>
-        </ol>
-        <p>Though I'm more familiar with front-end development, I managed to build this Python app by engaging with GPT-4 and watching some helpful videos. If I can do this, so can you! Follow me on Twitter to stay updated, and happy building!</p>
-      </div>
-      <div class="follow">
         <p>
-          Up next:
+          I wrote this article for anyone who's curious about AI but specifically for law students and product designers at the start of their career. 
+        </p>
+        <p>
+          tl;dr: To create a game-changing AI chatbot, all you need is a dataset that serves a niche community you have insight into. The low-code way to build this chat is Zapier, but even if you have no technical background you can get an actual code chatbot up and running by forking this Replit project and following the instructions in this video. 
+        </p>
+        <h3 id="what-is-aichatbot">
+          What is an AI chatbot?
+        </h3>
+        <p>
+          You've likely used a chatbot and, honestly, probably didn't enjoy the experience. Chatbots have been around for almost as long as computers, but an AI chatbot feels like an entirely new thing.
+        </p>
+        <p>
+          An AI chatbot generates human-like responses based on natural language inputs. The chatbot can be restricted to a specific dataset, resulting in situations where it says "I don't know", or unrestricted and allowed to pull from datasets seemingly as large as every piece of text online.
+        </p>
+        <p>
+          If you haven't yet, I highly encourage you to try products like ChatGPT and Claude to get a feel for what it's like to interact with software using "natural language inputs", i.e. what it's like to talk to an app.
+        </p>
+        <p>
+          The broader implications of enhancing a chatbot with an LLM are profound, but I'm a practical person and this is a practical guide so we'll just concern ourselves with the immediate effect: you can now talk to any book, codex, or collection of data. You can ask these things to explain themselves to you as if you were a five year old. You can type or use your voice. You can receive answers as text or human-like spoken word. You can describe your situation and ask the chatbot "what should I do?"
+        </p>
+        <h3 id="chatbot-mechanics">
+          AI chatbot mechanics
+        </h3>
+        <p>
+          The type of AI chatbot we're going to explore includes the following working parts:
         </p>
         <ul>
           <li>
-            What kind of data makes for a viable business?
+            Large language model
           </li>
           <li>
-            Is a pure chat interface the best way to get the end-user engaged?
+            Dataset
+          </li>
+          <li>
+            Prompt
+          </li>
+          <li>
+            Chat interface
           </li>
         </ul>
-        <a href="https://twitter.com/TomaOfficer" target="_blank" class="secondary-btn">
-          <img src="../assets/x-brand.svg" alt="X (formerly known as Twitter) logo">
-          follow me
-        </a>
+        <p>
+          A <span style="font-weight: bold; font-family: sans-serif">large language model</span> (LLM) is some kind of machine learning algorithm used to generate human-like text based on the input it receives. Magic as far we're concerned, and available for a reasonable fee from companies like OpenAI (gpt-4) and Anthropic (claude).
+        </p>
+        <p>
+          The <span style="font-weight: bold; font-family: sans-serif">dataset</span> is the subject matter that the LLM will restrain itself to. 
+        </p>
+        <p>
+          You can think of the LLM as a wildly powerful autocomplete where text goes in and text comes out. The text that goes in is the <span style="font-weight: bold; font-family: sans-serif">prompt</span>. The prompt can include nothing more than the user's input, but it typically also includes instructions on how the AI should respond (e.g. "You are Ward, an attorney with a cold attitude and no-nonsense demeanor").
+        </p>
+        <p>
+          Finally, the <span style="font-weight: bold; font-family: sans-serif">chat interface</span>, which is essentially just an SMS text user interface.
+        </p>
+        <h3 id="what-should-you-build">
+          What kind of AI chatbot should you build?
+        </h3>
+        <p>
+          You should build something minimal that is still useful (AKA a minimum viable product). But in my experience, it's very difficult to jump straight to thinking about the kinds of problems a technology can solve; it's easier if you start with a firm understanding of the mechanics. After you understand the basic mechanics, you can enter a state of play with the technology and this is the optimal state from which to innovate. 
+        </p>
+        <p>
+          Once you're comfortable playing with the mechanics of an AI chatbot, I have some ideas on the types of issues you might tackle:
+        </p>
+        <h4 id="law-students">
+          For law students
+        </h4>
+        <p>
+          If you're interested in legal tech, or you just want to show prospective employers that you're engaged with the most important technical advancement in the legal industry since the internet, you should build an AI chatbot.
+        </p>
+        <p>
+          There are many ways to understand the value of a legal AI chatbot. Here are a two:
+        </p>
+        <ol>
+          <li>
+            It provides a more useable interface for the public to understand and interact with the rules that govern their lives; and 
+          </li>
+          <li>
+            It makes attorneys more efficient by allowing them to instantly draft and even analyze documents. 
+          </li>
+        </ol>
+        <h4 id="product-designers">
+          For product designers
+        </h4>
+        <p>
+          ChatGPT launched late November, 2022, and introduced AI chatbots to a million people (1 million users signed up in the company's first 5 days, breaking the record for fastest-growing user base). ChatGPT's user interface is largely unchanged from its launch 9 months ago, a simple text field with some hints about the type of things you could type into it:
+        </p>
+        <img src="../assets/aichat-gpt1.png" class="blog__showcase-image" alt="Screenshot of ChatGPT gpt-4 Aug 2023">
+        <p>
+          Is this the best user interface? Maybe it's the best for a general-purpose, "ask me anything" style chatbot, but what about one that is ultra focused? Maybe the best user interface depends on the unique attributes of the underlying use-case, and maybe it looks nothing like a traditional chatbot?
+        </p>
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">LLMs exploded so quickly on the market that we skipped the tooling and philosophy phase of new technologies<br><br>The internet took 7 years from WWW to 100M users. Enough time to iterate on open standards, web design, user experience, accessibility, and cybersecurity before mass…</p>&mdash; Greg Kamradt (@GregKamradt) <a href="https://twitter.com/GregKamradt/status/1696524344086888676?ref_src=twsrc%5Etfw">August 29, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <p>
+          The ease with which anyone can build an AI chatbot means differentiation in the marketplace will depend heavily on, among other things, UX design. This is a great time to distinguish yourself; at the start of a new wave.
+        </p>
+        <h3 id="no-code">
+          Build a chatbot in 1 minute using no-code tools
+        </h3>
+        <p>
+          So-called "no-code" tools are a wonderful thing. They make it easy for anyone, regardless of technical ability, to build software products. The most commonly known type of no-code tool is a website builder like SquareSpace, Wix, or (imo, this is the best no-code website builder, by far) Webflow. Other types of no-code tools include:
+        </p>
+        <ul>
+          <li>
+            Database builders: Airtable, Google Sheets, Notion
+          </li>
+          <li>
+            Document automation: 
+          </li>
+          <li>
+            Integration platforms (used to connect various web services, applications, or devices): Zapier, IFTTT, Pipedream, and Make.
+          </li>
+        </ul>
+        <p>
+          Zapier is what I recommend using if you want to build an AI chatbot in 1 minute.
+        </p>
+        <h5>
+          setup
+        </h5>
+        <ol>
+          <li>
+            Create a <a href="" target="_blank">Zapier</a> account;
+          </li>
+          <li>
+            Follow <a href="https://zapier.com/blog/create-custom-ai-chatbots-with-interfaces/" target="_blank">Zapier's instructions</a> for building an AI chatbot.
+          </li>
+        </ol>
+        <p>
+          You'll need a Premium Zapier Interfaces plan ($20/m) and a dataset that fits on a 1MB static file. The cost and limited functionality is what you exchange for speed and ease-of-use. The actual code solution, which I promise is doable for anyone, costs less than 50 cents per month.
+        </p>
+        <p>
+          Before we jump to actual code, I have to point out that there are a number of people working on building a no-code tool just for building AI chatbots and services. I haven't explored these much but I encourage you to see what works (all these products are startups and they generally offer free trials as they try to find traction).
+        </p>
+        <h3 id="actual-code">
+          Build a chatbot in 30 minutes using actual code
+        </h3>
+        <p>
+          Modern software development tools are some of the best software products ever created; they're simple, powerful, and worth investing the time to learn. Now it's time to introduce my current favorite tool: <a href="" target="_blank">Replit</a>. 
+        </p>
+        <p>
+          Previously, if you wanted to start writing code, you'd have to first set up your computer (download a ton of stuff, configure it, etc...). Now, you can just create a free account on Replit and click 'Create Repl' to launch a new code project. Even better, you copy an existing Repl and edit it for your purpose. Which is exactly what we're going to do. 
+        </p>
+        <h5>
+          setup
+        </h5>
+        <ol>
+          <li>
+            <a href="https://openai.com/blog/openai-api" target="_blank">Sign up for an OpenAI API account</a> to get an API key. You'll have to add a payment method to get the API key and you'll be chaged according to how often that key is used (OpenAI's gpt-3.5-turbo LLM is extremely affordable).
+          </li>
+          <li>
+            Fork <a href="https://replit.com/@ThomasOfficer/Langchain-OpenAI-Python-Flask-app?v=1">this Replit project</a>.
+          </li>
+          <li>
+            Follow this instructions in this video:
+            <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/67ec042016b648818a573128c1af9940?sid=be5b33ab-6fdc-4c5d-a348-a2edc9a25e21" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+          </li>
+        </ol>
+        <h3 id="troubleshoot">
+          How to troubleshoot any situation
+        </h3>
+        <p>
+          You will run into issues. Something will break and you will not know why. This is an inescapable part of building software. Thankfully, it's never been easier to dig yourself out of these holes because you have access to an infinitly patient tutor in the form of ChatGPT or Claude.
+        </p>
+        <p>
+          Every instance where you get stuck is an opportunity to learn, not only how to solve the problem at hand but how to interact with an AI chatbot to get the most value from it. To troubleshoot with ChatGPT or Claude, make sure to provide as much context as possible. Trying copying and pasting the error message; try copying and pasting chunks of your code (or even your entire file). Ask the chatbot to rephrase its advice. Ask the chatbot to explain itself to you as if you were a 5 year old.
+        </p>
+        <p>
+          I promise, with patience and consistent effort, there is nothing you can't build.
+        </p>
       </div>
     </div>
   </div>
+  <script>
+    // Get all TOC items
+    const tocItems = document.querySelectorAll('.toc-item');
+
+    // Add click event listener to each TOC item
+    tocItems.forEach(item => {
+      item.addEventListener('click', function(event) {
+        // Prevent default action
+        event.preventDefault();
+
+        // Get the target section ID from the clicked link
+        const targetId = this.getAttribute('href').substring(1);
+
+        // Scroll to the target section
+        document.getElementById(targetId).scrollIntoView({ 
+          behavior: 'smooth' 
+        });
+      });
+    });
+
+    // Code to make TOC sticky after scrolling
+    const toc = document.getElementById('toc');
+    const stickyStart = 332; // Scroll position at which TOC becomes sticky
+
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset >= stickyStart) {
+        toc.classList.add('sticky');
+      } else {
+        toc.classList.remove('sticky');
+      }
+    });
+  </script>
 </body>
 
 </html>
