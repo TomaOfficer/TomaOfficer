@@ -3,7 +3,7 @@ body {
   background-color: #F8F6F5;
   color: #222;
   font-family: Georgia, serif;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.7em;
   padding: 0;
   margin: 0;
@@ -213,10 +213,10 @@ nav {
   padding: 0 0 .5em;
 }
 .about {
-  padding: 1.777em 0;
+  padding: 0 0 2em;
 }
 .about-design {
-  padding: 1.777em 0 3em;
+  padding: 0 0 2em;
 }
 .about-design__showcase {
   background-image: url(assets/sketch-chatbot.png);
@@ -231,7 +231,10 @@ nav {
   max-width: 80%;
 }
 .name {
-  padding: 0 0 1em;
+  padding: 0 0 3em;
+}
+.name h1 {
+  font-size: 1.953em;
 }
 .status {
   display: flex;
@@ -533,12 +536,14 @@ nav {
 }
 .blog-post-snippet__link {
   text-decoration: none;
-  font-family: sans-serif;
   color: #0652DD;
   padding: 0;
   margin: 0;
   line-height: 1.4em;
-  font-size: 17px;
+  border-bottom: 1px solid #8894a57a;
+}
+.blog-post-snippet__link:hover {
+  opacity: .6;
 }
 .blog__post {
   max-width: 760px;
