@@ -346,6 +346,7 @@ nav {
 @media screen and (max-width: 650px){
   .about-design__showcase {
     background-position: 80%;
+    height: auto;
   }
 }
 /* --- About --- */
@@ -634,6 +635,20 @@ nav {
   }
 }
 @media screen and (max-width: 650px) {
+  .title h1 {
+    font-size: 2em;
+  }
+  .blog__header {
+    flex-direction: column-reverse;
+  }
+  .blog__quote {
+    line-height: 1.4em;
+    padding-right: 0;
+  }
+  .status {
+    padding: 1em 0 2em;
+    margin: 0;
+  }
   .portfolio-cta {
     padding: 1.5em;
   }
