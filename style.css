@@ -89,6 +89,15 @@ li {
   color: #e7e7ea;
   transition: .5s; 
 }
+.color-link {
+  color: #0652DD;
+  border-bottom: 1px solid rgba(136, 148, 165,.4);
+  text-decoration: none;
+  transition: .5s; 
+}
+.color-link:hover {
+  opacity: .5;
+}
 .text-link {
   color: #222;
   border-bottom: 1px solid rgba(136, 148, 165,.4);

@@ -68,7 +68,7 @@
           I wrote this article for anyone who's curious about AI but specifically for law students and product designers at the start of their career. 
         </p>
         <p>
-          tl;dr: To create a game-changing AI chatbot, all you need is a dataset that serves a niche community you have insight into. The low-code way to build this chat is Zapier, but even if you have no technical background you can get an actual code chatbot up and running by forking this Replit project and following the instructions in this video. 
+          tl;dr: To create a game-changing AI chatbot, all you need is a dataset that serves a niche community you have insight into. The low-code way to build this chatbot is <a href="https://zapier.com/ai/chatbot" class="color-link" target="_blank">Zapier</a>, but even if you have no technical background you can get an actual code chatbot up and running by forking <a href="https://replit.com/@ThomasOfficer/Langchain-OpenAI-Python-Flask-app?v=1" class="color-link" target="_blank">this Replit project</a> and following the instructions in <a href="https://www.loom.com/share/b2475900a1d94fe7a756fddbc884ee0b?sid=24f6fd43-be88-459e-a0f2-a7e330260068" class="color-link" target="_blank">this video</a>. 
         </p>
         <h3 id="what-is-aichatbot">
           What is an AI chatbot?
@@ -77,13 +77,13 @@
           You've likely used a chatbot and, honestly, probably didn't enjoy the experience. Chatbots have been around for almost as long as computers, but an AI chatbot feels like an entirely new thing.
         </p>
         <p>
-          An AI chatbot generates human-like responses based on natural language inputs. The chatbot can be restricted to a specific dataset, resulting in situations where it says "I don't know", or unrestricted and allowed to pull from datasets seemingly as large as every piece of text online.
+          An AI chatbot generates human-like responses based on natural language inputs. The chatbot can be restricted to a specific dataset, resulting in situations where it says "I don't know", or unrestricted and allowed to generate responses to any question you ask of it (occasionally resulting in inaccurate statements known as hallucinations).
         </p>
         <p>
-          If you haven't yet, I highly encourage you to try products like ChatGPT and Claude to get a feel for what it's like to interact with software using "natural language inputs", i.e. what it's like to talk to an app.
+          If you haven't yet, I highly encourage you to try products like <a href="https://chat.openai.com/auth/login" class="color-link" target="_blank">ChatGPT</a> and <a href="https://claude.ai/login" class="color-link" target="_blank">Claude</a> to get a feel for what it's like to interact with software using "natural language inputs", i.e. what it's like to talk to an app.
         </p>
         <p>
-          The broader implications of enhancing a chatbot with an LLM are profound, but I'm a practical person and this is a practical guide so we'll just concern ourselves with the immediate effect: you can now talk to any book, codex, or collection of data. You can ask these things to explain themselves to you as if you were a five year old. You can type or use your voice. You can receive answers as text or human-like spoken word. You can describe your situation and ask the chatbot "what should I do?"
+          The broader implications of enhancing a chatbot with an LLM are profound, but I'm a practical person and this is a practical guide so we'll just concern ourselves with the immediate effect: you can now talk to any book, codex, or collection of data. You can ask these things to explain themselves to you as if you were a five year old. You can type or use your voice. You can receive answers as text or spoken word. You can describe your situation and ask the chatbot "what should I do?"
         </p>
         <h3 id="chatbot-mechanics">
           AI chatbot mechanics
@@ -93,30 +93,18 @@
         </p>
         <ul>
           <li>
-            Large language model
+            Large language model (LLM): A machine learning algorith used to generate human-like text based on the input it receives. Magic as far as we're concerned, and available for a reasonable fee from companies like OpenAI (gpt-4) or Anthropic (claude), or for free from a growing open-source movement.
           </li>
           <li>
-            Dataset
+            Dataset: The subject matter the LLM will restrain itself to when generating responses.
           </li>
           <li>
-            Prompt
+            Prompt: You can think of the LLM has a wildly powerful autocomplete where text goes in and text comes out. The text that goes in is the prompt. The prompt can include nothing more than the user's input, but typically also includes instructions on how the AI should respond.
           </li>
           <li>
-            Chat interface
+            Chat interface: This is the frontend of our chatbot, which is essentially just an SMS text user interface.
           </li>
         </ul>
-        <p>
-          A <span style="font-weight: bold; font-family: sans-serif">large language model</span> (LLM) is some kind of machine learning algorithm used to generate human-like text based on the input it receives. Magic as far we're concerned, and available for a reasonable fee from companies like OpenAI (gpt-4) and Anthropic (claude).
-        </p>
-        <p>
-          The <span style="font-weight: bold; font-family: sans-serif">dataset</span> is the subject matter that the LLM will restrain itself to. 
-        </p>
-        <p>
-          You can think of the LLM as a wildly powerful autocomplete where text goes in and text comes out. The text that goes in is the <span style="font-weight: bold; font-family: sans-serif">prompt</span>. The prompt can include nothing more than the user's input, but it typically also includes instructions on how the AI should respond (e.g. "You are Ward, an attorney with a cold attitude and no-nonsense demeanor").
-        </p>
-        <p>
-          Finally, the <span style="font-weight: bold; font-family: sans-serif">chat interface</span>, which is essentially just an SMS text user interface.
-        </p>
         <h3 id="what-should-you-build">
           What kind of AI chatbot should you build?
         </h3>
@@ -182,10 +170,10 @@
         </h5>
         <ol>
           <li>
-            Create a <a href="" target="_blank">Zapier</a> account;
+            Create a <a href="https://zapier.com/" class="color-link" target="_blank">Zapier</a> account;
           </li>
           <li>
-            Follow <a href="https://zapier.com/blog/create-custom-ai-chatbots-with-interfaces/" target="_blank">Zapier's instructions</a> for building an AI chatbot.
+            Follow <a href="https://zapier.com/blog/create-custom-ai-chatbots-with-interfaces/" class="color-link" target="_blank">Zapier's instructions</a> for building an AI chatbot.
           </li>
         </ol>
         <p>
@@ -198,7 +186,7 @@
           Build a chatbot in 30 minutes using actual code
         </h3>
         <p>
-          Modern software development tools are some of the best software products ever created; they're simple, powerful, and worth investing the time to learn. Now it's time to introduce my current favorite tool: <a href="" target="_blank">Replit</a>. 
+          Modern software development tools are some of the best software products ever created; they're simple, powerful, and worth investing the time to learn. Now it's time to introduce my current favorite tool: <a href="https://replit.com/" class="color-link" target="_blank">Replit</a>. 
         </p>
         <p>
           Previously, if you wanted to start writing code, you'd have to first set up your computer (download a ton of stuff, configure it, etc...). Now, you can just create a free account on Replit and click 'Create Repl' to launch a new code project. Even better, you copy an existing Repl and edit it for your purpose. Which is exactly what we're going to do. 
@@ -208,10 +196,10 @@
         </h5>
         <ol>
           <li>
-            <a href="https://openai.com/blog/openai-api" target="_blank">Sign up for an OpenAI API account</a> to get an API key. You'll have to add a payment method to get the API key and you'll be chaged according to how often that key is used (OpenAI's gpt-3.5-turbo LLM is extremely affordable).
+            <a href="https://openai.com/blog/openai-api" target="_blank" class="color-link">Sign up for an OpenAI API account</a> to get an API key. You'll have to add a payment method to get the API key and you'll be charged according to how often that key is used (OpenAI's gpt-3.5-turbo LLM is extremely affordable).
           </li>
           <li>
-            Fork <a href="https://replit.com/@ThomasOfficer/Langchain-OpenAI-Python-Flask-app?v=1">this Replit project</a>.
+            Fork <a href="https://replit.com/@ThomasOfficer/Langchain-OpenAI-Python-Flask-app?v=1" target="_blank" class="color-link">this Replit project</a>.
           </li>
           <li>
             Follow this instructions in this video:
