@@ -100,7 +100,7 @@ li {
   opacity: .5;
 }
 .text-link {
-  color: #222;
+  color: #0652DD;
   border-bottom: 1px solid rgba(136, 148, 165,.4);
   text-decoration: none;
   transition: .5s; 
@@ -170,13 +170,13 @@ li {
   transition: .2s;
   white-space: nowrap;
   color: #222;
-  border: 1px solid #2171a6;
+  border: 1px solid #0f8e74;
   border-radius: .5em;
   text-decoration: none !important;
   font-family: sans-serif;
   font-size: 17px;
   font-weight: 500;
-  background-color: #2980b9;
+  background-color: #16a085;
   color: #fff;
   width: 100%;
   display: block;
