@@ -164,6 +164,33 @@ li {
   width: 20px;
   padding: 0 .35em 0 0;
 }
+.portfolio-btn {
+  padding: .5rem 1.1rem;
+  margin: .5em 0 2em;
+  transition: .2s;
+  white-space: nowrap;
+  color: #222;
+  border: 1px solid #2171a6;
+  border-radius: .5em;
+  text-decoration: none !important;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #2980b9;
+  color: #fff;
+  width: 100%;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 2px 15px 0px rgba(26,29,33,0.13);
+  -moz-box-shadow: 0px 2px 15px 0px rgba(26,29,33,0.13);
+  box-shadow: 0px 2px 15px 0px rgba(26,29,33,0.13);
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+.portfolio-btn:hover {
+  box-shadow: none;
+  opacity: .75;
+}
 /* --- Navigation --- */
 nav {
   border-bottom: 1px solid #e2e2e2;
@@ -241,10 +268,14 @@ nav {
   max-width: 80%;
 }
 .name {
-  padding: 0 0 3em;
+  padding: 0 0 1em;
 }
 .name h1 {
   font-size: 1.953em;
+}
+.name__description {
+  font-family: 'Alegreya Sans', sans-serif;
+  line-height: 1.55em;
 }
 .status {
   display: flex;
@@ -319,12 +350,23 @@ nav {
   padding: 0;
   color: #222;
 }
+.home-blog {
+  padding-top: 4em;
+}
 @media screen and (max-width: 1100px){
 
 }
 @media screen and (max-width: 820px){
   .home-main {
     margin-left: 0;
+    padding: 0;
+  }
+  .name h1 {
+    font-size: 1.333em;
+    padding: 0 0 1em;
+  }
+  h3 {
+    font-size: 1.333em;
   }
   .secondRow__wrapper {
     flex-direction: column-reverse;
@@ -346,8 +388,9 @@ nav {
   .homepage-portfolio__card {
     margin: 0 0 2em;
   }
-  .contact-row {
-    flex-direction: column;
+  .contact-row__leftCol {
+    flex-basis: 25%;
+    padding-right: 1em;
   }
   .contact-row:first-of-type {
     padding: 0 0 1em;
@@ -360,9 +403,6 @@ nav {
   .about-design__showcase {
     background-position: 80%;
     height: auto;
-  }
-  .home-main {
-    padding: 3em 0;
   }
 }
 /* --- About --- */
