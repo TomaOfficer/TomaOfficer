@@ -220,6 +220,7 @@ nav {
 }
 nav .text-link {
   font-family: 'Alegreya Sans', sans-serif;
+  margin: 0 0 0 1em;
 }
 
 @media screen and (max-width: 820px) {
