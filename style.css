@@ -242,15 +242,19 @@ nav .text-link {
 /* --- Homepage --- */
 .home-main {
   margin-top: 64px;
-  padding: 6em 0;
+  padding: 2em 0;
+  font-family: 'Alegreya Sans', sans-serif;
+  line-height: 1.55em;
+  font-size: 1em;
 }
 .home-main__wrapper {
   padding: 0 20px;
-  max-width: 620px;
+  max-width: 600px;
   margin: 0 auto;
 }
 .home-main h1 {
   padding: 0 0 .5em;
+  font-size: 2em;
 }
 .home-main h5 {
   color: #8894a5;
@@ -279,10 +283,6 @@ nav .text-link {
 }
 .name h1 {
   font-size: 1.953em;
-}
-.name__description {
-  font-family: 'Alegreya Sans', sans-serif;
-  line-height: 1.55em;
 }
 .status {
   display: flex;
