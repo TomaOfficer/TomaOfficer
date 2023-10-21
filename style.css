@@ -108,6 +108,16 @@ li {
 .text-link:hover {
   opacity: .5;
 }
+.highlight-link {
+  text-decoration: none;
+  background-color: #ffeaa7;
+  padding: 1px 4px;
+  border-radius: 4px;
+  color: #7e5a16;
+}
+.highlight-link:hover {
+  opacity: .5;
+}
 .portfolio-link {
   color: #0652DD;
   transition: .5s; 
