@@ -109,11 +109,10 @@ li {
   opacity: .5;
 }
 .highlight-link {
+  color: #dd06bd;
+  border-bottom: 1px solid rgba(136, 148, 165,.4);
   text-decoration: none;
-  background-color: #ffeaa7;
-  padding: 1px 4px;
-  border-radius: 4px;
-  color: #7e5a16;
+  transition: .5s; 
 }
 .highlight-link:hover {
   opacity: .5;
