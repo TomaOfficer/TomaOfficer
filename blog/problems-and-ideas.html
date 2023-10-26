@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>How to build an AI chatbot | Thomas F. Officer</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thomasofficer.com/blog/ai-chatbot.html">
+  <meta property="og:title" content="How to build an AI chatbot | Thomas F. Officer">
+  <meta property="og:description" content="I wrote this guide for product designers and law students.">
+  <meta property="og:image" content="https://thomasofficer.com/assets/lofi-desk-og.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://thomasofficer.com/blog/ai-chatbot.html">
+  <meta property="twitter:title" content="How to build an AI chatbot | Thomas F. Officer">
+  <meta property="twitter:description" content="I wrote this guide for product designers and law students.">
+  <meta property="twitter:image" content="https://thomasofficer.com/assets/lofi-desk-twitter.png">
+</head>
+
+<body>
+  <nav>
+    <div class="nav__wrapper">
+      <a href="/" class="nav__brand">
+        <img src="../assets/tfo-brand-dark.svg" alt="Thomas Felix Officer logo">
+      </a>
+    </div>
+  </nav>
+  <div class="blog-post">
+    <div class="blog-post__title">
+      <h1>
+        Problems and Ideas
+      </h1>
+      <h3>
+        Problems I'm passionate about and some early-stage ideas on how to solve them. 
+      </h3>
+    </div>
+    <div class="blog-post__wrapper">
+      <div class="blog-post__leftCol">
+        <div class="table-of-contents" id="toc">
+          <h5 class="table-of-contents__label">
+            on this page
+          </h5>
+          <ul>
+            <li class="table-of-contents__item"><a href="#remote-work">Future of remote work</a></li>
+            <li class="table-of-contents__item"><a href="#upskilling">Upskilling after AI takes your job</a></li>
+            <li class="table-of-contents__item"><a href="#what-should-you-build">What kind of AI chatbot should you build?</a></li>
+            <li class="table-of-contents__indented-item"><a href="#law-students">For law students</a></li>
+            <li class="table-of-contents__indented-item"><a href="#product-designers">For product designers</a></li>
+            <li class="table-of-contents__item"><a href="#no-code">Build a chatbot in 1 minute using no-code tools</a></li>
+            <li class="table-of-contents__item"><a href="#actual-code">Build a chatbot in 30 minutes using actual code</a></li>
+            <li class="table-of-contents__item"><a href="#troubleshoot">How to troubleshoot any situation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="blog-post__rightCol">
+        <div class="blog__header"> 
+          <div class="status">
+            <img src="../assets/thomas-headshot-small.png" alt="Headshot of Thomas Officer" class="status__headshot">
+            <div class="status__rightCol">
+              <p class="status__name">Thomas F. Officer</p>
+              <p class="subtitle">
+              product designer
+              </p>
+            </div>
+          </div>
+          <div>
+            <p class="blog__date">
+              October 2023
+            </p>
+          </div>
+        </div>
+        <p>
+          I'm looking for startup cofounders. To that end, I'm sharing this list of problems that I am passionate about, because the best way to find a good startup idea is to focus on a good problem. Ideas change, whereas the problem, if it's really worthwhile, will likely stay the same. But ideas are fun, so I've shared some of those too. 
+        </p>
+        <h3 id="remote-work">
+          Future of remote work
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+        <h3 id="upskilling">
+          Upskilling after AI takes your job
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        </p>
+        <h3 id="upskilling">
+          Electronic health records
+        </h3>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer__wrapper">
+      <div class="footer__row">
+        <div class="footer__col">
+          <p class="label">email</p>
+          <p>thomas.officer@gmail.com</p>
+        </div>
+        <div class="footer__col">
+          <p class="label">follow</p>
+          @<a href="https://twitter.com/TomaOfficer" target="_blank" class="text-link">TomaOfficer</a>
+        </div>
+        <div class="footer__col">
+          <p class="label">linkedin</p>
+          @<a href="https://www.linkedin.com/in/thomasofficer/" target="_blank" class="text-link">thomasofficer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Get all TOC items
+    const tocItems = document.querySelectorAll('.toc-item');
+
+    // Add click event listener to each TOC item
+    tocItems.forEach(item => {
+      item.addEventListener('click', function(event) {
+        // Prevent default action
+        event.preventDefault();
+
+        // Get the target section ID from the clicked link
+        const targetId = this.getAttribute('href').substring(1);
+
+        // Scroll to the target section
+        document.getElementById(targetId).scrollIntoView({ 
+          behavior: 'smooth' 
+        });
+      });
+    });
+
+    // Code to make TOC sticky after scrolling
+    const toc = document.getElementById('toc');
+    const stickyStart = 332; // Scroll position at which TOC becomes sticky
+
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset >= stickyStart) {
+        toc.classList.add('sticky');
+      } else {
+        toc.classList.remove('sticky');
+      }
+    });
+  </script>
+</body>
+
+</html>
