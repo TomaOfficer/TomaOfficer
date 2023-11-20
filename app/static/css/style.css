@@ -200,6 +200,23 @@ li {
   box-shadow: none;
   opacity: .75;
 }
+/* --- WIP --- */
+.wip {
+  max-width: 480px;
+  margin: 4em auto;
+  line-height: 1.6em;
+}
+.wip h5 {
+  font-weight: 600;
+  font-family: Helvetica, sans-serif;
+}
+.wip h6 {
+  padding: 0 0 1em;
+  margin: 0;
+  font-weight: 400;
+  font-family: Helvetica, sans-serif;
+}
+
 /* --- Navigation --- */
 nav {
   border-bottom: 1px solid #e2e2e2;

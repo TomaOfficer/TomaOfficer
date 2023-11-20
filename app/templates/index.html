@@ -5,151 +5,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Thomas F. Officer | Portfolio</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" href="assets/tfo-favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="{{ url_for('static', filename='assets/tfo-favicon.ico') }}" type="image/x-icon">
 </head>
 
 <body>
-  <!-- <nav>
-    <div class="nav__wrapper">
-      <a href="/" class="nav__brand">
-        <img src="assets/tfo-brand-dark.svg" alt="Thomas Felix Officer logo">
-      </a>
-      <div>
-        <a href="https://calendly.com/thomas-officer/coffee-chat" class="text-link" target="_blank">
-          Schedule call
-        </a>
-        <a href="https://drive.google.com/file/d/13M6zyxHFkd--DdqFPBV98A8CWeiNQeN4/view?usp=sharing" class="text-link" target="_blank">
-          Resume
-        </a>
-      </div>
-    </div>
-  </nav> -->
-  <div class="home-main">
-    <div class="home-main__wrapper">
-      <h1>Thomas F. Officer</h1>
-      <p>
-        Tech generalist with deep expertise in product design and more than 9 years experience working in startups.
-      </p>
-      <p style="padding-bottom:.75em;">
-        Previously:
-      </p>
-      <ul>
-        <li>
-          Designer at <a href="https://www.netdocuments.com/ndmax" class="text-link" target="_blank">NetDocuments</a> (2023) where I helped define the early stages of NetDocument's AI product, ndMAX.
-        </li>
-        <li>
-          Cofounder and designer at <a href="/portfolio/afterpattern.html" class="text-link">Afterpattern</a> (acq. 2021), a no-code app builder for lawyers.
-        </li>
-        <li>
-          Design Fellow at <a href="/portfolio/blueridgelabs.html" class="text-link">Blue Ridge Labs @ RobinHood</a> (2016) where I participated in a 4 month technology incubator and, after a major pivot, launched Afterpattern.
-        </li>
-      </ul>
-      <p>
-        Curious about the details of my startup adventures? Try talking to <a href="https://tfo-resume.replit.app/" class="text-link" target="_blank">my AI chatbot</a> who can answer any question about my professional experience and give opinions about my suitability for future projects.
-      </p>
-      <p>
-        Find screenshots of my work in my <a href="https://www.tfodesign.com/" class="highlight-link" target="_blank">design portfolio</a>. 
-      </p>
-      <br>
-      <h5>
-        contact
-      </h5>
-      <p>
-        Follow me on X <a href="https://twitter.com/TomaOfficer" class="text-link" target="_blank">@TomaOfficer</a> and <a href="https://www.linkedin.com/in/thomasofficer/" class="text-link" target="_blank">Linkedin</a>. I keep an hour of my day available for remote coffee & conversation; please feel free to <a href="https://cal.com/thomasofficer" class="text-link" target="_blank">schedule a call</a> or <a href="https://app.gather.town/app/bl5P0JZuwHe62cEO/Atlantis" class="text-link" target="_blank">visit my virtual office</a>.
-      </p>
-      <br>
-      <h5>
-        blog
-      </h5>
-      <ul class="blog-posts__list">
-        <li class="blog-posts__list-item">
-          <div class="blog-post-snippet">
-            <a class="blog-post-snippet__link" href="/blog/problems-and-ideas.html">Problems & ideas I'm exploring</a>
-          </div>
-        </li>
-        <li class="blog-posts__list-item">
-          <div class="blog-post-snippet">
-            <a class="blog-post-snippet__link" href="/blog/system-message.html">How to write a good system message for GPT 3.5 and 4</a>
-          </div>
-        </li>
-        <li class="blog-posts__list-item">
-          <div class="blog-post-snippet">
-            <a class="blog-post-snippet__link" href="/blog/ai-chatbot.html">You should build an AI chatbot</a>
-          </div>
-        </li>
-        <li class="blog-posts__list-item">
-          <div class="blog-post-snippet">
-            <a class="blog-post-snippet__link" href="/portfolio/afterpattern.html">Building and selling Afterpattern</a>
-          </div>
-        </li>
-        <li class="blog-posts__list-item">
-          <div class="blog-post-snippet">
-            <a class="blog-post-snippet__link" href="/portfolio/blueridgelabs.html">Building Community.lawyer at the BRL incubator</a>
-          </div>
-        </li>
-        <li class="blog-posts__list-item">
-          <div class="blog-post-snippet">
-            <a class="blog-post-snippet__link" href="/blog/legal-apps.html">What is a legal app? Examples from Afterpattern</a>            
-          </div>
-        </li>
-      </ul>
-      <!-- <div class="name">
-        
-        <div class="contact-row">
-          <div class="contact-row__leftCol">
-            <p class="contact-row__label">
-              email
-            </p>
-          </div>
-          <div class="contact-row__rightCol">
-            <p class="contact-row__value">
-              thomas.officer@gmail.com
-            </p>
-          </div>
-        </div>
-        <div class="contact-row">
-          <div class="contact-row__leftCol">
-            <p class="contact-row__label">
-              follow
-            </p>
-          </div>
-          <div class="contact-row__rightCol">
-            <p class="contact-row__value">
-              @<a href="https://twitter.com/TomaOfficer" class="text-link" target="_blank">TomaOfficer</a>
-            </p>
-          </div>
-        </div>
-      </div>  
-      <a href="https://www.tfodesign.com/" target="_blank" class="portfolio-btn">
-        portfolio
-      </a>
-      <div class="about-design__showcase">
-        <h3>
-          Talk to my CV
-        </h3>
-        <p>
-          This GPT-4 chatbot allows you to talk with my CV. Feel free to ask questions about my expertise, your project, and how you could combine the two. 
-        </p>
-        <a href="https://tfo-resume.replit.app/" class="secondary-btn" target="_blank">start conversation</a>
-      </div>
-      <div class="home-blog">
-        <h5>
-          blog
-        </h5>
-        
-      </div> -->
-   </div>
+  <div class="wip">
+    <h5>Under construction</h5>
+    <h6>Nov 20, 2023</h6>
+    <p>
+      I'm transforming this site into an interactive, LLM-based chatbot / portfolio. Please bear with me. For now, here are some helpful links:
+    </p>
+    <ul>
+      <li>
+        <a href="https://www.tfodesign.com/" target="_blank">Design portfolio</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/thomasofficer/" target="_blank">LinkedIn</a>
+      </li>
+      <li>
+        <a href="https://github.com/TomaOfficer" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    <p>
+      Feel free to shoot me an email at thomas.officer[at]gmail.com.
+    </p>
   </div>
-  <footer>
-    <div class="footer__wrapper">
-
-    </div>
-  </footer>
 </body>
 
 </html>
