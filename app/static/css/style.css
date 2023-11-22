@@ -205,6 +205,7 @@ li {
   max-width: 480px;
   margin: 4em auto;
   line-height: 1.6em;
+  padding: 0 2em;
 }
 .wip h5 {
   font-weight: 600;
