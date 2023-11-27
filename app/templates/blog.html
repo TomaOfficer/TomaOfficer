@@ -5,67 +5,90 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Blog | Thomas F. Officer</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="assets/tfo-favicon.ico" type="image/x-icon">
 </head>
 </head>
 
 <body>
-  <nav>
-    <div class="nav__wrapper">
-      <a href="/" class="nav__brand">
-        <img src="assets/tfo-brand-dark.svg" alt="Thomas Felix Officer logo">
-      </a>
-    </div>
-  </nav>
-  <div class="blog-posts">
-    <div class="blog-posts__wrapper">
-      <ul class="blog-posts__list">
-        <li class="blog-posts__list-item">
-          <div class="blog-post-snippet">
-            <a class="blog-post-snippet__link" href="/blog/aicontext.html">An AI startup idea</a>
-            <p class="blog-post-snippet__date">July 2023</p>
-          </div>
-        </li>
-        <li class="blog-posts__list-item">
-          <div class="blog-post-snippet">
-            <a class="blog-post-snippet__link" href="/blog/legal-apps.html">Legal Apps</a>
-            <p class="blog-post-snippet__date">July 2022</p>
-          </div>
-        </li>
-        <li class="blog-posts__list-item">
-          <div class="blog-post-snippet">
-            <a class="blog-post-snippet__link" href="/blog/start-of-an-idea.html">Real estate software idea</a>
-            <p class="blog-post-snippet__date">January 2022</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <footer>
-    <div class="footer__wrapper">
-      <div class="footer__row">
-        <div class="footer__col">
-          <p class="label">email</p>
-          <p>thomas.officer@gmail.com</p>
-        </div>
-        <div class="footer__col">
-          <p class="label">follow</p>
-          @<a href="https://twitter.com/TomaOfficer" target="_blank" class="text-link">TomaOfficer</a>
-        </div>
-        <div class="footer__col">
-          <p class="label">linkedin</p>
-          @<a href="https://www.linkedin.com/in/thomasofficer/" target="_blank" class="text-link">thomasofficer</a>
-        </div>
+  <div class="body__wrapper">
+    <header>
+      <p style="padding-bottom: 0;">
+        Thomas F. Officer
+      </p>
+      <p style="padding-bottom: 0;">
+        Software Designer & Developer
+      </p>
+      <div class="header__links">
+        <ul>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/computer_2-2.png" alt="Computer Icon">
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/address_book_user.png" alt="Address Book User Icon">
+            <a href="/about">
+              About
+            </a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/help_book_cool-4.png" alt="Help Book Icon">
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/msagent-2.png" alt="Msg Agent Icon">
+            <a href="/contact">Contact</a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/notepad_file-0.png" alt="Notepad Icon">
+            <a href="/portfolio">Portfolio</a>
+          </li>
+        </ul>
       </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
+    </header>
+    <main>
+      <div class="main__wrapper">
+        <ul class="blog-posts__list">
+          <li class="blog-posts__list-item">
+            <div class="blog-post-snippet">
+              <a class="blog-post-snippet__link" href="/blog/problems-and-ideas">Problems and ideas for software startups</a>
+              <p class="blog-post-snippet__date">October 2023</p>
+            </div>
+          </li>
+          <li class="blog-posts__list-item">
+            <div class="blog-post-snippet">
+              <a class="blog-post-snippet__link" href="/blog/aicontext">An AI startup idea</a>
+              <p class="blog-post-snippet__date">July 2023</p>
+            </div>
+          </li>
+          <li class="blog-posts__list-item">
+            <div class="blog-post-snippet">
+              <a class="blog-post-snippet__link" href="/blog/legal-apps">Legal Apps</a>
+              <p class="blog-post-snippet__date">July 2022</p>
+            </div>
+          </li>
+          <li class="blog-posts__list-item">
+            <div class="blog-post-snippet">
+              <a class="blog-post-snippet__link" href="/blog/system-message">System messages for GPT-4</a>
+              <p class="blog-post-snippet__date">June 2022</p>
+            </div>
+          </li>
+          <li class="blog-posts__list-item">
+            <div class="blog-post-snippet">
+              <a class="blog-post-snippet__link" href="/blog/ai-chatbot">You should build an AI chatbot</a>
+              <p class="blog-post-snippet__date">June 2022</p>
+            </div>
+          </li>
+          <li class="blog-posts__list-item">
+            <div class="blog-post-snippet">
+              <a class="blog-post-snippet__link" href="/blog/start-of-an-idea">Real estate software idea</a>
+              <p class="blog-post-snippet__date">January 2022</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
 </body>
-
-</html>
 
 </html>

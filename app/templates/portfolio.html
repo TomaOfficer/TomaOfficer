@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Thomas F. Officer | Portfolio</title>
+  <title>Portfolio | Thomas F. Officer</title>
   <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
-  <link rel="icon" href="{{ url_for('static', filename='assets/tfo-favicon.ico') }}" type="image/x-icon">
+  <link rel="icon" href="assets/tfo-favicon.ico" type="image/x-icon">
+</head>
 </head>
 
 <body>
@@ -47,11 +48,21 @@
     </header>
     <main>
       <div class="main__wrapper">
-        <p>
-          Currently exploring. Previously, Principal Product Designer at <a href="https://www.netdocuments.com/ndmax" target="_blank">NetDocuments</a>, cofounder at <a href="https://afterpattern.com/" target="_blank">Afterpattern</a> (acquired 2021), and Design Fellow at <a href="https://www.labs.robinhood.org/" target="_blank">Blue Ridge Labs @ Robin Hood</a>.
-        </p>
+        <ul class="blog-posts__list">
+          <li class="blog-posts__list-item">
+            <div class="blog-post-snippet">
+              <a class="blog-post-snippet__link" href="/portfolio/afterpattern">Afterpattern</a>
+            </div>
+          </li>
+          <li class="blog-posts__list-item">
+            <div class="blog-post-snippet">
+              <a class="blog-post-snippet__link" href="/portfolio/blueridgelabs">Community.lawyer</a>
+            </div>
+          </li>
+        </ul>  
       </div>
     </main>
   </div>
 </body>
+
 </html>

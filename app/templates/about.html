@@ -5,60 +5,65 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>About | Thomas F. Officer</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
   <link rel="icon" href="assets/tfo-favicon.ico" type="image/x-icon">
-  <link href="homepage.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
 </head>
 </head>
 
 <body>
-  <nav>
-    <div class="nav__wrapper">
-      <a href="/" class="nav__brand">
-        <img src="assets/tfo-brand-dark.svg" alt="Thomas Felix Officer logo">
-      </a>
-    </div>
-  </nav>
-  <div class="about-main">
-    <div class="about-main__wrapper">
-      <img src="assets/thomas-headshot.png" class="about-main__headshot" alt="Photo of Thomas Officer">
-      <p>
-        All my projects stem from my passion for exploring, testing, and building new ideas. I'm in awe of our potential. Few things make me happier than getting in sync with a colleague on what that potential looks like. Getting into this mind meld is electrifying and satisfying in its own right. It's also my favorite way to build software.
+  <div class="body__wrapper">
+    <header>
+      <p style="padding-bottom: 0;">
+        Thomas F. Officer
       </p>
-      <p>
-        I've been designing and building software products for the past 7 years, mostly in startups. In 2016, I was awarded a design fellowship at the Blue Ridge Labs technology incubator. This is where I met my cofounders and launched Afterpattern. Together, over the course of 5 years, we played a critical role in defining a new category of product: no-code app builder for legal professionals. 
+      <p style="padding-bottom: 0;">
+        Software Designer & Developer
       </p>
-      <p>
-        At its peak, when Afterpattern was acquired by NetDocuments, thousands of law firms, courts, and legal aids used our no-code development tools to create award winning legal apps.
-      </p>
-      <p>
-        I'm thankful everyday that it's my job to make ideas real. I love meeting new people who share that passion and know how to get in sync. If you're that kind of person, please reach out at thomas.officer@gmail.com. 
-      </p>
-    </div>
-  </div>
-  <footer>
-    <div class="footer__wrapper">
-      <div class="footer__row">
-        <div class="footer__col">
-          <p class="label">email</p>
-          <p>thomas.officer@gmail.com</p>
-        </div>
-        <div class="footer__col">
-          <p class="label">follow</p>
-          @<a href="https://twitter.com/TomaOfficer" target="_blank" class="text-link">TomaOfficer</a>
-        </div>
-        <div class="footer__col">
-          <p class="label">linkedin</p>
-          @<a href="https://www.linkedin.com/in/thomasofficer/" target="_blank" class="text-link">thomasofficer</a>
-        </div>
+      <div class="header__links">
+        <ul>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/computer_2-2.png" alt="Computer Icon">
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/address_book_user.png" alt="Address Book User Icon">
+            <a href="/about">
+              About
+            </a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/help_book_cool-4.png" alt="Help Book Icon">
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/msagent-2.png" alt="Msg Agent Icon">
+            <a href="/contact">Contact</a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/notepad_file-0.png" alt="Notepad Icon">
+            <a href="/portfolio">Portfolio</a>
+          </li>
+        </ul>
       </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
+    </header>
+    <main>
+      <div class="main__wrapper">
+        <img src="{{ url_for('static', filename='assets/thomas-headshot.png') }}" class="headshot" alt="Photo of Thomas Officer">
+        <p>
+          All my projects stem from my passion for exploring, testing, and building new ideas. I'm in awe of our potential. Few things make me happier than getting in sync with a colleague on what that potential looks like. Getting into this mind meld is electrifying and satisfying in its own right. It's also my favorite way to build software.
+        </p>
+        <p>
+          I've been designing and building software products for the past 7 years, mostly in startups. In 2016, I was awarded a design fellowship at the Blue Ridge Labs technology incubator. This is where I met my cofounders and launched Afterpattern. Together, over the course of 5 years, we played a critical role in defining a new category of product: no-code app builder for legal professionals. 
+        </p>
+        <p>
+          At its peak, when Afterpattern was acquired by NetDocuments, thousands of law firms, courts, and legal aids used our no-code development tools to create award winning legal apps.
+        </p>
+        <p>
+          I'm thankful everyday that it's my job to make ideas real. I love meeting new people who share that passion and know how to get in sync. If you're that kind of person, please reach out at thomas.officer@gmail.com. 
+        </p>
+      </div>
+    </main>
+  </div>
 </body>
 
 </html>
