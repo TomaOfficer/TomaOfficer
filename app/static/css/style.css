@@ -24,6 +24,12 @@ a {
   max-width: 600px;
   padding: 4em 0;
 }
+@media screen and (max-width: 600px){
+  .body__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* --- Header --- */
 .header__links ul {
   list-style: none;
