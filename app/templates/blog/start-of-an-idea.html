@@ -4,94 +4,104 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Start of an Idea | Thomas F. Officer</title>
-  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <title>Real estate software idea | Thomas F. Officer</title>
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
   <link rel="icon" href="assets/tfo-favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav>
-    <div class="nav__wrapper">
-      <a href="/" class="nav__brand">
-        <img src="../assets/tfo-brand-dark.svg" alt="Thomas Felix Officer logo">
-      </a>
-    </div>
-  </nav>
-  <div class="blog">
-    <div class="blog__wrapper">
-      <div class="title">
-        <div class="title__wrapper">
-          <h1>
-            Real estate startup idea
-          </h1>
-        </div>
+  <div class="body__wrapper">
+    <header>
+      <p style="padding-bottom: 0;">
+        Thomas F. Officer
+      </p>
+      <p style="padding-bottom: 0;">
+        Software Designer & Developer
+      </p>
+      <div class="header__links">
+        <ul>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/computer_2-2.png" alt="Computer Icon">
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/address_book_user.png" alt="Address Book User Icon">
+            <a href="/about">
+              About
+            </a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/help_book_cool-4.png" alt="Help Book Icon">
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/msagent-2.png" alt="Msg Agent Icon">
+            <a href="/contact">Contact</a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/notepad_file-0.png" alt="Notepad Icon">
+            <a href="/portfolio">Portfolio</a>
+          </li>
+        </ul>
       </div>
-      <div class="blog__post">
-        <div class="blog__header"> 
-          <div class="status">
-            <img src="../assets/thomas-headshot-small.png" alt="Headshot of Thomas Officer" class="status__headshot">
-            <div class="status__rightCol">
-              <p class="status__name">Thomas F. Officer</p>
-              <p class="subtitle">
-              product designer
+    </header>
+    <main>
+      <div class="main__wrapper">
+        <div class="blog">
+          <div class="blog__wrapper">
+            <div class="title">
+              <div class="title__wrapper">
+                <h1>
+                  Real estate startup idea
+                </h1>
+              </div>
+            </div>
+            <div class="blog__post">
+              <div class="blog__header"> 
+                <div class="status">
+                  <div class="status__rightCol">
+                    <p class="status__name">Thomas F. Officer</p>
+                    <p class="subtitle">
+                    product designer
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <p class="blog__date">
+                    November 2021
+                  </p>
+                </div>
+              </div>
+              <p>
+                It would be fun to invest in a local real estate project with a group of 5 or 8 friends. Together, we could
+                probably wrangle up $50,000. This opens the door to real estate opportunities we could never afford on our
+                own. Plus, it would be fun. I'm picturing us pouring over details on how to transform an aging, tiny frame
+                shop into the kind of wine bar we miss from Brooklyn.
+              </p>
+              <img src="{{ url_for('static', filename='assets/start-of-idea.png') }}" alt="Illustration of people drawing on whiteboard" class="blog__showcase-image">
+              <p>
+                One of the most common reactions I've heard to this idea is "that sounds like a great way to ruin
+                friendships." I hear what they mean. There's a lot of stress in real estate projects, and when money gets
+                involved it's possible to amplify stress to the point where you act belligerently.
+              </p>
+              <p>
+                Does it have to be that way? Surely it's possible to write an operating agreement that accounts for things
+                like unforeseen expenses or someone wanting to cash out early. It's definitely possible to run a venture
+                poorly and damage relationships in the process, but it's also possible to do this well and keep friendships
+                intact no matter what the project's outcome is.
+              </p>
+              <p>
+                Let's say we do create an operating agreement that makes everyone feel comfortable and we get a loan that transforms our $50,000 into $250,000 of purchasing power... how do you find a good opportunity? 
+              </p>
+              <p>
+                Here is where we come to the heart of this idea: I feel like most people think they have a cutting-edge in finding real estate opportunities. Because who the hell knows whether a stock is going up or down, or whether a particular web3 project will get meme status and take off, but I know it in my gut that this aging, tiny frame shop could be a popular wine bar.
               </p>
             </div>
           </div>
-          <div>
-            <p class="blog__date">
-              November 2021
-            </p>
-          </div>
         </div>
-        <p>
-          It would be fun to invest in a local real estate project with a group of 5 or 8 friends. Together, we could
-          probably wrangle up $50,000. This opens the door to real estate opportunities we could never afford on our
-          own. Plus, it would be fun. I'm picturing us pouring over details on how to transform an aging, tiny frame
-          shop into the kind of wine bar we miss from Brooklyn.
-        </p>
-        <img src="../assets/start-of-idea.png" alt="Illustration of people drawing on whiteboard" class="blog__showcase-image">
-        <p>
-          One of the most common reactions I've heard to this idea is "that sounds like a great way to ruin
-          friendships." I hear what they mean. There's a lot of stress in real estate projects, and when money gets
-          involved it's possible to amplify stress to the point where you act belligerently.
-        </p>
-        <p>
-          Does it have to be that way? Surely it's possible to write an operating agreement that accounts for things
-          like unforeseen expenses or someone wanting to cash out early. It's definitely possible to run a venture
-          poorly and damage relationships in the process, but it's also possible to do this well and keep friendships
-          intact no matter what the project's outcome is.
-        </p>
-        <p>
-          Let's say we do create an operating agreement that makes everyone feel comfortable and we get a loan that transforms our $50,000 into $250,000 of purchasing power... how do you find a good opportunity? 
-        </p>
-        <p>
-          Here is where we come to the heart of this idea: I feel like most people think they have a cutting-edge in finding real estate opportunities. Because who the hell knows whether a stock is going up or down, or whether a particular web3 project will get meme status and take off, but I know it in my gut that this aging, tiny frame shop could be a popular wine bar.
-        </p>
       </div>
-    </div>
+    </main>
   </div>
-  <footer>
-    <div class="footer__wrapper">
-      <div class="footer__row">
-        <div class="footer__col">
-          <p class="label">email</p>
-          <p>thomas.officer@gmail.com</p>
-        </div>
-        <div class="footer__col">
-          <p class="label">follow</p>
-          @<a href="https://twitter.com/TomaOfficer" target="_blank" class="text-link">TomaOfficer</a>
-        </div>
-        <div class="footer__col">
-          <p class="label">linkedin</p>
-          @<a href="https://www.linkedin.com/in/thomasofficer/" target="_blank" class="text-link">thomasofficer</a>
-        </div>
-      </div>
-    </div>
-  </footer>
   <script src="script.js"></script>
 </body>
 
