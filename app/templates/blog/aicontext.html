@@ -4,105 +4,115 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>AI startup idea | Thomas F. Officer</title>
-  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <title>Real estate software idea | Thomas F. Officer</title>
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
   <link rel="icon" href="assets/tfo-favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav>
-    <div class="nav__wrapper">
-      <a href="/" class="nav__brand">
-        <img src="../assets/tfo-brand-dark.svg" alt="Thomas Felix Officer logo">
-      </a>
-    </div>
-  </nav>
-  <div class="blog">
-    <div class="blog__wrapper">
-      <div class="blog__post">
-        <div class="blog__header"> 
-          <div class="status">
-            <img src="../assets/thomas-headshot-small.png" alt="Headshot of Thomas Officer" class="status__headshot">
-            <div class="status__rightCol">
-              <p class="status__name">Thomas F. Officer</p>
-              <p class="subtitle">
-              product designer
-              </p>
-            </div>
-          </div>
-          <div>
-            <p class="blog__date">
-              July 2023
-            </p>
-          </div>
-        </div>
-        <p>
-          Either all at once or gradually over the past 50 years, we've entered the world of AI experiences.
-        </p>
-        <p>
-          I've been playing around with some of these AI tools and I'm fascinated. Like many others, I've learned how to get more useful responses out of large language models. The trick is framing your question properly and providing enough context. If I'm asking, "why is my code not working?" my codebase is the necessary context. If I'm asking, "should I take this job?" the context includes the job listing, my work experience, professional goals, and on and on.
-        </p>
-        <p>
-          I'm frustrated by the experience of manually providing my context to an AI experience like ChatGPT. Every time I want to have a productive AI conversation, I re-enter the paragraphs of information that define my context.
-        </p>
-        <p>
-          I'm going to build something for this problem. Something with public services and small businesses in mind. Something that allows them to invite their audiences to provide whatever context is needed to deliver a useful AI experience. 
-        </p>
-        <p>
-          Side note: You should get in touch if this sounds interesting to you. Go ahead and <a href="https://calendly.com/tofficer1921/30min" class="text-link" target="_blank">schedule a call directly on my calendar </a>.
-        </p>
-        
-        <!-- <h1>AI context as a service</h1>
-        <p>July 2023</p>
-        <p>
-          AI has recently become one of the most powerful and affordable resources available to businesses of all sizes. We live in a world of ai experiences where a consumer's unique context can be used to make the generic personal. 
-        </p>
-        <p>
-          For example:
-        </p>
+  <div class="body__wrapper">
+    <header>
+      <p style="padding-bottom: 0;">
+        Thomas F. Officer
+      </p>
+      <p style="padding-bottom: 0;">
+        Software Designer & Developer
+      </p>
+      <div class="header__links">
         <ul>
           <li>
-            A job board that helps job seekers perform a gap analysis between their resume and the requirements of their ideal job.
+            <img src="https://win98icons.alexmeub.com/icons/png/computer_2-2.png" alt="Computer Icon">
+            <a href="/">Home</a>
           </li>
           <li>
-            A travel guide that provides itineraries tailored to each tourist.
+            <img src="https://win98icons.alexmeub.com/icons/png/address_book_user.png" alt="Address Book User Icon">
+            <a href="/about">
+              About
+            </a>
           </li>
           <li>
-            A textbook publisher that uses each student’s unique learning style to reformat educational content to fit their needs.
+            <img src="https://win98icons.alexmeub.com/icons/png/help_book_cool-4.png" alt="Help Book Icon">
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/msagent-2.png" alt="Msg Agent Icon">
+            <a href="/contact">Contact</a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/notepad_file-0.png" alt="Notepad Icon">
+            <a href="/portfolio">Portfolio</a>
           </li>
         </ul>
-        <p>
-          In this new world, one-size-fits-all content is intolerable. Everyone is different, so why would everyone consume the exact same presentation of a job post, travel guide, or text book?
-        </p>
-        <h3>There'll be winners and losers</h3>
-        <p>
-          Businesses that continue to use consumer data only for advertisement will fall behind those that use consumer data to define contexts and build AI experiences that create personalized interfaces to their products and services.
-        </p> -->
       </div>
-    </div>
+    </header>
+    <main>
+      <div class="main__wrapper">
+        <div class="blog">
+          <div class="blog__wrapper">
+            <div class="blog__post">
+              <div class="blog__header"> 
+                <div class="status">
+                  <div class="status__rightCol">
+                    <p class="status__name">Thomas F. Officer</p>
+                    <p class="subtitle">
+                    product designer
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <p class="blog__date">
+                    July 2023
+                  </p>
+                </div>
+              </div>
+              <p>
+                Either all at once or gradually over the past 50 years, we've entered the world of AI experiences.
+              </p>
+              <p>
+                I've been playing around with some of these AI tools and I'm fascinated. Like many others, I've learned how to get more useful responses out of large language models. The trick is framing your question properly and providing enough context. If I'm asking, "why is my code not working?" my codebase is the necessary context. If I'm asking, "should I take this job?" the context includes the job listing, my work experience, professional goals, and on and on.
+              </p>
+              <p>
+                I'm frustrated by the experience of manually providing my context to an AI experience like ChatGPT. Every time I want to have a productive AI conversation, I re-enter the paragraphs of information that define my context.
+              </p>
+              <p>
+                I'm going to build something for this problem. Something with public services and small businesses in mind. Something that allows them to invite their audiences to provide whatever context is needed to deliver a useful AI experience. 
+              </p>
+              <p>
+                Side note: You should get in touch if this sounds interesting to you. Go ahead and <a href="https://calendly.com/tofficer1921/30min" class="text-link" target="_blank">schedule a call directly on my calendar </a>.
+              </p>
+              
+              <!-- <h1>AI context as a service</h1>
+              <p>July 2023</p>
+              <p>
+                AI has recently become one of the most powerful and affordable resources available to businesses of all sizes. We live in a world of ai experiences where a consumer's unique context can be used to make the generic personal. 
+              </p>
+              <p>
+                For example:
+              </p>
+              <ul>
+                <li>
+                  A job board that helps job seekers perform a gap analysis between their resume and the requirements of their ideal job.
+                </li>
+                <li>
+                  A travel guide that provides itineraries tailored to each tourist.
+                </li>
+                <li>
+                  A textbook publisher that uses each student’s unique learning style to reformat educational content to fit their needs.
+                </li>
+              </ul>
+              <p>
+                In this new world, one-size-fits-all content is intolerable. Everyone is different, so why would everyone consume the exact same presentation of a job post, travel guide, or text book?
+              </p>
+              <h3>There'll be winners and losers</h3>
+              <p>
+                Businesses that continue to use consumer data only for advertisement will fall behind those that use consumer data to define contexts and build AI experiences that create personalized interfaces to their products and services.
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
-  <footer>
-    <div class="footer__wrapper">
-      <div class="footer__row">
-        <div class="footer__col">
-          <p class="label">email</p>
-          <p>thomas.officer@gmail.com</p>
-        </div>
-        <div class="footer__col">
-          <p class="label">follow</p>
-          @<a href="https://twitter.com/TomaOfficer" target="_blank" class="text-link">TomaOfficer</a>
-        </div>
-        <div class="footer__col">
-          <p class="label">linkedin</p>
-          @<a href="https://www.linkedin.com/in/thomasofficer/" target="_blank" class="text-link">thomasofficer</a>
-        </div>
-      </div>
-    </div>
-  </footer>
 </body>
 
 </html>
