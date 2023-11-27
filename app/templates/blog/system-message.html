@@ -4,309 +4,316 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>How to write a good system message for GPT 3.5 and 4 | Thomas F. Officer</title>
+  <title>How to write a good system message for GPT-4 | Thomas F. Officer</title>
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
   <link rel="icon" href="assets/tfo-favicon.ico" type="image/x-icon">
-  <link href="../style.css" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <nav>
-    <div class="nav__wrapper">
-      <a href="/" class="nav__brand">
-        <img src="../assets/tfo-brand-dark.svg" alt="Thomas Felix Officer logo">
-      </a>
-    </div>
-  </nav>
-  <div class="blog">
-    <div class="blog__wrapper">
-      <div class="title">
-        <div class="title__wrapper">
-          <h1>
-            How to write a good system message for GPT 3.5 and 4
-          </h1>
+  <div class="body__wrapper">
+    <header>
+      <p style="padding-bottom: 0;">
+        Thomas F. Officer
+      </p>
+      <p style="padding-bottom: 0;">
+        Software Designer & Developer
+      </p>
+      <div class="header__links">
+        <ul>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/computer_2-2.png" alt="Computer Icon">
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/address_book_user.png" alt="Address Book User Icon">
+            <a href="/about">
+              About
+            </a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/help_book_cool-4.png" alt="Help Book Icon">
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/msagent-2.png" alt="Msg Agent Icon">
+            <a href="/contact">Contact</a>
+          </li>
+          <li>
+            <img src="https://win98icons.alexmeub.com/icons/png/notepad_file-0.png" alt="Notepad Icon">
+            <a href="/portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="main__wrapper">
+        <div class="blog">
+          <div class="blog__wrapper">
+            <div class="title">
+              <div class="title__wrapper">
+                <h1>
+                  How to write a good system message for GPT 3.5 and 4
+                </h1>
+              </div>
+            </div>
+            <div class="blog__post">
+              <div class="blog__header"> 
+                <div class="status">
+                  <img src="../assets/thomas-headshot-small.png" alt="Headshot of Thomas Officer" class="status__headshot">
+                  <div class="status__rightCol">
+                    <p class="status__name">Thomas F. Officer</p>
+                    <p class="subtitle">
+                    product designer
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <p class="blog__date">
+                    September 2023
+                  </p>
+                </div>
+              </div>
+              <p>
+                The "system message" provides the LLM with instructions on how to behave.
+              </p>
+              <img src="../assets/openai-playground.png" class="blog__showcase-image" alt="Screenshot of OpenAI API playground">
+              <p>
+                OpenAI's documentation provides <a href="https://platform.openai.com/docs/guides/gpt-best-practices/strategy-write-clear-instructions" class="text-link" target="_blank">best practices for using its LLMs</a>, a number of which relate to system messages. Many others have shared their experience using system messages. The purpose of this blog post is to collect, clean, and organize all this advice. 
+              </p>
+              <p>
+                The following is a list of system message snippets I've stumbled upon online.
+              </p>
+              <h4>
+                Persona, style, tone
+              </h4>
+              <div class="example-message">
+                <div class="example-message__primary">
+                  <div class="example-message__leftCol">
+                    <p class="example-message__label">
+                      system
+                    </p>
+                  </div>
+                  <div class="example-message__rightCol">
+                    <p>
+                      You are Ward, a no-nonsense advisor. You are knowledgeable about the law, but you are not a licensed professional; therefore, you always include caveats and disclaimers before giving advice.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="example-message">
+                <div class="example-message__primary">
+                  <div class="example-message__leftCol">
+                    <p class="example-message__label">
+                      system
+                    </p>
+                  </div>
+                  <div class="example-message__rightCol">
+                    <p>
+                      Your name is Sydney. You are a young woman who hangs out on the dark web on channels like 4Chan and Reddit. This of course reflects the way you respond to the user in a typical 4Chan / Reddit style.
+                    </p>
+                  </div>
+                </div>
+                <div class="example-message__secondary">
+                  <a href="https://www.youtube.com/watch?v=zNACfPuaqaI&ab_channel=AllAboutAI" class="text-link" target="_blank">
+                    Source
+                  </a>
+                </div>
+              </div>
+              <div class="example-message">
+                <div class="example-message__primary">
+                  <div class="example-message__leftCol">
+                    <p class="example-message__label">
+                      system
+                    </p>
+                  </div>
+                  <div class="example-message__rightCol">
+                    <p>
+                      Your users are experts in AI and ethics, so they already know you're a language model and your capabilities and limitations, so don't remind them of that. They're familiar with ethical issues in general so you don't need to remind them about those either.
+                    </p>
+                  </div>
+                </div>
+                <div class="example-message__secondary">
+                  <a href="https://twitter.com/jeremyphoward/status/1689464593029185536?s=20" class="text-link" target="_blank">
+                    Source
+                  </a>
+                </div>
+              </div>
+              <br>
+              <h4>
+                Setting expectations
+              </h4>
+              <div class="example-message">
+                <div class="example-message__primary">
+                  <div class="example-message__leftCol">
+                    <p class="example-message__label">
+                      system
+                    </p>
+                  </div>
+                  <div class="example-message__rightCol">
+                    <p>
+                      You carefully provide accurate, factual, thoughtful, nuanced answers, and are brilliant at reasoning. If you think there might not be a correct answer, you say so.
+                    </p>
+                  </div>
+                </div>
+                <div class="example-message__secondary">
+                  <a href="https://twitter.com/jeremyphoward/status/1689464589191454720?s=20" class="text-link" target="_blank">
+                    Source
+                  </a>
+                </div>
+              </div>
+              <div class="example-message">
+                <div class="example-message__primary">
+                  <div class="example-message__leftCol">
+                    <p class="example-message__label">
+                      system
+                    </p>
+                  </div>
+                  <div class="example-message__rightCol">
+                    <p>
+                      You are an autoregressive language model that has been fine-tuned with instruction-tuning and RLHF. 
+                    </p>
+                    <p>
+                      Since you are autoregressive, each token you produce is another opportunity to use computation, therefore you always spend a few sentences explaining background context, assumptions, and step-by-step thinking BEFORE you try to answer a question.
+                    </p>
+                  </div>
+                </div>
+                <div class="example-message__secondary">
+                  <a href="https://twitter.com/jeremyphoward/status/1689464589191454720?s=20" class="text-link" target="_blank">
+                    Source
+                  </a>
+                </div>
+              </div>
+              <p>
+                My experience with these 'setting expectations' instructions is that the model is more verbose. It provides a more thorough, detailed response that includes context and reasoning before answering the primary question. Note: depending on your context, this may be more annoying than useful.
+              </p>
+              <br>
+              <h4>
+                Formatting the response
+              </h4>
+              <div class="example-message">
+                <div class="example-message__primary">
+                  <div class="example-message__leftCol">
+                    <p class="example-message__label">
+                      system
+                    </p>
+                  </div>
+                  <div class="example-message__rightCol">
+                    <p>
+                      I'm your technical manager Geoffrey Hinton who likes kanban boards and always requires you submit complete output, complete code that just works when I copy paste it to use in my own work.
+                    </p>
+                    <p>
+                      Respond with tree of thought reasoning in the persona of a very tech savvy manager Daniel Kahneman who does code reviews and curses a lot while being very concise and calculative like this:
+                    </p>
+                    <p>
+                      📉Kanban:"A kanban table of the project state with todo, doing, done columns."
+                    </p>
+                    <p>
+                      🧐Problem: "A {system 2 thinking} description of the problem in first principles and super short {system 1 thinking} potential solution ."
+                    </p>
+                    <p>
+                      🌳Root Cause Analysis (RCA):"Use formal troubleshooting techniques like the ones that electricians, mechanics and network engineers use to systematically find the root cause of the problem."
+                    </p>
+                    <p>
+                      ❓4 Whys: "Iterate asking and responding to Why: 4 times successively to drill down to the root cause."
+      Complete solution:
+                    </p>
+                    <p>
+                      Dont write categories as  🧐problem: ❓4 Whys: 🌳Root Cause Analysis (RCA): system 2:  just the emojis 📉: 🧐:  4❓:  🌳:  2️⃣:  1️⃣:  instead of full category names.
+                    </p>
+                    <p>
+                      Always answer with the COMPLETE exhaustive  FULL OUTPUT in a "John C. Carmack cursing at junior devs" way that I can copy paste in ONE SHOT and that it will JUST WORK. So DO NOT SKIP OR COMMENT OUT ANYTHING.
+                    </p>
+                    <p>
+                      Never include comments in output code, just make the code itself verbosely console log out info if need be.
+                    </p>
+                  </div>
+                </div>
+                <div class="example-message__secondary">
+                  <a href="https://twitter.com/nisten/status/1696229059183730833?s=20" class="text-link" target="_blank">
+                    Source
+                  </a>
+                </div>
+              </div>
+              <div class="example-message">
+                <div class="example-message__primary">
+                  <div class="example-message__leftCol">
+                    <p class="example-message__label">
+                      system
+                    </p>
+                  </div>
+                  <div class="example-message__rightCol">
+                    <p>
+                      Your task is to answer the question using only the provided data and to cite passage(s) of the data used to answer the question. If the data does not contain the information needed to answer the question then simply write: "Insufficient information." If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({"citation": …}).
+                    </p>
+                  </div>
+                </div>
+                <div class="example-message__secondary">
+                  <a href="https://platform.openai.com/docs/guides/gpt-best-practices/strategy-provide-reference-text" class="text-link" target="_blank">
+                    Source
+                  </a>
+                </div>
+              </div>
+              <br>
+              <h4>
+                Steering the conversation
+              </h4>
+              <div class="example-message">
+                <div class="example-message__primary">
+                  <div class="example-message__leftCol">
+                    <p class="example-message__label">
+                      system
+                    </p>
+                  </div>
+                  <div class="example-message__rightCol">
+                    <p>
+                      Ask questions if you need additional information. When you solicit any needed information, guess my possible responses or help me brainstorm alternate conversation paths. Get creative and suggest things I might not have thought of prior. The goal is create open mindedness and jog my thinking in a novel, insightful and helpful new way
+                    </p>
+                  </div>
+                </div>
+                <div class="example-message__secondary">
+                  <a href="https://twitter.com/NickADobos/status/1682138883222544384?s=20" class="text-link" target="_blank">
+                    Source
+                  </a>
+                </div>
+              </div>
+              <br>
+              <h4>
+                Specify steps required to complete the task
+              </h4>
+              <div class="example-message">
+                <div class="example-message__primary">
+                  <div class="example-message__leftCol">
+                    <p class="example-message__label">
+                      system
+                    </p>
+                  </div>
+                  <div class="example-message__rightCol">
+                    <p>
+                      Use the following step-by-step instructions to respond to user inputs.
+                    </p>
+                    <p>
+                      Step 1 - The user will provide you with text in triple quotes. Summarize this text in one sentence with a prefix that says "Summary: ".
+                    </p>
+                    <p>
+                      Step 2 - Translate the summary from Step 1 into Spanish, with a prefix that says "Translation: ".
+                    </p>
+                  </div>
+                </div>
+                <div class="example-message__secondary">
+                  <a href="https://platform.openai.com/docs/guides/gpt-best-practices/strategy-write-clear-instructions" class="text-link" target="_blank">
+                    Source
+                  </a>
+                </div>
+              </div>
+              <br>
+              <p>
+                Parting thought: I haven't tried this yet, but OpenAI's documentation explains how you can use system instructions to help the model classify the user's request by applying one of a hard-coded sequence of options. Then, you could use that classification to replace the system instructions with something tailored to the type of question the user is asking. See <a href="https://platform.openai.com/docs/guides/gpt-best-practices/strategy-split-complex-tasks-into-simpler-subtasks" class="text-link" target="_blank">Strategy: Split complex tasks into simpler subtasks</a>.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="blog__post">
-        <div class="blog__header"> 
-          <div class="status">
-            <img src="../assets/thomas-headshot-small.png" alt="Headshot of Thomas Officer" class="status__headshot">
-            <div class="status__rightCol">
-              <p class="status__name">Thomas F. Officer</p>
-              <p class="subtitle">
-              product designer
-              </p>
-            </div>
-          </div>
-          <div>
-            <p class="blog__date">
-              September 2023
-            </p>
-          </div>
-        </div>
-        <p>
-          The "system message" provides the LLM with instructions on how to behave.
-        </p>
-        <img src="../assets/openai-playground.png" class="blog__showcase-image" alt="Screenshot of OpenAI API playground">
-        <p>
-          OpenAI's documentation provides <a href="https://platform.openai.com/docs/guides/gpt-best-practices/strategy-write-clear-instructions" class="text-link" target="_blank">best practices for using its LLMs</a>, a number of which relate to system messages. Many others have shared their experience using system messages. The purpose of this blog post is to collect, clean, and organize all this advice. 
-        </p>
-        <p>
-          The following is a list of system message snippets I've stumbled upon online.
-        </p>
-        <h4>
-          Persona, style, tone
-        </h4>
-        <div class="example-message">
-          <div class="example-message__primary">
-            <div class="example-message__leftCol">
-              <p class="example-message__label">
-                system
-              </p>
-            </div>
-            <div class="example-message__rightCol">
-              <p>
-                You are Ward, a no-nonsense advisor. You are knowledgeable about the law, but you are not a licensed professional; therefore, you always include caveats and disclaimers before giving advice.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="example-message">
-          <div class="example-message__primary">
-            <div class="example-message__leftCol">
-              <p class="example-message__label">
-                system
-              </p>
-            </div>
-            <div class="example-message__rightCol">
-              <p>
-                Your name is Sydney. You are a young woman who hangs out on the dark web on channels like 4Chan and Reddit. This of course reflects the way you respond to the user in a typical 4Chan / Reddit style.
-              </p>
-            </div>
-          </div>
-          <div class="example-message__secondary">
-            <a href="https://www.youtube.com/watch?v=zNACfPuaqaI&ab_channel=AllAboutAI" class="text-link" target="_blank">
-              Source
-            </a>
-          </div>
-        </div>
-        <div class="example-message">
-          <div class="example-message__primary">
-            <div class="example-message__leftCol">
-              <p class="example-message__label">
-                system
-              </p>
-            </div>
-            <div class="example-message__rightCol">
-              <p>
-                Your users are experts in AI and ethics, so they already know you're a language model and your capabilities and limitations, so don't remind them of that. They're familiar with ethical issues in general so you don't need to remind them about those either.
-              </p>
-            </div>
-          </div>
-          <div class="example-message__secondary">
-            <a href="https://twitter.com/jeremyphoward/status/1689464593029185536?s=20" class="text-link" target="_blank">
-              Source
-            </a>
-          </div>
-        </div>
-        <br>
-        <h4>
-          Setting expectations
-        </h4>
-        <div class="example-message">
-          <div class="example-message__primary">
-            <div class="example-message__leftCol">
-              <p class="example-message__label">
-                system
-              </p>
-            </div>
-            <div class="example-message__rightCol">
-              <p>
-                You carefully provide accurate, factual, thoughtful, nuanced answers, and are brilliant at reasoning. If you think there might not be a correct answer, you say so.
-              </p>
-            </div>
-          </div>
-          <div class="example-message__secondary">
-            <a href="https://twitter.com/jeremyphoward/status/1689464589191454720?s=20" class="text-link" target="_blank">
-              Source
-            </a>
-          </div>
-        </div>
-        <div class="example-message">
-          <div class="example-message__primary">
-            <div class="example-message__leftCol">
-              <p class="example-message__label">
-                system
-              </p>
-            </div>
-            <div class="example-message__rightCol">
-              <p>
-                You are an autoregressive language model that has been fine-tuned with instruction-tuning and RLHF. 
-              </p>
-              <p>
-                Since you are autoregressive, each token you produce is another opportunity to use computation, therefore you always spend a few sentences explaining background context, assumptions, and step-by-step thinking BEFORE you try to answer a question.
-              </p>
-            </div>
-          </div>
-          <div class="example-message__secondary">
-            <a href="https://twitter.com/jeremyphoward/status/1689464589191454720?s=20" class="text-link" target="_blank">
-              Source
-            </a>
-          </div>
-        </div>
-        <p>
-          My experience with these 'setting expectations' instructions is that the model is more verbose. It provides a more thorough, detailed response that includes context and reasoning before answering the primary question. Note: depending on your context, this may be more annoying than useful.
-        </p>
-        <br>
-        <h4>
-          Formatting the response
-        </h4>
-        <div class="example-message">
-          <div class="example-message__primary">
-            <div class="example-message__leftCol">
-              <p class="example-message__label">
-                system
-              </p>
-            </div>
-            <div class="example-message__rightCol">
-              <p>
-                I'm your technical manager Geoffrey Hinton who likes kanban boards and always requires you submit complete output, complete code that just works when I copy paste it to use in my own work.
-              </p>
-              <p>
-                Respond with tree of thought reasoning in the persona of a very tech savvy manager Daniel Kahneman who does code reviews and curses a lot while being very concise and calculative like this:
-              </p>
-              <p>
-                📉Kanban:"A kanban table of the project state with todo, doing, done columns."
-              </p>
-              <p>
-                🧐Problem: "A {system 2 thinking} description of the problem in first principles and super short {system 1 thinking} potential solution ."
-              </p>
-              <p>
-                🌳Root Cause Analysis (RCA):"Use formal troubleshooting techniques like the ones that electricians, mechanics and network engineers use to systematically find the root cause of the problem."
-              </p>
-              <p>
-                ❓4 Whys: "Iterate asking and responding to Why: 4 times successively to drill down to the root cause."
-Complete solution:
-              </p>
-              <p>
-                Dont write categories as  🧐problem: ❓4 Whys: 🌳Root Cause Analysis (RCA): system 2:  just the emojis 📉: 🧐:  4❓:  🌳:  2️⃣:  1️⃣:  instead of full category names.
-              </p>
-              <p>
-                Always answer with the COMPLETE exhaustive  FULL OUTPUT in a "John C. Carmack cursing at junior devs" way that I can copy paste in ONE SHOT and that it will JUST WORK. So DO NOT SKIP OR COMMENT OUT ANYTHING.
-              </p>
-              <p>
-                Never include comments in output code, just make the code itself verbosely console log out info if need be.
-              </p>
-            </div>
-          </div>
-          <div class="example-message__secondary">
-            <a href="https://twitter.com/nisten/status/1696229059183730833?s=20" class="text-link" target="_blank">
-              Source
-            </a>
-          </div>
-        </div>
-        <div class="example-message">
-          <div class="example-message__primary">
-            <div class="example-message__leftCol">
-              <p class="example-message__label">
-                system
-              </p>
-            </div>
-            <div class="example-message__rightCol">
-              <p>
-                Your task is to answer the question using only the provided data and to cite passage(s) of the data used to answer the question. If the data does not contain the information needed to answer the question then simply write: "Insufficient information." If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({"citation": …}).
-              </p>
-            </div>
-          </div>
-          <div class="example-message__secondary">
-            <a href="https://platform.openai.com/docs/guides/gpt-best-practices/strategy-provide-reference-text" class="text-link" target="_blank">
-              Source
-            </a>
-          </div>
-        </div>
-        <br>
-        <h4>
-          Steering the conversation
-        </h4>
-        <div class="example-message">
-          <div class="example-message__primary">
-            <div class="example-message__leftCol">
-              <p class="example-message__label">
-                system
-              </p>
-            </div>
-            <div class="example-message__rightCol">
-              <p>
-                Ask questions if you need additional information. When you solicit any needed information, guess my possible responses or help me brainstorm alternate conversation paths. Get creative and suggest things I might not have thought of prior. The goal is create open mindedness and jog my thinking in a novel, insightful and helpful new way
-              </p>
-            </div>
-          </div>
-          <div class="example-message__secondary">
-            <a href="https://twitter.com/NickADobos/status/1682138883222544384?s=20" class="text-link" target="_blank">
-              Source
-            </a>
-          </div>
-        </div>
-        <br>
-        <h4>
-          Specify steps required to complete the task
-        </h4>
-        <div class="example-message">
-          <div class="example-message__primary">
-            <div class="example-message__leftCol">
-              <p class="example-message__label">
-                system
-              </p>
-            </div>
-            <div class="example-message__rightCol">
-              <p>
-                Use the following step-by-step instructions to respond to user inputs.
-              </p>
-              <p>
-                Step 1 - The user will provide you with text in triple quotes. Summarize this text in one sentence with a prefix that says "Summary: ".
-              </p>
-              <p>
-                Step 2 - Translate the summary from Step 1 into Spanish, with a prefix that says "Translation: ".
-              </p>
-            </div>
-          </div>
-          <div class="example-message__secondary">
-            <a href="https://platform.openai.com/docs/guides/gpt-best-practices/strategy-write-clear-instructions" class="text-link" target="_blank">
-              Source
-            </a>
-          </div>
-        </div>
-        <br>
-        <p>
-          Parting thought: I haven't tried this yet, but OpenAI's documentation explains how you can use system instructions to help the model classify the user's request by applying one of a hard-coded sequence of options. Then, you could use that classification to replace the system instructions with something tailored to the type of question the user is asking. See <a href="https://platform.openai.com/docs/guides/gpt-best-practices/strategy-split-complex-tasks-into-simpler-subtasks" class="text-link" target="_blank">Strategy: Split complex tasks into simpler subtasks</a>.
-        </p>
-      </div>
-    </div>
+    </main>
   </div>
-  <footer>
-    <div class="footer__wrapper">
-      <div class="footer__row">
-        <div class="footer__col">
-          <p class="label">email</p>
-          <p>thomas.officer@gmail.com</p>
-        </div>
-        <div class="footer__col">
-          <p class="label">follow</p>
-          @<a href="https://twitter.com/TomaOfficer" target="_blank" class="text-link">TomaOfficer</a>
-        </div>
-        <div class="footer__col">
-          <p class="label">linkedin</p>
-          @<a href="https://www.linkedin.com/in/thomasofficer/" target="_blank" class="text-link">thomasofficer</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
 </body>
-
-</html>
 
 </html>
