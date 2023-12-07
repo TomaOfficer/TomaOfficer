@@ -1,6 +1,7 @@
 # app/routes.py
 from app import app
-from flask import render_template
+from app.ai_chatbot import ask_ward
+from flask import render_template, request, jsonify
 
 @app.route('/')
 def home():
@@ -53,3 +54,9 @@ def startofanidea():
 @app.route('/blog/system-message')
 def systemmessage():
     return render_template('blog/system-message.html')
+
+@app.route('/ask_chatbot', methods=['POST'])
+def ask_chatbot():
+    user_input = request.json['message']
+    response = ask_ward(user_input)
+    return jsonify({'reply': response})

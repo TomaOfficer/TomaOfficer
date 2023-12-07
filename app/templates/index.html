@@ -7,6 +7,7 @@
   <title>Thomas F. Officer | Portfolio</title>
   <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
   <link rel="icon" href="{{ url_for('static', filename='assets/tfo-favicon.ico') }}" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -50,8 +51,38 @@
         <p>
           Currently exploring. Previously, Principal Product Designer at <a href="https://www.netdocuments.com/ndmax" target="_blank">NetDocuments</a>, cofounder at <a href="https://afterpattern.com/" target="_blank">Afterpattern</a> (acquired 2021), and Design Fellow in the 2016 cohort at the <a href="https://www.labs.robinhood.org/" target="_blank">Blue Ridge Labs @ Robin Hood</a> incubator.
         </p>
+        <div class="chatbot">
+          <div id="chatDisplay" class="chat-display"></div>
+          <input type="text" id="userMessage" placeholder="Type a message...">
+          <button onclick="sendUserMessage()">Send</button>
+        </div>
       </div>
     </main>
   </div>
+  <script>
+    function sendUserMessage() {
+      var message = document.getElementById('userMessage').value;
+      sendMessageToChatbot(message);
+      document.getElementById('chatDisplay').innerHTML += "<p>You: " + message + "</p>";
+      document.getElementById('userMessage').value = "";
+    }
+  
+    function sendMessageToChatbot(message) {
+      $.ajax({
+        url: '/ask_chatbot',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({ 'message': message }),
+        success: function(response) {
+          var chatDisplay = document.getElementById('chatDisplay');
+          chatDisplay.innerHTML += "<p>Bot: " + response.reply + "</p>";
+        },
+        error: function(error) {
+          console.log(error);
+          // Optionally display an error message on the chat display
+        }
+      });
+    }
+  </script>  
 </body>
 </html>
