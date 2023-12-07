@@ -75,3 +75,11 @@ a {
 .blog img {
   max-width: 100%;
 }
+/* --- Chatbot --- */
+.chatbot-message {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  /* Other styling as needed */
+}

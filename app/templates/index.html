@@ -51,6 +51,9 @@
         <p>
           Currently exploring. Previously, Principal Product Designer at <a href="https://www.netdocuments.com/ndmax" target="_blank">NetDocuments</a>, cofounder at <a href="https://afterpattern.com/" target="_blank">Afterpattern</a> (acquired 2021), and Design Fellow in the 2016 cohort at the <a href="https://www.labs.robinhood.org/" target="_blank">Blue Ridge Labs @ Robin Hood</a> incubator.
         </p>
+        <div class="chat-display" id="chatDisplay">
+          <p id="welcomeMessage" class="chatbot-message">Greetings! I'm Ward, an AI chatbot. I know (almost) everything about Thomas' career and professional ambitions. Ask away.</p>
+        </div>
         <div class="chatbot">
           <div id="chatDisplay" class="chat-display"></div>
           <input type="text" id="userMessage" placeholder="Type a message...">
@@ -62,6 +65,13 @@
   <script>
     function sendUserMessage() {
       var message = document.getElementById('userMessage').value;
+
+      // Hide the welcome message on first user input
+      var welcomeMessage = document.getElementById('welcomeMessage');
+      if (welcomeMessage) {
+          welcomeMessage.style.display = 'none';
+      }
+
       sendMessageToChatbot(message);
       document.getElementById('chatDisplay').innerHTML += "<p>You: " + message + "</p>";
       document.getElementById('userMessage').value = "";
