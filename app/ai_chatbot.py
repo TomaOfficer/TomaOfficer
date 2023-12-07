@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from flask import jsonify
 
 # Load environment variables and initialize OpenAI client
-load_dotenv()
+# load_dotenv()
 client = OpenAI()
 
 # Upload a file with an "assistants" purpose
