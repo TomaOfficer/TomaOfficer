@@ -9,23 +9,7 @@
   <link rel="icon" href="{{ url_for('static', filename='assets/tfo-favicon.ico') }}" type="image/x-icon">
 </head>
 <body>
-  <nav>
-    <div class="nav__wrapper">
-      <div class="nav__wrapper__leftCol">
-        <a href="/" class="nav__title" style="color:#ccc;">
-          <h3>
-            Thomas<span>F.</span>Officer
-          </h3>
-          <p>
-            Software Designer & Developer
-          </p>
-        </a>
-      </div>
-      <div class="nav__wrapper__rightCol">
-
-      </div>
-    </div>
-  </nav>
+  {% include 'navbar.html' %}
   <section class="portfolio-essay">
     <div class="portfolio-essay__title">
       <h1>
