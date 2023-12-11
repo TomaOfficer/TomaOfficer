@@ -235,3 +235,17 @@ nav {
   margin: 5px;
   /* Other styling as needed */
 }
+/* --- Restaurants --- */
+.restaurants-hero {
+  text-align: center;
+  padding: 6em 0 3em;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.restaurants-hero h1 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3em;
+  font-family: 'Georgia', serif;
+}
