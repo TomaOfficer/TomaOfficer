@@ -15,6 +15,10 @@ def about():
 def blog():
     return render_template('blog.html')
 
+@app.route('/restaurants')
+def restaurants():
+    return render_template('restaurants.html')
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
