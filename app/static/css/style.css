@@ -21,7 +21,7 @@ a {
   gap: 10px;
 }
 .main__wrapper {
-  max-width: 600px;
+  max-width: 560px;
   padding: 4em 0;
 }
 @media screen and (max-width: 600px){
