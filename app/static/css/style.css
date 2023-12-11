@@ -108,8 +108,11 @@ nav {
 }
 /* --- Portfolio --- */
 .portfolio-essay h1 {
-  padding: 0 0 1em;
+  padding: 0 0 10px;
   margin: 0;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  line-height: 1.4em;
 }
 .portfolio-essay {
   max-width: 800px;
@@ -122,6 +125,28 @@ nav {
 .portfolio-essay__title {
   text-align: right;
   flex-basis: 25%;
+}
+.portfolio-essay__title__caption {
+  font-size: 18px;
+  font-style: italic;
+  font-family: Georgia, serif;
+  line-height: 1.4em;
+  padding: 0;
+}
+.portfolio-essay__title__label {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding-bottom: .5em;
+}
+.portfolio-essay__title__label:first-of-type {
+  border-top: 1px solid #ccc;
+  padding-top: 1.333em;
+  margin-top: 1.333em;
+}
+.portfolio-essay__title__label span:first-of-type {
+  color: #ccc;
 }
 .portfolio-essay__body {
   flex-basis: 70%;
