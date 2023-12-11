@@ -62,12 +62,12 @@ nav {
 /* --- Header --- */
 .header__links ul {
   list-style: none;
-  padding: .5em 0;
+  max-width: 170px;
 }
 .header__links li {
   display: flex;
   align-items: center;
-  padding: .15em 0;
+  padding: .25em 0;
 }
 .header__links img {
   width: 15px;
