@@ -75,6 +75,55 @@ a {
 .blog img {
   max-width: 100%;
 }
+/* --- Lightbox --- */
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+.lightbox-content {
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  overflow: auto;
+  margin: 15px 0;
+}
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 6px;
+}
+.lightbox__caption  {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  padding: 1em 0 0;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  font-size: 15px;
+  color: #fff !important;
+}
+.lightbox-trigger {
+  text-decoration: none;
+  transition: opacity .5s;
+}
+.lightbox-trigger:hover {
+  opacity: .5;
+}
+.lightbox-trigger img {
+  max-width: 100%;
+  border-radius: 6px;
+  -webkit-box-shadow: -2px 12px 39px -14px rgba(107,107,107,0.75);
+  -moz-box-shadow: -2px 12px 39px -14px rgba(107,107,107,0.75);
+  box-shadow: -2px 12px 39px -14px rgba(107,107,107,0.75);
+}
+.lightbox-trigger:active img {
+  box-shadow: none;
+}
 /* --- Chatbot --- */
 .chatbot-message {
   background-color: #e0e0e0;
