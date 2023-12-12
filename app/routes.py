@@ -4,7 +4,8 @@ from app.ai_chatbot import ask_ward
 from dotenv import load_dotenv
 from flask import render_template, request, jsonify
 
-load_dotenv()
+if os.environ.get('FLASK_ENV') == 'development':
+    load_dotenv()
 
 @app.route('/')
 def home():
