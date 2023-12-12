@@ -17,22 +17,12 @@ a {
   color: #0000EE;
 }
 .body__wrapper {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 10px;
+  
 }
 .main__wrapper {
   max-width: 560px;
   padding: 4em 0;
-}
-@media screen and (max-width: 880px){
-  .body__wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  .main__wrapper {
-    max-width: none;
-  }
+  margin: 0 auto;
 }
 /* --- Nav --- */
 nav {
@@ -64,7 +54,7 @@ nav {
 }
 /* --- Header --- */
 header {
-  float: left;
+  position: absolute;
 }
 .header__links ul {
   list-style: none;
@@ -79,9 +69,9 @@ header {
   width: 15px;
   padding: 0 .25em 0 0;
 }
-@media screen and (max-width: 880px){
+@media screen and (max-width: 1015px){
   header {
-    float: none;
+    position: relative;
   }
   .header__links ul {
     max-width: none;
@@ -186,7 +176,7 @@ header {
 .blog img {
   max-width: 100%;
 }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 1015px){
   .portfolio-essay {
     flex-direction: column;
   }
