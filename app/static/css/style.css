@@ -155,6 +155,9 @@ header {
 .portfolio-essay__title__label span:first-of-type {
   color: #ccc;
 }
+.portfolio-essay__title__label span:last-of-type {
+  text-align: right;
+}
 .portfolio-essay__body {
   flex-basis: 70%;
 }
