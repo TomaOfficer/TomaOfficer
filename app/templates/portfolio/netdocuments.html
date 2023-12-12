@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>NetDocuments | Thomas F. Officer</title>
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="{{ url_for('static', filename='assets/tfo-favicon.ico') }}" type="image/x-icon">
+</head>
+
+<body>
+  {% include 'navbar.html' %}
+  {% include 'header.html' %}
+  <section class="portfolio-essay">
+    <div class="portfolio-essay__title">
+      <h1 style="font-size: 28px;">
+        NetDocuments
+      </h1>
+      <p class="portfolio-essay__title__caption">
+        Redesigning Afterpattern and introducing AI
+      </p>
+      <div class="portfolio-essay__title__label">
+        <span>Role</span>
+        <span>Product Designer</span>
+      </div>
+      <div class="portfolio-essay__title__label">
+        <span>When</span>
+        <span>2021 - 2023</span>
+      </div>
+    </div>
+    <div class="portfolio-essay__body">
+      <p>
+        I joined NetDocuments in November 2021 when they acquired Afterpattern. Initially, my job was to incorporate Afterpattern's suite of no-code development tools into the company's document management system (you can think of NetDocuments as Dropbox for law firms).
+      </p>
+      <p>
+        In the images below, you can see a glimpse of my work at NetDocuments, where I played a key role in integrating, and redesigning, the Afterpattern suite of no-code development tools, the most important of which was the no-code app builder.
+      </p>
+    </div>
+  </section>
+  <section class="portfolio-showcase">
+    <a href="{{ url_for('static', filename='assets/nd-showcase-workflow1.png') }}" class="lightbox-trigger">
+      <img src="{{ url_for('static', filename='assets/nd-showcase-workflow1.png') }}" alt="Afterpattern app builder 2021">
+      <p class="lightbox-trigger__caption">
+        community.lawyer team 2016
+      </p>
+    </a>
+    <div id="lightbox">
+      <p class="lightbox__caption">Click to close</p>
+      <div class="lightbox-content">
+          <img id="lightbox-image" src="" alt="" />
+      </div>
+    </div>
+    <div class="portfolio-showcase__row">
+      <div class="portfolio-showcase__col">
+        <a href="{{ url_for('static', filename='assets/brl-showcase-problem.png') }}" class="lightbox-trigger">
+          <img src="{{ url_for('static', filename='assets/brl-showcase-problem.png') }}" alt="Afterpattern app builder 2018">
+          <p class="lightbox-trigger__caption">
+            problem statement
+          </p>
+        </a>
+        <div id="lightbox">
+          <p class="lightbox__caption">Click to close</p>
+          <div class="lightbox-content">
+              <img id="lightbox-image" src="" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-showcase__col">
+        <a href="{{ url_for('static', filename='assets/brl-showcase-marketing.png') }}" class="lightbox-trigger">
+          <img src="{{ url_for('static', filename='assets/brl-showcase-marketing.png') }}" alt="Afterpattern app builder 2019">
+          <p class="lightbox-trigger__caption">
+            v1 marketing materials
+          </p>
+        </a>
+        <div id="lightbox">
+          <p class="lightbox__caption">Click to close</p>
+          <div class="lightbox-content">
+              <img id="lightbox-image" src="" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-showcase__col">
+        <a href="{{ url_for('static', filename='assets/brl-showcase-homepage.png') }}" class="lightbox-trigger">
+          <img src="{{ url_for('static', filename='assets/brl-showcase-homepage.png') }}" alt="Afterpattern app builder 2020">
+          <p class="lightbox-trigger__caption">
+            homepage draft
+          </p>
+        </a>
+        <div id="lightbox">
+          <p class="lightbox__caption">Click to close</p>
+          <div class="lightbox-content">
+              <img id="lightbox-image" src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio-essay">
+    <div class="portfolio-essay__title">
+
+    </div>
+    <div class="portfolio-essay__body">
+      <p>
+        Community.lawyer was a two-sided marketplace, with clients on one side and lawyers on the other. Where would we get our roster of lawyers? What hack could we exploit to get a large roster of vetted lawyers with as little effort as possible?
+      </p>
+      <p>
+        Our first pivot was moving away from trying to build our own roster of lawyers towards partnering with those organizations that already had them: bar associations.
+      </p>
+      <p>
+        Bar associations have lawyer referral services that traditionally operate by phone. Their online experience was outdated. We offered Community.lawyer as referral platform SaaS.
+      </p>
+    </div>
+  </section>
+  <section class="portfolio-showcase">
+    <a href="{{ url_for('static', filename='assets/brl-showcase-boston.png') }}" class="lightbox-trigger">
+      <img src="{{ url_for('static', filename='assets/brl-showcase-boston.png') }}" alt="Afterpattern app builder 2021">
+      <p class="lightbox-trigger__caption">
+        boston bar's community.lawyer website
+      </p>
+    </a>
+    <div id="lightbox">
+      <p class="lightbox__caption">Click to close</p>
+      <div class="lightbox-content">
+          <img id="lightbox-image" src="" alt="" />
+      </div>
+    </div>
+    <div class="portfolio-showcase__row">
+      <div class="portfolio-showcase__col">
+        <a href="{{ url_for('static', filename='assets/brl-showcase-brochure.png') }}" class="lightbox-trigger">
+          <img src="{{ url_for('static', filename='assets/brl-showcase-brochure.png') }}" alt="Afterpattern app builder 2018">
+          <p class="lightbox-trigger__caption">
+            v2 marketing materials
+          </p>
+        </a>
+        <div id="lightbox">
+          <p class="lightbox__caption">Click to close</p>
+          <div class="lightbox-content">
+              <img id="lightbox-image" src="" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-showcase__col">
+        <a href="{{ url_for('static', filename='assets/brl-showcase-backend.png') }}" class="lightbox-trigger">
+          <img src="{{ url_for('static', filename='assets/brl-showcase-backend.png') }}" alt="Afterpattern app builder 2019">
+          <p class="lightbox-trigger__caption">
+            lawyer-facing backend
+          </p>
+        </a>
+        <div id="lightbox">
+          <p class="lightbox__caption">Click to close</p>
+          <div class="lightbox-content">
+              <img id="lightbox-image" src="" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-showcase__col">
+        <a href="{{ url_for('static', filename='assets/brl-showcase-reports.png') }}" class="lightbox-trigger">
+          <img src="{{ url_for('static', filename='assets/brl-showcase-reports.png') }}" alt="Afterpattern app builder 2020">
+          <p class="lightbox-trigger__caption">
+            admin-facing backend
+          </p>
+        </a>
+        <div id="lightbox">
+          <p class="lightbox__caption">Click to close</p>
+          <div class="lightbox-content">
+              <img id="lightbox-image" src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio-essay">
+    <div class="portfolio-essay__title">
+
+    </div>
+    <div class="portfolio-essay__body">
+      <p>
+        We grew very quickly to include as customers some of the largest bar associations in the country. Our network of referral platforms still exists today and is used by over 20,000 people every month to find legal help.
+      </p>
+    </div>
+  </section>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

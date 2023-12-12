@@ -23,6 +23,10 @@ def contact():
 def portfolio():
     return render_template('portfolio.html')
 
+@app.route('/portfolio/netdocuments')
+def netdocuments():
+    return render_template('portfolio/netdocuments.html')
+
 @app.route('/portfolio/afterpattern')
 def afterpattern():
     return render_template('portfolio/afterpattern.html')
