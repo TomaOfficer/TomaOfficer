@@ -1,7 +1,10 @@
-# app/routes.py
+import os
 from app import app
 from app.ai_chatbot import ask_ward
+from dotenv import load_dotenv
 from flask import render_template, request, jsonify
+
+load_dotenv()
 
 @app.route('/')
 def home():
@@ -68,7 +71,8 @@ def ask_chatbot():
 @app.route('/verify_password', methods=['POST'])
 def verify_password():
     password = request.json.get('password')
-    if password == "YourSecretPassword":  # Replace with your actual password
+    correct_password = os.getenv('PORTFOLIO_PASSWORD')
+    if password == correct_password:
         return jsonify({"status": "success"})
     else:
         return jsonify({"status": "failure"}), 401
