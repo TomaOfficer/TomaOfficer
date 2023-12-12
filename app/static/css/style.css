@@ -25,10 +25,13 @@ a {
   max-width: 560px;
   padding: 4em 0;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 880px){
   .body__wrapper {
     display: flex;
     flex-direction: column;
+  }
+  .main__wrapper {
+    max-width: none;
   }
 }
 /* --- Nav --- */
@@ -60,6 +63,9 @@ nav {
   margin: 0;
 }
 /* --- Header --- */
+header {
+  float: left;
+}
 .header__links ul {
   list-style: none;
   max-width: 170px;
@@ -72,6 +78,17 @@ nav {
 .header__links img {
   width: 15px;
   padding: 0 .25em 0 0;
+}
+@media screen and (max-width: 880px){
+  header {
+    float: none;
+  }
+  .header__links ul {
+    max-width: none;
+  }
+  .header__links li {
+    display: inline-block;
+  }
 }
 /* --- Blog --- */
 .blog {
@@ -169,7 +186,7 @@ nav {
 .blog img {
   max-width: 100%;
 }
-@media screen and (max-width: 620px){
+@media screen and (max-width: 760px){
   .portfolio-essay {
     flex-direction: column;
   }
@@ -234,18 +251,4 @@ nav {
   border-radius: 5px;
   margin: 5px;
   /* Other styling as needed */
-}
-/* --- Restaurants --- */
-.restaurants-hero {
-  text-align: center;
-  padding: 6em 0 3em;
-  max-width: 480px;
-  margin: 0 auto;
-}
-.restaurants-hero h1 {
-  font-size: 3em;
-  margin: 0;
-  padding: 0;
-  line-height: 1.3em;
-  font-family: 'Georgia', serif;
 }
