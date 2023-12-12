@@ -64,3 +64,11 @@ def ask_chatbot():
     user_input = request.json['message']
     response = ask_ward(user_input)
     return jsonify({'reply': response})
+
+@app.route('/verify_password', methods=['POST'])
+def verify_password():
+    password = request.json.get('password')
+    if password == "YourSecretPassword":  # Replace with your actual password
+        return jsonify({"status": "success"})
+    else:
+        return jsonify({"status": "failure"}), 401

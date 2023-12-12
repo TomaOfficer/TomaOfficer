@@ -176,6 +176,10 @@ header {
 .blog img {
   max-width: 100%;
 }
+.blur-image {
+  filter: blur(8px);
+  transition: filter 0.3s;
+}
 @media screen and (max-width: 1015px){
   .portfolio-essay {
     flex-direction: column;
