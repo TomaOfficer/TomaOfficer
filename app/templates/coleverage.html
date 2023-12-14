@@ -11,8 +11,33 @@
 </head>
 
 <body>
-  {% include 'navbar.html' %}
-  
-</body>
+  <h1>Real Estate Investment Calculator</h1>
+  <p>
+    Generate and share back-of-the-napkin calculations for a property’s rehab, financing, and income expectations.
+  </p>
+  <form action="/submit_coleverage" method="post">
+    <label for="acquisitionCost">Acquisition Cost:</label><br>
+    <input type="number" id="acquisitionCost" name="acquisitionCost" required><br>
 
+    <label for="squareFootage">Square Footage:</label><br>
+    <input type="number" id="squareFootage" name="squareFootage" required><br>
+
+    <label for="renovationAmount">Amount of Renovation Required:</label><br>
+    <select id="renovationAmount" name="renovationAmount" required>
+        <option value="minimal">Minimal</option>
+        <option value="moderate">Moderate</option>
+        <option value="total">Total</option>
+    </select><br>
+
+    <label for="renovationType">Type of Renovation:</label><br>
+    <select id="renovationType" name="renovationType" required>
+        <option value="singleFamily">Single Family Home</option>
+        <option value="duplex">Duplex</option>
+        <option value="multiPlex">Multi-Plex</option>
+        <option value="liveWork">Live-Work</option>
+    </select><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
 </html>
