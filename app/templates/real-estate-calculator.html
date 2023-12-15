@@ -14,6 +14,8 @@
       var downPaymentPercentage = parseFloat(document.getElementById('downpayment-percentage').value) || 100;
       var loanTerm = parseFloat(document.getElementById('loan-term').value);
       var interestRate = parseFloat(document.getElementById('interest-rate').value);
+      var monthlyInterestRate = interestRate / 12 / 100; // Convert annual rate to a decimal monthly rate
+      var totalPayments = loanTerm * 12;
       var rehabCost = parseFloat(document.getElementById('rehab-cost').value) || 0;
       var transferTax = parseFloat(document.getElementById('transfer-tax').value);
       var closingCost = parseFloat(document.getElementById('closing-cost').value);
@@ -34,10 +36,12 @@
       // Calculations
       var downPayment = purchasePrice * downPaymentPercentage / 100;
       var upfrontCost = rehabCost + downPayment;
-      var monthlyLoanPayment = (purchasePrice - downPayment) * interestRate / 12 * loanTerm; // Simplified loan payment calculation
+      var principal = purchasePrice - downPayment;
+      var monthlyLoanPayment = (monthlyInterestRate * principal) / (1 - Math.pow(1 + monthlyInterestRate, - totalPayments)) || 0;
 
       // Set results
       document.getElementById('upfront-cost').innerText = '$' + upfrontCost.toFixed(2);
+      document.getElementById('loan-payment').innerText = '$' + monthlyLoanPayment.toFixed(2);
     }
   </script>
 </head>
@@ -73,7 +77,7 @@
         </div>
         <div class="calc__row">
           <div class="calc__row__leftCol">
-            <label for="loan-term">Loan term</label> 
+            <label for="loan-term">Loan term (years)</label> 
           </div>
           <div class="calc__row__rightCol">
             <input type="number" id="loan-term" oninput="updateResults()">
@@ -116,7 +120,7 @@
             <label for="loan-payment">Loan payment</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="loan-payment" oninput="updateResults()">
+            <p id="loan-payment"></p>
           </div>
         </div>
         <div class="calc__row">
