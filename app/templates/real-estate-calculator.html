@@ -11,10 +11,10 @@
     function updateResults() {
       // Pull values from calculator
       var purchasePrice = parseFloat(document.getElementById('purchase-price').value);
-      var downPaymentPercentage = parseFloat(document.getElementById('downpayment-percentage').value);
+      var downPaymentPercentage = parseFloat(document.getElementById('downpayment-percentage').value) || 100;
       var loanTerm = parseFloat(document.getElementById('loan-term').value);
       var interestRate = parseFloat(document.getElementById('interest-rate').value);
-      var rehabCost = parseFloat(document.getElementById('rehab-cost').value);
+      var rehabCost = parseFloat(document.getElementById('rehab-cost').value) || 0;
       var transferTax = parseFloat(document.getElementById('transfer-tax').value);
       var closingCost = parseFloat(document.getElementById('closing-cost').value);
       var loanPayment = parseFloat(document.getElementById('loan-payment').value);
