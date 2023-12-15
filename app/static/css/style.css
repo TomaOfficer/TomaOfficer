@@ -274,23 +274,31 @@ header {
 }
 .calc-main__wrapper {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 2fr 6fr;
 }
-.calc-main__calc {
+.calc {
   background-color: #ccc;
 }
-.calc-main__header-row {
+.calc__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+.calc__row__leftCol {
+  flex-basis: 40%;
+}
+.calc__row__rightCol {
+  flex-basis: 55%;
+}
+.calc input[type="number"] {
+  width: 100%;
+  box-sizing: border-box;
+}
+.results__header-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.calc-main__header-row__col {
-  flex-basis: 33%;
-}
-.calc-main__header-subrow {
-  display: flex;
-  justify-content: space-between;
-}
-.calc-main__header-subrow__col {
-  flex-basis: 45%;
+.results__header-row__col {
+  flex-basis: 20%;
 }

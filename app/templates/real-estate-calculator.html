@@ -21,12 +21,29 @@
   </div>
   <div class="calc-main">
     <div class="calc-main__wrapper">
-      <div class="calc-main__calc">
-        Purchase price
-        Downpayment
-        Loan term
-        Interest rate
-        Rehab cost
+      <div class="calc">
+        <div class="calc__row">
+          <div class="calc__row__leftCol">
+            <label for="purchase-price">Purchase price:</label> 
+          </div>
+          <div class="calc__row__rightCol">
+            <input type="number" id="purchase-price" oninput="updateResults()">
+          </div>
+        </div>
+        <div class="calc__row">
+          <div class="calc__row__leftCol">
+            <label for="purchase-price">Downpayment %</label> 
+          </div>
+          <div class="calc__row__rightCol">
+            <input type="number" id="downpayment" oninput="updateResults()">
+          </div>
+        </div>
+        
+        <label for="downpayment">Downpayment %:</label> <br>
+        <label for="loan-term">Loan term:</label> <input type="number" id="loan-term" oninput="updateResults()"><br>
+        <label for="interest-rate">Interest rate:</label> <input type="number" id="interest-rate" oninput="updateResults()"><br>
+        <label for="rehab-cost">Rehab cost:</label> <input type="number" id="rehab-cost" oninput="updateResults()"><br>
+
         Transfer tax
         Closing cost
         Loan payment
@@ -43,9 +60,9 @@
         Garbage
         Monthly income
       </div>
-      <div class="calc-main__results">
-        <div class="calc-main__header-row">
-          <div class="calc-main__header-row__col">
+      <div class="results">
+        <div class="results__header-row">
+          <div class="results__header-row__col">
             <h3>
               Upfront cost
             </h3>
@@ -53,20 +70,14 @@
               $360,000
             </p>
           </div>
-          <div class="calc-main__header-row__col">
+          <div class="results__header-row__col">
             <h3>
               Cashflow
             </h3>
-            <div classs="calc-main__header-subrow">
-              <div class="calc-main__header-subrow__col">
-                $2,142 / month
-              </div>
-              <div class="calc-main__header-subrow__col">
-                $28,994 / year
-              </div>
-            </div>
+            $2,142 / month <br>
+            $28,994 / year
           </div>
-          <div class="calc-main__header-row__col">
+          <div class="results__header-row__col">
             <h3>
               Cap rate
             </h3>
@@ -74,7 +85,7 @@
               11.05
             </p>
           </div>
-          <div class="calc-main__header-row__col">
+          <div class="results__header-row__col">
             <h3>
               Estimated value after 20 years
             </h3>
