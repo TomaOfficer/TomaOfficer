@@ -59,9 +59,14 @@
   <div class="calc-main">
     <div class="calc-main__wrapper">
       <div class="calc">
+        <div class="calc__header">
+          <h5>
+            Upfront costs
+          </h5>
+        </div>
         <div class="calc__row">
           <div class="calc__row__leftCol">
-            <label for="purchase-price">Purchase price:</label> 
+            <label for="purchase-price">Purchase price</label> 
           </div>
           <div class="calc__row__rightCol">
             <input type="number" id="purchase-price" oninput="updateResults()">
@@ -85,7 +90,7 @@
         </div>
         <div class="calc__row">
           <div class="calc__row__leftCol">
-            <label for="interest-rate">Interest rate</label> 
+            <label for="interest-rate">Interest rate %</label> 
           </div>
           <div class="calc__row__rightCol">
             <input type="number" id="interest-rate" oninput="updateResults()">
@@ -114,6 +119,24 @@
           <div class="calc__row__rightCol">
             <input type="number" id="closing-cost" oninput="updateResults()">
           </div>
+        </div>
+        <div class="calc__header">
+          <h5>
+            Income
+          </h5>
+        </div>
+        <div class="calc__row">
+          <div class="calc__row__leftCol">
+            <label for="monthly-income">Monthly income</label> 
+          </div>
+          <div class="calc__row__rightCol">
+            <input type="number" id="monthly-income" oninput="updateResults()">
+          </div>
+        </div>
+        <div class="calc__header">
+          <h5>
+            Monthly costs
+          </h5>
         </div>
         <div class="calc__row">
           <div class="calc__row__leftCol">
@@ -209,14 +232,6 @@
           </div>
           <div class="calc__row__rightCol">
             <input type="number" id="garbage" oninput="updateResults()">
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="monthly-income">Monthly income</label> 
-          </div>
-          <div class="calc__row__rightCol">
-            <input type="number" id="monthly-income" oninput="updateResults()">
           </div>
         </div>      
       </div>

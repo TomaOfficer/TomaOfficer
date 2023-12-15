@@ -278,6 +278,15 @@ header {
 }
 .calc {
   background-color: #ccc;
+  padding: 1em 0;
+}
+.calc__header {
+  padding: 5px 10px;
+}
+.calc__header h5 {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
 }
 .calc__row {
   display: flex;
