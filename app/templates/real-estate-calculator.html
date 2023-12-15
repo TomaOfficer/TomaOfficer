@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Real Estate Investment Calculator | Thomas Officer</title>
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="assets/tfo-favicon.ico" type="image/x-icon">
+</head>
+</head>
+
+<body>
+  <div class="calc-nav">
+    <div class="cal-nav__wrapper">
+      <h1>Real Estate Investment Calculator</h1>
+      <p>
+        Generate and share back-of-the-napkin calculations for a property’s rehab, financing, and income expectations.
+      </p>    
+    </div>
+  </div>
+  <div class="calc-main">
+    <div class="calc-main__wrapper">
+      <div class="calc-main__calc">
+        Purchase price
+        Downpayment
+        Loan term
+        Interest rate
+        Rehab cost
+        Transfer tax
+        Closing cost
+        Loan payment
+        Property taxes
+        Home insurance
+        Repairs & maintenance
+        Vacancy
+        Capital expenditures
+        Management fees
+        HOA dues
+        Electricity
+        Gas
+        Water / Sewer
+        Garbage
+        Monthly income
+      </div>
+      <div class="calc-main__results">
+        <div class="calc-main__header-row">
+          <div class="calc-main__header-row__col">
+            <h3>
+              Upfront cost
+            </h3>
+            <p>
+              $360,000
+            </p>
+          </div>
+          <div class="calc-main__header-row__col">
+            <h3>
+              Cashflow
+            </h3>
+            <div classs="calc-main__header-subrow">
+              <div class="calc-main__header-subrow__col">
+                $2,142 / month
+              </div>
+              <div class="calc-main__header-subrow__col">
+                $28,994 / year
+              </div>
+            </div>
+          </div>
+          <div class="calc-main__header-row__col">
+            <h3>
+              Cap rate
+            </h3>
+            <p>
+              11.05
+            </p>
+          </div>
+          <div class="calc-main__header-row__col">
+            <h3>
+              Estimated value after 20 years
+            </h3>
+            <p>
+              1,540,322
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

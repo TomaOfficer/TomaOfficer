@@ -16,9 +16,6 @@ ul {
 a {
   color: #0000EE;
 }
-.body__wrapper {
-  
-}
 .main__wrapper {
   max-width: 560px;
   padding: 4em 0;
@@ -248,4 +245,52 @@ header {
   border-radius: 5px;
   margin: 5px;
   /* Other styling as needed */
+}
+/* --- Real Estate Investment Calculator --- */
+.calc-nav {
+  padding: 20px 0;
+  font-family: Helvetica, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+.cal-nav__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.calc-nav h1 {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0 0 .35em;
+  margin: 0;
+}
+.calc-nav p {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  color: #ccc;
+}
+.calc-main {
+  
+}
+.calc-main__wrapper {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.calc-main__calc {
+  background-color: #ccc;
+}
+.calc-main__header-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.calc-main__header-row__col {
+  flex-basis: 33%;
+}
+.calc-main__header-subrow {
+  display: flex;
+  justify-content: space-between;
+}
+.calc-main__header-subrow__col {
+  flex-basis: 45%;
 }

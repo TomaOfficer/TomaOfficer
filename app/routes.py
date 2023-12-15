@@ -79,34 +79,6 @@ def verify_password():
     else:
         return jsonify({"status": "failure"}), 401
     
-@app.route('/coleverage')
+@app.route('/calculator')
 def coleverage():
-    return render_template('coleverage.html')
-
-@app.route('/submit_coleverage', methods=['POST'])
-def submit_coleverage():
-    # Here you will process the form data
-    acquisition_cost = request.form['acquisitionCost']
-    square_footage = request.form['squareFootage']
-    renovation_amount = request.form['renovationAmount']
-    renovation_type = request.form['renovationType']
-
-    monthly_income_estimate = get_monthly_income_from_openai(square_footage, renovation_type)
-
-    # Prepare property data for the DataFrame
-    property_data = {
-        'acquisitionCost': acquisition_cost,
-        'squareFootage': square_footage,
-        'renovationAmount': renovation_amount,
-        'renovationType': renovation_type,
-        'totalMonthlyIncome': monthly_income_estimate,
-        # Add other form fields as necessary
-    }
-
-    # Initialize DataFrame and add the property
-    df = initialize_dataframe()
-    df = add_property_to_dataframe(df, property_data)
-
-    df_html = df.to_html()
-
-    return render_template('coleverage.html', dataframe_html=df_html)
+    return render_template('real-estate-calculator.html')
