@@ -42,6 +42,7 @@
       var monthlyLoanPayment = (monthlyInterestRate * principal) / (1 - Math.pow(1 + monthlyInterestRate, - totalPayments)) || 0;
       var monthlyCost = loanPayment + propertyTaxes + homeInsurance + repairsMaintenance + vacancy + capex + mgtFees + hoaDues + electricity + gas + water + garbage;
       var monthlyCashflow = monthlyIncome - monthlyCost;
+      var annualCashflow = monthlyCashflow * 12;
 
       // Set results
       document.getElementById('upfront-cost').innerText = '$' + upfrontCost.toFixed(2);
@@ -55,6 +56,7 @@
           var futureValue = purchasePrice * Math.pow(1 + appreciationRate, years);
           document.getElementById('appreciation').innerText = '$' + futureValue.toFixed(2);
       }
+      document.getElementById('cashflow-annually').innerText = '$' + annualCashflow.toFixed(2);
     }
   </script>
 </head>
