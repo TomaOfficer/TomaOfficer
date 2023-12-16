@@ -87,6 +87,11 @@
       document.getElementById('cashflow-annually').innerText = formatCurrency(annualCashflow);
       document.getElementById('cap-rate').innerText = capRate.toFixed(2) + '%';
     }
+
+    function estimateRepairs() {
+        var monthlyIncome = parseFloat(document.getElementById('monthly-income').value) || 0;
+        document.getElementById('repairs-maintenance').value = (monthlyIncome * 0.10).toFixed(2);
+    }
   </script>
 </head>
 </head>
