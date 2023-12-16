@@ -32,7 +32,9 @@
       var water = parseFloat(document.getElementById('water').value) || 0;
       var garbage = parseFloat(document.getElementById('garbage').value) || 0;
       var monthlyIncome = parseFloat(document.getElementById('monthly-income').value) || 0;
-      
+      var appreciationRate = parseFloat(document.getElementById('appreciation-rate').value) / 100;
+      var years = 20;
+
       // Calculations
       var downPayment = purchasePrice * downPaymentPercentage / 100;
       var upfrontCost = rehabCost + downPayment || 0;
@@ -45,6 +47,14 @@
       document.getElementById('upfront-cost').innerText = '$' + upfrontCost.toFixed(2);
       document.getElementById('loan-payment').innerText = '$' + monthlyLoanPayment.toFixed(2);
       document.getElementById('cashflow-monthly').innerText = '$' + monthlyCashflow.toFixed(2);
+      if (isNaN(appreciationRate)) {
+          // If appreciation rate is not provided, set future value to empty or a placeholder
+          document.getElementById('appreciation').innerText = 'N/A';
+      } else {
+          // Perform calculation if appreciation rate is provided
+          var futureValue = purchasePrice * Math.pow(1 + appreciationRate, years);
+          document.getElementById('appreciation').innerText = '$' + futureValue.toFixed(2);
+      }
     }
   </script>
 </head>
@@ -125,7 +135,7 @@
         </div>
         <div class="calc__header">
           <h5>
-            Income
+            Income & Appreciation
           </h5>
         </div>
         <div class="calc__row">
@@ -134,6 +144,14 @@
           </div>
           <div class="calc__row__rightCol">
             <input type="number" id="monthly-income" oninput="updateResults()">
+          </div>
+        </div>
+        <div class="calc__row">
+          <div class="calc__row__leftCol">
+            <label for="appreciation-rate">Appreciation rate %</label> 
+          </div>
+          <div class="calc__row__rightCol">
+            <input type="number" id="appreciation-rate" oninput="updateResults()">
           </div>
         </div>
         <div class="calc__header">
