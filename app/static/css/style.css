@@ -269,12 +269,9 @@ header {
   margin: 0;
   color: #ccc;
 }
-.calc-main {
-  
-}
 .calc-main__wrapper {
   display: grid;
-  grid-template-columns: 2fr 6fr;
+  grid-template-columns: 3fr 6fr;
 }
 .calc {
   background-color: #ccc;
@@ -308,8 +305,7 @@ header {
 }
 .results__header-row {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .results__header-row__col {
   flex-basis: 20%;
