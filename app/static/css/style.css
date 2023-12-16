@@ -303,6 +303,9 @@ header {
   width: 100%;
   box-sizing: border-box;
 }
+.results {
+  padding: 2em;
+}
 .results__header-row {
   display: flex;
   flex-direction: row;
@@ -310,4 +313,8 @@ header {
 }
 .results__header-row__col {
   flex-basis: 20%;
+}
+.results h3 {
+  padding: 0 0 .5em;
+  margin: 0;
 }
