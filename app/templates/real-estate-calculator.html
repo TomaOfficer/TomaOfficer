@@ -8,6 +8,23 @@
   <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
   <link rel="icon" href="assets/tfo-favicon.ico" type="image/x-icon">
   <script>
+    function saveInput(id) {
+      var value = document.getElementById(id).value;
+      localStorage.setItem(id, value);
+    }
+
+    function loadSavedInputs() {
+      document.querySelectorAll('.calc input').forEach(input => {
+        var savedValue = localStorage.getItem(input.id);
+        if (savedValue) {
+          input.value = savedValue;
+        }
+      });
+      updateResults(); // Update results based on loaded inputs
+    }
+
+    window.onload = loadSavedInputs;
+
     function updateResults() {
       // Pull values from calculator
       var purchasePrice = parseFloat(document.getElementById('purchase-price').value);
@@ -35,6 +52,14 @@
       var appreciationRate = parseFloat(document.getElementById('appreciation-rate').value) / 100;
       var years = 20;
 
+      function formatCurrency(value) {
+        return new Intl.NumberFormat('en-US', {
+          style: 'currency',
+          currency: 'USD',
+          maximumFractionDigits: 2
+        }).format(value);
+      }
+
       // Calculations
       var downPayment = purchasePrice * downPaymentPercentage / 100;
       var upfrontCost = rehabCost + downPayment || 0;
@@ -48,18 +73,18 @@
       var capRate = (NOI / purchasePrice) * 100;
 
       // Set results
-      document.getElementById('upfront-cost').innerText = '$' + upfrontCost.toFixed(2);
-      document.getElementById('loan-payment').innerText = '$' + monthlyLoanPayment.toFixed(2);
-      document.getElementById('cashflow-monthly').innerText = '$' + monthlyCashflow.toFixed(2);
+      document.getElementById('upfront-cost').innerText = formatCurrency(upfrontCost);
+      document.getElementById('loan-payment').innerText = formatCurrency(monthlyLoanPayment);
+      document.getElementById('cashflow-monthly').innerText = formatCurrency(monthlyCashflow);
       if (isNaN(appreciationRate)) {
           // If appreciation rate is not provided, set future value to empty or a placeholder
           document.getElementById('appreciation').innerText = 'N/A';
       } else {
           // Perform calculation if appreciation rate is provided
           var futureValue = purchasePrice * Math.pow(1 + appreciationRate, years);
-          document.getElementById('appreciation').innerText = '$' + futureValue.toFixed(2);
+          document.getElementById('appreciation').innerText = formatCurrency(futureValue);
       }
-      document.getElementById('cashflow-annually').innerText = '$' + annualCashflow.toFixed(2);
+      document.getElementById('cashflow-annually').innerText = formatCurrency(annualCashflow);
       document.getElementById('cap-rate').innerText = capRate.toFixed(2) + '%';
     }
   </script>
@@ -88,7 +113,7 @@
             <label for="purchase-price">Purchase price</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="purchase-price" oninput="updateResults()">
+            <input type="number" id="purchase-price" oninput="updateResults(); saveInput('purchase-price')">
           </div>
         </div>
         <div class="calc__row">
@@ -96,7 +121,7 @@
             <label for="downpayment-percentage">Downpayment %</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="downpayment-percentage" oninput="updateResults()">
+            <input type="number" id="downpayment-percentage" oninput="updateResults(); saveInput('downpayment-percentage')">
           </div>
         </div>
         <div class="calc__row">
@@ -104,7 +129,7 @@
             <label for="loan-term">Loan term (years)</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="loan-term" oninput="updateResults()">
+            <input type="number" id="loan-term" oninput="updateResults(); saveInput('loan-term')">
           </div>
         </div>
         <div class="calc__row">
@@ -112,7 +137,7 @@
             <label for="interest-rate">Interest rate %</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="interest-rate" oninput="updateResults()">
+            <input type="number" id="interest-rate" oninput="updateResults(); saveInput('interest-rate')">
           </div>
         </div>
         <div class="calc__row">
@@ -120,7 +145,7 @@
             <label for="rehab-cost">Rehab cost</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="rehab-cost" oninput="updateResults()">
+            <input type="number" id="rehab-cost" oninput="updateResults(); saveInput('rehab-cost')">
           </div>
         </div>
         <div class="calc__row">
@@ -128,7 +153,7 @@
             <label for="transfer-tax">Transfer tax</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="transfer-tax" oninput="updateResults()">
+            <input type="number" id="transfer-tax" oninput="updateResults(); saveInput('transfer-tax')">
           </div>
         </div>
         <div class="calc__row">
@@ -136,7 +161,7 @@
             <label for="closing-cost">Closing cost</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="closing-cost" oninput="updateResults()">
+            <input type="number" id="closing-cost" oninput="updateResults(); saveInput('closing-cost')">
           </div>
         </div>
         <div class="calc__header">
@@ -149,7 +174,7 @@
             <label for="monthly-income">Monthly income</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="monthly-income" oninput="updateResults()">
+            <input type="number" id="monthly-income" oninput="updateResults(); saveInput('monthly-income')">
           </div>
         </div>
         <div class="calc__row">
@@ -157,7 +182,7 @@
             <label for="appreciation-rate">Appreciation rate %</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="appreciation-rate" oninput="updateResults()">
+            <input type="number" id="appreciation-rate" oninput="updateResults(); saveInput('appreciation-rate')">
           </div>
         </div>
         <div class="calc__header">
@@ -178,7 +203,7 @@
             <label for="property-taxes">Property taxes</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="property-taxes" oninput="updateResults()">
+            <input type="number" id="property-taxes" oninput="updateResults(); saveInput('property-taxes')">
           </div>
         </div>
         <div class="calc__row">
@@ -186,7 +211,7 @@
             <label for="home-insurance">Home insurance</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="home-insurance" oninput="updateResults()">
+            <input type="number" id="home-insurance" oninput="updateResults(); saveInput('home-insurance')">
           </div>
         </div>
         <div class="calc__row">
@@ -194,7 +219,7 @@
             <label for="repairs-maintenance">Repairs & maintenance</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="repairs-maintenance" oninput="updateResults()">
+            <input type="number" id="repairs-maintenance" oninput="updateResults(); saveInput('repairs-maintenance')">
           </div>
         </div>
         <div class="calc__row">
@@ -202,7 +227,7 @@
             <label for="vacancy">Vacancy</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="vacancy" oninput="updateResults()">
+            <input type="number" id="vacancy" oninput="updateResults(); saveInput('vacancy')">
           </div>
         </div>
         <div class="calc__row">
@@ -210,7 +235,7 @@
             <label for="capex">Capital expenditures</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="capex" oninput="updateResults()">
+            <input type="number" id="capex" oninput="updateResults(); saveInput('capex')">
           </div>
         </div>
         <div class="calc__row">
@@ -218,7 +243,7 @@
             <label for="mgt-fees">Management fees</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="mgt-fees" oninput="updateResults()">
+            <input type="number" id="mgt-fees" oninput="updateResults(); saveInput('mgt-fees')">
           </div>
         </div>
         <div class="calc__row">
@@ -226,7 +251,7 @@
             <label for="hoa-dues">HOA Dues</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="hoa-dues" oninput="updateResults()">
+            <input type="number" id="hoa-dues" oninput="updateResults(); saveInput('hoa-dues')">
           </div>
         </div>
         <div class="calc__row">
@@ -234,7 +259,7 @@
             <label for="electricity">Electricity</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="electricity" oninput="updateResults()">
+            <input type="number" id="electricity" oninput="updateResults(); saveInput('electricity')">
           </div>
         </div>
         <div class="calc__row">
@@ -242,7 +267,7 @@
             <label for="gas">Gas</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="gas" oninput="updateResults()">
+            <input type="number" id="gas" oninput="updateResults(); saveInput('gas')">
           </div>
         </div>
         <div class="calc__row">
@@ -250,7 +275,7 @@
             <label for="water">Water / Sewer</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="water" oninput="updateResults()">
+            <input type="number" id="water" oninput="updateResults(); saveInput('water')">
           </div>
         </div>
         <div class="calc__row">
@@ -258,7 +283,7 @@
             <label for="garbage">Garbage</label> 
           </div>
           <div class="calc__row__rightCol">
-            <input type="number" id="garbage" oninput="updateResults()">
+            <input type="number" id="garbage" oninput="updateResults(); saveInput('garbage')">
           </div>
         </div>      
       </div>
