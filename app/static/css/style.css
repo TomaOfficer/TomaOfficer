@@ -291,10 +291,13 @@ header {
   padding: 5px 10px;
 }
 .calc__row__leftCol {
-  flex-basis: 50%;
+  flex-basis: 40%;
+}
+.calc__row__middleCol {
+  flex-basis: 25%;
 }
 .calc__row__rightCol {
-  flex-basis: 35%;
+  flex-basis: 30%;
 }
 .calc input[type="number"] {
   width: 100%;
@@ -305,7 +308,8 @@ header {
 }
 .results__header-row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .results__header-row__col {
   flex-basis: 20%;
