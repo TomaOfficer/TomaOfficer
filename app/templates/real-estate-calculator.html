@@ -41,8 +41,11 @@
       var principal = purchasePrice - downPayment;
       var monthlyLoanPayment = (monthlyInterestRate * principal) / (1 - Math.pow(1 + monthlyInterestRate, - totalPayments)) || 0;
       var monthlyCost = loanPayment + propertyTaxes + homeInsurance + repairsMaintenance + vacancy + capex + mgtFees + hoaDues + electricity + gas + water + garbage;
+      var annualOperatingExpenses = monthlyCost * 12;
       var monthlyCashflow = monthlyIncome - monthlyCost;
       var annualCashflow = monthlyCashflow * 12;
+      var NOI = annualCashflow - annualOperatingExpenses;
+      var capRate = (NOI / purchasePrice) * 100;
 
       // Set results
       document.getElementById('upfront-cost').innerText = '$' + upfrontCost.toFixed(2);
@@ -57,6 +60,7 @@
           document.getElementById('appreciation').innerText = '$' + futureValue.toFixed(2);
       }
       document.getElementById('cashflow-annually').innerText = '$' + annualCashflow.toFixed(2);
+      document.getElementById('cap-rate').innerText = capRate.toFixed(2) + '%';
     }
   </script>
 </head>
