@@ -17,31 +17,34 @@
       var monthlyInterestRate = interestRate / 12 / 100; // Convert annual rate to a decimal monthly rate
       var totalPayments = loanTerm * 12;
       var rehabCost = parseFloat(document.getElementById('rehab-cost').value) || 0;
-      var transferTax = parseFloat(document.getElementById('transfer-tax').value);
-      var closingCost = parseFloat(document.getElementById('closing-cost').value);
-      var loanPayment = parseFloat(document.getElementById('loan-payment').value);
-      var propertyTaxes = parseFloat(document.getElementById('property-taxes').value);
-      var homeInsurance = parseFloat(document.getElementById('home-insurance').value);
-      var repairsMaintenance = parseFloat(document.getElementById('repairs-maintenance').value);
-      var vacancy = parseFloat(document.getElementById('vacancy').value);
-      var capex = parseFloat(document.getElementById('capex').value);
-      var mgtFees = parseFloat(document.getElementById('mgt-fees').value);
-      var hoaDues = parseFloat(document.getElementById('hoa-dues').value);
-      var electricity = parseFloat(document.getElementById('electricity').value);
-      var gas = parseFloat(document.getElementById('gas').value);
-      var water = parseFloat(document.getElementById('water').value);
-      var garbage = parseFloat(document.getElementById('garbage').value);
-      var monthlyIncome = parseFloat(document.getElementById('monthly-income').value);
+      var transferTax = parseFloat(document.getElementById('transfer-tax').value) || 0;
+      var closingCost = parseFloat(document.getElementById('closing-cost').value) || 0;
+      var loanPayment = parseFloat(document.getElementById('loan-payment').value) || 0;
+      var propertyTaxes = parseFloat(document.getElementById('property-taxes').value) || 0;
+      var homeInsurance = parseFloat(document.getElementById('home-insurance').value) || 0;
+      var repairsMaintenance = parseFloat(document.getElementById('repairs-maintenance').value) || 0;
+      var vacancy = parseFloat(document.getElementById('vacancy').value) || 0;
+      var capex = parseFloat(document.getElementById('capex').value) || 0;
+      var mgtFees = parseFloat(document.getElementById('mgt-fees').value) || 0;
+      var hoaDues = parseFloat(document.getElementById('hoa-dues').value) || 0; 
+      var electricity = parseFloat(document.getElementById('electricity').value) || 0;
+      var gas = parseFloat(document.getElementById('gas').value) || 0;
+      var water = parseFloat(document.getElementById('water').value) || 0;
+      var garbage = parseFloat(document.getElementById('garbage').value) || 0;
+      var monthlyIncome = parseFloat(document.getElementById('monthly-income').value) || 0;
       
       // Calculations
       var downPayment = purchasePrice * downPaymentPercentage / 100;
       var upfrontCost = rehabCost + downPayment;
       var principal = purchasePrice - downPayment;
       var monthlyLoanPayment = (monthlyInterestRate * principal) / (1 - Math.pow(1 + monthlyInterestRate, - totalPayments)) || 0;
+      var monthlyCost = loanPayment + propertyTaxes + homeInsurance + repairsMaintenance + vacancy + capex + mgtFees + hoaDues + electricity + gas + water + garbage;
+      var monthlyCashflow = monthlyIncome - monthlyCost;
 
       // Set results
       document.getElementById('upfront-cost').innerText = '$' + upfrontCost.toFixed(2);
       document.getElementById('loan-payment').innerText = '$' + monthlyLoanPayment.toFixed(2);
+      document.getElementById('cashflow-monthly').innerText = '$' + monthlyCashflow.toFixed(2);
     }
   </script>
 </head>
