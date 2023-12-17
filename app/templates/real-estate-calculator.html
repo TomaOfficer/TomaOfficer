@@ -52,13 +52,19 @@
       var appreciationRate = parseFloat(document.getElementById('appreciation-rate').value) / 100;
       var years = 20;
 
-      function formatCurrency(value) {
-        return new Intl.NumberFormat('en-US', {
-          style: 'currency',
-          currency: 'USD',
-          maximumFractionDigits: 2
-        }).format(value);
-      }
+      var buttonsEnabled = monthlyIncome > 0;
+      document.getElementById('estimate-repairs-button').disabled = !buttonsEnabled;
+      document.getElementById('estimate-vacancy-button').disabled = !buttonsEnabled;
+      document.getElementById('estimate-capex-button').disabled = !buttonsEnabled;
+      document.getElementById('estimate-mgtfees-button').disabled = !buttonsEnabled;
+
+        function formatCurrency(value) {
+          return new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            maximumFractionDigits: 2
+          }).format(value);
+        }
 
       // Calculations
       var downPayment = purchasePrice * downPaymentPercentage / 100;
@@ -271,7 +277,7 @@
             <input type="number" id="repairs-maintenance" oninput="updateResults(); saveInput('repairs-maintenance')">
           </div>
           <div class="calc__row__rightCol">
-            <button onclick="estimateRepairs()">Estimate</button>
+            <button id="estimate-repairs-button" onclick="estimateRepairs()">Estimate</button>
           </div>
         </div>
         <div class="calc__row">
@@ -282,7 +288,7 @@
             <input type="number" id="vacancy" oninput="updateResults(); saveInput('vacancy')">
           </div>
           <div class="calc__row__rightCol">
-            <button onclick="estimateVacancy()">Estimate</button>
+            <button id="estimate-vacancy-button" onclick="estimateVacancy()">Estimate</button>
           </div>
         </div>
         <div class="calc__row">
@@ -293,7 +299,7 @@
             <input type="number" id="capex" oninput="updateResults(); saveInput('capex')">
           </div>
           <div class="calc__row__rightCol">
-            <button onclick="estimateCapex()">Estimate</button>
+            <button id="estimate-capex-button" onclick="estimateCapex()">Estimate</button>
           </div>
         </div>
         <div class="calc__row">
@@ -304,7 +310,7 @@
             <input type="number" id="mgt-fees" oninput="updateResults(); saveInput('mgt-fees')">
           </div>
           <div class="calc__row__rightCol">
-            <button onclick="estimateMgtfees()">Estimate</button>
+            <button id="estimate-mgtfees-button" onclick="estimateMgtfees()">Estimate</button>
           </div>
         </div>
         <div class="calc__row">
