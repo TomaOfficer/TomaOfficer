@@ -70,7 +70,7 @@
       var monthlyCashflow = monthlyIncome - monthlyCost;
       var annualCashflow = monthlyCashflow * 12;
       var NOI = annualCashflow - annualOperatingExpenses;
-      var capRate = (NOI / purchasePrice) * 100;
+      var capRate = (NOI / purchasePrice) * 100 || 'N/A';
 
       // Set results
       document.getElementById('upfront-cost').innerText = formatCurrency(upfrontCost);
@@ -81,7 +81,7 @@
           document.getElementById('appreciation').innerText = 'N/A';
       } else {
           // Perform calculation if appreciation rate is provided
-          var futureValue = purchasePrice * Math.pow(1 + appreciationRate, years);
+          var futureValue = purchasePrice * Math.pow(1 + appreciationRate, years) || 'N/A';
           document.getElementById('appreciation').innerText = formatCurrency(futureValue);
       }
       document.getElementById('cashflow-annually').innerText = formatCurrency(annualCashflow);
@@ -91,6 +91,18 @@
     function estimateRepairs() {
         var monthlyIncome = parseFloat(document.getElementById('monthly-income').value) || 0;
         document.getElementById('repairs-maintenance').value = (monthlyIncome * 0.10).toFixed(2);
+    }
+    function estimateVacancy() {
+        var monthlyIncome = parseFloat(document.getElementById('monthly-income').value) || 0;
+        document.getElementById('vacancy').value = (monthlyIncome * 0.05).toFixed(2);
+    }
+    function estimateCapex() {
+        var monthlyIncome = parseFloat(document.getElementById('monthly-income').value) || 0;
+        document.getElementById('capex').value = (monthlyIncome * 0.10).toFixed(2);
+    }
+    function estimateMgtfees() {
+        var monthlyIncome = parseFloat(document.getElementById('monthly-income').value) || 0;
+        document.getElementById('mgt-fees').value = (monthlyIncome * 0.08).toFixed(2);
     }
   </script>
 </head>
@@ -270,7 +282,7 @@
             <input type="number" id="vacancy" oninput="updateResults(); saveInput('vacancy')">
           </div>
           <div class="calc__row__rightCol">
-            
+            <button onclick="estimateVacancy()">Estimate</button>
           </div>
         </div>
         <div class="calc__row">
@@ -281,7 +293,7 @@
             <input type="number" id="capex" oninput="updateResults(); saveInput('capex')">
           </div>
           <div class="calc__row__rightCol">
-            
+            <button onclick="estimateCapex()">Estimate</button>
           </div>
         </div>
         <div class="calc__row">
@@ -292,7 +304,7 @@
             <input type="number" id="mgt-fees" oninput="updateResults(); saveInput('mgt-fees')">
           </div>
           <div class="calc__row__rightCol">
-            
+            <button onclick="estimateMgtfees()">Estimate</button>
           </div>
         </div>
         <div class="calc__row">
@@ -357,26 +369,26 @@
             <h3>
               Upfront cost
             </h3>
-            <p id="upfront-cost">$0</p>
+            <p id="upfront-cost"></p>
           </div>
           <div class="results__header-row__col">
             <h3>
               Cashflow
             </h3>
-            <p><span id="cashflow-monthly">$0</span> per month</p>
-            <p><span id="cashflow-annually">$0</span> per year</p>
+            <p><span id="cashflow-monthly"></span> per month</p>
+            <p><span id="cashflow-annually"></span> per year</p>
           </div>
           <div class="results__header-row__col">
             <h3>
               Cap rate
             </h3>
-            <p id="cap-rate">0</p>
+            <p id="cap-rate">-</p>
           </div>
           <div class="results__header-row__col">
             <h3>
               Estimated value after 20 years
             </h3>
-            <p id="appreciation">$0</p>
+            <p id="appreciation"></p>
           </div>
         </div>
       </div>
