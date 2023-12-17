@@ -1,7 +1,6 @@
 import os
 from app import app
 from app.ai_chatbot import ask_ward
-from app.spreadsheet_handler import get_monthly_income_from_openai, add_property_to_dataframe, initialize_dataframe
 from dotenv import load_dotenv
 from flask import render_template, request, jsonify
 

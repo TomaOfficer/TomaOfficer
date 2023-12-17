@@ -7,6 +7,7 @@
   <title>Real Estate Investment Calculator | Thomas Officer</title>
   <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
   <link rel="icon" href="assets/tfo-favicon.ico" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     function saveInput(id) {
       var value = document.getElementById(id).value;
@@ -401,8 +402,32 @@
             <p id="appreciation"></p>
           </div>
         </div>
+        <div class="results__actions">
+          <button onclick="sendMessageToChatbot()">Ask AI Assistant</button>
+          <div id="aiResponse"></div>
+        </div>
       </div>
     </div>
   </div>
+  <script>
+    function sendMessageToChatbot() {
+      var predefinedMessage = "Your predefined or dynamically set message here";
+
+      $.ajax({
+        url: '/ask_chatbot',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({ 'message': predefinedMessage }),
+        success: function(response) {
+          document.getElementById('aiResponse').innerHTML = "AI Response: " + response.reply;
+        },
+        error: function(error) {
+          console.log(error);
+          // Optionally display an error message
+          document.getElementById('aiResponse').innerHTML = "Error in getting response";
+        }
+      });
+    }
+  </script>
 </body>
 </html>
