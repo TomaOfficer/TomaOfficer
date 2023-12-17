@@ -414,7 +414,7 @@
       var predefinedMessage = "Your predefined or dynamically set message here";
 
       $.ajax({
-        url: '/ask_chatbot',
+        url: '/get_crowdfunding_breakdown',
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({ 'message': predefinedMessage }),

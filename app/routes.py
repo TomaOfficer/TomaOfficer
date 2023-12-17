@@ -3,6 +3,7 @@ from app import app
 from app.ai_chatbot import ask_ward
 from dotenv import load_dotenv
 from flask import render_template, request, jsonify
+from app.real_estate_chat import get_crowdfunding_breakdown
 
 if os.environ.get('FLASK_ENV') == 'development':
     load_dotenv()
@@ -67,6 +68,12 @@ def systemmessage():
 def ask_chatbot():
     user_input = request.json['message']
     response = ask_ward(user_input)
+    return jsonify({'reply': response})
+
+@app.route('/get_crowdfunding_breakdown', methods=['POST'])
+def get_crowdfunding_breakdown_route():
+    user_input = request.json['message']
+    response = get_crowdfunding_breakdown(user_input)
     return jsonify({'reply': response})
 
 @app.route('/verify_password', methods=['POST'])
