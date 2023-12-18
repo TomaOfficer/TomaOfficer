@@ -419,3 +419,13 @@ header {
   cursor: not-allowed;
   box-shadow: none;
 }
+.insufficientDataMessage {
+  color: rgba(65,69,82,1);
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  padding: 0 0 1em;
+}
+.insufficientDataMessage p {
+  padding: 0;
+  margin: 0;
+}
