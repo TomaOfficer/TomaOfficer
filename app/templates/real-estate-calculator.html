@@ -81,6 +81,7 @@
 
       // Set results
       updateElementsByClass('upfront-cost', formatCurrency(upfrontCost));
+      updateElementsByClass('monthly-cost', formatCurrency(monthlyCost));
       document.getElementById('loan-payment').innerText = formatCurrency(monthlyLoanPayment);
       document.getElementById('cashflow-monthly').innerText = formatCurrency(monthlyCashflow);
       document.getElementById('cashflow-annually').innerText = formatCurrency(annualCashflow);
@@ -394,7 +395,18 @@
         <div class="calc__row__rightCol">
           
         </div>
-      </div>      
+      </div>   
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="closing-cost">Total</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <p class="monthly-cost"></p>
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>   
     </div>
     <div class="results">
       <div class="results__header-row">
