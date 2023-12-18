@@ -269,16 +269,16 @@ header {
   margin: 0;
   color: #ccc;
 }
-.calc-main__wrapper {
+.calc-main {
   display: grid;
-  grid-template-columns: 3fr 6fr;
-}
-.calc {
-  background-color: #ccc;
-  padding: 1em 0;
+  grid-template-columns: 1fr 1fr;
 }
 .calc__header {
   padding: 5px 10px;
+}
+.calc p {
+  padding: 0;
+  margin: 0;
 }
 .calc__header h5 {
   padding: 0;
@@ -309,7 +309,7 @@ header {
   margin: 0;
 }
 .results {
-  padding: 2em;
+  
 }
 .results__header-row {
   display: flex;

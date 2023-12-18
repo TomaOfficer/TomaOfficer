@@ -124,296 +124,294 @@
 </head>
 
 <body>
-  <div class="calc-nav">
+  <!-- <div class="calc-nav">
     <div class="cal-nav__wrapper">
       <h1>Real Estate Investment Calculator</h1>
       <p>
         Generate and share back-of-the-napkin calculations for a property’s rehab, financing, and income expectations.
       </p>    
     </div>
-  </div>
+  </div> -->
   <div class="calc-main">
-    <div class="calc-main__wrapper">
-      <div class="calc">
-        <div class="calc__header">
-          <h5>
-            Upfront costs
-          </h5>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="purchase-price">Purchase price</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="purchase-price" oninput="updateResults(); saveInput('purchase-price')">
-          </div>
-          <div class="calc__row__rightCol">
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="downpayment-percentage">Downpayment %</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="downpayment-percentage" oninput="updateResults(); saveInput('downpayment-percentage')">
-          </div>
-          <div class="calc__row__rightCol">
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="loan-term">Loan term (years)</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="loan-term" oninput="updateResults(); saveInput('loan-term')">
-          </div>
-          <div class="calc__row__rightCol">
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="interest-rate">Interest rate %</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="interest-rate" oninput="updateResults(); saveInput('interest-rate')">
-          </div>
-          <div class="calc__row__rightCol">
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="rehab-cost">Rehab cost</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="rehab-cost" oninput="updateResults(); saveInput('rehab-cost')">
-          </div>
-          <div class="calc__row__rightCol">
-            
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="transfer-tax">Transfer tax</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="transfer-tax" oninput="updateResults(); saveInput('transfer-tax')">
-          </div>
-          <div class="calc__row__rightCol">
-            
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="closing-cost">Closing cost</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="closing-cost" oninput="updateResults(); saveInput('closing-cost')">
-          </div>
-          <div class="calc__row__rightCol">
-            
-          </div>
-        </div>
-        <div class="calc__header">
-          <h5>
-            Income & Appreciation
-          </h5>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="monthly-income">Monthly income</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="monthly-income" oninput="updateResults(); saveInput('monthly-income')">
-          </div>
-          <div class="calc__row__rightCol">
-            
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="appreciation-rate">Appreciation rate %</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="appreciation-rate" oninput="updateResults(); saveInput('appreciation-rate')">
-          </div>
-          <div class="calc__row__rightCol">
-            
-          </div>
-        </div>
-        <div class="calc__header">
-          <h5>
-            Monthly costs
-          </h5>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="loan-payment">Loan payment</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <p id="loan-payment"></p>
-          </div>
-          <div class="calc__row__rightCol">
-            
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="property-taxes">Property taxes</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="property-taxes" oninput="updateResults(); saveInput('property-taxes')">
-          </div>
-          <div class="calc__row__rightCol">
-            
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="home-insurance">Home insurance</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="home-insurance" oninput="updateResults(); saveInput('home-insurance')">
-          </div>
-          <div class="calc__row__rightCol">
-            
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="repairs-maintenance">Repairs & maintenance</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="repairs-maintenance" oninput="updateResults(); saveInput('repairs-maintenance')">
-          </div>
-          <div class="calc__row__rightCol">
-            <button id="estimate-repairs-button" onclick="estimateRepairs()">Estimate</button>
-            <p class="calc__explainer">as 10% of monthly income</p>
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="vacancy">Vacancy</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="vacancy" oninput="updateResults(); saveInput('vacancy')">
-          </div>
-          <div class="calc__row__rightCol">
-            <button id="estimate-vacancy-button" onclick="estimateVacancy()">Estimate</button>
-            <p class="calc__explainer">as 5% of monthly income</p>
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="capex">Capital expenditures</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="capex" oninput="updateResults(); saveInput('capex')">
-          </div>
-          <div class="calc__row__rightCol">
-            <button id="estimate-capex-button" onclick="estimateCapex()">Estimate</button>
-            <p class="calc__explainer">as 10% of monthly income</p>
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="mgt-fees">Management fees</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="mgt-fees" oninput="updateResults(); saveInput('mgt-fees')">
-          </div>
-          <div class="calc__row__rightCol">
-            <button id="estimate-mgtfees-button" onclick="estimateMgtfees()">Estimate</button>
-            <p class="calc__explainer">as 8% of monthly income</p>
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="hoa-dues">HOA Dues</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="hoa-dues" oninput="updateResults(); saveInput('hoa-dues')">
-          </div>
-          <div class="calc__row__rightCol">
-            
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="electricity">Electricity</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="electricity" oninput="updateResults(); saveInput('electricity')">
-          </div>
-          <div class="calc__row__rightCol">
-            
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="gas">Gas</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="gas" oninput="updateResults(); saveInput('gas')">
-          </div>
-          <div class="calc__row__rightCol">
-            
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="water">Water / Sewer</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="water" oninput="updateResults(); saveInput('water')">
-          </div>
-          <div class="calc__row__rightCol">
-            
-          </div>
-        </div>
-        <div class="calc__row">
-          <div class="calc__row__leftCol">
-            <label for="garbage">Garbage</label> 
-          </div>
-          <div class="calc__row__middleCol">
-            <input type="number" id="garbage" oninput="updateResults(); saveInput('garbage')">
-          </div>
-          <div class="calc__row__rightCol">
-            
-          </div>
-        </div>      
+    <div class="calc">
+      <div class="calc__header">
+        <h5>
+          Upfront costs
+        </h5>
       </div>
-      <div class="results">
-        <div class="results__header-row">
-          <div class="results__header-row__col">
-            <h3>
-              Upfront cost
-            </h3>
-            <p id="upfront-cost"></p>
-          </div>
-          <div class="results__header-row__col">
-            <h3>
-              Cashflow
-            </h3>
-            <p><span id="cashflow-monthly"></span> per month</p>
-            <p><span id="cashflow-annually"></span> per year</p>
-          </div>
-          <div class="results__header-row__col">
-            <h3>
-              Cap rate
-            </h3>
-            <p id="cap-rate">-</p>
-          </div>
-          <div class="results__header-row__col">
-            <h3>
-              Estimated value after 20 years
-            </h3>
-            <p id="appreciation"></p>
-          </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="purchase-price">Purchase price</label> 
         </div>
-        <div class="results__actions">
-          <button onclick="sendMessageToChatbot()">Ask AI Assistant</button>
-          <div id="aiResponse"></div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="purchase-price" oninput="updateResults(); saveInput('purchase-price')">
         </div>
+        <div class="calc__row__rightCol">
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="downpayment-percentage">Downpayment %</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="downpayment-percentage" oninput="updateResults(); saveInput('downpayment-percentage')">
+        </div>
+        <div class="calc__row__rightCol">
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="loan-term">Loan term (years)</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="loan-term" oninput="updateResults(); saveInput('loan-term')">
+        </div>
+        <div class="calc__row__rightCol">
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="interest-rate">Interest rate %</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="interest-rate" oninput="updateResults(); saveInput('interest-rate')">
+        </div>
+        <div class="calc__row__rightCol">
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="rehab-cost">Rehab cost</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="rehab-cost" oninput="updateResults(); saveInput('rehab-cost')">
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="transfer-tax">Transfer tax</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="transfer-tax" oninput="updateResults(); saveInput('transfer-tax')">
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="closing-cost">Closing cost</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="closing-cost" oninput="updateResults(); saveInput('closing-cost')">
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>
+      <div class="calc__header">
+        <h5>
+          Income & Appreciation
+        </h5>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="monthly-income">Monthly income</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="monthly-income" oninput="updateResults(); saveInput('monthly-income')">
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="appreciation-rate">Appreciation rate %</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="appreciation-rate" oninput="updateResults(); saveInput('appreciation-rate')">
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>
+      <div class="calc__header">
+        <h5>
+          Monthly costs
+        </h5>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="loan-payment">Loan payment</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <p id="loan-payment"></p>
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="property-taxes">Property taxes</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="property-taxes" oninput="updateResults(); saveInput('property-taxes')">
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="home-insurance">Home insurance</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="home-insurance" oninput="updateResults(); saveInput('home-insurance')">
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="repairs-maintenance">Repairs & maintenance</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="repairs-maintenance" oninput="updateResults(); saveInput('repairs-maintenance')">
+        </div>
+        <div class="calc__row__rightCol">
+          <button id="estimate-repairs-button" onclick="estimateRepairs()">Estimate</button>
+          <p class="calc__explainer">as 10% of monthly income</p>
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="vacancy">Vacancy</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="vacancy" oninput="updateResults(); saveInput('vacancy')">
+        </div>
+        <div class="calc__row__rightCol">
+          <button id="estimate-vacancy-button" onclick="estimateVacancy()">Estimate</button>
+          <p class="calc__explainer">as 5% of monthly income</p>
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="capex">Capital expenditures</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="capex" oninput="updateResults(); saveInput('capex')">
+        </div>
+        <div class="calc__row__rightCol">
+          <button id="estimate-capex-button" onclick="estimateCapex()">Estimate</button>
+          <p class="calc__explainer">as 10% of monthly income</p>
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="mgt-fees">Management fees</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="mgt-fees" oninput="updateResults(); saveInput('mgt-fees')">
+        </div>
+        <div class="calc__row__rightCol">
+          <button id="estimate-mgtfees-button" onclick="estimateMgtfees()">Estimate</button>
+          <p class="calc__explainer">as 8% of monthly income</p>
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="hoa-dues">HOA Dues</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="hoa-dues" oninput="updateResults(); saveInput('hoa-dues')">
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="electricity">Electricity</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="electricity" oninput="updateResults(); saveInput('electricity')">
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="gas">Gas</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="gas" oninput="updateResults(); saveInput('gas')">
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="water">Water / Sewer</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="water" oninput="updateResults(); saveInput('water')">
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="garbage">Garbage</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <input type="number" id="garbage" oninput="updateResults(); saveInput('garbage')">
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>      
+    </div>
+    <div class="results">
+      <div class="results__header-row">
+        <div class="results__header-row__col">
+          <h3>
+            Upfront cost
+          </h3>
+          <p id="upfront-cost"></p>
+        </div>
+        <div class="results__header-row__col">
+          <h3>
+            Cashflow
+          </h3>
+          <p><span id="cashflow-monthly"></span> per month</p>
+          <p><span id="cashflow-annually"></span> per year</p>
+        </div>
+        <div class="results__header-row__col">
+          <h3>
+            Cap rate
+          </h3>
+          <p id="cap-rate">-</p>
+        </div>
+        <div class="results__header-row__col">
+          <h3>
+            Estimated value after 20 years
+          </h3>
+          <p id="appreciation"></p>
+        </div>
+      </div>
+      <div class="results__actions">
+        <button onclick="sendMessageToChatbot()">Ask AI Assistant</button>
+        <div id="aiResponse"></div>
       </div>
     </div>
   </div>
