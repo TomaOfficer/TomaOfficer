@@ -249,28 +249,6 @@ header {
   /* Other styling as needed */
 }
 /* --- Real Estate Investment Calculator --- */
-.calc-nav {
-  padding: 20px 0;
-  font-family: Helvetica, sans-serif;
-  border-bottom: 1px solid #ccc;
-}
-.cal-nav__wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-.calc-nav h1 {
-  font-size: 17px;
-  font-weight: bold;
-  padding: 0 0 .35em;
-  margin: 0;
-}
-.calc-nav p {
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
-  color: #ccc;
-}
 .calc-main {
   display: flex;
   flex-direction: row;
@@ -352,6 +330,7 @@ header {
   margin: 0;
   font-size: 2.444em;
   color: rgba(26,27,31,1);
+  line-height: 1.3em;
 }
 .results h2 {
   color: rgba(26,27,31,1);
@@ -428,4 +407,31 @@ header {
 .insufficientDataMessage p {
   padding: 0;
   margin: 0;
+}
+@media screen and (max-width: 1015px){
+  .calc-main {
+    flex-direction: column;
+    height: auto;
+  }
+  .calc {
+    flex-basis: 100%;
+    overflow: auto;
+  }
+  .results {
+    flex-basis: 100%;
+  }
+  .results__header-row {
+    flex-wrap: wrap;
+  }
+  .results__header-row__costCol {
+    flex-basis: 43%;
+    margin: 0 0 1em;
+  }
+  .results__header-row__cashflowCol {
+    flex-basis: 43%;
+    margin: 0 0 1em;
+  }
+  .results__header-row__investmentCol {
+    flex-basis: 43%;
+  }
 }
