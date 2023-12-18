@@ -4,6 +4,8 @@ body {
   font-size: 12px;
   line-height: 1.4em;
   color: #333;
+  padding: 0;
+  margin: 0;
 }
 p {
   padding: 0 0 1.333em;
@@ -271,13 +273,15 @@ header {
 }
 .calc-main {
   display: flex;
-  flex-basis: row;
+  flex-direction: row;
+  justify-content: space-between;
   height: 100vh;
 }
 .calc {
-  border-right: 1px solid #ccc;
+  flex-basis: 50%;
   overflow: scroll;
   padding: 2em;
+  background-color: #EEEFF5;
 }
 .calc p {
   padding: 0;
@@ -295,6 +299,17 @@ header {
   margin: 0;
   font-size: 13px;
 }
+.calc__main-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.calc__main-row__leftCol {
+  flex-basis: 47%;
+}
+.calc__main-row__rightCol {
+  flex-basis: 47%;
+}
 .calc__row {
   display: flex;
   justify-content: space-between;
@@ -302,28 +317,29 @@ header {
   align-items: baseline;
 }
 .calc__row:nth-child(odd){
-  background-color: #f5f5f5;
+  background-color: #dddfe8;
 
 }
 .calc__row__leftCol {
   flex-basis: 60%;
 }
 .calc__row__middleCol {
-  flex-basis: 19%;
-}
-.calc__row__rightCol {
   flex-basis: 20%;
   text-align: right;
 }
+.calc__row__rightCol {
+  text-align: right;
+}
 .calc input[type="number"] {
-  width: 100%;
+  width: 75px;
   box-sizing: border-box;
 }
 .calc__estimate-button {
   font-size: 12px;
 }
 .results {
-  
+  flex-basis: 50%;
+  padding: 2em;
 }
 .results__header-row {
   display: flex;
