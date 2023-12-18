@@ -69,7 +69,7 @@
 
       // Calculations
       var downPayment = purchasePrice * downPaymentPercentage / 100;
-      var upfrontCost = rehabCost + downPayment || 0;
+      var upfrontCost = rehabCost + downPayment + transferTax + closingCost || 0;
       var principal = purchasePrice - downPayment;
       var monthlyLoanPayment = (monthlyInterestRate * principal) / (1 - Math.pow(1 + monthlyInterestRate, - totalPayments)) || 0;
       var monthlyCost = monthlyLoanPayment + propertyTaxes + homeInsurance + repairsMaintenance + vacancy + capex + mgtFees + hoaDues + electricity + gas + water + garbage;
