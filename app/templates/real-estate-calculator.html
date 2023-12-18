@@ -83,6 +83,7 @@
       document.getElementById('upfront-cost').innerText = formatCurrency(upfrontCost);
       document.getElementById('loan-payment').innerText = formatCurrency(monthlyLoanPayment);
       document.getElementById('cashflow-monthly').innerText = formatCurrency(monthlyCashflow);
+      document.getElementById('cashflow-annually').innerText = formatCurrency(annualCashflow);
       if (isNaN(appreciationRate)) {
           // If appreciation rate is not provided, set future value to empty or a placeholder
           document.getElementById('appreciation').innerText = 'N/A';
@@ -91,25 +92,28 @@
           var futureValue = purchasePrice * Math.pow(1 + appreciationRate, years) || 'N/A';
           document.getElementById('appreciation').innerText = formatCurrency(futureValue);
       }
-      document.getElementById('cashflow-annually').innerText = formatCurrency(annualCashflow);
       document.getElementById('cap-rate').innerText = capRate.toFixed(2) + '%';
     }
 
     function estimateRepairs() {
         var monthlyIncome = parseFloat(document.getElementById('monthly-income').value) || 0;
         document.getElementById('repairs-maintenance').value = (monthlyIncome * 0.10).toFixed(2);
+        updateResults();
     }
     function estimateVacancy() {
         var monthlyIncome = parseFloat(document.getElementById('monthly-income').value) || 0;
         document.getElementById('vacancy').value = (monthlyIncome * 0.05).toFixed(2);
+        updateResults();
     }
     function estimateCapex() {
         var monthlyIncome = parseFloat(document.getElementById('monthly-income').value) || 0;
         document.getElementById('capex').value = (monthlyIncome * 0.10).toFixed(2);
+        updateResults();
     }
     function estimateMgtfees() {
         var monthlyIncome = parseFloat(document.getElementById('monthly-income').value) || 0;
         document.getElementById('mgt-fees').value = (monthlyIncome * 0.08).toFixed(2);
+        updateResults();
     }
   </script>
 </head>
