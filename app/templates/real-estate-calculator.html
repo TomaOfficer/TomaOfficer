@@ -72,7 +72,7 @@
       var upfrontCost = rehabCost + downPayment || 0;
       var principal = purchasePrice - downPayment;
       var monthlyLoanPayment = (monthlyInterestRate * principal) / (1 - Math.pow(1 + monthlyInterestRate, - totalPayments)) || 0;
-      var monthlyCost = loanPayment + propertyTaxes + homeInsurance + repairsMaintenance + vacancy + capex + mgtFees + hoaDues + electricity + gas + water + garbage;
+      var monthlyCost = monthlyLoanPayment + propertyTaxes + homeInsurance + repairsMaintenance + vacancy + capex + mgtFees + hoaDues + electricity + gas + water + garbage;
       var annualOperatingExpenses = monthlyCost * 12;
       var monthlyCashflow = monthlyIncome - monthlyCost;
       var annualCashflow = monthlyCashflow * 12;
@@ -403,14 +403,15 @@
           </div>
         </div>
         <div class="results__actions">
-          <button onclick="sendMessageToChatbot()">Ask AI Assistant</button>
-          <div id="aiResponse"></div>
+          <!-- <button onclick="sendMessageToChatbot()">Ask AI Assistant</button>
+          <div id="aiResponse"></div> -->
         </div>
       </div>
     </div>
   </div>
   <script>
     function sendMessageToChatbot() {
+      var purchasePrice = document.getElementById('purchase-price').value;
       var predefinedMessage = "Your predefined or dynamically set message here";
 
       $.ajax({
