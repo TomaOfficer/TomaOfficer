@@ -143,30 +143,37 @@
   </div> -->
   <div class="calc-main">
     <div class="results">
-      <h1>
-        Real Estate Investment Calculator
-      </h1>
+      <div class="results__title">
+        <h1>
+          Real Estate Investment Calculator
+        </h1>
+      </div>
+      <div class="results__header-title">
+        <h2>
+          Key metrics
+        </h2>
+      </div>
       <div class="results__header-row">
-        <div class="results__header-row__col">
+        <div class="results__header-row__costCol">
           <h3>
             Upfront cost
           </h3>
           <p class="upfront-cost"></p>
         </div>
-        <div class="results__header-row__col">
+        <div class="results__header-row__cashflowCol">
           <h3>
             Cashflow
           </h3>
-          <p><span id="cashflow-monthly"></span> per month</p>
-          <p><span id="cashflow-annually"></span> per year</p>
+          <p style="padding-bottom: 4px;"><span id="cashflow-monthly"></span><span style="color: #788193;">/month</span></p>
+          <p><span id="cashflow-annually"></span><span style="color: #788193;">/year</span></p>
         </div>
-        <div class="results__header-row__col">
+        <div class="results__header-row__investmentCol">
           <h3>
             Cap rate
           </h3>
           <p id="cap-rate">-</p>
         </div>
-        <div class="results__header-row__col">
+        <div class="results__header-row__investmentCol">
           <h3>
             Estimated value after 20 years
           </h3>

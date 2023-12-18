@@ -281,7 +281,7 @@ header {
   flex-basis: 50%;
   overflow: scroll;
   padding: 2em;
-  background-color: #EEEFF5;
+  background-color: rgba(246,248,250,1);
 }
 .calc p {
   padding: 0;
@@ -297,7 +297,9 @@ header {
 .calc__header h5 {
   padding: 0;
   margin: 0;
-  font-size: 13px;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: rgba(26,27,31,1);
 }
 .calc__main-row {
   display: flex;
@@ -317,7 +319,7 @@ header {
   align-items: baseline;
 }
 .calc__row:nth-child(odd){
-  background-color: #dddfe8;
+  background-color: rgba(235,238,241,1);
 
 }
 .calc__row__leftCol {
@@ -341,15 +343,55 @@ header {
   flex-basis: 50%;
   padding: 2em;
 }
+.results__title {
+  
+}
+.results__title h1 {
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 2em 0 1.333em;
+  margin: 0;
+  font-size: 2.444em;
+  color: rgba(26,27,31,1);
+}
+.results h2 {
+  color: rgba(26,27,31,1);
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.333em;
+}
+.results__header-title {
+  border-bottom: 1.5px solid #ebeef1;
+  margin: 0 0 1em;
+}
 .results__header-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0 0 1.333em;
 }
-.results__header-row__col {
+.results__header-row p {
+  padding: 0;
+}
+.results__header-row__costCol {
   flex-basis: 20%;
+  border: 1.5px solid #ebeef1;
+  padding: 1em;
+  border-radius: 16px;
+}
+.results__header-row__cashflowCol {
+  flex-basis: 20%;
+  border: 1.5px solid #ebeef1;
+  padding: 1em;
+  border-radius: 16px;
+}
+.results__header-row__investmentCol {
+  flex-basis: 20%;
+  border: 1.5px solid #ebeef1;
+  padding: 1em;
+  border-radius: 16px;
 }
 .results h3 {
   padding: 0 0 .5em;
   margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: rgba(26,27,31,1);
 }
