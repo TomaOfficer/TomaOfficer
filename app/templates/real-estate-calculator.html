@@ -24,16 +24,16 @@
       updateResults(); // Update results based on loaded inputs
     }
 
-    window.onload = loadSavedInputs;
-
     function updateResults() {
       // Pull values from calculator
-      var purchasePrice = parseFloat(document.getElementById('purchase-price').value);
+      var purchasePriceInput = document.getElementById('purchase-price');
+      var purchasePrice = purchasePriceInput ? parseFloat(purchasePriceInput.value) || 0 : 0;
+
       var downPaymentPercentage = parseFloat(document.getElementById('downpayment-percentage').value) || 100;
-      var loanTerm = parseFloat(document.getElementById('loan-term').value);
-      var interestRate = parseFloat(document.getElementById('interest-rate').value);
-      var monthlyInterestRate = interestRate / 12 / 100; // Convert annual rate to a decimal monthly rate
-      var totalPayments = loanTerm * 12;
+      var loanTerm = parseFloat(document.getElementById('loan-term').value) || 0;
+      var interestRate = parseFloat(document.getElementById('interest-rate').value) || 0;
+      var monthlyInterestRate = interestRate / 12 / 100 || 0;
+      var totalPayments = loanTerm * 12 || 0;
       var rehabCost = parseFloat(document.getElementById('rehab-cost').value) || 0;
       var transferTax = parseFloat(document.getElementById('transfer-tax').value) || 0;
       var closingCost = parseFloat(document.getElementById('closing-cost').value) || 0;
@@ -52,20 +52,20 @@
       var monthlyIncome = parseFloat(document.getElementById('monthly-income').value) || 0;
       var appreciationRate = parseFloat(document.getElementById('appreciation-rate').value) / 100;
       var years = 20;
-
+      
       var buttonsEnabled = monthlyIncome > 0;
       document.getElementById('estimate-repairs-button').disabled = !buttonsEnabled;
       document.getElementById('estimate-vacancy-button').disabled = !buttonsEnabled;
       document.getElementById('estimate-capex-button').disabled = !buttonsEnabled;
       document.getElementById('estimate-mgtfees-button').disabled = !buttonsEnabled;
 
-        function formatCurrency(value) {
-          return new Intl.NumberFormat('en-US', {
-            style: 'currency',
-            currency: 'USD',
-            maximumFractionDigits: 2
-          }).format(value);
-        }
+      function formatCurrency(value) {
+        return new Intl.NumberFormat('en-US', {
+          style: 'currency',
+          currency: 'USD',
+          maximumFractionDigits: 2
+        }).format(value);
+      }
 
       // Calculations
       var downPayment = purchasePrice * downPaymentPercentage / 100;
@@ -78,6 +78,9 @@
       var annualCashflow = monthlyCashflow * 12;
       var NOI = annualCashflow - annualOperatingExpenses;
       var capRate = (NOI / purchasePrice) * 100 || 'N/A';
+      if (!isNaN(NOI) && purchasePrice > 0) {
+          capRate = (NOI / purchasePrice) * 100;
+      }
 
       // Set results
       updateElementsByClass('upfront-cost', formatCurrency(upfrontCost));
@@ -94,7 +97,23 @@
           var futureValue = purchasePrice * Math.pow(1 + appreciationRate, years) || 'N/A';
           document.getElementById('appreciation').innerText = formatCurrency(futureValue);
       }
-      document.getElementById('cap-rate').innerText = capRate.toFixed(2) + '%';
+
+      if (capRate !== 'N/A') {
+          document.getElementById('cap-rate').innerText = capRate.toFixed(2) + '%';
+      } else {
+          document.getElementById('cap-rate').innerText = capRate;
+      }
+
+      var isDataSufficient = purchasePrice > 0 && monthlyIncome > 0;
+
+      // Enable or disable the button based on isDataSufficient
+      document.querySelectorAll('.assistant-button').forEach(button => {
+          button.disabled = !isDataSufficient;
+      });
+
+      // Show or hide the insufficient data message
+      var messageDiv = document.getElementById('insufficientDataMessage');
+      messageDiv.style.display = isDataSufficient ? 'none' : 'block';
     }
 
     function updateElementsByClass(className, value) {
@@ -128,6 +147,12 @@
         saveInput('mgt-fees');
         updateResults();
     }
+  
+    window.onload = function() {
+        loadSavedInputs();
+        updateResults();
+    };
+    
   </script>
 </head>
 </head>
@@ -185,8 +210,11 @@
           AI Assistant
         </h2>
       </div>
+      <div id="insufficientDataMessage">
+        Insufficient data
+      </div>
       <div class="results__actions">
-        <button onclick="sendMessageToChatbot()">Ask AI Assistant</button>
+        <button class="assistant-button" onclick="sendMessageToChatbot()">Ask AI Assistant</button>
         <div id="aiResponse"></div>
       </div>
     </div>

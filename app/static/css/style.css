@@ -395,3 +395,27 @@ header {
   font-family: 'Helvetica Neue', sans-serif;
   color: rgba(26,27,31,1);
 }
+.assistant-button {
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #ebeef1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  color: #1A202C;
+  display: inline-flex;
+  justify-content: center;
+  overflow-wrap: break-word;
+  padding: 6px 8px;
+  text-decoration: none;
+  width: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.assistant-button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
