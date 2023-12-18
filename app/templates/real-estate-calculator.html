@@ -80,10 +80,11 @@
       var capRate = (NOI / purchasePrice) * 100 || 'N/A';
 
       // Set results
-      document.getElementById('upfront-cost').innerText = formatCurrency(upfrontCost);
+      updateElementsByClass('upfront-cost', formatCurrency(upfrontCost));
       document.getElementById('loan-payment').innerText = formatCurrency(monthlyLoanPayment);
       document.getElementById('cashflow-monthly').innerText = formatCurrency(monthlyCashflow);
       document.getElementById('cashflow-annually').innerText = formatCurrency(annualCashflow);
+
       if (isNaN(appreciationRate)) {
           // If appreciation rate is not provided, set future value to empty or a placeholder
           document.getElementById('appreciation').innerText = 'N/A';
@@ -93,6 +94,13 @@
           document.getElementById('appreciation').innerText = formatCurrency(futureValue);
       }
       document.getElementById('cap-rate').innerText = capRate.toFixed(2) + '%';
+    }
+
+    function updateElementsByClass(className, value) {
+        var elements = document.querySelectorAll('.' + className);
+        elements.forEach(function(element) {
+            element.innerText = value;
+        });
     }
 
     function estimateRepairs() {
@@ -207,6 +215,17 @@
         </div>
         <div class="calc__row__middleCol">
           <input type="number" id="closing-cost" oninput="updateResults(); saveInput('closing-cost')">
+        </div>
+        <div class="calc__row__rightCol">
+          
+        </div>
+      </div>
+      <div class="calc__row">
+        <div class="calc__row__leftCol">
+          <label for="closing-cost">Total</label> 
+        </div>
+        <div class="calc__row__middleCol">
+          <p class="upfront-cost"></p>
         </div>
         <div class="calc__row__rightCol">
           
@@ -383,7 +402,7 @@
           <h3>
             Upfront cost
           </h3>
-          <p id="upfront-cost"></p>
+          <p class="upfront-cost"></p>
         </div>
         <div class="results__header-row__col">
           <h3>
