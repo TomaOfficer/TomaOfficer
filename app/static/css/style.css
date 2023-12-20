@@ -500,15 +500,15 @@ header {
     flex-wrap: wrap;
   }
   .results__header-row__costCol {
-    flex-basis: 43%;
+    flex-basis: 40%;
     margin: 0 0 1em;
   }
   .results__header-row__cashflowCol {
-    flex-basis: 43%;
+    flex-basis: 40%;
     margin: 0 0 1em;
   }
   .results__header-row__investmentCol {
-    flex-basis: 43%;
+    flex-basis: 40%;
   }
 }
 /* --- Spinner --- */
