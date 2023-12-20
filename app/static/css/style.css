@@ -478,7 +478,11 @@ header {
   padding: 0 2em;
 }
 .results__actions__response {
-  padding: 2em 0 0 0;
+  padding: 2em 0 4em 0;
+  line-height: 1.6em;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  max-width: 590px;
 }
 @media screen and (max-width: 1015px){
   .calc-main {
