@@ -159,9 +159,25 @@
 </head>
 
 <body>
-  {% include 'navbar.html' %}
   <div class="calc-main">
     <div class="results">
+      <nav class="calc-main__nav">
+        <div class="calc-main__nav__wrapper">
+          <div class="calc-main__nav__wrapper__leftCol">
+            <a href="/" class="calc-main__nav__title">
+              <h3>
+                Thomas<span>F.</span>Officer
+              </h3>
+              <p>
+                Software Designer & Developer
+              </p>
+            </a>
+          </div>
+          <div class="nav__wrapper__rightCol">
+      
+          </div>
+        </div>
+      </nav>
       <div class="results__title">
         <h1>
           Real Estate Investment Calculator
@@ -211,7 +227,7 @@
       </div>
       <div class="results__actions">
         <button class="secondary-button" onclick="sendMessageToChatbot()">Get investment crowdfunding advice</button>
-        <div id="aiResponse"></div>
+        <div id="aiResponse" class="results__actions__response"></div>
       </div>
     </div>
     <div class="calc">
