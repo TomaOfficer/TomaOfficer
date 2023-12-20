@@ -151,6 +151,7 @@
     window.onload = function() {
         loadSavedInputs();
         updateResults();
+        loadSavedAIResponse();
     };
     
   </script>
@@ -512,6 +513,7 @@
         data: JSON.stringify({ 'message': predefinedMessage }),
         success: function(response) {
           document.getElementById('aiResponse').innerHTML = "AI Response: " + response.reply;
+          localStorage.setItem('aiResponse', response.reply);
         },
         error: function(error) {
           console.log(error);
@@ -520,6 +522,17 @@
         }
       });
     }
+  
+    function loadSavedAIResponse() {
+      var savedResponse = localStorage.getItem('aiResponse');
+      if (savedResponse) {
+        document.getElementById('aiResponse').innerHTML = "AI Response: " + savedResponse;
+      }
+    }
+
+    // Call loadSavedAIResponse on page load
+    window.addEventListener('load', loadSavedAIResponse);
+    
   </script>
 </body>
 </html>
