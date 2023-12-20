@@ -226,7 +226,10 @@
         </p>
       </div>
       <div class="results__actions">
-        <button class="secondary-button" onclick="sendMessageToChatbot()">Get investment crowdfunding advice</button>
+        <button class="secondary-button" id="crowdfundingButton" onclick="sendMessageToChatbot()">
+          Get investment crowdfunding advice 
+          <div id="loadingSpinner" class="spinner" style="display: none;"></div>
+        </button>
         <div id="aiResponse" class="results__actions__response"></div>
       </div>
     </div>
@@ -522,18 +525,26 @@
 
       var predefinedMessage = "I need your help doing some quick back-of-the-napkin math for my real estate investment project. The project has upfront cost of" + upfrontCost + ", and a monthly cost of " + monthlyCost + ". The project has an estimated cashflow of " + monthlyCashflow + ". \n\n Example response: Agent: Let's say you wanted to fund this project through investment crowdfunding. How much money do you need to raise? Let's take the upfront cost and add 6 months worth of expenses. That's $X. If you have 50 investors, the average investment size needs to be around $X. If you have 750 investors, the average investment size is around $X. With an estimated monthly income of $X, you could provide investors with a X rate of return. ";
 
+      document.getElementById('loadingSpinner').style.display = 'inline-block';
+      document.getElementById('crowdfundingButton').disabled = true;
+
       $.ajax({
         url: '/get_crowdfunding_breakdown',
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({ 'message': predefinedMessage }),
         success: function(response) {
+          document.getElementById('loadingSpinner').style.display = 'none';
+          document.getElementById('crowdfundingButton').disabled = false;
+
           document.getElementById('aiResponse').innerHTML = "AI Response: " + response.reply;
           localStorage.setItem('aiResponse', response.reply);
         },
         error: function(error) {
+          document.getElementById('loadingSpinner').style.display = 'none';
+          document.getElementById('crowdfundingButton').disabled = false;
+
           console.log(error);
-          // Optionally display an error message
           document.getElementById('aiResponse').innerHTML = "Error in getting response";
         }
       });
