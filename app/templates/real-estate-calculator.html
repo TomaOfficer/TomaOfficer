@@ -203,18 +203,15 @@
           AI Assistant
         </h2>
       </div>
-      <p>
-        Coming soon!
-      </p>
       <div class="insufficientDataMessage" id="insufficientDataMessage">
-        <!-- <p>
-          Coming soon!
-        </p> -->
+        <p>
+          Fill out more details about your investment project to use the AI assistant.
+        </p>
       </div>
-      <!-- <div class="results__actions">
+      <div class="results__actions">
         <button class="secondary-button" onclick="sendMessageToChatbot()">Get investment crowdfunding advice</button>
         <div id="aiResponse"></div>
-      </div> -->
+      </div>
     </div>
     <div class="calc">
       <div class="calc__main-row">
@@ -477,8 +474,36 @@
   </div>
   <script>
     function sendMessageToChatbot() {
-      var purchasePrice = document.getElementById('purchase-price').value;
-      var predefinedMessage = "Your predefined or dynamically set message here";
+      var purchasePriceInput = document.getElementById('purchase-price');
+      var purchasePrice = purchasePriceInput ? parseFloat(purchasePriceInput.value) || 0 : 0;
+      var downPaymentPercentage = parseFloat(document.getElementById('downpayment-percentage').value) || 100;
+      var downPayment = purchasePrice * downPaymentPercentage / 100;
+      var rehabCost = parseFloat(document.getElementById('rehab-cost').value) || 0;
+      var transferTax = parseFloat(document.getElementById('transfer-tax').value) || 0;
+      var closingCost = parseFloat(document.getElementById('closing-cost').value) || 0;
+      var upfrontCost = rehabCost + downPayment + transferTax + closingCost
+      var loanTerm = parseFloat(document.getElementById('loan-term').value) || 0;
+      var totalPayments = loanTerm * 12 || 0;
+      var monthlyIncome = parseFloat(document.getElementById('monthly-income').value) || 0;
+      var mgtFees = parseFloat(document.getElementById('mgt-fees').value) || 0;
+      var hoaDues = parseFloat(document.getElementById('hoa-dues').value) || 0; 
+      var electricity = parseFloat(document.getElementById('electricity').value) || 0;
+      var gas = parseFloat(document.getElementById('gas').value) || 0;
+      var water = parseFloat(document.getElementById('water').value) || 0;
+      var garbage = parseFloat(document.getElementById('garbage').value) || 0;
+      var capex = parseFloat(document.getElementById('capex').value) || 0;
+      var vacancy = parseFloat(document.getElementById('vacancy').value) || 0;
+      var repairsMaintenance = parseFloat(document.getElementById('repairs-maintenance').value) || 0;
+      var propertyTaxes = parseFloat(document.getElementById('property-taxes').value) || 0;
+      var homeInsurance = parseFloat(document.getElementById('home-insurance').value) || 0;
+      var principal = purchasePrice - downPayment;
+      var interestRate = parseFloat(document.getElementById('interest-rate').value) || 0;
+      var monthlyInterestRate = interestRate / 12 / 100 || 0;
+      var monthlyLoanPayment = (monthlyInterestRate * principal) / (1 - Math.pow(1 + monthlyInterestRate, - totalPayments)) || 0;
+      var monthlyCost = monthlyLoanPayment + propertyTaxes + homeInsurance + repairsMaintenance + vacancy + capex + mgtFees + hoaDues + electricity + gas + water + garbage;
+      var monthlyCashflow = monthlyIncome - monthlyCost;
+
+      var predefinedMessage = "I need your help doing some quick back-of-the-napkin math for my real estate investment project. The project has upfront cost of" + upfrontCost + ", and a monthly cost of " + monthlyCost + ". The project has an estimated cashflow of " + monthlyCashflow + ". \n\n Example response: Agent: Let's say you wanted to fund this project through investment crowdfunding. How much money do you need to raise? Let's take the upfront cost and add 6 months worth of expenses. That's $X. If you have 50 investors, the average investment size needs to be around $X. If you have 750 investors, the average investment size is around $X. With an estimated monthly income of $X, you could provide investors with a X rate of return. ";
 
       $.ajax({
         url: '/get_crowdfunding_breakdown',
