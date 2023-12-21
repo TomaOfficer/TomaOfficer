@@ -152,6 +152,16 @@ header {
   flex-basis: 75px;
 }
 /* --- Portfolio --- */
+.portfolio__wrapper {
+  max-width: 560px;
+  padding: 6em 20px;
+  margin: 0 auto;
+}
+.portfolio__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .portfolio-essay h1 {
   padding: 0 0 10px;
   margin: 0;
