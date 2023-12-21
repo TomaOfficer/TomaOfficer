@@ -1,4 +1,6 @@
 import os
+import markdown
+import bleach
 from app import app
 from app.ai_chatbot import ask_ward
 from dotenv import load_dotenv
@@ -74,7 +76,13 @@ def ask_chatbot():
 def get_crowdfunding_breakdown_route():
     user_input = request.json['message']
     response = get_crowdfunding_breakdown(user_input)
-    return jsonify({'reply': response})
+
+    html_response = markdown.markdown(response)
+
+    allowed_tags = ['a', 'abbr', 'acronym', 'b', 'blockquote', 'code', 'em', 'i', 'li', 'ol', 'strong', 'ul', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p']
+    sanitized_html = bleach.clean(html_response, tags=allowed_tags, strip=True)
+
+    return jsonify({'reply':  sanitized_html})
 
 @app.route('/verify_password', methods=['POST'])
 def verify_password():

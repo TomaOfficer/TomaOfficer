@@ -493,6 +493,14 @@
     </div>
   </div>
   <script>
+    function formatCurrency(value) {
+      return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        maximumFractionDigits: 0
+      }).format(value);
+    }
+
     function sendMessageToChatbot() {
       var purchasePriceInput = document.getElementById('purchase-price');
       var purchasePrice = purchasePriceInput ? parseFloat(purchasePriceInput.value) || 0 : 0;
@@ -522,9 +530,13 @@
       var monthlyLoanPayment = (monthlyInterestRate * principal) / (1 - Math.pow(1 + monthlyInterestRate, - totalPayments)) || 0;
       var monthlyCost = monthlyLoanPayment + propertyTaxes + homeInsurance + repairsMaintenance + vacancy + capex + mgtFees + hoaDues + electricity + gas + water + garbage;
       var monthlyCashflow = monthlyIncome - monthlyCost;
+      var monthlyCashflowFormatted = formatCurrency(monthlyCashflow);
+      var monthlyIncomeFormatted = formatCurrency(monthlyIncome);
+      var financeNeeds = formatCurrency(upfrontCost + (monthlyCost * 6));
 
-      var predefinedMessage = "I need your help doing some quick back-of-the-napkin math for my real estate investment project. The project has upfront cost of" + upfrontCost + ", and a monthly cost of " + monthlyCost + ". The project has an estimated cashflow of " + monthlyCashflow + ". \n\n Example response: Agent: Let's say you wanted to fund this project through investment crowdfunding. How much money do you need to raise? Let's take the upfront cost and add 6 months worth of expenses. That's $X. If you have 50 investors, the average investment size needs to be around $X. If you have 750 investors, the average investment size is around $X. With an estimated monthly income of $X, you could provide investors with a X rate of return. ";
+      var predefinedMessage = "I found a real estate project that requires "+ financeNeeds + " for upcost cost and 6 months worth of expenses. How many investors would I need if no single person contributed more than $5,000? The project has an estimated cashflow of " + monthlyCashflowFormatted + " per month, with an income of " + monthlyIncomeFormatted + " per month. What kind of rate of return would that provide investors? Is that a good investment? How could I improve the investment?";
 
+      console.log(predefinedMessage);
       document.getElementById('loadingSpinner').style.display = 'inline-block';
       document.getElementById('crowdfundingButton').disabled = true;
 
@@ -536,8 +548,7 @@
         success: function(response) {
           document.getElementById('loadingSpinner').style.display = 'none';
           document.getElementById('crowdfundingButton').disabled = false;
-
-          document.getElementById('aiResponse').innerHTML = "AI Response: " + response.reply;
+          document.getElementById('aiResponse').innerHTML = response.reply;
           localStorage.setItem('aiResponse', response.reply);
         },
         error: function(error) {
