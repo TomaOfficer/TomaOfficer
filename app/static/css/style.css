@@ -390,11 +390,16 @@ header {
 }
 .results__title h1 {
   font-family: 'Helvetica Neue', sans-serif;
-  padding: 0 0 1.333em;
+  padding: 0 0 .25em;
   margin: 0;
   font-size: 2.444em;
   color: rgba(26,27,31,1);
   line-height: 1.3em;
+}
+.results__title p {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 .results h2 {
   color: rgba(26,27,31,1);

@@ -391,7 +391,7 @@
           <label for="repairs-maintenance">Repairs & maintenance</label> 
         </div>
         <div class="calc__row__middleCol">
-          <button class="calc__estimate-button" id="estimate-repairs-button" onclick="estimateRepairs()">Estimate</button>
+          <button class="calc__estimate-button" id="estimate-repairs-button" onclick="estimateRepairs()" title="Estimates 10% of monthly income for repairs and maintenance.">Estimate</button>
         </div>
         <div class="calc__row__rightCol">
           <input type="number" id="repairs-maintenance" oninput="updateResults(); saveInput('repairs-maintenance')">
@@ -402,7 +402,7 @@
           <label for="vacancy">Vacancy</label> 
         </div>
         <div class="calc__row__middleCol">
-          <button class="calc__estimate-button" id="estimate-vacancy-button" onclick="estimateVacancy()">Estimate</button>
+          <button class="calc__estimate-button" id="estimate-vacancy-button" onclick="estimateVacancy()" title="Estimates 5% of monthly income for potential vacancy costs.">Estimate</button>
         </div>
         <div class="calc__row__rightCol">
           <input type="number" id="vacancy" oninput="updateResults(); saveInput('vacancy')">
@@ -413,7 +413,7 @@
           <label for="capex">Capital expenditures</label> 
         </div>
         <div class="calc__row__middleCol">
-          <button class="calc__estimate-button" id="estimate-capex-button" onclick="estimateCapex()">Estimate</button>
+          <button class="calc__estimate-button" id="estimate-capex-button" onclick="estimateCapex()" title="Estimates 10% of monthly income for capital expenditures.">Estimate</button>
         </div>
         <div class="calc__row__rightCol">
           <input type="number" id="capex" oninput="updateResults(); saveInput('capex')">
@@ -424,7 +424,7 @@
           <label for="mgt-fees">Management fees</label> 
         </div>
         <div class="calc__row__middleCol">
-          <button class="calc__estimate-button" id="estimate-mgtfees-button" onclick="estimateMgtfees()">Estimate</button>
+          <button class="calc__estimate-button" id="estimate-mgtfees-button" onclick="estimateMgtfees()" title="Estimates 8% of monthly income for management fees.">Estimate</button>
         </div>
         <div class="calc__row__rightCol">
           <input type="number" id="mgt-fees" oninput="updateResults(); saveInput('mgt-fees')">
