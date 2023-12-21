@@ -224,6 +224,21 @@ header {
   filter: blur(8px);
   transition: filter 0.3s;
 }
+.portfolio__password-required {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 4px;
+  color: #856404;
+  padding: 1em;
+}
+.portfolio__password-required h3 {
+  padding: 0 0 .5em;
+  margin: 0;
+}
+.portfolio__password-required p {
+  padding: 0;
+  margin: 0;
+}
 @media screen and (max-width: 1015px){
   .portfolio-essay {
     flex-direction: column;
