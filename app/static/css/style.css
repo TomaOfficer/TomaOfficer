@@ -130,6 +130,16 @@ header {
   max-width: 580px;
   margin: 0 auto;
 }
+.example-message {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+  border-radius: .25rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e3e3e3;
+}
+.example-message__primary {
+  
+}
 /* --- About --- */
 .headshot {
   width: 200px;
