@@ -7,6 +7,9 @@ body {
   padding: 0;
   margin: 0;
 }
+h1 {
+  line-height: 1.4em;
+}
 p {
   padding: 0 0 1.333em;
   margin: 0;
