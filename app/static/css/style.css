@@ -142,10 +142,14 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 0 0 2em;
+  color: #ccc;
 }
-.status__name {
+.blog__header h3 {
   padding: 0;
   margin: 0;
+}
+.table-of-contents {
+  padding: 0 0 4em;
 }
 /* --- About --- */
 .headshot {
