@@ -66,6 +66,10 @@ def startofanidea():
 def systemmessage():
     return render_template('blog/system-message.html')
 
+@app.route('/blog/2023-review')
+def review():
+    return render_template('blog/2023-review.html')
+
 @app.route('/ask_chatbot', methods=['POST'])
 def ask_chatbot():
     user_input = request.json['message']

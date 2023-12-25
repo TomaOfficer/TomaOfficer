@@ -137,8 +137,15 @@ header {
   margin-bottom: 1.5rem;
   border: 1px solid #e3e3e3;
 }
-.example-message__primary {
-  
+.blog__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 2em;
+}
+.status__name {
+  padding: 0;
+  margin: 0;
 }
 /* --- About --- */
 .headshot {
