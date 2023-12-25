@@ -15,8 +15,11 @@ p {
   margin: 0;
 }
 ul {
-  padding: 0 0 0 1em;
+  padding: 0 0 1.333em 3.777em;
   margin: 0;
+}
+ol {
+  padding: 0 0 1.333em 3.777em;
 }
 a {
   color: #0000EE;
@@ -99,6 +102,8 @@ header {
 .header__links ul {
   list-style: none;
   max-width: 170px;
+  padding: 0 0 0 1em;
+  margin: 0;
 }
 .header__links li {
   display: flex;
@@ -150,6 +155,11 @@ header {
 }
 .table-of-contents {
   padding: 0 0 4em;
+}
+.blog-posts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /* --- About --- */
 .headshot {
