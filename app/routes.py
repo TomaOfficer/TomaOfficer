@@ -56,8 +56,7 @@ def legalapps():
 
 @app.route('/blog/problems-and-ideas')
 def problemsandideas():
-    date = "October 2023"
-    return render_template('blog/problems-and-ideas.html', date=date)
+    return render_template('blog/problems-and-ideas.html')
 
 @app.route('/blog/start-of-an-idea')
 def startofanidea():
@@ -69,8 +68,7 @@ def systemmessage():
 
 @app.route('/blog/2023-review')
 def review():
-    date = "December 2023"
-    return render_template('blog/2023-review.html', date=date)
+    return render_template('blog/2023-review.html')
 
 @app.route('/ask_chatbot', methods=['POST'])
 def ask_chatbot():
