@@ -38,6 +38,8 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 .nav__wrapper__leftCol {
   display: flex;
