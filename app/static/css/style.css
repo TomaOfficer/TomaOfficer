@@ -32,7 +32,7 @@ a {
 /* --- Nav --- */
 nav {
   padding: 1em;
-  position: absolute;
+ 
 }
 .nav__wrapper {
   display: flex;
