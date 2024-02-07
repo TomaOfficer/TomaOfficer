@@ -95,22 +95,16 @@ nav {
   }
 }
 /* --- Header --- */
-header {
-  position: absolute;
-  top: 60px;
-}
-.header__links ul {
+.nav__links {
   list-style: none;
-  max-width: 170px;
-  padding: 0 0 0 1em;
+  padding: 0;
   margin: 0;
 }
-.header__links li {
-  display: flex;
-  align-items: center;
-  padding: .25em 0;
+.nav__links li {
+  padding: 0 .5em;
+  display: inline-block;
 }
-.header__links img {
+.nav__links img {
   width: 15px;
   padding: 0 .25em 0 0;
 }
