@@ -122,6 +122,14 @@ nav {
     display: inline-block;
   }
 }
+/* --- Index --- */
+.index__emoji {
+  font-family: sans-serif;
+  font-size: 1.333em;
+}
+.index__ul {
+  padding: 0 0 0 3em;
+}
 /* --- Blog --- */
 .blog {
   padding: 4em 0;
@@ -159,9 +167,9 @@ nav {
 }
 /* --- About --- */
 .headshot {
-  width: 200px;
-  float: left;
-  margin: 0 1.75em 1em 0;
+  width: 150px;
+  /* float: left;
+  margin: 0 1.75em 1em 0; */
   padding: 4px;
   border: 1px solid #ccc;
   box-sizing: border-box;
