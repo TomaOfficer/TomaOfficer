@@ -21,6 +21,15 @@
         <p>
           Building something new from Lebanon, NH <span class="index__emoji">☕</span>
         </p>
+        <div class="chat-display" id="chatDisplay">
+          <p id="welcomeMessage" class="chatbot-message">Greetings! I'm Ward, an AI chatbot. I know (almost) everything about Thomas' career and professional ambitions. Ask away.</p>
+        </div>
+        <div class="chatbot">
+          <div id="chatDisplay" class="chat-display"></div>
+          <input type="text" id="userMessage" placeholder="Type a message...">
+          <button onclick="sendUserMessage()">Send</button>
+          <div id="spinner" class="spinner" style="display: none;"></div>
+        </div>
         <p>
           Previously,
         </p>
@@ -81,28 +90,5 @@
       </div>
     </main>
   </div>
-  <script>
-    
-      $.ajax({
-        url: '/ask_chatbot',
-        type: 'POST',
-        contentType: 'application/json',
-        data: JSON.stringify({ 'message': message }),
-        success: function(response) {
-          var chatDisplay = document.getElementById('chatDisplay');
-          chatDisplay.innerHTML += "<p>Bot: " + response.reply + "</p>";
-          // Hide spinner and enable send button
-          document.getElementById('spinner').style.display = 'none';
-          document.querySelector('button[onclick="sendUserMessage()"]').disabled = false;
-        },
-        error: function(error) {
-          console.log(error);
-          // Hide spinner and enable send button
-          document.getElementById('spinner').style.display = 'none';
-          document.querySelector('button[onclick="sendUserMessage()"]').disabled = false;
-        }
-      });
-    }
-  </script>  
 </body>
 </html>
