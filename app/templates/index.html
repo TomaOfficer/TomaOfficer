@@ -1,94 +1,101 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Thomas F. Officer | Portfolio</title>
+    <link
+      href="{{ url_for('static', filename='css/style.css') }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='assets/tfo-favicon.ico') }}"
+      type="image/x-icon"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Thomas F. Officer | Portfolio</title>
-  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
-  <link rel="icon" href="{{ url_for('static', filename='assets/tfo-favicon.ico') }}" type="image/x-icon">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-  {% include 'navbar.html' %}
-  <div class="body__wrapper">
-    <main>
-      <div class="main__wrapper">
-        <img src="{{ url_for('static', filename='assets/tfo-headshot-2-2024.png') }}" class="headshot" alt="Photo of Thomas Officer">
-        <h1>Thomas F. Officer</h1>
-        <p>
-          Building something new from Lebanon, NH <span class="index__emoji">☕</span>
-        </p>
-        <div class="chat-display" id="chatDisplay">
-          <p id="welcomeMessage" class="chatbot-message">Greetings! I'm Ward, an AI chatbot. I know (almost) everything about Thomas' career and professional ambitions. Ask away.</p>
-        </div>
-        <div class="chatbot">
-          <div id="chatDisplay" class="chat-display"></div>
-          <input type="text" id="userMessage" placeholder="Type a message...">
-          <button onclick="sendUserMessage()">Send</button>
-          <div id="spinner" class="spinner" style="display: none;"></div>
-        </div>
-        <p>
-          Previously,
-        </p>
-        <ul class="index__ul">
-          <li>
-            Product Designer @ NetDocuments
-          </li>
-          <li>
-            Co-Founder, Product Designer @ Afterpattern (acquired 2021)
-          </li>
-          <li>
-            Design Fellow @ Blue Ridge Labs @ Robin Hood
-          </li>
-        </ul>
-        <br>
-        <div class="contact__row">
-          <div class="contact__row__leftCol">
-            <p>
-              EMAIL
-            </p>
-          </div>
-          <div class="contact__row__rightCol">
-            <p>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="body__wrapper">
+      <main>
+        <div class="main__wrapper">
+          <img
+            src="{{ url_for('static', filename='assets/tfo-headshot-2-2024.png') }}"
+            class="headshot"
+            alt="Photo of Thomas Officer"
+          />
+          <h1>Thomas F. Officer</h1>
+          <p>
+            Building something new from Lebanon, NH
+            <span class="index__emoji">☕</span>
+          </p>
+          <p>Previously,</p>
+          <ul class="index__ul">
+            <li>Product Designer @ NetDocuments</li>
+            <li>Co-Founder, Product Designer @ Afterpattern (acquired 2021)</li>
+            <li>Design Fellow @ Blue Ridge Labs @ Robin Hood</li>
+          </ul>
+          <br />
+          <div class="contact__row">
+            <div class="contact__row__leftCol">
+              <p>EMAIL</p>
+            </div>
+            <div class="contact__row__rightCol">
+              <p></p>
               <p>
-                <a href="mailto:thomas.officer@gmail.com">thomas.officer@gmail.com</a>
+                <a href="mailto:thomas.officer@gmail.com"
+                  >thomas.officer@gmail.com</a
+                >
               </p>
+            </div>
           </div>
-        </div>
-        <div class="contact__row">
-          <div class="contact__row__leftCol">
-            <p>
-              GITHUB
-            </p>
-          </div>
-          <div class="contact__row__rightCol">
-            <p>
+          <div class="contact__row">
+            <div class="contact__row__leftCol">
+              <p>GITHUB</p>
+            </div>
+            <div class="contact__row__rightCol">
+              <p></p>
               <p>
-                <a href="https://github.com/TomaOfficer" target="_blank">@TomaOfficer</a>
+                <a href="https://github.com/TomaOfficer" target="_blank"
+                  >@TomaOfficer</a
+                >
               </p>
+            </div>
           </div>
-        </div>
-        <div class="contact__row">
-          <div class="contact__row__leftCol">
-            <p>
-              LINKEDIN
-            </p>
-          </div>
-          <div class="contact__row__rightCol">
-            <p>
+          <div class="contact__row">
+            <div class="contact__row__leftCol">
+              <p>LINKEDIN</p>
+            </div>
+            <div class="contact__row__rightCol">
+              <p></p>
               <p>
-                <a href="https://www.linkedin.com/in/thomasofficer/" target="_blank">ThomasOfficer</a>
+                <a
+                  href="https://www.linkedin.com/in/thomasofficer/"
+                  target="_blank"
+                  >ThomasOfficer</a
+                >
               </p>
+            </div>
           </div>
+          <p style="padding-top: 2em">
+            Follow me on X
+            <a href="https://twitter.com/TomaOfficer" target="_blank"
+              >@TomaOfficer</a
+            >
+            for updates on my projects and random thoughts. Listen to me on the
+            <a href="https://www.lawsubscribed.com/p/afterpattern"
+              >Law Subscribed podcast</a
+            >.
+          </p>
         </div>
-        <p style="padding-top: 2em;">
-          Follow me on X <a href="https://twitter.com/TomaOfficer" target="_blank">@TomaOfficer</a> for updates on my projects and random thoughts. Listen to me on the <a href="https://www.lawsubscribed.com/p/afterpattern">Law Subscribed podcast</a>.
-        </p>
-      </div>
-    </main>
-  </div>
-</body>
+      </main>
+    </div>
+  </body>
 </html>

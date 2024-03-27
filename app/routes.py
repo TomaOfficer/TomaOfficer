@@ -2,7 +2,6 @@ import os
 import markdown
 import bleach
 from app import app
-from app.ai_chatbot import ask_ward
 from dotenv import load_dotenv
 from flask import render_template, request, jsonify
 from app.real_estate_chat import get_crowdfunding_breakdown
@@ -69,12 +68,6 @@ def systemmessage():
 @app.route('/blog/2023-review')
 def review():
     return render_template('blog/2023-review.html')
-
-@app.route('/ask_chatbot', methods=['POST'])
-def ask_chatbot():
-    user_input = request.json['message']
-    response = ask_ward(user_input)
-    return jsonify({'reply': response})
 
 @app.route('/get_crowdfunding_breakdown', methods=['POST'])
 def get_crowdfunding_breakdown_route():
