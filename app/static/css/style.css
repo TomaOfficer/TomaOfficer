@@ -1,14 +1,18 @@
 /* --- Universal --- */
 body {
-  font-family: menlo, monospace;
-  font-size: 12px;
-  line-height: 1.4em;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  line-height: 1.5em;
   color: #333;
   padding: 0;
   margin: 0;
 }
 h1 {
   line-height: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 p {
   padding: 0 0 1.333em;
@@ -22,11 +26,19 @@ ol {
   padding: 0 0 1.333em 3.777em;
 }
 a {
-  color: #0000EE;
+  color: #585874;
+  text-decoration-color: #75716c;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 0.05em;
 }
 .main__wrapper {
-  max-width: 560px;
+  max-width: 680px;
   padding: 6em 20px;
+  margin: 0 auto;
+}
+.index__wrapper {
+  padding: 6em 20px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 /* --- Nav --- */
@@ -48,6 +60,8 @@ nav {
 .nav__title {
   color: #333;
   text-decoration: none !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 .nav__title h3 {
   padding: 0;
@@ -59,6 +73,11 @@ nav {
 .nav__title p {
   padding: 0;
   margin: 0;
+}
+.nav__links a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .calc-main__nav {
   padding: 1em;
@@ -178,16 +197,22 @@ nav {
 /* --- Contact --- */
 .contact__row {
   display: flex;
-  padding: .25em 0;
+  padding: .5em 0;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .contact__row p {
   padding: 0;
+}
+.contact__row a {
+  
 }
 .contact__row:first-of-type {
   padding-top: 1em;
 }
 .contact__row__leftCol {
-  flex-basis: 75px;
+  flex-basis: 150px;
+  color: #9595a5;
 }
 /* --- Portfolio --- */
 .portfolio__wrapper {
