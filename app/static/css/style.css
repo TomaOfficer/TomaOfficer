@@ -79,6 +79,10 @@ nav {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.nav__links a.active {
+  color: #9595a5;
+  text-decoration: underline;
+}
 .calc-main__nav {
   padding: 1em;
   position: relative !important;
