@@ -2,7 +2,7 @@
 body {
   font-family: Georgia, serif;
   font-size: 17px;
-  line-height: 1.5em;
+  line-height: 1.65em;
   color: #333;
   padding: 0;
   margin: 0;
@@ -38,7 +38,7 @@ a {
 }
 .index__wrapper {
   padding: 6em 20px;
-  max-width: 1080px;
+  max-width: 680px;
   margin: 0 auto;
 }
 /* --- Nav --- */
