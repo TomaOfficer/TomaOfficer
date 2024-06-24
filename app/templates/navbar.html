@@ -8,28 +8,33 @@
 </head>
 <body>
     <nav>
-      <div class="nav__wrapper">
-        <div class="nav__wrapper__leftCol">
-          <a href="/" class="nav__title">
-            <h3>
-              Thomas<span>F.</span>Officer
-            </h3>
-          </a>
+      <div class="nav__top">
+        <div class="nav__links">
+          <li>
+            <a href="/blog" class="{{ 'active' if request.path == '/blog' else '' }}">Blog</a>
+          </li>
+          <li>
+            <a href="/portfolio" class="{{ 'active' if request.path == '/portfolio' else '' }}">Portfolio</a>
+          </li>
         </div>
-        <div class="nav__wrapper__rightCol">
-          <ul class="nav__links">
-            <li>
-              <a href="/" class="{{ 'active' if request.path == '/' else '' }}">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="/blog" class="{{ 'active' if request.path == '/blog' else '' }}">Blog</a>
-            </li>
-            <li>
-              <a href="/portfolio" class="{{ 'active' if request.path == '/portfolio' else '' }}">Portfolio</a>
-            </li>
-          </ul>
+        <p class="nav__email">
+          e. thomas.officer@gmail.com
+        </p>
+      </div>
+      <div class="nav__bottom">
+        <div class="nav__links">
+          <li>
+            <a href="#" class="">Linkedin</a>
+          </li>
+          <li>
+            <a href="#" class="">Github</a>
+          </li>
+          <li>
+            <a href="#" class="">Replit</a>
+          </li>
+          <li>
+            <a href="#" class="">Twitter</a>
+          </li>
         </div>
       </div>
     </nav>

@@ -26,7 +26,7 @@ ol {
   padding: 0 0 1.333em 3.777em;
 }
 a {
-  color: #585874;
+  color: #333;
   text-decoration-color: #75716c;
   text-decoration-thickness: 0.5px;
   text-underline-offset: 0.05em;
@@ -44,43 +44,36 @@ a {
 /* --- Nav --- */
 nav {
   padding: 1em;
- 
+  display: flex;
+  flex-direction: column;
 }
-.nav__wrapper {
+.nav__top {
+  border-bottom: 1px solid #ddd;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 1080px;
-  margin: 0 auto;
 }
-.nav__wrapper__leftCol {
-  display: flex;
-  flex-direction: row;
-}
-.nav__title {
-  color: #333;
-  text-decoration: none !important;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-}
-.nav__title h3 {
+.nav__links {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
-.nav__title h3 span {
-  padding: 0 4px;
+.nav__links li {
+  padding: 0 .5em;
+  display: inline-block;
 }
-.nav__title p {
+.nav__email {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
 }
 .nav__links a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .nav__links a.active {
-  color: #9595a5;
   text-decoration: underline;
 }
 .calc-main__nav {
@@ -119,20 +112,6 @@ nav {
     position: relative;
   }
 }
-/* --- Header --- */
-.nav__links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.nav__links li {
-  padding: 0 .5em;
-  display: inline-block;
-}
-.nav__links img {
-  width: 15px;
-  padding: 0 .25em 0 0;
-}
 @media screen and (max-width: 1015px){
   header {
     position: relative;
@@ -146,6 +125,45 @@ nav {
   }
 }
 /* --- Index --- */
+.home {
+  display: flex;
+  flex-direction: row;
+}
+.home__Main-leftCol {
+  flex-basis: 10%;
+  max-width: 10%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home__Main-rightCol {
+  flex-basis: 90%;
+}
+.home__logo {
+  max-width: 55%;
+  margin: 0 auto;
+  margin: 0 0 2em;
+}
+.home__quote {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 14px;
+  line-height: 1.6em;
+  padding: 0;
+  margin: 0;
+}
+.home__Inner-body {
+  display: flex;
+  flex-direction: row;
+}
+.home__Inner-body__leftCol {
+  flex-basis: 47%;
+}
+.home__Inner-body__rightCol {
+  flex-basis: 47%;
+}
 .index__emoji {
   font-family: sans-serif;
   font-size: 1.333em;
