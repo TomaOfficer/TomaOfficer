@@ -141,7 +141,6 @@ nav {
   padding: 2em 1em 2em 2em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .home__Main-rightCol {
@@ -184,12 +183,30 @@ nav {
 .timeline-row {
   display: flex;
   justify-content: space-between;
+  margin-top: 2em;
 }
 .timeline-row__leftCol {
   flex-basis: 30%;
 }
 .timeline-row__rightCol {
   flex-basis: 70%;
+}
+.timeline-row__label {
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.timeline-row__body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.timeline-row__title {
+  font-size: 16px;
+  font-weight: 600;
 }
 /* --- Blog --- */
 .blog {
