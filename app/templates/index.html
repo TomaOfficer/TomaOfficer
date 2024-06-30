@@ -15,10 +15,6 @@
       type="image/x-icon"
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
   </head>
 
   <body>
@@ -38,15 +34,30 @@
         {% include 'navbar.html' %}
         <div class="home__Inner-body">
           <div class="home__Inner-body__leftCol">
-            <h1>
-              Thomas F. Officer
-            </h1>
-            <h3>
-              Product Designer + Frontend Engineer
-            </h3>
+            <div class="chat-container">
+              <div class="chat-display" id="chatDisplay">
+                <p id="welcomeMessage" class="chatbot-message">Greetings! I'm Ward, an AI chatbot. I know (almost) everything about Thomas' career and professional ambitions. Ask away.</p>
+              </div>
+              <div class="chat-input">
+                <input type="text" id="userMessage" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendUserMessage()">Send</button>
+                <div id="spinner" class="spinner" style="display: none;"></div>
+              </div>
+            </div>
+
+
+            <!-- <div class="chat-display" id="chatDisplay">
+              <p id="welcomeMessage" class="chatbot-message">Greetings! I'm Ward, an AI chatbot. I know (almost) everything about Thomas' career and professional ambitions. Ask away.</p>
+            </div>
+            <div class="chatbot">
+              <div id="chatDisplay" class="chat-display"></div>
+              <input type="text" id="userMessage" placeholder="Type a message...">
+              <button onclick="sendUserMessage()">Send</button>
+              <div id="spinner" class="spinner" style="display: none;"></div>
+            </div> -->
           </div>
           <div class="home__Inner-body__rightCol">
-            <p>
+            <!-- <p>
               I'm a designer with 10 years experience working in various roles for various startups. My first job out of law school was for a tech company that only hired lawyers in case it turned out its software constituted the delivery of legal services and the company had to become a law firm. This was my introduction to the world of tech entrepreneurship.
             </p>
             <p>
@@ -54,7 +65,13 @@
             </p>
             <p>
               The pivotal moment of my career was joining the Blue Ridge Labs @ Robin Hood tech incubator as a Design Fellow in 2016. This is where I met my cofounders who I would work with for the next 5 years. We built Afterpattern, a no-code automation builder for lawyers. Afterpattern was acquired by NetDocuments in 2021.
-            </p>
+            </p> -->
+            <h1>
+              Thomas F. Officer
+            </h1>
+            <h3>
+              Product Designer + Frontend Engineer
+            </h3>
             <div class="timeline-row">
               <div class="timeline-row__leftCol">
                 <p class="timeline-row__label">
@@ -63,10 +80,10 @@
               </div>
               <div class="timeline-row__rightCol">
                 <h3 class="timeline-row__title">
-                  Cofounder, <a href="https://verdai.xyz/">Verdai</a>
+                  Cofounder, <a href="https://verdai.xyz/">VoiceJournal</a>
                 </h3>
                 <p class="timeline-row__body">
-                  Exploring new product opportunities offered by large language models. As of June 2024, this is taking the shape of a journal with voice transcription, perfect memory, and expert opinions.
+                  AI-enhanced, voice-to-text journaling app.
                 </p>
               </div>
             </div>
@@ -81,7 +98,7 @@
                   Product Designer, <a href="https://www.netdocuments.com/products/patternbuilder">NetDocuments</a>
                 </h3>
                 <p class="timeline-row__body">
-                  Principal product designer. Responsible for the integration of Afterpattern into NetDocuments.
+                  Responsible for integrating Afterpattern into NetDocuments. Led design for how NetDocuments would incorporate AI after ChatGPT exploded onto the world.
                 </p>
               </div>
             </div>
@@ -96,7 +113,7 @@
                   Product Designer / Cofounder, <a href="https://afterpattern.com/">Afterpattern</a>
                 </h3>
                 <p class="timeline-row__body">
-                  Acquired by NetDocuments (Nov. 2021). Afterpattern, now NetDocuments PatternBuilder, is a no code automation builder for lawyers. I led product design, front-end development, and UX research.
+                  Acquired by NetDocuments (Nov. 2021). No-code app builder for lawyers.
                 </p>
               </div>
             </div>
@@ -111,7 +128,7 @@
                   Design Fellow, <a href="https://www.labs.robinhood.org/">Blue Ridge Labs @ Robin Hood</a>
                 </h3>
                 <p class="timeline-row__body">
-                  Blue Ridge Labs (BRL) is a social impact technology incubator run by the Robin Hood Foundation, New York's largest poverty-fighting organization. BRL provides Fellows with the resources necessary to research, launch, and grow new social impact ventures.
+                  Participant in tech incubator then accelerator. Co-founded Community.lawyer which grew into Afterpattern.
                 </p>
               </div>
             </div>
@@ -130,9 +147,66 @@
                 </p>
               </div>
             </div>
+            <div class="timeline-row">
+              <div class="timeline-row__leftCol">
+                <p class="timeline-row__label">
+                  2013 — 2015
+                </p>
+              </div>
+              <div class="timeline-row__rightCol">
+                <h3 class="timeline-row__title">
+                  Legal Researcher, <a href="https://crowdcheck.com/">CrowdCheck</a>
+                </h3>
+                <p class="timeline-row__body">
+                  First job out of law school. Prepared disclosure documents for investment crowdfunding rounds.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      function sendUserMessage() {
+        var message = document.getElementById('userMessage').value;
+        var sendButton = document.querySelector('button[onclick="sendUserMessage()"]');
+  
+        // Hide the welcome message on first user input
+        var welcomeMessage = document.getElementById('welcomeMessage');
+        if (welcomeMessage) {
+            welcomeMessage.style.display = 'none';
+        }
+  
+        // Show spinner and disable send button
+        document.getElementById('spinner').style.display = 'block';
+        sendButton.disabled = true;
+  
+        sendMessageToChatbot(message);
+        document.getElementById('chatDisplay').innerHTML += "<p>You: " + message + "</p>";
+        document.getElementById('userMessage').value = "";
+      }
+    
+      function sendMessageToChatbot(message) {
+        $.ajax({
+          url: '/ask_chatbot',
+          type: 'POST',
+          contentType: 'application/json',
+          data: JSON.stringify({ 'message': message }),
+          success: function(response) {
+            var chatDisplay = document.getElementById('chatDisplay');
+            chatDisplay.innerHTML += "<p>Bot: " + response.reply + "</p>";
+            // Hide spinner and enable send button
+            document.getElementById('spinner').style.display = 'none';
+            document.querySelector('button[onclick="sendUserMessage()"]').disabled = false;
+          },
+          error: function(error) {
+            console.log(error);
+            // Hide spinner and enable send button
+            document.getElementById('spinner').style.display = 'none';
+            document.querySelector('button[onclick="sendUserMessage()"]').disabled = false;
+          }
+        });
+      }
+    </script> 
   </body>
 </html>
