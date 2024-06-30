@@ -166,13 +166,14 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   height: calc(100vh - 100px);
+  padding-right: 20px;
 }
 .home__Inner-body__leftCol {
-  flex-basis: 37%;
+  flex-basis: 49%;
   padding-top: 2em;
 }
 .home__Inner-body__rightCol {
-  flex-basis: 57%;
+  flex-basis: 49%;
   overflow: scroll;  
   padding-top: 2em;
 }
@@ -211,7 +212,7 @@ nav {
 .timeline-row {
   display: flex;
   justify-content: space-between;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 .timeline-row__leftCol {
   flex-basis: 30%;
@@ -232,6 +233,7 @@ nav {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 1.5em;
+  color: #6b7178;
 }
 .timeline-row__title {
   font-size: 16px;
