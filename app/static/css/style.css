@@ -142,10 +142,13 @@ nav {
   flex-basis: 90%;
   padding: 1em 2em 2em 1em; 
 }
-.home__logo {
+.home__brand {
   max-width: 55%;
   margin: 0 auto;
   margin: 0 0 2.5em;
+}
+.home__brand img {
+  width: 100%;
 }
 .home__quote {
   writing-mode: vertical-rl;
@@ -229,6 +232,50 @@ nav {
     padding-bottom: .75em;
   }
 }
+/* --- Showcase header (navbar for blog and portfolio) --- */
+.showcase-header {
+  padding: 0 20px;
+}
+.showcase-header__wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 4em 0 2em;
+}
+.showcase-header__top-row {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.showcase-header__bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.showcase-header__brand {
+  max-width: 50px;
+  display: inline-block;
+}
+.showcase-header img {
+  max-width: 100%;
+}
+.showcase-header h1 {
+  font-size: 15px;
+}
+.showcase-header__label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+@media screen and (max-width: 920px){
+  .showcase-header__label {
+    display: none;
+  }
+  .showcase-header h1 {
+    display: none;
+  }
+}
+
 /* --- Blog --- */
 .blog {
   padding: 4em 0;

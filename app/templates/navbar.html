@@ -11,6 +11,9 @@
       <div class="nav__top">
         <div class="nav__links">
           <li>
+            <a href="/" class="{{ 'active' if request.path == '/' else '' }}">Home</a>
+          </li>
+          <li>
             <a href="/blog" class="{{ 'active' if request.path == '/blog' else '' }}">Blog</a>
           </li>
           <li>
