@@ -34,13 +34,19 @@
         {% include 'navbar.html' %}
         <div class="home__Inner-body">
           <div class="home__Inner-body__leftCol">
-            <h1>
-              Thomas F. Officer
-            </h1>
-            <h3>
-              Product Designer + Frontend Engineer
-            </h3>
-            <div class="chat-display" id="chatDisplay">
+            <div class="chat-container">
+              <div class="chat-display" id="chatDisplay">
+                <p id="welcomeMessage" class="chatbot-message">Greetings! I'm Ward, an AI chatbot. I know (almost) everything about Thomas' career and professional ambitions. Ask away.</p>
+              </div>
+              <div class="chat-input">
+                <input type="text" id="userMessage" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendUserMessage()">Send</button>
+                <div id="spinner" class="spinner" style="display: none;"></div>
+              </div>
+            </div>
+
+
+            <!-- <div class="chat-display" id="chatDisplay">
               <p id="welcomeMessage" class="chatbot-message">Greetings! I'm Ward, an AI chatbot. I know (almost) everything about Thomas' career and professional ambitions. Ask away.</p>
             </div>
             <div class="chatbot">
@@ -48,10 +54,10 @@
               <input type="text" id="userMessage" placeholder="Type a message...">
               <button onclick="sendUserMessage()">Send</button>
               <div id="spinner" class="spinner" style="display: none;"></div>
-            </div>
+            </div> -->
           </div>
           <div class="home__Inner-body__rightCol">
-            <p>
+            <!-- <p>
               I'm a designer with 10 years experience working in various roles for various startups. My first job out of law school was for a tech company that only hired lawyers in case it turned out its software constituted the delivery of legal services and the company had to become a law firm. This was my introduction to the world of tech entrepreneurship.
             </p>
             <p>
@@ -59,7 +65,13 @@
             </p>
             <p>
               The pivotal moment of my career was joining the Blue Ridge Labs @ Robin Hood tech incubator as a Design Fellow in 2016. This is where I met my cofounders who I would work with for the next 5 years. We built Afterpattern, a no-code automation builder for lawyers. Afterpattern was acquired by NetDocuments in 2021.
-            </p>
+            </p> -->
+            <h1>
+              Thomas F. Officer
+            </h1>
+            <h3>
+              Product Designer + Frontend Engineer
+            </h3>
             <div class="timeline-row">
               <div class="timeline-row__leftCol">
                 <p class="timeline-row__label">
