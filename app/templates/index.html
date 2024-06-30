@@ -22,80 +22,117 @@
   </head>
 
   <body>
-    {% include 'navbar.html' %}
-    <div class="body__wrapper">
-      <main>
-        <div class="main__wrapper">
-          <img
-            src="{{ url_for('static', filename='assets/tfo-headshot-2-2024.png') }}"
-            class="headshot"
-            alt="Photo of Thomas Officer"
-          />
-          <h1>Thomas F. Officer</h1>
-          <p>
-            Building something new from Lebanon, NH
-            <span class="index__emoji">☕</span>
-          </p>
-          <p>Previously,</p>
-          <ul class="index__ul">
-            <li>Product Designer @ NetDocuments</li>
-            <li>Co-Founder, Product Designer @ Afterpattern (acquired 2021)</li>
-            <li>Design Fellow @ Blue Ridge Labs @ Robin Hood</li>
-          </ul>
-          <br />
-          <div class="contact__row">
-            <div class="contact__row__leftCol">
-              <p>EMAIL</p>
+    <div class="home">
+      <div class="home__Main-leftCol">
+        <a href="/" class="home__brand">
+          <img src="{{ url_for('static', filename='assets/tfo-brand-dark.svg') }}" alt="TFO logo">
+        </a>        
+        <blockquote class="home__quote">
+          Child: “The Major and the soldiers and Mycroft told me what war is like. They say it's the second worst thing in the world.”<br>
+          Man: “That's an interesting definition. What did they say is the worst thing?”<br>
+          Child: “Not having anything worth fighting for in the first place.”<br>
+          — Too Like the Lightening, Ada Palmer
+        </blockquote>
+      </div>
+      <div class="home__Main-rightCol">
+        {% include 'navbar.html' %}
+        <div class="home__Inner-body">
+          <div class="home__Inner-body__leftCol">
+            <h1>
+              Thomas F. Officer
+            </h1>
+            <h3>
+              Product Designer + Frontend Engineer
+            </h3>
+          </div>
+          <div class="home__Inner-body__rightCol">
+            <p>
+              I'm a designer with 10 years experience working in various roles for various startups. My first job out of law school was for a tech company that only hired lawyers in case it turned out its software constituted the delivery of legal services and the company had to become a law firm. This was my introduction to the world of tech entrepreneurship.
+            </p>
+            <p>
+              I've had the great priviledge of a wandering career. I studied religion in college and went to law school in Scotland. I discovered tech entrepreneurship when I was 25 and spent 2 years transitioning from lawyer to UX designer and then front-end developer. 
+            </p>
+            <p>
+              The pivotal moment of my career was joining the Blue Ridge Labs @ Robin Hood tech incubator as a Design Fellow in 2016. This is where I met my cofounders who I would work with for the next 5 years. We built Afterpattern, a no-code automation builder for lawyers. Afterpattern was acquired by NetDocuments in 2021.
+            </p>
+            <div class="timeline-row">
+              <div class="timeline-row__leftCol">
+                <p class="timeline-row__label">
+                  2024 — Present
+                </p>
+              </div>
+              <div class="timeline-row__rightCol">
+                <h3 class="timeline-row__title">
+                  Cofounder, <a href="https://verdai.xyz/">Verdai</a>
+                </h3>
+                <p class="timeline-row__body">
+                  Exploring new product opportunities offered by large language models. As of June 2024, this is taking the shape of a journal with voice transcription, perfect memory, and expert opinions.
+                </p>
+              </div>
             </div>
-            <div class="contact__row__rightCol">
-              <p></p>
-              <p>
-                <a href="mailto:thomas.officer@gmail.com"
-                  >thomas.officer@gmail.com</a
-                >
-              </p>
+            <div class="timeline-row">
+              <div class="timeline-row__leftCol">
+                <p class="timeline-row__label">
+                  2021 — 2023
+                </p>
+              </div>
+              <div class="timeline-row__rightCol">
+                <h3 class="timeline-row__title">
+                  Product Designer, <a href="https://www.netdocuments.com/products/patternbuilder">NetDocuments</a>
+                </h3>
+                <p class="timeline-row__body">
+                  Principal product designer. Responsible for the integration of Afterpattern into NetDocuments.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-row">
+              <div class="timeline-row__leftCol">
+                <p class="timeline-row__label">
+                  2016 — 2021
+                </p>
+              </div>
+              <div class="timeline-row__rightCol">
+                <h3 class="timeline-row__title">
+                  Product Designer / Cofounder, <a href="https://afterpattern.com/">Afterpattern</a>
+                </h3>
+                <p class="timeline-row__body">
+                  Acquired by NetDocuments (Nov. 2021). Afterpattern, now NetDocuments PatternBuilder, is a no code automation builder for lawyers. I led product design, front-end development, and UX research.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-row">
+              <div class="timeline-row__leftCol">
+                <p class="timeline-row__label">
+                  2016
+                </p>
+              </div>
+              <div class="timeline-row__rightCol">
+                <h3 class="timeline-row__title">
+                  Design Fellow, <a href="https://www.labs.robinhood.org/">Blue Ridge Labs @ Robin Hood</a>
+                </h3>
+                <p class="timeline-row__body">
+                  Blue Ridge Labs (BRL) is a social impact technology incubator run by the Robin Hood Foundation, New York's largest poverty-fighting organization. BRL provides Fellows with the resources necessary to research, launch, and grow new social impact ventures.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-row">
+              <div class="timeline-row__leftCol">
+                <p class="timeline-row__label">
+                  2015 — 2016
+                </p>
+              </div>
+              <div class="timeline-row__rightCol">
+                <h3 class="timeline-row__title">
+                  UX Designer, <a href="https://www.foundationlab.co/">Foundation Lab</a>
+                </h3>
+                <p class="timeline-row__body">
+                  Part of a small, interdisciplinary team that built web applications for law firm clients.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="contact__row">
-            <div class="contact__row__leftCol">
-              <p>GITHUB</p>
-            </div>
-            <div class="contact__row__rightCol">
-              <p></p>
-              <p>
-                <a href="https://github.com/TomaOfficer" target="_blank"
-                  >@TomaOfficer</a
-                >
-              </p>
-            </div>
-          </div>
-          <div class="contact__row">
-            <div class="contact__row__leftCol">
-              <p>LINKEDIN</p>
-            </div>
-            <div class="contact__row__rightCol">
-              <p></p>
-              <p>
-                <a
-                  href="https://www.linkedin.com/in/thomasofficer/"
-                  target="_blank"
-                  >ThomasOfficer</a
-                >
-              </p>
-            </div>
-          </div>
-          <p style="padding-top: 2em">
-            Follow me on X
-            <a href="https://twitter.com/TomaOfficer" target="_blank"
-              >@TomaOfficer</a
-            >
-            for updates on my projects and random thoughts. Listen to me on the
-            <a href="https://www.lawsubscribed.com/p/afterpattern"
-              >Law Subscribed podcast</a
-            >.
-          </p>
         </div>
-      </main>
+      </div>
     </div>
   </body>
 </html>

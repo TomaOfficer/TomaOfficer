@@ -12,56 +12,69 @@
 </head>
 
 <body>
-  {% include 'navbar.html' %}
-  <div class="body__wrapper">
-    <main>
-      <div class="main__wrapper">
-        <ul class="blog-posts__list">
-          <li class="blog-posts__list-item">
-            <div class="blog-post-snippet">
-              <a class="blog-post-snippet__link" href="/blog/2023-review">2023 Review</a>
-              <p class="blog-post-snippet__date">December 2023</p>
-            </div>
-          </li>
-          <li class="blog-posts__list-item">
-            <div class="blog-post-snippet">
-              <a class="blog-post-snippet__link" href="/blog/problems-and-ideas">Problems and ideas for software startups</a>
-              <p class="blog-post-snippet__date">October 2023</p>
-            </div>
-          </li>
-          <li class="blog-posts__list-item">
-            <div class="blog-post-snippet">
-              <a class="blog-post-snippet__link" href="/blog/aicontext">An AI startup idea</a>
-              <p class="blog-post-snippet__date">July 2023</p>
-            </div>
-          </li>
-          <li class="blog-posts__list-item">
-            <div class="blog-post-snippet">
-              <a class="blog-post-snippet__link" href="/blog/legal-apps">Legal Apps</a>
-              <p class="blog-post-snippet__date">July 2022</p>
-            </div>
-          </li>
-          <li class="blog-posts__list-item">
-            <div class="blog-post-snippet">
-              <a class="blog-post-snippet__link" href="/blog/system-message">System messages for GPT-4</a>
-              <p class="blog-post-snippet__date">June 2022</p>
-            </div>
-          </li>
-          <li class="blog-posts__list-item">
-            <div class="blog-post-snippet">
-              <a class="blog-post-snippet__link" href="/blog/ai-chatbot">You should build an AI chatbot</a>
-              <p class="blog-post-snippet__date">June 2022</p>
-            </div>
-          </li>
-          <li class="blog-posts__list-item">
-            <div class="blog-post-snippet">
-              <a class="blog-post-snippet__link" href="/blog/start-of-an-idea">Real estate software idea</a>
-              <p class="blog-post-snippet__date">January 2022</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </main>
+  <div class="home">
+    <div class="home__Main-leftCol">
+      <a href="/" class="home__brand">
+        <img src="{{ url_for('static', filename='assets/tfo-brand-dark.svg') }}" alt="TFO logo">
+      </a>
+      <blockquote class="home__quote">
+        Child: “The Major and the soldiers and Mycroft told me what war is like. They say it's the second worst thing in the world.”<br>
+        Man: “That's an interesting definition. What did they say is the worst thing?”<br>
+        Child: “Not having anything worth fighting for in the first place.”<br>
+        — Too Like the Lightening, Ada Palmer
+      </blockquote>
+    </div>
+    <div class="home__Main-rightCol">
+      {% include 'navbar.html' %}
+      <main>
+        <div class="main__wrapper">
+          <ul class="blog-posts__list">
+            <li class="blog-posts__list-item">
+              <div class="blog-post-snippet">
+                <p class="blog-post-snippet__date">December 2023</p>
+                <a class="blog-post-snippet__link" href="/blog/2023-review">2023 Review</a>
+              </div>
+            </li>
+            <li class="blog-posts__list-item">
+              <div class="blog-post-snippet">
+                <p class="blog-post-snippet__date">October 2023</p>
+                <a class="blog-post-snippet__link" href="/blog/problems-and-ideas">Problems and ideas for software startups</a>
+              </div>
+            </li>
+            <li class="blog-posts__list-item">
+              <div class="blog-post-snippet">
+                <p class="blog-post-snippet__date">July 2023</p>
+                <a class="blog-post-snippet__link" href="/blog/aicontext">An AI startup idea</a>
+              </div>
+            </li>
+            <li class="blog-posts__list-item">
+              <div class="blog-post-snippet">
+                <p class="blog-post-snippet__date">July 2022</p>
+                <a class="blog-post-snippet__link" href="/blog/legal-apps">Legal Apps</a>
+              </div>
+            </li>
+            <li class="blog-posts__list-item">
+              <div class="blog-post-snippet">
+                <p class="blog-post-snippet__date">June 2022</p>
+                <a class="blog-post-snippet__link" href="/blog/system-message">System messages for GPT-4</a>
+              </div>
+            </li>
+            <li class="blog-posts__list-item">
+              <div class="blog-post-snippet">
+                <p class="blog-post-snippet__date">June 2022</p>
+                <a class="blog-post-snippet__link" href="/blog/ai-chatbot">You should build an AI chatbot</a>
+              </div>
+            </li>
+            <li class="blog-posts__list-item">
+              <div class="blog-post-snippet">
+                <p class="blog-post-snippet__date">January 2022</p>
+                <a class="blog-post-snippet__link" href="/blog/start-of-an-idea">Real estate software idea</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
   </div>
 </body>
 

@@ -1,14 +1,25 @@
 /* --- Universal --- */
 body {
-  font-family: menlo, monospace;
-  font-size: 12px;
-  line-height: 1.4em;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  line-height: 1.65em;
   color: #333;
   padding: 0;
   margin: 0;
 }
 h1 {
   line-height: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 2.074rem;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 p {
   padding: 0 0 1.333em;
@@ -22,43 +33,54 @@ ol {
   padding: 0 0 1.333em 3.777em;
 }
 a {
-  color: #0000EE;
+  color: #333;
+  text-decoration-color: #75716c;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 0.05em;
 }
 .main__wrapper {
-  max-width: 560px;
+  max-width: 680px;
   padding: 6em 20px;
+  margin: 0 auto;
+}
+.index__wrapper {
+  padding: 6em 20px;
+  max-width: 680px;
   margin: 0 auto;
 }
 /* --- Nav --- */
 nav {
-  padding: 1em;
- 
+  display: flex;
+  flex-direction: column;
 }
-.nav__wrapper {
+.nav__top {
+  border-bottom: 1px solid #ddd;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 1080px;
-  margin: 0 auto;
 }
-.nav__wrapper__leftCol {
-  display: flex;
-  flex-direction: row;
-}
-.nav__title {
-  color: #333;
-  text-decoration: none !important;
-}
-.nav__title h3 {
+.nav__links {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
-.nav__title h3 span {
-  padding: 0 4px;
+.nav__links li {
+  padding: 0 .5em;
+  display: inline-block;
 }
-.nav__title p {
+.nav__email {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
+}
+.nav__links a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav__links a.active {
+  text-decoration: underline;
 }
 .calc-main__nav {
   padding: 1em;
@@ -92,25 +114,6 @@ nav {
   margin: 0;
 }
 @media screen and (max-width: 1015px){
-  nav {
-    position: relative;
-  }
-}
-/* --- Header --- */
-.nav__links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.nav__links li {
-  padding: 0 .5em;
-  display: inline-block;
-}
-.nav__links img {
-  width: 15px;
-  padding: 0 .25em 0 0;
-}
-@media screen and (max-width: 1015px){
   header {
     position: relative;
     top: 0;
@@ -123,6 +126,50 @@ nav {
   }
 }
 /* --- Index --- */
+.home {
+  display: flex;
+  flex-direction: row;
+}
+.home__Main-leftCol {
+  flex-basis: 10%;
+  max-width: 10%;
+  padding: 2em 1em 2em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__Main-rightCol {
+  flex-basis: 90%;
+  padding: 1em 2em 2em 1em; 
+}
+.home__brand {
+  max-width: 55%;
+  margin: 0 auto;
+  margin: 0 0 2.5em;
+}
+.home__brand img {
+  width: 100%;
+}
+.home__quote {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 14px;
+  line-height: 1.6em;
+  padding: 0;
+  margin: 0;
+}
+.home__Inner-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 4em;
+}
+.home__Inner-body__leftCol {
+  flex-basis: 37%;
+}
+.home__Inner-body__rightCol {
+  flex-basis: 57%;
+}
 .index__emoji {
   font-family: sans-serif;
   font-size: 1.333em;
@@ -130,6 +177,105 @@ nav {
 .index__ul {
   padding: 0 0 0 3em;
 }
+@media screen and (max-width: 1015px){
+  .home {
+    flex-direction: column;
+  }
+  .home__Main-leftCol {
+    display: none;
+  }
+  .home__Inner-body {
+    flex-direction: column;
+  }
+  .home__Inner-body__leftCol {
+    padding: 0 0 3em;
+  }
+}
+/* --- Timeline --- */
+.timeline-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.timeline-row__leftCol {
+  flex-basis: 30%;
+}
+.timeline-row__rightCol {
+  flex-basis: 70%;
+}
+.timeline-row__label {
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  padding-bottom: 0;
+}
+.timeline-row__body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.timeline-row__title {
+  font-size: 16px;
+  font-weight: 600;
+}
+@media screen and (max-width: 1015px){
+  .timeline-row {
+    flex-direction: column;
+  }
+  .timeline-row__leftCol {
+    flex-basis: auto;
+  }
+  .timeline-row__label {
+    padding-bottom: .75em;
+  }
+}
+/* --- Showcase header (navbar for blog and portfolio) --- */
+.showcase-header {
+  padding: 0 20px;
+}
+.showcase-header__wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 4em 0 2em;
+}
+.showcase-header__top-row {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.showcase-header__bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.showcase-header__brand {
+  max-width: 50px;
+  display: inline-block;
+}
+.showcase-header img {
+  max-width: 100%;
+}
+.showcase-header h1 {
+  font-size: 15px;
+}
+.showcase-header__label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+@media screen and (max-width: 920px){
+  .showcase-header__label {
+    display: none;
+  }
+  .showcase-header h1 {
+    display: none;
+  }
+}
+
 /* --- Blog --- */
 .blog {
   padding: 4em 0;
@@ -165,6 +311,19 @@ nav {
   padding: 0;
   margin: 0;
 }
+.blog-post-snippet {
+  display: flex;
+}
+.blog-post-snippet__link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.blog-post-snippet__date {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #9595a5;
+  flex-basis: 150px;
+}
 /* --- About --- */
 .headshot {
   width: 150px;
@@ -178,16 +337,22 @@ nav {
 /* --- Contact --- */
 .contact__row {
   display: flex;
-  padding: .25em 0;
+  padding: .5em 0;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .contact__row p {
   padding: 0;
+}
+.contact__row a {
+  
 }
 .contact__row:first-of-type {
   padding-top: 1em;
 }
 .contact__row__leftCol {
-  flex-basis: 75px;
+  flex-basis: 150px;
+  color: #9595a5;
 }
 /* --- Portfolio --- */
 .portfolio__wrapper {
