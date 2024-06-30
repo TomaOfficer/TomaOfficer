@@ -3,6 +3,7 @@ import markdown
 import bleach
 from app import app
 from dotenv import load_dotenv
+from app.ai_chatbot import ask_ward
 from flask import render_template, request, jsonify
 from app.real_estate_chat import get_crowdfunding_breakdown
 
@@ -12,6 +13,12 @@ if os.environ.get('FLASK_ENV') == 'development':
 @app.route('/')
 def home():
     return render_template('index.html')
+
+@app.route('/ask_chatbot', methods=['POST'])
+def ask_chatbot():
+    user_input = request.json['message']
+    response = ask_ward(user_input)
+    return jsonify({'reply': response})
 
 @app.route('/about')
 def about():
