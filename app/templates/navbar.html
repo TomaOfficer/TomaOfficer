@@ -1,44 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Officer</title>
-</head>
-<body>
-    <nav>
-      <div class="nav__top">
-        <div class="nav__links">
-          <li>
-            <a href="/" class="{{ 'active' if request.path == '/' else '' }}">Home</a>
-          </li>
-          <li>
-            <a href="/blog" class="{{ 'active' if request.path == '/blog' else '' }}">Blog</a>
-          </li>
-          <li>
-            <a href="/portfolio" class="{{ 'active' if request.path == '/portfolio' else '' }}">Portfolio</a>
-          </li>
-        </div>
-        <p class="nav__email">
-          e. thomas.officer@gmail.com
-        </p>
-      </div>
-      <div class="nav__bottom">
-        <div class="nav__links">
-          <li>
-            <a href="https://www.linkedin.com/in/thomasofficer/" class="">Linkedin</a>
-          </li>
-          <li>
-            <a href="https://github.com/TomaOfficer" class="">Github</a>
-          </li>
-          <li>
-            <a href="https://replit.com/@ThomasOfficer" class="">Replit</a>
-          </li>
-          <li>
-            <a href="https://x.com/TomaOfficer" class="">Twitter</a>
-          </li>
-        </div>
-      </div>
-    </nav>
-</body>
-</html>
+<nav>
+  <div class="nav__top">
+    <div class="nav__links">
+      <li>
+        <a href="/" class="{{ 'active' if request.path == '/' else '' }}">Home</a>
+      </li>
+      <li>
+        <a href="/blog" class="{{ 'active' if request.path == '/blog' else '' }}">Blog</a>
+      </li>
+      <li>
+        <a href="/portfolio" class="{{ 'active' if request.path == '/portfolio' else '' }}">Portfolio</a>
+      </li>
+    </div>
+    <p class="nav__email">
+      e. thomas.officer@gmail.com
+    </p>
+  </div>
+  <div class="nav__bottom">
+    <div class="nav__links">
+      <li>
+        <a href="https://www.linkedin.com/in/thomasofficer/" class="">Linkedin</a>
+      </li>
+      <li>
+        <a href="https://github.com/TomaOfficer" class="">Github</a>
+      </li>
+      <li>
+        <a href="https://replit.com/@ThomasOfficer" class="">Replit</a>
+      </li>
+      <li>
+        <a href="https://x.com/TomaOfficer" class="">Twitter</a>
+      </li>
+    </div>
+  </div>
+</nav>

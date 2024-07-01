@@ -125,6 +125,12 @@ nav {
   .header__links li {
     display: inline-block;
   }
+  .nav__top {
+    flex-direction: column;
+  }
+  .nav__email {
+    display: none;
+  }
 }
 /* --- Index --- */
 .home {
@@ -194,15 +200,15 @@ nav {
   .home__Inner-body {
     flex-direction: column-reverse;
     padding-right: 20px;
-    height: calc(100vh - 60px);
+    height: auto;
   }
   .home__Inner-body__rightCol {
-    flex-basis: 10%;
+    flex-basis: auto;
     padding: 1em 0;
   }
   .home__Inner-body__leftCol {
     padding: 1em 0 2em;
-    flex-basis: 85%;
+    flex-basis: auto;
   }
   .home__Inner-body__rightCol {
     
