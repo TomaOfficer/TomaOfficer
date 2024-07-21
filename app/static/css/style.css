@@ -554,6 +554,8 @@ nav {
   background: #fff;
   display: flex;
   flex-direction: column;
+  line-height: 1.5em;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .chat-display p {
@@ -579,6 +581,7 @@ nav {
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-right: 10px;
+  font-size: 15px;
 }
 
 .chat-input button {
@@ -590,6 +593,7 @@ nav {
   cursor: pointer;
   width: 72px;
   text-align: center;
+  font-size: 15px;
 }
 
 .chat-input button:disabled {
