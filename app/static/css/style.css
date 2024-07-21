@@ -538,24 +538,6 @@ nav {
   box-shadow: none;
 }
 /* --- Chatbot --- */
-/* .chatbot-message {
-  background-color: #e0e0e0;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 5px;
-}
-.spinner {
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border-left-color: #09f;
-  animation: spin 1s ease infinite;
-}
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-} */
 .chat-container {
   display: flex;
   flex-direction: column;
@@ -606,24 +588,12 @@ nav {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 72px;
+  text-align: center;
 }
 
 .chat-input button:disabled {
   background: #ccc;
-}
-
-.spinner {
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border-left-color: #09f;
-  animation: spin 1s ease infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }
 /* --- Real Estate Investment Calculator --- */
 .calc-main {
@@ -846,9 +816,9 @@ nav {
   border-top: 4px solid #8a8080;
   width: 10px;
   height: 10px;
+  margin: 0 auto;
   -webkit-animation: spin 1s linear infinite; /* Safari */
   animation: spin 1s linear infinite;
-  margin-left: 10px;
   display: inline-block;
   vertical-align: middle;
 }

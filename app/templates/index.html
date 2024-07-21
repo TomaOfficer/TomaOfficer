@@ -40,8 +40,10 @@
               </div>
               <div class="chat-input">
                 <input type="text" id="userMessage" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
-                <button onclick="sendUserMessage()">Send</button>
-                <div id="spinner" class="spinner" style="display: none;"></div>
+                <button onclick="sendUserMessage()">
+                  <div id="spinner" class="spinner" style="display: none;"></div>
+                  <span id="send-button-text">Send</span>
+                </button>
               </div>
             </div>
           </div>
@@ -147,6 +149,12 @@
       </div>
     </div>
     <script>
+      function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+          sendUserMessage();
+        }
+      }
+
       function sendUserMessage() {
         var message = document.getElementById('userMessage').value;
         var sendButton = document.querySelector('button[onclick="sendUserMessage()"]');
@@ -159,6 +167,7 @@
   
         // Show spinner and disable send button
         document.getElementById('spinner').style.display = 'block';
+        document.getElementById('send-button-text').style.display = 'none';
         sendButton.disabled = true;
   
         sendMessageToChatbot(message);
@@ -177,12 +186,14 @@
             chatDisplay.innerHTML += "<p>Bot: " + response.reply + "</p>";
             // Hide spinner and enable send button
             document.getElementById('spinner').style.display = 'none';
+            document.getElementById('send-button-text').style.display = 'inline';
             document.querySelector('button[onclick="sendUserMessage()"]').disabled = false;
           },
           error: function(error) {
             console.log(error);
             // Hide spinner and enable send button
             document.getElementById('spinner').style.display = 'none';
+            document.getElementById('send-button-text').style.display = 'inline';
             document.querySelector('button[onclick="sendUserMessage()"]').disabled = false;
           }
         });
