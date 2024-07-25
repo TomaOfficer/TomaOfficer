@@ -561,7 +561,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
   flex-grow: 1;
@@ -584,37 +583,37 @@ nav {
   padding: 10px;
   border-radius: 5px;
 }
-
 .chat-input {
   display: flex;
   padding: 10px;
   background: #f5f5f5;
-  border-top: 1px solid #ddd;
+  width: 620px;
+  margin: 0 auto 1em;
+  border-radius: 20px;
 }
-
 .chat-input input {
   flex: 1;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: none;
+  background: #f5f5f5;
   border-radius: 5px;
   margin-right: 10px;
   font-size: 15px;
 }
-
 .chat-input button {
-  padding: 10px 20px;
-  background: #007bff;
-  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
-  border-radius: 5px;
+  background: none;
   cursor: pointer;
-  width: 72px;
-  text-align: center;
-  font-size: 15px;
 }
-
 .chat-input button:disabled {
-  background: #ccc;
+  opacity: .5;
+}
+.chat-input__icon {
+  font-size: 20px;
+  font-weight: bold;
 }
 /* --- Real Estate Investment Calculator --- */
 .calc-main {

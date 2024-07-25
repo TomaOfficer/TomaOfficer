@@ -23,7 +23,6 @@
         <a href="/" class="tfo-link">
           <img src="{{ url_for('static', filename='assets/tfo-brand-dark.svg') }}" alt="TFO logo">
         </a>
-        {% include 'navbar.html' %}
         <h1>
           Thomas F. Officer
         </h1>
@@ -40,7 +39,11 @@
             <input type="text" id="userMessage" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
             <button onclick="sendUserMessage()">
               <div id="spinner" class="spinner" style="display: none;"></div>
-              <span id="send-button-text">Send</span>
+              <svg id="send-button-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="12" fill="#000"/>
+                <path d="M12 16V8" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 12L12 8L16 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </button>
           </div>
         </div>
