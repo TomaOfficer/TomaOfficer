@@ -19,131 +19,29 @@
 
   <body>
     <div class="home">
-      <div class="home__Main-leftCol">
-        <a href="/" class="home__brand">
+      <div class="home__leftCol">
+        <a href="/" class="tfo-link">
           <img src="{{ url_for('static', filename='assets/tfo-brand-dark.svg') }}" alt="TFO logo">
-        </a>        
-        <blockquote class="home__quote">
-          Child: “The Major and the soldiers and Mycroft told me what war is like. They say it's the second worst thing in the world.”<br>
-          Man: “That's an interesting definition. What did they say is the worst thing?”<br>
-          Child: “Not having anything worth fighting for in the first place.”<br>
-          — Too Like the Lightening, Ada Palmer
-        </blockquote>
-      </div>
-      <div class="home__Main-rightCol">
+        </a>
         {% include 'navbar.html' %}
-        <div class="home__Inner-body">
-          <div class="home__Inner-body__leftCol">
-            <div class="chat-container">
-              <div class="chat-display" id="chatDisplay">
-                <p id="welcomeMessage" class="chatbot-message">Greetings! I'm Ward, an AI chatbot. I know (almost) everything about Thomas' career and professional ambitions. Ask away.</p>
-              </div>
-              <div class="chat-input">
-                <input type="text" id="userMessage" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
-                <button onclick="sendUserMessage()">
-                  <div id="spinner" class="spinner" style="display: none;"></div>
-                  <span id="send-button-text">Send</span>
-                </button>
-              </div>
-            </div>
+        <h1>
+          Thomas F. Officer
+        </h1>
+        <h3>
+          Product Designer + Frontend Engineer
+        </h3>
+      </div>
+      <div class="home__rightCol">
+        <div class="chat-container">
+          <div class="chat-display" id="chatDisplay">
+            <p id="welcomeMessage" class="chatbot-message">Greetings! I'm Ward, an AI chatbot. I know (almost) everything about Thomas' career and professional ambitions. Ask away.</p>
           </div>
-          <div class="home__Inner-body__rightCol">
-            <h1>
-              Thomas F. Officer
-            </h1>
-            <h3>
-              Product Designer + Frontend Engineer
-            </h3>
-            <div class="timeline-row">
-              <div class="timeline-row__leftCol">
-                <p class="timeline-row__label">
-                  2024 — Present
-                </p>
-              </div>
-              <div class="timeline-row__rightCol">
-                <h3 class="timeline-row__title">
-                  Cofounder, <a href="https://verdai.xyz/">VoiceJournal</a>
-                </h3>
-                <p class="timeline-row__body">
-                  AI-enhanced, voice-to-text journaling app.
-                </p>
-              </div>
-            </div>
-            <div class="timeline-row">
-              <div class="timeline-row__leftCol">
-                <p class="timeline-row__label">
-                  2021 — 2023
-                </p>
-              </div>
-              <div class="timeline-row__rightCol">
-                <h3 class="timeline-row__title">
-                  Product Designer, <a href="https://www.netdocuments.com/products/patternbuilder">NetDocuments</a>
-                </h3>
-                <p class="timeline-row__body">
-                  Responsible for integrating Afterpattern into NetDocuments. Led design for how NetDocuments would incorporate AI after ChatGPT exploded onto the world.
-                </p>
-              </div>
-            </div>
-            <div class="timeline-row">
-              <div class="timeline-row__leftCol">
-                <p class="timeline-row__label">
-                  2016 — 2021
-                </p>
-              </div>
-              <div class="timeline-row__rightCol">
-                <h3 class="timeline-row__title">
-                  Product Designer / Cofounder, <a href="https://afterpattern.com/">Afterpattern</a>
-                </h3>
-                <p class="timeline-row__body">
-                  Acquired by NetDocuments (Nov. 2021). No-code app builder for lawyers.
-                </p>
-              </div>
-            </div>
-            <div class="timeline-row">
-              <div class="timeline-row__leftCol">
-                <p class="timeline-row__label">
-                  2016
-                </p>
-              </div>
-              <div class="timeline-row__rightCol">
-                <h3 class="timeline-row__title">
-                  Design Fellow, <a href="https://www.labs.robinhood.org/">Blue Ridge Labs @ Robin Hood</a>
-                </h3>
-                <p class="timeline-row__body">
-                  Participant in tech incubator then accelerator. Co-founded Community.lawyer which grew into Afterpattern.
-                </p>
-              </div>
-            </div>
-            <div class="timeline-row">
-              <div class="timeline-row__leftCol">
-                <p class="timeline-row__label">
-                  2015 — 2016
-                </p>
-              </div>
-              <div class="timeline-row__rightCol">
-                <h3 class="timeline-row__title">
-                  UX Designer, <a href="https://www.foundationlab.co/">Foundation Lab</a>
-                </h3>
-                <p class="timeline-row__body">
-                  Part of a small, interdisciplinary team that built web applications for law firm clients.
-                </p>
-              </div>
-            </div>
-            <div class="timeline-row">
-              <div class="timeline-row__leftCol">
-                <p class="timeline-row__label">
-                  2013 — 2015
-                </p>
-              </div>
-              <div class="timeline-row__rightCol">
-                <h3 class="timeline-row__title">
-                  Legal Researcher, <a href="https://crowdcheck.com/">CrowdCheck</a>
-                </h3>
-                <p class="timeline-row__body">
-                  First job out of law school. Prepared disclosure documents for investment crowdfunding rounds.
-                </p>
-              </div>
-            </div>
+          <div class="chat-input">
+            <input type="text" id="userMessage" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendUserMessage()">
+              <div id="spinner" class="spinner" style="display: none;"></div>
+              <span id="send-button-text">Send</span>
+            </button>
           </div>
         </div>
       </div>
