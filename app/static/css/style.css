@@ -153,63 +153,18 @@ nav {
   flex-direction: column;
   padding: 20px;
 }
-.tfo-link {
-  max-width: 50px;
+.home__main {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
+}
+.home__main__name {
+  font-weight: bold;
 }
 .tfo-link img {
-  width: 100%;
+  width: 75px;
+  margin: 0 0 2em;
 }
-/* .home__Main-leftCol {
-  flex-basis: 10%;
-  max-width: 10%;
-  padding: 2em 1em 2em 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.home__Main-rightCol {
-  flex-basis: 90%;
-  padding: 1em 0em 2em 1em; 
-}
-.home__brand {
-  max-width: 55%;
-  margin: 0 auto;
-  margin: 0 0 2.5em;
-}
-.home__brand img {
-  width: 100%;
-}
-.home__quote {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  font-size: 14px;
-  line-height: 1.6em;
-  padding: 0;
-  margin: 0;
-}
-.home__Inner-body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: calc(100vh - 100px);
-  padding-right: 20px;
-}
-.home__Inner-body__leftCol {
-  flex-basis: 49%;
-  padding-top: 2em;
-}
-.home__Inner-body__rightCol {
-  flex-basis: 49%;
-  overflow: scroll;  
-  padding-top: 2em;
-}
-.index__emoji {
-  font-family: sans-serif;
-  font-size: 1.333em;
-}
-.index__ul {
-  padding: 0 0 0 3em;
-} */
+
 @media screen and (max-width: 1015px){
   /* .home {
     flex-direction: column;

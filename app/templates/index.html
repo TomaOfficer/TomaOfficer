@@ -23,12 +23,20 @@
         <a href="/" class="tfo-link">
           <img src="{{ url_for('static', filename='assets/tfo-brand-dark.svg') }}" alt="TFO logo">
         </a>
-        <h1>
-          Thomas F. Officer
-        </h1>
-        <h3>
-          Product Designer + Frontend Engineer
-        </h3>
+        <p class="home__main">
+          <span class="home__main__name">Thomas F. Officer</span> is a product designer and front-end engineer with 10 years experience working for various startups in various roles.
+        </p>
+        <div class="home__links">
+          <li>
+            <a href="/" class="{{ 'active' if request.path == '/' else '' }}">Home</a>
+          </li>
+          <li>
+            <a href="/blog" class="{{ 'active' if request.path == '/blog' else '' }}">Blog</a>
+          </li>
+          <li>
+            <a href="/portfolio" class="{{ 'active' if request.path == '/portfolio' else '' }}">Portfolio</a>
+          </li>
+        </div>
       </div>
       <div class="home__rightCol">
         <div class="chat-container">
