@@ -41,7 +41,7 @@
       <div class="home__rightCol">
         <div class="chat-container">
           <div class="chat-display" id="chatDisplay">
-            <p id="welcomeMessage" class="chatbot-message">Greetings! I'm Ward, an AI chatbot. I know (almost) everything about Thomas' career and professional ambitions. Ask away.</p>
+            <p id="welcomeMessage" class="chatbot-message chatbot-welcome-message">Greetings! I'm Ward, an AI chatbot. I know (almost) everything about Thomas' career and professional ambitions. Ask away.</p>
           </div>
           <div class="chat-input">
             <input type="text" id="userMessage" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
@@ -76,7 +76,6 @@
   
         // Show spinner and disable send button
         document.getElementById('spinner').style.display = 'block';
-        document.getElementById('send-button-text').style.display = 'none';
         sendButton.disabled = true;
   
         sendMessageToChatbot(message);
@@ -95,14 +94,12 @@
             chatDisplay.innerHTML += "<p>Bot: " + response.reply + "</p>";
             // Hide spinner and enable send button
             document.getElementById('spinner').style.display = 'none';
-            document.getElementById('send-button-text').style.display = 'inline';
             document.querySelector('button[onclick="sendUserMessage()"]').disabled = false;
           },
           error: function(error) {
             console.log(error);
             // Hide spinner and enable send button
             document.getElementById('spinner').style.display = 'none';
-            document.getElementById('send-button-text').style.display = 'inline';
             document.querySelector('button[onclick="sendUserMessage()"]').disabled = false;
           }
         });

@@ -538,6 +538,8 @@ nav {
   padding: 10px;
   border-radius: 5px;
 }
+.chatbot-welcome-message {
+}
 .chat-input {
   display: flex;
   padding: 10px;

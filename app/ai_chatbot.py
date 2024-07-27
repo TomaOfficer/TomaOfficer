@@ -15,7 +15,7 @@ try:
             file=f,
             purpose='assistants'
         )
-    print(f"File uploaded successfully: {file}")
+    # print(f"File uploaded successfully: {file}")
 except Exception as e:
     print(f"Error uploading file: {e}")
 
@@ -33,10 +33,9 @@ try:
         Your knowledge base includes a document titled 'knowledge.md'. Always refer to this document to find the information needed to answer the user's questions.
         """,
         tools=[{"type": "retrieval"}],
-        model="gpt-4-1106-preview",
+        model="gpt-3.5-turbo-0125",
         file_ids=[file.id]
     )
-    print(f"Assistant created successfully: {assistant}")
 except Exception as e:
     print(f"Error creating assistant: {e}")
 
@@ -60,7 +59,7 @@ def ask_ward(user_input):
             Always refer to this document to find the information needed to answer the user's question: '{user_input}'.
             If you need more context, ask for it. If not, provide the answer based on the document."""
         )
-        print(f"Run response: {run_response}")
+        # print(f"Run response: {run_response}")
 
         while True:
             run_status = client.beta.threads.runs.retrieve(
@@ -82,7 +81,7 @@ def ask_ward(user_input):
                     if content_item.type == 'text':
                         chatbot_response += content_item.text.value + "\n"
 
-        print(f"Chatbot response: {chatbot_response}")
+        # print(f"Chatbot response: {chatbot_response}")
         return chatbot_response
     except Exception as e:
         print("Error:", e)
