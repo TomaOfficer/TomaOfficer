@@ -51,8 +51,15 @@ a {
 /* --- Nav --- */
 nav {
   display: flex;
-  flex-direction: column;
-  padding: 0 2em 0 0;
+  flex-direction: row;
+  padding: 20px;
+  align-items: center;
+}
+.nav__leftCol {
+  margin-right: 2em;
+}
+.nav__rightCol {
+  flex-grow: 1;
 }
 .nav__top {
   border-bottom: 1px solid #ddd;
@@ -114,6 +121,11 @@ nav {
   padding: 0;
   margin: 0;
 }
+@media screen and (max-width: 680px){
+  .nav__email {
+    display: none;
+  }
+}
 @media screen and (max-width: 1015px){
   header {
     position: relative;
@@ -125,12 +137,6 @@ nav {
   .header__links li {
     display: inline-block;
   }
-  .nav__top {
-    flex-direction: column;
-  }
-  .nav__email {
-    display: none;
-  }
 }
 /* --- Index --- */
 .home {
@@ -138,7 +144,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 99.09px);
   overflow: hidden;
   position: relative;
 }
@@ -162,10 +168,14 @@ nav {
 }
 .tfo-link img {
   width: 75px;
-  margin: 0 0 2em;
 }
-@media screen and (max-width: 890px){
-
+@media screen and (max-width: 960px) {
+  .home__leftCol {
+    display: none;
+  }
+  .home__rightCol {
+    flex-basis: 100%;
+  }
 }
 @media screen and (max-width: 1015px){
   /* .home {
@@ -577,6 +587,9 @@ nav {
   font-weight: bold;
 }
 @media screen and (max-width: 960px){
+  .chat-display {
+    padding: 0;
+  }
   .chat-input-container {
     width: 100%;
   }

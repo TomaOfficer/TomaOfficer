@@ -18,11 +18,9 @@
   </head>
 
   <body>
+    {% include 'navbar.html' %}
     <div class="home">
       <div class="home__leftCol">
-        <a href="/" class="tfo-link">
-          <img src="{{ url_for('static', filename='assets/tfo-brand-dark.svg') }}" alt="TFO logo">
-        </a>
         <p class="home__main">
           <span class="home__main__name">Thomas F. Officer</span> is a product designer and front-end engineer with 10 years experience working for various startups in various roles.
         </p>
