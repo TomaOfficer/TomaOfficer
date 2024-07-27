@@ -1,34 +1,44 @@
 <nav>
-  <div class="nav__top">
-    <div class="nav__links">
-      <li>
-        <a href="/" class="{{ 'active' if request.path == '/' else '' }}">Home</a>
-      </li>
-      <li>
-        <a href="/blog" class="{{ 'active' if request.path == '/blog' else '' }}">Blog</a>
-      </li>
-      <li>
-        <a href="/portfolio" class="{{ 'active' if request.path == '/portfolio' else '' }}">Portfolio</a>
-      </li>
+  <!-- <div class="nav__leftCol">
+    <a href="/" class="tfo-link">
+      <img src="{{ url_for('static', filename='assets/tfo-brand-dark.svg') }}" alt="TFO logo">
+    </a>
+  </div> -->
+  <div class="nav__rightCol">
+    <div class="nav__top">
+      <a href="/" class="nav__email">
+        Thomas F. Officer
+      </a>
+      <div class="nav__links">
+        <li>
+          <a href="/" class="{{ 'active' if request.path == '/' else '' }}">Home</a>
+        </li>
+        <li>
+          <a href="/blog" class="{{ 'active' if request.path == '/blog' else '' }}">Blog</a>
+        </li>
+        <li>
+          <a href="/portfolio" class="{{ 'active' if request.path == '/portfolio' else '' }}">Portfolio</a>
+        </li>
+      </div>
     </div>
-    <p class="nav__email">
-      e. thomas.officer@gmail.com
-    </p>
-  </div>
-  <div class="nav__bottom">
-    <div class="nav__links">
-      <li>
-        <a href="https://www.linkedin.com/in/thomasofficer/" class="">Linkedin</a>
-      </li>
-      <li>
-        <a href="https://github.com/TomaOfficer" class="">Github</a>
-      </li>
-      <li>
-        <a href="https://replit.com/@ThomasOfficer" class="">Replit</a>
-      </li>
-      <li>
-        <a href="https://x.com/TomaOfficer" class="">Twitter</a>
-      </li>
+    <div class="nav__bottom">
+      <p class="nav__title">
+        Product Designer + Frontend Engineer
+      </p>
+      <div class="nav__links">
+        <li>
+          <a href="https://www.linkedin.com/in/thomasofficer/" class="">Linkedin</a>
+        </li>
+        <li>
+          <a href="https://github.com/TomaOfficer" class="">Github</a>
+        </li>
+        <li>
+          <a href="https://replit.com/@ThomasOfficer" class="">Replit</a>
+        </li>
+        <li>
+          <a href="https://x.com/TomaOfficer" class="">Twitter</a>
+        </li>
+      </div>
     </div>
   </div>
 </nav>
