@@ -1,11 +1,14 @@
 <nav>
-  <div class="nav__leftCol">
+  <!-- <div class="nav__leftCol">
     <a href="/" class="tfo-link">
       <img src="{{ url_for('static', filename='assets/tfo-brand-dark.svg') }}" alt="TFO logo">
     </a>
-  </div>
+  </div> -->
   <div class="nav__rightCol">
     <div class="nav__top">
+      <p class="nav__email">
+        Thomas F. Officer
+      </p>
       <div class="nav__links">
         <li>
           <a href="/" class="{{ 'active' if request.path == '/' else '' }}">Home</a>
@@ -17,11 +20,11 @@
           <a href="/portfolio" class="{{ 'active' if request.path == '/portfolio' else '' }}">Portfolio</a>
         </li>
       </div>
-      <p class="nav__email">
-        e. thomas.officer@gmail.com
-      </p>
     </div>
     <div class="nav__bottom">
+      <p class="nav__email">
+        Product Designer + Frontend Engineer
+      </p>
       <div class="nav__links">
         <li>
           <a href="https://www.linkedin.com/in/thomasofficer/" class="">Linkedin</a>
