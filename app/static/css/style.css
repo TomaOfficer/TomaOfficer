@@ -563,10 +563,40 @@ nav {
 .chat-display p {
   margin: 5px 0;
 }
-.chatbot-message {
-  background-color: #e0e0e0;
-  padding: 10px;
-  border-radius: 5px;
+.chatbot-welcome-message {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.chatbot-welcome-message h2 {
+  text-align: center;
+  line-height: 1.4em;
+  font-size: 1.777em;
+  font-weight: 600;
+  padding: 0 0 .25em;
+  margin: 0;
+}
+.chatbot-welcome-message p {
+  text-align: center;
+}
+.chatbot-welcome-message__button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.chatbot-welcome-message button {
+  margin: 0 1em;
+  flex-basis: 30%;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.4em;
+  padding: 1em;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  display: flex;
+}
+.chatbot-welcome-message button:hover {
+  opacity: .5;
+  cursor: pointer;
 }
 .chat-input-container {
   width: 620px;

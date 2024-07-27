@@ -25,13 +25,37 @@
           Thomas has 8 years experience building software as a cofounder, designer, and frontend engineer. Currently, Thomas is working on Echo, an AI notebook that helps you think better. 
         </p>
         <p class="home__main">
-          Previously, Thomas cofounded and led design at Afterpattern, a no-code app builder for lawyers (acquired 2021), and was a Design Fellow at Blue Ridge Labs @ Robin Hood, a social impact technology incubator.
+          Previously, Thomas cofounded and led design at Afterpattern, a no-code app builder for lawyers (acquired 2021), and was a Design Fellow at Blue Ridge Labs @ Robin Hood (2016), a social impact technology incubator.
         </p>
       </div>
       <div class="home__rightCol">
         <div class="chat-container">
           <div class="chat-display" id="chatDisplay">
-            <p id="welcomeMessage" class="chatbot-message chatbot-welcome-message">Greetings! I'm Ward, an AI chatbot. I know (almost) everything about Thomas' career and professional ambitions. Ask away.</p>
+            <div id="welcomeMessage" class="chatbot-welcome-message">
+              <h2>
+                I'm Ward, Thomas' AI chatbot
+              </h2>
+              <p>
+                I have knowledge of Thomas' portfolio, resume, and current projects. I am built using the gpt-3.5-turbo LLM from OpenAI.
+              </p>
+              <div class="chatbot-welcome-message__button-wrapper">
+                <button onclick="sendPredefinedQuestion('Tell me about Thomas\'s professional background.')">
+                  <span>
+                    Tell me about Thomas's professional background.
+                  </span>
+                </button>
+                <button onclick="sendPredefinedQuestion('What is Echo?')">
+                  <span>
+                    What is Echo?
+                  </span>
+                </button>
+                <button onclick="sendPredefinedQuestion('What are Thomas\'s future ambitions?')">
+                  <span>
+                    What are Thomas's future ambitions?
+                  </span>
+                </button>
+              </div>
+            </div>
           </div>
           <div class="chat-input-container">
             <div class="chat-input">
@@ -95,6 +119,22 @@
             document.querySelector('button[onclick="sendUserMessage()"]').disabled = false;
           }
         });
+      }
+
+      function sendPredefinedQuestion(question) {
+        // Hide the welcome message on button click
+        var welcomeMessage = document.getElementById('welcomeMessage');
+        if (welcomeMessage) {
+            welcomeMessage.style.display = 'none';
+        }
+
+        // Show spinner and disable send button
+        var sendButton = document.querySelector('button[onclick="sendUserMessage()"]');
+        document.getElementById('spinner').style.display = 'block';
+        sendButton.disabled = true;
+
+        sendMessageToChatbot(question);
+        document.getElementById('chatDisplay').innerHTML += "<p>You: " + question + "</p>";
       }
     </script> 
   </body>
