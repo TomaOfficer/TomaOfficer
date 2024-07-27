@@ -43,16 +43,18 @@
           <div class="chat-display" id="chatDisplay">
             <p id="welcomeMessage" class="chatbot-message chatbot-welcome-message">Greetings! I'm Ward, an AI chatbot. I know (almost) everything about Thomas' career and professional ambitions. Ask away.</p>
           </div>
-          <div class="chat-input">
-            <input type="text" id="userMessage" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
-            <button onclick="sendUserMessage()">
-              <div id="spinner" class="spinner" style="display: none;"></div>
-              <svg id="send-button-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="12" fill="#000"/>
-                <path d="M12 16V8" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 12L12 8L16 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
+          <div class="chat-input-container">
+            <div class="chat-input">
+              <input type="text" id="userMessage" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+              <button onclick="sendUserMessage()">
+                <div id="spinner" class="spinner" style="display: none;"></div>
+                <svg id="send-button-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="12" fill="#000"/>
+                  <path d="M12 16V8" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 12L12 8L16 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
