@@ -48,6 +48,24 @@ a {
   max-width: 680px;
   margin: 0 auto;
 }
+.work-in-progress {
+  font-family: sans-serif;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  padding: 1em;
+  border-radius: 2em;
+  text-align: center;
+}
+.work-in-progress__title {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: .025em;
+}
+.work-in-progress p {
+  padding: 0;
+  margin: 0;
+}
 /* --- Nav --- */
 nav {
   display: flex;
