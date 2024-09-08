@@ -1,0 +1,44 @@
+body {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+header {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 4em 20px 0;
+}
+header h1 {
+  padding: 0 0 0.25em;
+  margin: 0;
+}
+header p {
+  padding: 0;
+  margin: 0;
+}
+header nav {
+  padding: 1em 0 0;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+}
+section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2em 20px;
+}
+.tfo-headshot {
+  float: left;
+  max-width: 150px;
+  margin: 0 1.5em 0 0;
+  border-radius: 8px;
+  border: 1px solid rgb(176, 176, 176);
+  padding: 1px; /* Space for the white line */
+  background-clip: content-box;
+  box-shadow: 0 0 0 2px white, /* White line */ 0 0 0 3px rgb(176, 176, 176); /* Inner black border */
+}
