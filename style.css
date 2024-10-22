@@ -1,6 +1,7 @@
 body {
   font-size: 18px;
   line-height: 1.5em;
+  font-family: "Georgia", "Times New Roman", Times, serif;
 }
 header {
   max-width: 600px;
@@ -32,9 +33,16 @@ section {
   margin: 0 auto;
   padding: 2em 20px;
 }
+section p:first-of-type {
+  margin-top: 0;
+}
+.subtitle {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 15px;
+}
 .tfo-headshot {
   float: left;
-  max-width: 150px;
+  max-width: 125px;
   margin: 0 1.5em 0 0;
   border-radius: 8px;
   border: 1px solid rgb(176, 176, 176);
