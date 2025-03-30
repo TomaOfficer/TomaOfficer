@@ -1,12 +1,14 @@
 body {
   font-size: 18px;
   line-height: 1.5em;
-  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: sans-serif;
+  background-color: #222;
+  color: #dfded5;
 }
 header {
   max-width: 600px;
   margin: 0 auto;
-  padding: 4em 20px 0;
+  padding: 4em 20px 2em;
 }
 header h1 {
   padding: 0 0 0.25em;
@@ -31,10 +33,20 @@ header nav ul li {
 section {
   max-width: 600px;
   margin: 0 auto;
-  padding: 2em 20px;
+  padding: 0 20px 2em;
 }
 section p:first-of-type {
   margin-top: 0;
+}
+section p:last-of-type {
+  margin-bottom: 0;
+}
+h2 {
+  padding: 0 0 0.75em;
+  margin: 0;
+}
+a {
+  color: #dfded5;
 }
 .subtitle {
   font-family: "Helvetica", "Arial", sans-serif;
@@ -49,4 +61,15 @@ section p:first-of-type {
   padding: 1px; /* Space for the white line */
   background-clip: content-box;
   box-shadow: 0 0 0 2px white, /* White line */ 0 0 0 3px rgb(176, 176, 176); /* Inner black border */
+}
+.simple-2-col {
+  display: flex;
+  padding: 0 0 1em;
+}
+.simple-2-col p:first-child {
+  margin-right: 40px;
+}
+.simple-2-col p {
+  padding: 0;
+  margin: 0;
 }
