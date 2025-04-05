@@ -1,75 +1,45 @@
+/* Base styles */
 body {
-  font-size: 18px;
-  line-height: 1.5em;
-  font-family: sans-serif;
-  background-color: #222;
-  color: #dfded5;
-}
-header {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 4em 20px 2em;
-}
-header h1 {
-  padding: 0 0 0.25em;
   margin: 0;
-}
-header p {
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+.contact-card {
+  padding: 2em;
+}
+
+.contact-card h1 {
+  font-size: 17px;
+  font-weight: medium;
+  letter-spacing: 0.015em;
+  padding-bottom: 0.25em;
   margin: 0;
 }
-header nav {
-  padding: 1em 0 0;
+
+.contact-card p {
+  font-size: 15px;
+  padding-bottom: 1.25em;
+  margin: 0;
 }
-header nav ul {
+
+.contact-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-header nav ul li {
-  display: inline-block;
-  padding: 0 1em 0 0;
-}
-section {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0 20px 2em;
-}
-section p:first-of-type {
-  margin-top: 0;
-}
-section p:last-of-type {
-  margin-bottom: 0;
-}
-h2 {
-  padding: 0 0 0.75em;
-  margin: 0;
-}
-a {
-  color: #dfded5;
-}
-.subtitle {
-  font-family: "Helvetica", "Arial", sans-serif;
+
+.contact-list li {
+  margin-bottom: 0.5em;
   font-size: 15px;
 }
-.tfo-headshot {
-  float: left;
-  max-width: 125px;
-  margin: 0 1.5em 0 0;
-  border-radius: 8px;
-  border: 1px solid rgb(176, 176, 176);
-  padding: 1px; /* Space for the white line */
-  background-clip: content-box;
-  box-shadow: 0 0 0 2px white, /* White line */ 0 0 0 3px rgb(176, 176, 176); /* Inner black border */
+
+.contact-list a {
+  color: inherit;
 }
-.simple-2-col {
-  display: flex;
-  padding: 0 0 1em;
-}
-.simple-2-col p:first-child {
-  margin-right: 40px;
-}
-.simple-2-col p {
-  padding: 0;
-  margin: 0;
+
+.contact-list a:hover {
+  color: #000;
 }
