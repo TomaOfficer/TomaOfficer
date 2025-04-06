@@ -110,6 +110,10 @@ a:hover {
     padding: 1.5em;
     border-bottom: 1px solid #e0e0e0;
   }
+
+  .echo-promo__header {
+    flex-direction: column;
+  }
 }
 
 .echo-promo {
@@ -141,7 +145,6 @@ a:hover {
 
 .echo-logo {
   max-width: 50px;
-  margin-bottom: 1rem;
 }
 
 .echo-promo p.header {
