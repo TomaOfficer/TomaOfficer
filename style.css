@@ -17,9 +17,9 @@ body {
 .about-section {
   padding: 2.7777em 20px;
   position: absolute;
-  top: 30%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   width: 100%;
   max-width: 600px;
 }
@@ -110,4 +110,60 @@ a:hover {
     padding: 1.5em;
     border-bottom: 1px solid #e0e0e0;
   }
+}
+
+.echo-promo {
+  background-color: #222;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: #cdcdcd;
+}
+
+.echo-promo__title-link {
+  text-decoration: none;
+  color: #7eaaff;
+  font-size: 1.1em;
+}
+
+.echo-promo__title-link:hover {
+  color: #5e8dec;
+}
+
+.echo-promo__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.echo-logo {
+  max-width: 50px;
+  margin-bottom: 1rem;
+}
+
+.echo-promo p.header {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.echo-promo ul {
+  list-style-type: none;
+  padding: 0 0 1em;
+}
+
+.echo-promo ul li {
+  margin-bottom: 0.5em;
+}
+
+.app-store-button {
+  max-width: 120px;
+  transition: transform 0.2s ease;
+}
+
+.app-store-button:hover {
+  transform: scale(1.025);
 }
