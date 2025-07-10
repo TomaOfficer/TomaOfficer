@@ -116,4 +116,10 @@ footer p {
   main h2 {
     max-width: 300px;
   }
+  footer {
+    flex-direction: column;
+  }
+  .footer__rightColumn {
+    margin-top: 1em;
+  }
 }
