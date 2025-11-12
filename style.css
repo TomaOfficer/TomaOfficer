@@ -18,12 +18,13 @@ a:hover {
   color: #c2bfbf;
 }
 h1 {
-  font-family: "Georgia", serif;
   font-weight: 400;
   letter-spacing: 0.02em;
+  font-weight: bolder;
+  line-height: 1.25;
+  font-size: 2.5em;
 }
 h2 {
-  font-family: "Georgia", serif;
   color: #707070;
   font-weight: 400;
   font-size: 1.25em;
@@ -146,6 +147,10 @@ article header {
 article header h1 {
   margin-bottom: 0.5em;
 }
+article header p {
+  font-size: 1.2em;
+  color: #707070;
+}
 .post-content {
   padding-top: 1em;
 }
@@ -158,6 +163,12 @@ article header h1 {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
   font-size: 1.1em;
+}
+.post-content p,
+li,
+blockquote {
+  font-size: 1.2em;
+  font-family: "Georgia", serif;
 }
 .post-content p {
   margin: 1em 0;
