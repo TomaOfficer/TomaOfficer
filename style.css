@@ -46,6 +46,24 @@ main h2 {
 main section {
   padding: 1.5em 0 0 0;
 }
+.work-section {
+  padding: 2em 0 0 0;
+}
+.work-card {
+  display: block;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.work-card:hover {
+  opacity: 0.8;
+}
+.work-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 footer {
   padding: 0 0 4em 0;
   max-width: 620px;
