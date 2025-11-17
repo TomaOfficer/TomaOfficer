@@ -12,18 +12,5 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://www.thomasofficer.com/blog/</loc>
-    <lastmod>2025-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.thomasofficer.com/blog/some-human-stories-can-only-be-told-with-ai-assistance.html</loc>
-    <lastmod>2025-10-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <!-- Add more blog posts here as you publish them -->
 </urlset>
 
