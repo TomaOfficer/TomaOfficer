@@ -1,7 +1,8 @@
 /* Base styles */
 body {
-  margin: 0;
   padding: 0 20px;
+  max-width: 1600px;
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
@@ -23,6 +24,7 @@ h1 {
   font-weight: bolder;
   line-height: 1.25;
   font-size: 2.5em;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 h2 {
   color: #707070;
@@ -35,8 +37,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1em 0;
-  max-width: 1600px;
-  margin: 0 auto;
 }
 header ul {
   list-style: none;
@@ -74,8 +74,6 @@ header img {
 }
 main {
   padding: 4em 0;
-  max-width: 620px;
-  margin: 0 auto;
 }
 main h1 {
   padding: 0;
@@ -90,6 +88,9 @@ main section {
 }
 .work-section {
   padding: 2em 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
 }
 .work-card {
   display: block;
@@ -108,8 +109,6 @@ main section {
 }
 footer {
   padding: 1em 0 4em 0;
-  max-width: 1600px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -140,5 +139,8 @@ footer img {
 @media (max-width: 620px) {
   main h2 {
     max-width: 300px;
+  }
+  .work-section {
+    grid-template-columns: 1fr;
   }
 }
