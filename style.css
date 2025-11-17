@@ -35,6 +35,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1em 0;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 header ul {
   list-style: none;
@@ -53,6 +55,12 @@ header ul li a {
 header ul li a:hover {
   color: #c2bfbf;
 }
+.header__brand {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
 header img {
   max-width: 75px;
   height: auto;
@@ -60,6 +68,9 @@ header img {
 .header__title {
   font-size: 0.85em;
   color: #707070;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 main {
   padding: 4em 0;
@@ -96,9 +107,13 @@ main section {
   display: block;
 }
 footer {
-  padding: 0 0 4em 0;
-  max-width: 620px;
+  padding: 1em 0 4em 0;
+  max-width: 1600px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #454747;
 }
 footer p {
   padding: 0;
@@ -112,13 +127,6 @@ footer ul {
 footer ul li {
   display: inline-block;
   margin-left: 1em;
-}
-.footer__row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  border-top: 1px solid #454747;
-  padding: 1em 0;
 }
 .footer__copyright {
   font-size: 0.85em;
