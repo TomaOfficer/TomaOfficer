@@ -30,17 +30,6 @@ h2 {
   font-size: 1.25em;
   line-height: 1.25;
 }
-h3 {
-  color: #707070;
-  font-weight: 400;
-  font-size: 1.1em;
-  letter-spacing: 0.02em;
-  line-height: 1.25;
-}
-time {
-  font-size: 0.85em;
-  color: #707070;
-}
 main {
   padding: 4em 0;
   max-width: 620px;
@@ -58,41 +47,41 @@ main section {
   padding: 1.5em 0 0 0;
 }
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  border-top: 1px solid #454747;
-  padding: 1em 0 4em 0;
+  padding: 0 0 4em 0;
   max-width: 620px;
   margin: 0 auto;
 }
 footer p {
-  padding: 0 0 1.25em 0;
+  padding: 0;
   margin: 0;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #454747;
+  padding: 1em 0;
 }
 .footer__copyright {
   font-size: 0.85em;
   color: #707070;
 }
-.logo-link {
+footer img {
   max-width: 75px;
   display: inline-block;
-}
-.logo-link img {
-  max-width: 100%;
   height: auto;
 }
 @media (max-width: 620px) {
-  .site-header {
-    padding: 1.5em 0 0 0;
-  }
   main h2 {
     max-width: 300px;
-  }
-  footer {
-    flex-direction: column;
-  }
-  .footer__rightColumn {
-    margin-top: 1em;
   }
 }
