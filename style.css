@@ -41,30 +41,6 @@ time {
   font-size: 0.85em;
   color: #707070;
 }
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 620px;
-  margin: 0 auto;
-  padding: 2em 0 0 0;
-}
-.header-logo {
-  max-width: 75px;
-  display: inline-block;
-}
-.header-logo img {
-  max-width: 100%;
-  height: auto;
-}
-.site-header nav {
-  display: flex;
-  gap: 1.5em;
-}
-.site-header nav a {
-  text-decoration: none;
-  font-size: 1em;
-}
 main {
   padding: 4em 0;
   max-width: 620px;
@@ -105,37 +81,6 @@ footer p {
 .logo-link img {
   max-width: 100%;
   height: auto;
-}
-.minimal-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.minimal-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0.75em 0;
-  border-bottom: 1px solid #454747;
-}
-.minimal-list li:last-child {
-  border-bottom: none;
-}
-.minimal-list h4 {
-  padding: 0;
-  margin: 0;
-}
-.minimal-list p {
-  padding: 0;
-  margin: 0;
-}
-.minimal-list__title {
-  display: flex;
-  flex-direction: column;
-}
-.minimal-list__employer {
-  font-size: 0.85em;
-  color: #707070;
 }
 @media (max-width: 620px) {
   .site-header {
