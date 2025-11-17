@@ -30,6 +30,37 @@ h2 {
   font-size: 1.25em;
   line-height: 1.25;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header ul li {
+  display: inline-block;
+  margin-left: 1em;
+}
+header ul li a {
+  text-decoration: none;
+  color: #fafafa;
+  transition: color 0.2s ease;
+}
+header ul li a:hover {
+  color: #c2bfbf;
+}
+header img {
+  max-width: 75px;
+  height: auto;
+}
+.header__title {
+  font-size: 0.85em;
+  color: #707070;
+}
 main {
   padding: 4em 0;
   max-width: 620px;
