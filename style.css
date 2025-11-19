@@ -102,6 +102,8 @@ main section {
 .work-section {
   padding: 2em 0.75em 0 0.75em;
   display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
   grid-template-columns: repeat(2, 1fr);
   gap: 2em;
 }
