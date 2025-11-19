@@ -6,6 +6,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
+  font-size: 17px;
   color: #12141f;
   background-color: rgb(255, 255, 255);
 }
@@ -33,44 +34,51 @@ h2 {
   line-height: 1.25;
 }
 header {
+  position: fixed;
+  font-size: 15px;
+  top: 1em;
+  right: 1em;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 1em 0;
+  padding: 0.5em 1em;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 100px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 header ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  gap: 0.5em;
 }
 header ul li {
   display: inline-block;
-  margin-left: 1em;
+  margin: 0;
 }
 header ul li a {
   text-decoration: none;
   color: #12141f;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 0.25em 0.75em;
+  border-radius: 20px;
+  display: inline-block;
+  text-wrap: nowrap;
 }
 header ul li a:hover {
   color: #4a4d5f;
+  background-color: rgba(0, 0, 0, 0.05);
 }
-.header__brand {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 1em;
+header ul li a.active {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
 }
-header img {
+.hero__brand {
   max-width: 75px;
   height: auto;
-}
-.header__title {
-  font-size: 0.85em;
-  color: #6b6d7f;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 main {
   padding: 4em 0;
@@ -142,6 +150,12 @@ footer img {
   height: auto;
 }
 @media (max-width: 620px) {
+  header {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+  }
   main h2 {
     max-width: 300px;
   }
