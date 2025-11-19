@@ -6,17 +6,17 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
-  color: #fafafa;
-  background-color: #222424;
+  color: #12141f;
+  background-color: rgb(255, 255, 255);
 }
 a {
-  color: #fafafa;
+  color: #12141f;
   transition: color 0.2s ease;
-  text-decoration-color: #b1b0b0;
+  text-decoration-color: #8a8b9f;
   text-underline-offset: 3px;
 }
 a:hover {
-  color: #c2bfbf;
+  color: #4a4d5f;
 }
 h1 {
   font-weight: 400;
@@ -27,7 +27,7 @@ h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 h2 {
-  color: #707070;
+  color: #6b6d7f;
   font-weight: 400;
   font-size: 1.25em;
   line-height: 1.25;
@@ -49,11 +49,11 @@ header ul li {
 }
 header ul li a {
   text-decoration: none;
-  color: #fafafa;
+  color: #12141f;
   transition: color 0.2s ease;
 }
 header ul li a:hover {
-  color: #c2bfbf;
+  color: #4a4d5f;
 }
 .header__brand {
   text-decoration: none;
@@ -67,7 +67,7 @@ header img {
 }
 .header__title {
   font-size: 0.85em;
-  color: #707070;
+  color: #6b6d7f;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -117,7 +117,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-top: 1px solid #454747;
+  border-top: 1px solid #e0e0e0;
 }
 footer p {
   padding: 0;
@@ -134,7 +134,7 @@ footer ul li {
 }
 .footer__copyright {
   font-size: 0.85em;
-  color: #707070;
+  color: #6b6d7f;
 }
 footer img {
   max-width: 75px;
