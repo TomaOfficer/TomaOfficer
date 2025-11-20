@@ -41,6 +41,12 @@ h3.section-label {
   margin: 0;
   padding: 0 0 0.5em 0;
 }
+main section h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 1.5em 0 0.5em 0;
+  color: #12141f;
+}
 header {
   position: fixed;
   font-size: 15px;
@@ -94,6 +100,13 @@ main {
   max-width: 600px;
   margin: 6em auto 0 auto;
 }
+.portfolio-main {
+  max-width: 1200px;
+}
+.portfolio-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
 main h1 {
   padding: 0;
   margin: 0;
@@ -129,6 +142,35 @@ main h2 {
 }
 main section {
   padding: 1.5em 0 0 0;
+}
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5em 0;
+  border-radius: 4px;
+}
+.portfolio-caption {
+  font-size: 0.9em;
+  color: #6b6d7f;
+  margin: 0.5em 0 2em 0;
+  padding: 0;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  margin: 2em 0;
+}
+.portfolio-grid > div {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-grid .portfolio-image {
+  margin: 0 0 0.5em 0;
+}
+.portfolio-grid .portfolio-caption {
+  margin: 0 0 0 0;
 }
 .work-section {
   padding: 2em 0.75em 6em 0.75em;
@@ -298,6 +340,9 @@ footer img {
     max-width: 300px;
   }
   .work-section {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-grid {
     grid-template-columns: 1fr;
   }
 }
