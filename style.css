@@ -441,6 +441,31 @@ footer img {
 .lightbox-close:hover {
   opacity: 0.7;
 }
+.coming-soon-banner {
+  background-color: #fef3c7;
+  border: 1px solid #fbbf24;
+  border-radius: 8px;
+  padding: 1.25em 1.5em;
+  margin: 0 0 2em 0;
+  text-align: center;
+}
+.coming-soon-banner p {
+  margin: 0;
+  padding: 0;
+  color: #92400e;
+}
+.coming-soon-banner p:first-child {
+  font-weight: 600;
+  font-size: 1.05em;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.25em;
+}
+.coming-soon-banner p:last-child {
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #78350f;
+  opacity: 0.85;
+}
 @media (max-width: 620px) {
   header {
     right: auto;
