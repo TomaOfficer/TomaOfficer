@@ -252,6 +252,41 @@ footer img {
   font-size: 0.85em;
   color: #707070;
 }
+.work-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.work-list li {
+  line-height: 1.7;
+  color: #12141f;
+  padding-left: 1.5em;
+  position: relative;
+}
+.work-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #8a8b9f;
+  font-weight: 300;
+}
+.work-list li strong {
+  font-weight: 500;
+  color: #12141f;
+}
+.work-list li a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.work-list li a:hover {
+  color: #4a4d5f;
+}
+.work-list li a strong {
+  transition: color 0.2s ease;
+}
+.work-list li a:hover strong {
+  color: #4a4d5f;
+}
 @media (max-width: 620px) {
   header {
     right: auto;
