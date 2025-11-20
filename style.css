@@ -33,6 +33,14 @@ h2 {
   font-size: 1.25em;
   line-height: 1.25;
 }
+h3.section-label {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #6b6d7f;
+  margin: 0;
+  padding: 0 0 0.5em 0;
+}
 header {
   position: fixed;
   font-size: 15px;
@@ -181,6 +189,45 @@ footer img {
   max-width: 75px;
   display: inline-block;
   height: auto;
+}
+.minimal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.minimal-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.75em 0;
+  border-bottom: 1px solid #bac1c1;
+}
+.minimal-list li:last-child {
+  border-bottom: none;
+}
+.minimal-list h4 {
+  padding: 0;
+  margin: 0;
+}
+.minimal-list p {
+  padding: 0;
+  margin: 0;
+}
+.minimal-list__role {
+  font-weight: 500;
+}
+.minimal-list__title {
+  display: flex;
+  flex-direction: column;
+}
+.minimal-list__employer {
+  font-size: 0.85em;
+  color: #707070;
+  font-weight: 400;
+}
+.minimal-list time {
+  font-size: 0.85em;
+  color: #707070;
 }
 @media (max-width: 620px) {
   header {
