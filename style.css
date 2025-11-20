@@ -156,6 +156,27 @@ main section {
   margin: 0.5em 0 2em 0;
   padding: 0;
 }
+blockquote {
+  margin: 2em 0;
+  padding: 1.5em 1.5em 1.5em 2em;
+  border-left: 3px solid #8a8b9f;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+}
+blockquote p {
+  font-size: 1.1em;
+  font-style: italic;
+  color: #12141f;
+  margin: 0 0 0.25em 0;
+  line-height: 1.6;
+}
+blockquote cite {
+  display: block;
+  font-size: 0.85em;
+  color: #6b6d7f;
+  font-style: normal;
+  margin-top: 0.5em;
+}
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
