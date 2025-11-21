@@ -148,6 +148,11 @@ main h2 {
 main section {
   padding: 1.5em 0 0 0;
 }
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 4em 0;
+}
 .portfolio-image {
   width: 100%;
   height: auto;
@@ -380,7 +385,7 @@ footer img {
 }
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5em;
 }
 .service-card {
@@ -567,9 +572,9 @@ footer img {
   color: #78350f;
   opacity: 0.85;
 }
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .services-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 620px) {
