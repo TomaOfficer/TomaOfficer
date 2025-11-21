@@ -145,6 +145,24 @@ main h2 {
   color: #12141f;
   font-weight: 500;
 }
+.schedule-button {
+  display: inline-block;
+  margin: 1.5em 0 0 0;
+  padding: 0.25em 0.75em;
+  background-color: transparent;
+  color: #12141f;
+  text-decoration: none;
+  border: 1px solid #dddddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  font-size: 15px;
+}
+.schedule-button:hover {
+  color: #4a4d5f;
+  background-color: rgba(0, 0, 0, 0.05);
+}
 main section {
   padding: 1.5em 0 0 0;
 }
@@ -394,11 +412,6 @@ footer img {
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-.service-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-color: rgba(0, 0, 0, 0.12);
 }
 .service-card__title {
   font-size: 1.3em;
