@@ -93,7 +93,78 @@ header ul li a.active {
 .hero__brand {
   max-width: 75px;
   height: auto;
-  margin: 0 0 2em 0;
+  margin: 2em 0 0.25em 0;
+}
+.hero__signature p {
+  padding: 0;
+  margin: 0;
+}
+.hero__signature__name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.hero__signature__title {
+  font-size: 15px;
+  font-weight: 400;
+  color: #6b6d7f;
+  margin: 0;
+  padding: 0;
+}
+.hero__signature__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  margin-top: 0.5em;
+}
+.hero__signature__social {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 15px;
+  font-weight: 400;
+  color: #6b6d7f;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.hero__signature__social:hover {
+  color: #12141f;
+}
+.hero__signature__icon {
+  flex-shrink: 0;
+  color: #6b6d7f;
+  transition: color 0.2s ease;
+}
+.hero__signature__social:hover .hero__signature__icon {
+  color: #12141f;
+}
+.copy-email {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #8a8b9f;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  position: relative;
+}
+.copy-email:hover {
+  color: #12141f;
+  text-decoration-color: #12141f;
+}
+.copy-feedback {
+  position: absolute;
+  margin-left: 0.5em;
+  color: #22c55e;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+.copy-feedback.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 main {
   padding: 4em 0;
