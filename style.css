@@ -3,10 +3,10 @@ body {
   padding: 0 20px;
   max-width: 1600px;
   margin: 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
   line-height: 1.6;
-  font-size: 17px;
+  font-size: 19px;
   color: #12141f;
   background-color: #faf9f5;
 }
@@ -25,7 +25,8 @@ h1 {
   font-weight: bolder;
   line-height: 1.25;
   font-size: 2.5em;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
 }
 h2 {
   color: #6b6d7f;
@@ -40,6 +41,9 @@ h3.section-label {
   color: #6b6d7f;
   margin: 0;
   padding: 0 0 0.5em 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  font-size: 0.9em;
 }
 main section h3 {
   font-size: 1.2em;
@@ -49,6 +53,8 @@ main section h3 {
 }
 header {
   position: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
   font-size: 15px;
   top: 1em;
   right: 1em;
@@ -91,12 +97,14 @@ header ul li a.active {
   color: #f5f5f5;
 }
 .hero {
-  max-width: 480px;
+  max-width: 560px;
   margin: 0 auto;
   padding: 8em 0 4em 0;
 }
 .hero__meta {
   padding: 0 0 2em 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
 }
 .hero__meta p {
   padding: 0;
@@ -112,6 +120,8 @@ header ul li a.active {
 }
 .hero__signature {
   padding: 2em 0 0 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
 }
 .hero__signature p {
   padding: 0;
@@ -144,13 +154,13 @@ header ul li a.active {
   margin-bottom: -1px;
 }
 .hero__signature__name {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 600;
   margin: 0;
   padding: 0;
 }
 .hero__signature__title {
-  font-size: 1em;
+  font-size: 15px;
   font-style: italic;
   font-weight: 400;
   color: #6b6d7f;
@@ -183,33 +193,6 @@ header ul li a.active {
 }
 .hero__signature__social:hover .hero__signature__icon {
   color: #12141f;
-}
-.copy-email {
-  cursor: pointer;
-  text-decoration: underline;
-  text-decoration-color: #8a8b9f;
-  text-underline-offset: 3px;
-  transition: color 0.2s ease, text-decoration-color 0.2s ease;
-  position: relative;
-}
-.copy-email:hover {
-  color: #12141f;
-  text-decoration-color: #12141f;
-}
-.copy-feedback {
-  position: absolute;
-  margin-left: 0.5em;
-  color: #22c55e;
-  font-weight: 500;
-  font-size: 15px;
-  opacity: 0;
-  transform: translateY(-4px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  pointer-events: none;
-}
-.copy-feedback.show {
-  opacity: 1;
-  transform: translateY(0);
 }
 main {
   padding: 4em 0;
@@ -259,6 +242,8 @@ section {
   border-color: rgba(0, 0, 0, 0.2);
 }
 .portfolio-caption {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 500;
@@ -313,6 +298,9 @@ blockquote cite {
   gap: 2em;
 }
 .work-card {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  font-size: 17px;
   display: block;
   text-decoration: none;
   transition: opacity 0.2s ease;
@@ -364,6 +352,9 @@ footer {
   border-top: 1px solid #e0e0e0;
   max-width: 600px;
   margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  font-size: 15px;
 }
 footer p {
   padding: 0;
@@ -388,6 +379,9 @@ footer img {
   height: auto;
 }
 .minimal-list {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  font-size: 15px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -425,6 +419,11 @@ footer img {
 .minimal-list time {
   font-size: 0.85em;
   color: #707070;
+}
+.about_interviews {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  font-size: 15px;
 }
 .work-list {
   list-style: none;
@@ -508,6 +507,9 @@ footer img {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 .lightbox-caption {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  font-size: 15px;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.025em;
@@ -541,6 +543,9 @@ footer img {
   opacity: 0.7;
 }
 .coming-soon-banner {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  font-size: 15px;
   background-color: #fef3c7;
   border: 1px solid #fbbf24;
   border-radius: 8px;
