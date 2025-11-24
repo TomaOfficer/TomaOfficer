@@ -25,21 +25,62 @@
     </ul>
   </header>
   <body>
-    <main>
-      <div>
+    <div class="hero">
+      <div class="hero__meta">
+        <p>Fall, 2025</p>
+        <p>New Hampshire</p>
+      </div>
+
+      <p>
+        There are better versions of this world waiting to be built, and it's my
+        great joy to contribute the tools I've been given.
+      </p>
+      <p>
+        I’m a designer who works like a cofounder; high-agency, focused, and
+        comfortable making fast decisions with imperfect information.
+      </p>
+      <p>
+        Previously, I co-founded
+        <a href="work/afterpattern.html">Afterpattern</a> (2021) and
+        <a href="work/echo.html">Echo</a> (2025). Today, I'm a freelancer, and
+        I'm currently available <a href="work-with-me.html">for hire</a>.
+      </p>
+      <div class="hero__signature">
+        <p>Stay tuned.</p>
         <img
-          class="hero__brand"
+          class="hero__signature__brand"
           src="assets/tfo-brand-black.svg"
           alt="Thomas F. Officer"
         />
-        <h1>Creating software products with design, code, and AI</h1>
-        <p>
-          I'm Thomas "Toma", a product designer, developer, and entrepreneur
-          with 10 years experience working in startups.
-        </p>
-        <p>I'm currently available <a href="work-with-me.html">for hire</a>.</p>
+        <div class="hero__signature__row">
+          <img
+            class="hero__signature__headshot"
+            src="assets/tfo-headshot-2024.png"
+            alt="Thomas F. Officer"
+          />
+          <div class="hero__signature__details">
+            <p class="hero__signature__name">Thomas F. Officer</p>
+            <p class="hero__signature__title">Product Designer</p>
+          </div>
+        </div>
+        <div class="hero__signature__socials">
+          <a
+            href="https://www.linkedin.com/in/thomasofficer/"
+            target="_blank"
+            class="hero__signature__social"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://x.com/TomaOfficer"
+            target="_blank"
+            class="hero__signature__social"
+          >
+            Twitter
+          </a>
+        </div>
       </div>
-    </main>
+    </div>
 
     <section class="work-section">
       <a href="work/echo.html" class="work-card">
@@ -90,5 +131,46 @@
         </li>
       </ul>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const copyEmail = document.querySelector(".copy-email");
+        const copyFeedback = document.querySelector(".copy-feedback");
+
+        if (copyEmail && copyFeedback) {
+          copyEmail.addEventListener("click", async function () {
+            const email = this.getAttribute("data-email");
+
+            try {
+              await navigator.clipboard.writeText(email);
+              showFeedback();
+            } catch (err) {
+              // Fallback for older browsers
+              const textArea = document.createElement("textarea");
+              textArea.value = email;
+              textArea.style.position = "fixed";
+              textArea.style.opacity = "0";
+              document.body.appendChild(textArea);
+              textArea.select();
+
+              try {
+                document.execCommand("copy");
+                showFeedback();
+              } catch (fallbackErr) {
+                console.error("Failed to copy email:", fallbackErr);
+              }
+
+              document.body.removeChild(textArea);
+            }
+          });
+
+          function showFeedback() {
+            copyFeedback.classList.add("show");
+            setTimeout(() => {
+              copyFeedback.classList.remove("show");
+            }, 2000);
+          }
+        }
+      });
+    </script>
   </body>
 </html>
