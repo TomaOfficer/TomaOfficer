@@ -132,17 +132,25 @@ header ul li a.active {
 .hero__signature__row {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 0.5em;
   padding: 0.5em 0 0 0;
 }
+.hero__signature__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.hero__signature__details p {
+  margin-bottom: -1px;
+}
 .hero__signature__name {
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 600;
   margin: 0;
   padding: 0;
 }
 .hero__signature__title {
-  font-size: 15px;
+  font-size: 1em;
   font-style: italic;
   font-weight: 400;
   color: #6b6d7f;
@@ -209,10 +217,6 @@ main {
   margin: 6em auto 0 auto;
 }
 
-/* Override for work-with-me page */
-.work-with-me-main {
-  padding: 0;
-}
 .portfolio-main {
   max-width: 1200px;
 }
@@ -229,47 +233,6 @@ main h1 {
 main h2 {
   padding: 0;
   margin: 0;
-}
-.status-indicator {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5em;
-  padding: 0.25em 0.75em;
-  background-color: rgba(34, 197, 94, 0.1);
-  border: 1px solid rgba(34, 197, 94, 0.2);
-  border-radius: 20px;
-  margin: 0.5em 0 0 0;
-  font-size: 13px;
-  font-weight: 400;
-}
-.status-indicator__dot {
-  width: 8px;
-  height: 8px;
-  background-color: #22c55e;
-  border-radius: 50%;
-  display: inline-block;
-}
-.status-indicator__text {
-  color: #12141f;
-  font-weight: 500;
-}
-.schedule-button {
-  display: inline-block;
-  margin: 1.5em 0 0 0;
-  padding: 0.25em 0.75em;
-  background-color: transparent;
-  color: #12141f;
-  text-decoration: none;
-  border: 1px solid #dddddd;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  font-weight: 400;
-  transition: all 0.2s ease;
-  font-size: 15px;
-}
-.schedule-button:hover {
-  color: #4a4d5f;
-  background-color: rgba(0, 0, 0, 0.05);
 }
 main section {
   padding: 1.5em 0 0 0;
@@ -498,97 +461,6 @@ footer img {
 .work-list li a:hover strong {
   color: #4a4d5f;
 }
-/* Services section */
-.services-section {
-  padding: 2em 0.75em 4em 0.75em;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.services-section .section-label {
-  max-width: 600px;
-  margin: 0 auto 1.5em auto;
-  padding: 0 0 0.5em 0;
-}
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5em;
-}
-.service-card {
-  padding: 1.75em;
-  background-color: rgba(0, 0, 0, 0.02);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-.service-card__title {
-  font-size: 1.3em;
-  font-weight: 500;
-  margin: 0 0 0.75em 0;
-  padding: 0;
-  color: #12141f;
-  line-height: 1.3;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.service-card__description {
-  margin: 0 0 1em 0;
-  padding: 0;
-  line-height: 1.7;
-  color: #12141f;
-}
-.service-card__focus {
-  margin: 0;
-  padding: 0;
-  line-height: 1.7;
-  color: #6b6d7f;
-  font-size: 0.95em;
-}
-.service-card__focus strong {
-  color: #12141f;
-  font-weight: 500;
-}
-.service-list {
-  list-style: none;
-  padding: 0;
-  margin: 1.5em 0 1em 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25em;
-}
-.service-list__item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1em;
-  padding: 0;
-  margin: 0;
-}
-.service-list__icon {
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  color: #6b6d7f;
-  margin-top: 0.15em;
-}
-.service-list__content {
-  flex: 1;
-  line-height: 1.7;
-  color: #12141f;
-  font-size: 0.95em;
-}
-.service-list__content strong {
-  color: #12141f;
-  font-weight: 500;
-}
-
-/* Work With Me Page - Minimal Styles */
-/* Uses base styles for most elements, only minimal service card styling */
-
-.work-with-me-main .services-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5em;
-  margin: 0 0 6em 0;
-}
 /* Lightbox styles */
 .lightbox {
   position: fixed;
@@ -692,11 +564,6 @@ footer img {
   font-size: 0.9em;
   color: #78350f;
   opacity: 0.85;
-}
-@media (max-width: 767px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
 }
 @media (max-width: 620px) {
   header {
