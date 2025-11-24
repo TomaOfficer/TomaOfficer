@@ -315,6 +315,11 @@ main > section ul li strong,
   margin: 0;
   padding: 0;
 }
+.service__divider {
+  height: 1px;
+  background-color: #c2c2cc;
+  margin: 2em 4em;
+}
 .portfolio-image {
   width: 100%;
   height: auto;
