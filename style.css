@@ -110,6 +110,18 @@ h3.section-label {
 }
 .hero-work-card:first-child {
   grid-column: span 2;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.hero-work-card:nth-child(2) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.hero-work-card:nth-child(3) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .hero-work-card__image {
   width: 100%;
@@ -596,6 +608,24 @@ footer img {
   opacity: 0.85;
 }
 @media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  .hero__work {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    order: 2;
+  }
+  .hero__content {
+    order: 1;
+  }
+  .hero-work-card:first-child {
+    grid-column: span 2;
+  }
+  .hero__content__intro {
+    font-size: 1.3em !important;
+  }
   .work-with-me-main {
     grid-template-columns: 1fr;
     gap: 2em;
@@ -610,13 +640,54 @@ footer img {
 
 @media (max-width: 620px) {
   .hero {
-    grid-template-columns: 1fr;
+    gap: 2em;
+    min-height: auto;
   }
   .hero__work {
     grid-template-columns: 1fr;
+    gap: 1.25em;
   }
   .hero-work-card:first-child {
     grid-column: span 1;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  .hero-work-card:nth-child(2) {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  .hero-work-card:nth-child(3) {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+  .hero-work-card {
+    min-height: 200px;
+  }
+  .hero-work-card__body {
+    padding: 0.75em 0.9em;
+  }
+  .hero-work-card__body h3 {
+    font-size: 0.9em;
+  }
+  .hero-work-card__body p {
+    font-size: 0.75em;
+  }
+  .hero__content {
+    padding: 0;
+  }
+  .hero__content__intro {
+    font-size: 1.2em !important;
+    line-height: 1.4em !important;
+  }
+  .hero__content p {
+    font-size: 0.95em;
+    padding: 0 0 1em 0;
+  }
+  main {
+    padding: 3em 0;
+    margin: 4em auto 0 auto;
   }
   main h2 {
     max-width: 300px;
@@ -667,5 +738,17 @@ footer img {
   }
   body {
     padding: 0 15px;
+    font-size: 17px;
+  }
+  header {
+    font-size: 14px;
+    padding: 0.4em 0.9em;
+    bottom: 1em;
+  }
+  header nav {
+    gap: 0.4em;
+  }
+  header nav a {
+    padding: 0.2em 0.6em;
   }
 }
