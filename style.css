@@ -58,6 +58,95 @@ h3.section-label {
     Ubuntu, Cantarell, sans-serif;
   font-size: 0.9em;
 }
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5em;
+  align-items: stretch;
+  width: 100%;
+  align-items: start;
+  justify-items: start;
+  min-height: 100vh;
+}
+.hero-layout {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__content p {
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0 0 0.777em 0;
+}
+.hero__content__intro {
+  font-size: 1.5em !important;
+  line-height: 1.333em !important;
+}
+.hero__content__intro__name {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 0.85em;
+}
+.hero__work {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+.hero-work-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #ffffff;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+}
+.hero-work-card:first-child {
+  grid-column: span 2;
+}
+.hero-work-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero-work-card__body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.85em 1em;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.1),
+    transparent
+  );
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+.hero-work-card__body h3 {
+  margin: 0 0 0.15em 0;
+  font-size: 0.95em;
+  font-weight: 600;
+}
+.hero-work-card__body p {
+  margin: 0;
+  font-size: 0.8em;
+  opacity: 0.9;
+}
+.hero-work-card:hover .hero-work-card__image {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
 header {
   position: fixed;
   left: 50%;
@@ -520,6 +609,15 @@ footer img {
 }
 
 @media (max-width: 620px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero__work {
+    grid-template-columns: 1fr;
+  }
+  .hero-work-card:first-child {
+    grid-column: span 1;
+  }
   main h2 {
     max-width: 300px;
   }
