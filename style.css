@@ -60,33 +60,27 @@ h3.section-label {
 }
 header {
   position: fixed;
+  left: 50%;
+  bottom: 1.5em;
+  transform: translateX(-50%);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;
   font-size: 15px;
-  top: 1em;
-  right: 1em;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 0.5em 1em;
   background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
-  border-radius: 100px;
+  border-radius: 999px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
-header ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+header nav {
   display: flex;
   gap: 0.5em;
 }
-header ul li {
-  display: inline-block;
-  margin: 0;
-}
-header ul li a {
+header nav a {
   text-decoration: none;
   color: #12141f;
   transition: all 0.2s ease;
@@ -95,111 +89,9 @@ header ul li a {
   display: inline-block;
   text-wrap: nowrap;
 }
-header ul li a:hover {
+header nav a:hover {
   color: #4a4d5f;
   background-color: rgba(0, 0, 0, 0.05);
-}
-header ul li a.active {
-  background-color: #1a1a1a;
-  color: #f5f5f5;
-}
-.hero {
-  max-width: 560px;
-  margin: 0 auto;
-  padding: 8em 0 4em 0;
-}
-.hero__meta {
-  padding: 0 0 2em 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
-}
-.hero__meta p {
-  padding: 0;
-  margin: 0;
-  font-size: 15px;
-  font-weight: 400;
-  color: #6b6d7f;
-}
-.hero__brand {
-  max-width: 75px;
-  height: auto;
-  margin: 2em 0 0.25em 0;
-}
-.hero__signature {
-  padding: 2em 0 0 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
-}
-.hero__signature p {
-  padding: 0;
-  margin: 0;
-}
-.hero__signature__brand {
-  max-width: 75px;
-  height: auto;
-  margin: 2em 0 0.25em 0;
-}
-.hero__signature__headshot {
-  max-width: 60px;
-  border-radius: 50%;
-  border: 1px solid #e0e0e0;
-  height: auto;
-  margin: 0;
-}
-.hero__signature__row {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  padding: 0.5em 0 0 0;
-}
-.hero__signature__details {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-.hero__signature__details p {
-  margin-bottom: -1px;
-}
-.hero__signature__name {
-  font-size: 1em;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-}
-.hero__signature__title {
-  font-size: 15px;
-  font-style: italic;
-  font-weight: 400;
-  color: #6b6d7f;
-  margin: 0;
-  padding: 0;
-}
-.hero__signature__socials {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25em;
-  margin-top: 1em;
-}
-.hero__signature__social {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  font-size: 15px;
-  font-weight: 400;
-  color: #6b6d7f;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-.hero__signature__social:hover {
-  color: #12141f;
-}
-.hero__signature__icon {
-  flex-shrink: 0;
-  color: #6b6d7f;
-  transition: color 0.2s ease;
-}
-.hero__signature__social:hover .hero__signature__icon {
-  color: #12141f;
 }
 main {
   padding: 4em 0;
@@ -383,61 +275,6 @@ blockquote cite {
 }
 .portfolio-grid .portfolio-caption {
   margin: 0 0 0 0;
-}
-.work-section {
-  padding: 2em 0.75em 6em 0.75em;
-  display: grid;
-  max-width: 1200px;
-  margin: 0 auto;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2em;
-}
-.work-card {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
-  font-size: 17px;
-  display: block;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  background-color: #ffffff;
-}
-.work-card:hover {
-  opacity: 0.8;
-}
-.work-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.work-card__details {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15em;
-  padding: 1em 1.25em;
-  background-color: #ffffff;
-}
-.work-card__details h3 {
-  font-size: 0.9em;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-  color: #12141f;
-  line-height: 1.3;
-}
-.work-card__meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.work-card__details p {
-  font-size: 0.85em;
-  color: #6b6d7f;
-  margin: 0;
-  padding: 0;
 }
 footer {
   padding: 1em 0 4em 0;
@@ -683,17 +520,8 @@ footer img {
 }
 
 @media (max-width: 620px) {
-  header {
-    right: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    justify-content: center;
-  }
   main h2 {
     max-width: 300px;
-  }
-  .work-section {
-    grid-template-columns: 1fr;
   }
   .portfolio-grid {
     grid-template-columns: 1fr;
