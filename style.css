@@ -135,46 +135,53 @@ a:hover {
   font-size: 0.9em;
   letter-spacing: 0.01em;
 }
-.homepage__work {
+.showcase {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
-.homepage__work__card {
+.showcase__card {
   text-decoration: none;
   background-color: transparent;
   flex-basis: 30%;
   border: 1px solid #dcdce3;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.showcase__card__body {
+  padding: 2em 0;
+  text-align: center;
 }
 
-.homepage__work__card__showcaseimage {
-  width: 100%;
+.showcase__card__body img {
+  max-width: 60px;
+  height: auto;
 }
-.homepage__work__card__footer {
+
+.showcase__card__footer {
   background-color: #fff;
   display: flex;
   padding: 0.5em 0.75em;
   border-top: 1px solid #dcdce3;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  font-size: 15px;
 }
-
-.homepage__work__card__footer h3 {
-  font-size: 1em;
+.showcase__card__footer__title {
+  padding: 0 0 0 1em;
+}
+.showcase__card__footer h3 {
   padding: 0;
   margin: 0;
 }
-
-.homepage__work__card__footer p {
-  font-size: 1em;
+.showcase__card__footer p {
   color: #6b6d7f;
   padding: 0;
   margin: 0;
 }
-
-.homepage__work__card__footer img {
+.showcase__card__footer img {
   height: 50px;
 }
 
