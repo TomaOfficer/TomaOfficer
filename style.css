@@ -212,6 +212,9 @@ p {
 .showcase__card__body {
   padding: 2em 0;
   text-align: center;
+  background-color: rgba(213, 169, 136, 0.09);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .showcase__card__body img {
@@ -288,6 +291,11 @@ header nav a {
 header nav a:hover {
   color: #4a4d5f;
   background-color: rgba(0, 0, 0, 0.05);
+}
+header nav a.active {
+  color: #12141f;
+  background-color: rgba(213, 169, 136, 0.25);
+  font-weight: 500;
 }
 
 /* Work With Me */
