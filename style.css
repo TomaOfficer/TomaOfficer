@@ -8,7 +8,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Heliotrope";
   src: url("assets/fonts/Heliotrope3/heliotrope_3_italic.woff2") format("woff2");
@@ -16,7 +15,6 @@
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Heliotrope";
   src: url("assets/fonts/Heliotrope3/heliotrope_3_bold.woff2") format("woff2");
@@ -24,7 +22,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Heliotrope";
   src: url("assets/fonts/Heliotrope3/heliotrope_3_bold_italic.woff2")
@@ -43,7 +40,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Heliotrope";
   src: url("assets/fonts/Heliotrope4/heliotrope_4_italic.woff2") format("woff2");
@@ -51,7 +47,6 @@
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Heliotrope";
   src: url("assets/fonts/Heliotrope4/heliotrope_4_bold.woff2") format("woff2");
@@ -59,7 +54,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Heliotrope";
   src: url("assets/fonts/Heliotrope4/heliotrope_4_bold_italic.woff2")
@@ -79,7 +73,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Heliotrope Caps";
   src: url("assets/fonts/Heliotrope4Caps/heliotrope_4_caps_bold.woff2")
@@ -98,7 +91,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Heliotrope Caps";
   src: url("assets/fonts/Heliotrope3Caps/heliotrope_3_caps_bold.woff2")
@@ -110,7 +102,7 @@
 
 /* Base styles */
 body {
-  padding: 0 20px;
+  padding: 0 20px 8em 20px;
   max-width: 1600px;
   margin: 0 auto;
   font-family: "Heliotrope", sans-serif;
@@ -132,75 +124,58 @@ a {
 a:hover {
   color: #4a4d5f;
 }
-.hero {
-  padding: 0 20px;
-}
-.hero__layout {
-  display: flex;
-  flex-direction: row;
-  gap: 2.5em;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 3em 0;
-}
-.hero__content {
-  flex-basis: 45%;
-}
-.hero__work__leftColumn {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  flex: 1;
-}
-.hero__work__leftColumn .hero__work__card {
-  flex: 1;
-}
-.hero__work__rightColumn {
-  display: flex;
-  align-items: stretch;
-  gap: 1em;
-}
-.hero__intro {
+
+/* Homepage */
+.homepage__intro {
   font-size: 1.333em;
   line-height: 1.3;
 }
-.hero__intro__name {
+.homepage__intro__name {
   font-family: "Heliotrope Caps", sans-serif;
   font-size: 0.9em;
   letter-spacing: 0.01em;
 }
-.hero__work {
+.homepage__work {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
-  flex-basis: 55%;
-  gap: 1em;
-  align-items: stretch;
+  justify-content: space-between;
 }
-.hero__work__card {
+.homepage__work__card {
   text-decoration: none;
   background-color: transparent;
-  border: 1px solid #c2c2cc;
-  outline: 1px solid #c2c2cc;
-  outline-offset: 4px;
-  border-radius: 0;
-  display: flex;
-  flex-direction: column;
-  padding: 1.5em;
-  transition: all 0.2s ease;
-}
-.hero__work__card:hover {
-  outline-offset: 6px;
-}
-.hero__work__card__image {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 1em;
-}
-.hero-work-card__body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25em;
+  flex-basis: 30%;
+  border: 1px solid #dcdce3;
+  border-radius: 10px;
 }
 
+.homepage__work__card__showcaseimage {
+  width: 100%;
+}
+.homepage__work__card__footer {
+  background-color: #fff;
+  display: flex;
+  padding: 0.5em 0.75em;
+  border-top: 1px solid #dcdce3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;s
+}
+.homepage__work__card__footer h3 {
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+}
+.homepage__work__card__footer p {
+  font-size: 1em;
+  color: #6b6d7f;
+  padding: 0;
+  margin: 0;
+}
+.homepage__work__card__footer img {
+  height: 50px;
+}
+
+/* Header Navigation */
 header {
   position: fixed;
   left: 50%;
@@ -238,9 +213,10 @@ header nav a:hover {
 main {
   padding: 4em 0;
   max-width: 600px;
-  margin: 6em auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 
+/* Work With Me */
 .work-with-me-main {
   max-width: 860px;
   margin: 6em auto 0 auto;
@@ -255,23 +231,6 @@ main {
 }
 .work-with-me-content {
   max-width: 100%;
-}
-
-.portfolio-main {
-  max-width: 1200px;
-}
-.portfolio-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 0 4em 0;
-}
-section p:first-child {
-  margin-top: 0;
-  padding-top: 0;
 }
 main > section h3,
 .work-with-me-content section h3 {
@@ -308,6 +267,7 @@ main > section ul li strong,
   color: #12141f;
 }
 
+/* Work With Me */
 .service__description {
   font-weight: 400;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -329,6 +289,8 @@ main > section ul li strong,
   background-color: #c2c2cc;
   margin: 2em 4em;
 }
+
+/* Case Studies */
 .portfolio-image {
   width: 100%;
   height: auto;
@@ -393,6 +355,8 @@ blockquote cite {
 .portfolio-grid .portfolio-caption {
   margin: 0 0 0 0;
 }
+
+/* About */
 .minimal-list {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;
@@ -589,6 +553,8 @@ blockquote cite {
   color: #78350f;
   opacity: 0.85;
 }
+
+/* Media Queries */
 @media (max-width: 1100px) and (min-width: 901px) {
   .hero__work__leftColumn {
     flex-direction: column;
@@ -597,36 +563,7 @@ blockquote cite {
     flex: none;
   }
 }
-
 @media (max-width: 900px) {
-  .hero__layout {
-    flex-direction: column-reverse;
-    gap: 2em;
-  }
-  .hero__work {
-    flex-direction: column;
-    gap: 1.5em;
-    flex-basis: 100%;
-  }
-  .hero__work__leftColumn {
-    flex-direction: column;
-  }
-  .hero__work__rightColumn {
-    flex-direction: column;
-  }
-  .hero__content {
-    flex-basis: 100%;
-  }
-  .hero__content__intro {
-    font-size: 1.3em !important;
-  }
-  .hero__work__card {
-    padding: 1.25em;
-    outline-offset: 3px;
-  }
-  .hero__work__card:hover {
-    outline-offset: 4px;
-  }
   .work-with-me-main {
     grid-template-columns: 1fr;
     gap: 2em;
@@ -638,39 +575,7 @@ blockquote cite {
     text-align: left;
   }
 }
-
 @media (max-width: 620px) {
-  .hero__content {
-    padding: 0;
-  }
-  .hero__content__intro {
-    font-size: 1.2em !important;
-    line-height: 1.4em !important;
-  }
-  .hero__content p {
-    font-size: 0.95em;
-    padding: 0 0 1em 0;
-  }
-  .hero__work__card {
-    padding: 1em;
-    outline-offset: 2px;
-  }
-  .hero__work__card:hover {
-    outline-offset: 3px;
-  }
-  .hero-work-card__body h3 {
-    font-size: 1em;
-  }
-  .hero-work-card__body p {
-    font-size: 0.85em;
-  }
-  main {
-    padding: 3em 0;
-    margin: 4em auto 0 auto;
-  }
-  main h2 {
-    max-width: 300px;
-  }
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
