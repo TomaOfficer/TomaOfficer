@@ -158,19 +158,22 @@ a:hover {
   padding: 0.5em 0.75em;
   border-top: 1px solid #dcdce3;
   border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;s
+  border-bottom-right-radius: 10px;
 }
+
 .homepage__work__card__footer h3 {
   font-size: 1em;
   padding: 0;
   margin: 0;
 }
+
 .homepage__work__card__footer p {
   font-size: 1em;
   color: #6b6d7f;
   padding: 0;
   margin: 0;
 }
+
 .homepage__work__card__footer img {
   height: 50px;
 }
