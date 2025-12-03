@@ -173,6 +173,7 @@ p {
   padding: 0;
   margin: 0;
   line-height: 1.05;
+  font-style: normal;
 }
 .hero__subtitle {
   text-align: right;
@@ -186,16 +187,19 @@ p {
 /* Main */
 main {
   display: flex;
-  max-width: 940px;
-  margin: 0 auto 0 10%;
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 0 0 3em 0;
   justify-content: space-between;
 }
 main p:last-child {
   padding-bottom: 0;
 }
+main .aside-back {
+  flex-basis: 22%;
+}
 main .aside {
-  flex-basis: 28%;
+  flex-basis: 22%;
 }
 main .aside__subtle {
   color: #667;
@@ -214,7 +218,7 @@ main .aside a:hover {
   text-decoration-color: #dfbdbd;
 }
 main .content {
-  flex-basis: 68%;
+  flex-basis: 48%;
 }
 .content-title {
   border-top: 2px solid #dfe0e8;
@@ -248,6 +252,27 @@ main .content {
   vertical-align: baseline;
 }
 
+/* Work Projects */
+.work-title {
+  padding: 0 0 2em 0;
+  margin: 0;
+}
+.work-title h5 {
+  font-size: 1em;
+  font-family: "Heliotrope Caps", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+.work-title__divider {
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  background-color: #dcdce3;
+  margin: 0.5em 0;
+}
 /* Homepage */
 .tfo-logo {
   width: 70px;
