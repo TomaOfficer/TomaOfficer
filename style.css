@@ -1,169 +1,354 @@
+/* Font Face Declarations */
+/* Heliotrope 3 (Light/Regular weight) */
+@font-face {
+  font-family: "Heliotrope";
+  src: url("assets/fonts/Heliotrope3/heliotrope_3_regular.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope";
+  src: url("assets/fonts/Heliotrope3/heliotrope_3_italic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope";
+  src: url("assets/fonts/Heliotrope3/heliotrope_3_bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope";
+  src: url("assets/fonts/Heliotrope3/heliotrope_3_bold_italic.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Heliotrope 4 (Regular/Medium weight) */
+@font-face {
+  font-family: "Heliotrope";
+  src: url("assets/fonts/Heliotrope4/heliotrope_4_regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope";
+  src: url("assets/fonts/Heliotrope4/heliotrope_4_italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope";
+  src: url("assets/fonts/Heliotrope4/heliotrope_4_bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope";
+  src: url("assets/fonts/Heliotrope4/heliotrope_4_bold_italic.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Heliotrope Caps - Separate font family for caps variants */
+/* Heliotrope 4 Caps */
+@font-face {
+  font-family: "Heliotrope Caps";
+  src: url("assets/fonts/Heliotrope4Caps/heliotrope_4_caps_regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope Caps";
+  src: url("assets/fonts/Heliotrope4Caps/heliotrope_4_caps_bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Heliotrope 3 Caps */
+@font-face {
+  font-family: "Heliotrope Caps";
+  src: url("assets/fonts/Heliotrope3Caps/heliotrope_3_caps_regular.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope Caps";
+  src: url("assets/fonts/Heliotrope3Caps/heliotrope_3_caps_bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Base styles */
 body {
-  padding: 0 20px;
-  max-width: 1600px;
-  margin: 0 auto;
-  font-family: Georgia, "Times New Roman", Times, serif;
-
-  line-height: 1.6;
-  font-size: 19px;
-  color: #12141f;
+  padding: 4em 20px 8em 20px;
+  margin: 0;
+  font-family: "Heliotrope", sans-serif;
+  line-height: 1.5;
+  font-size: 21px;
+  color: #333;
   background-color: #faf9f5;
 }
-a {
-  color: #12141f;
-  transition: color 0.2s ease;
-  text-decoration-color: #8a8b9f;
-  text-underline-offset: 3px;
-}
-a:hover {
-  color: #4a4d5f;
-}
 h1 {
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  font-weight: bolder;
   padding: 0 0 0.25em;
+  line-height: 1.2;
   margin: 0;
-  line-height: 1.25;
-  font-size: 1.333em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
 }
 h2 {
-  color: #6b6d7f;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 1.25;
   font-style: italic;
-}
-h3.section-header {
-  font-size: 1em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
-  font-weight: 800;
-  margin: 0 0 0.5em 0;
-  color: #12141f;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-h3.section-label {
-  font-size: 1em;
   font-weight: 400;
-  line-height: 1.25;
-  color: #6b6d7f;
+  font-size: 1.333em;
+  padding: 0 0 1.777em;
   margin: 0;
-  padding: 0 0 0.5em 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
-  font-size: 0.9em;
+  line-height: 1.2;
+}
+h3 {
+  padding: 0 0 0.25em 0;
+  margin: 0;
+}
+a {
+  color: #880808;
+  transition: color 0.2s ease;
+  text-decoration-color: #d3a3a3;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease;
+}
+a:hover {
+  color: #b13434;
+  text-decoration-color: #dfbdbd;
+}
+p {
+  padding: 0 0 1em;
+  margin: 0;
+}
+.fleuron-container {
+  padding: 2em 0 4em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fleuron {
+  flex-basis: 18%;
+  max-width: 18%;
 }
 
+/* Hero */
 .hero {
-  padding: 0 20px;
-}
-.hero__layout {
-  display: flex;
-  flex-direction: row;
-  gap: 2.5em;
-  max-width: 1280px;
+  max-width: 920px;
   margin: 0 auto;
-  padding: 3em 0;
+  padding: 0 0 2em 0;
 }
-.hero__content {
-  flex-basis: 45%;
-}
-.hero__work__leftColumn {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  flex: 1;
-}
-.hero__work__leftColumn .hero__work__card {
-  flex: 1;
-}
-.hero__work__rightColumn {
-  display: flex;
-  align-items: stretch;
-  gap: 1em;
-}
-.hero__content p {
-  line-height: 1.6em;
+.hero h1 {
+  font-weight: 400;
+  font-size: 1em;
+  padding: 0 0 5em 0;
   margin: 0;
-  padding: 0 0 0.777em 0;
 }
-.hero__content__intro {
-  font-size: 1.5em !important;
-  line-height: 1.333em !important;
+.hero h2 {
+  font-family: "Heliotrope", sans-serif;
+  font-size: 4em;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  padding: 0;
+  margin: 0;
+  line-height: 1.05;
 }
-.hero__content__intro__name {
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  font-size: 0.85em;
+.hero__subtitle {
+  text-align: right;
+  font-style: italic;
+  font-size: 1.333em;
+  padding: 0.25em 0 0 0;
+  margin: 0 -2em 0 0;
+  color: #880808;
 }
-.hero__work {
+
+/* Main */
+main {
   display: flex;
-  flex-basis: 55%;
-  gap: 1em;
-  align-items: stretch;
+  max-width: 940px;
+  margin: 0 auto 0 10%;
+  padding: 0 0 3em 0;
+  justify-content: space-between;
 }
-.hero__work__card {
-  text-decoration: none;
-  background-color: transparent;
-  border: 1px solid #c2c2cc;
-  outline: 1px solid #c2c2cc;
-  outline-offset: 4px;
-  border-radius: 0;
-  display: flex;
-  flex-direction: column;
-  padding: 1.5em;
-  transition: all 0.2s ease;
+main p:last-child {
+  padding-bottom: 0;
 }
-.hero__work__card:hover {
-  outline-offset: 6px;
+main .aside {
+  flex-basis: 28%;
 }
-.hero__work__card__image {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 1em;
+main .aside__subtle {
+  color: #667;
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.3;
+  padding: 0;
+  margin: 0;
 }
-.hero-work-card__body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25em;
+main .aside a {
+  color: #667;
+  text-decoration-color: #dcdce3;
 }
-.hero-work-card__body h3 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
-  font-size: 1.1em;
-  font-weight: 600;
+main .aside a:hover {
+  color: #880808;
+  text-decoration-color: #dfbdbd;
+}
+main .content {
+  flex-basis: 68%;
+}
+.content-title {
+  border-top: 2px solid #dfe0e8;
+}
+.content-title h2 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.777em;
+  padding: 0 0 2em 0;
+  margin: 0;
+}
+.title {
+  font-weight: 400;
+  margin: 0;
+  padding: 0 0 1em;
+}
+.title__first-letter {
+  font-size: 1.333em;
+  font-family: "Heliotrope Caps", sans-serif;
+  line-height: 1.25;
   margin: 0;
   padding: 0;
-  color: #12141f;
+  vertical-align: baseline;
+}
+.title__intro {
+  font-family: "Heliotrope Caps", sans-serif;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* Homepage */
+.tfo-logo {
+  width: 70px;
+  height: auto;
+}
+.showcase {
+  display: flex;
+  padding: 0 0 2em;
+  justify-content: space-between;
+}
+.showcase__leftCol {
+  flex-basis: 40%;
+  padding: 0 2em 0 0;
+}
+.showcase__title {
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+.showcase__subtitle {
+  color: #667;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8em;
   line-height: 1.3;
 }
-.hero-work-card__body p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
-  font-size: 0.9em;
-  margin: 0;
-  padding: 0;
-  color: #6b6d7f;
-  line-height: 1.4;
+.showcase__rightCol {
+  flex-basis: 60%;
+}
+.showcase__card {
+  text-decoration: none;
+  background-color: transparent;
+  flex: 1 1 30%;
+  min-width: 0;
+  color: #333;
+  border: 1px solid #dcdce3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.showcase__card__body {
+  padding: 2em 0;
+  text-align: center;
+  background-color: rgba(213, 169, 136, 0.09);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
+.showcase__card__body img {
+  max-width: 60px;
+  height: auto;
+}
+
+.showcase__card__footer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em 0.75em;
+  border-top: 1px solid #dcdce3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+.showcase__card__footer__title {
+  padding: 0 0 0 1em;
+}
+.showcase__card__footer h3 {
+  padding: 0;
+  font-size: 1em;
+  line-height: 1.4;
+  text-transform: lowercase;
+  font-weight: bolder;
+  margin: 0;
+  font-family: "Heliotrope Caps", sans-serif;
+}
+.showcase__card__footer p {
+  color: #667;
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+}
+.showcase__card__footer img {
+  height: 50px;
+}
+
+/* Header Navigation */
 header {
   position: fixed;
   left: 50%;
   bottom: 1.5em;
   transform: translateX(-50%);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
-  font-size: 15px;
+  font-family: "Heliotrope", sans-serif;
+  font-size: 17px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5em 1em;
+  padding: 0.4em 0.5em;
   background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   border-radius: 999px;
@@ -187,12 +372,13 @@ header nav a:hover {
   color: #4a4d5f;
   background-color: rgba(0, 0, 0, 0.05);
 }
-main {
-  padding: 4em 0;
-  max-width: 600px;
-  margin: 6em auto 0 auto;
+header nav a.active {
+  color: #12141f;
+  background-color: rgba(213, 169, 136, 0.25);
+  font-weight: 500;
 }
 
+/* Work With Me */
 .work-with-me-main {
   max-width: 860px;
   margin: 6em auto 0 auto;
@@ -205,50 +391,8 @@ main {
 .work-with-me-header {
   text-align: right;
 }
-.work-with-me-header p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
-  font-size: 16px;
-  line-height: 1.6em;
-  font-weight: 400;
-  color: #6b6d7f;
-  margin: 0;
-  padding: 0;
-}
 .work-with-me-content {
   max-width: 100%;
-}
-
-.work-with-me-content section h2 {
-  font-size: 1.5em;
-  font-weight: 500;
-  color: #12141f;
-  font-style: normal;
-  margin: 2em 0 1em 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
-}
-
-.portfolio-main {
-  max-width: 1200px;
-}
-.portfolio-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-main h2 {
-  padding: 0;
-  margin: 0;
-}
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 0 4em 0;
-}
-section p:first-child {
-  margin-top: 0;
-  padding-top: 0;
 }
 main > section h3,
 .work-with-me-content section h3 {
@@ -285,6 +429,7 @@ main > section ul li strong,
   color: #12141f;
 }
 
+/* Work With Me */
 .service__description {
   font-weight: 400;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -306,6 +451,8 @@ main > section ul li strong,
   background-color: #c2c2cc;
   margin: 2em 4em;
 }
+
+/* Case Studies */
 .portfolio-image {
   width: 100%;
   height: auto;
@@ -370,6 +517,8 @@ blockquote cite {
 .portfolio-grid .portfolio-caption {
   margin: 0 0 0 0;
 }
+
+/* About */
 .minimal-list {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;
@@ -566,43 +715,14 @@ blockquote cite {
   color: #78350f;
   opacity: 0.85;
 }
-@media (max-width: 1100px) and (min-width: 901px) {
-  .hero__work__leftColumn {
-    flex-direction: column;
-  }
-  .hero__work__leftColumn .hero__work__card {
-    flex: none;
-  }
-}
 
+/* Media Queries */
 @media (max-width: 900px) {
-  .hero__layout {
-    flex-direction: column-reverse;
-    gap: 2em;
+  main {
+    margin: 0;
   }
-  .hero__work {
-    flex-direction: column;
-    gap: 1.5em;
-    flex-basis: 100%;
-  }
-  .hero__work__leftColumn {
-    flex-direction: column;
-  }
-  .hero__work__rightColumn {
-    flex-direction: column;
-  }
-  .hero__content {
-    flex-basis: 100%;
-  }
-  .hero__content__intro {
-    font-size: 1.3em !important;
-  }
-  .hero__work__card {
-    padding: 1.25em;
-    outline-offset: 3px;
-  }
-  .hero__work__card:hover {
-    outline-offset: 4px;
+  .hero h2 {
+    font-size: 3.2em;
   }
   .work-with-me-main {
     grid-template-columns: 1fr;
@@ -615,41 +735,46 @@ blockquote cite {
     text-align: left;
   }
 }
-
-@media (max-width: 620px) {
-  .hero__content {
-    padding: 0;
+@media (max-width: 740px) {
+  body {
+    font-size: 18px;
   }
-  .hero__content__intro {
-    font-size: 1.2em !important;
-    line-height: 1.4em !important;
+  header {
+    padding: 0.4em 0.9em;
+    bottom: 1em;
   }
-  .hero__content p {
-    font-size: 0.95em;
-    padding: 0 0 1em 0;
+  header nav {
+    gap: 0.4em;
   }
-  .hero__work__card {
-    padding: 1em;
-    outline-offset: 2px;
+  header nav a {
+    padding: 0.2em 0.6em;
   }
-  .hero__work__card:hover {
-    outline-offset: 3px;
-  }
-  .hero-work-card__body h3 {
-    font-size: 1em;
-  }
-  .hero-work-card__body p {
-    font-size: 0.85em;
+  .hero h2 {
+    font-size: 2.777em;
   }
   main {
-    padding: 3em 0;
-    margin: 4em auto 0 auto;
+    flex-direction: column;
+    padding: 0 0 3em;
+    margin: 0;
   }
-  main h2 {
-    max-width: 300px;
+  main .aside__content {
+    margin-top: 1.5em;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #dcdce3;
+    border-left: 3px solid #dcdce3;
   }
-  .portfolio-grid {
-    grid-template-columns: 1fr;
+  .content-title h2 {
+    padding: 0 0 1em 0;
+  }
+  .hero__subtitle {
+    margin: 0;
+  }
+  .showcase {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .showcase__rightCol {
+    margin: 0 2em;
   }
   .work-with-me-main {
     grid-template-columns: 1fr;
@@ -691,20 +816,5 @@ blockquote cite {
   .work-with-me-content section h3 {
     font-size: 1.1em;
     margin: 1.25em 0 0.5em 0;
-  }
-  body {
-    padding: 0 15px;
-    font-size: 17px;
-  }
-  header {
-    font-size: 14px;
-    padding: 0.4em 0.9em;
-    bottom: 1em;
-  }
-  header nav {
-    gap: 0.4em;
-  }
-  header nav a {
-    padding: 0.2em 0.6em;
   }
 }
