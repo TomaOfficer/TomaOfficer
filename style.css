@@ -103,6 +103,7 @@
 /* Base styles */
 body {
   padding: 4em 20px 8em 20px;
+  margin: 0;
   font-family: "Heliotrope", sans-serif;
   line-height: 1.5;
   font-size: 21px;
@@ -177,6 +178,9 @@ main {
   padding: 0 0 3em 0;
   justify-content: space-between;
 }
+main p:last-child {
+  padding-bottom: 0;
+}
 main .aside {
   flex-basis: 28%;
 }
@@ -185,6 +189,8 @@ main .aside__subtle {
   font-size: 0.9em;
   font-weight: 300;
   line-height: 1.3;
+  padding: 0;
+  margin: 0;
 }
 main .aside a {
   color: #667;
@@ -699,6 +705,12 @@ blockquote cite {
 
 /* Media Queries */
 @media (max-width: 900px) {
+  main {
+    margin: 0;
+  }
+  .hero h2 {
+    font-size: 3.2em;
+  }
   .work-with-me-main {
     grid-template-columns: 1fr;
     gap: 2em;
@@ -710,15 +722,46 @@ blockquote cite {
     text-align: left;
   }
 }
-@media (max-width: 620px) {
+@media (max-width: 740px) {
+  body {
+    font-size: 18px;
+  }
+  header {
+    padding: 0.4em 0.9em;
+    bottom: 1em;
+  }
+  header nav {
+    gap: 0.4em;
+  }
+  header nav a {
+    padding: 0.2em 0.6em;
+  }
+  .hero h2 {
+    font-size: 2.777em;
+  }
+  main {
+    flex-direction: column;
+    padding: 0 0 3em;
+    margin: 0;
+  }
+  main .aside__content {
+    margin-top: 1.5em;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #dcdce3;
+    border-left: 3px solid #dcdce3;
+  }
+  .content-title h2 {
+    padding: 0 0 1em 0;
+  }
+  .hero__subtitle {
+    margin: 0;
+  }
   .showcase {
     flex-direction: column;
     gap: 1.5em;
-    max-width: 80%;
-    margin: 0 auto;
   }
-  .showcase__card {
-    flex-basis: 100%;
+  .showcase__rightCol {
+    margin: 0 2em;
   }
   .work-with-me-main {
     grid-template-columns: 1fr;
@@ -760,18 +803,5 @@ blockquote cite {
   .work-with-me-content section h3 {
     font-size: 1.1em;
     margin: 1.25em 0 0.5em 0;
-  }
-  body {
-    font-size: 17px;
-  }
-  header {
-    padding: 0.4em 0.9em;
-    bottom: 1em;
-  }
-  header nav {
-    gap: 0.4em;
-  }
-  header nav a {
-    padding: 0.2em 0.6em;
   }
 }
