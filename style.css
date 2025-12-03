@@ -273,6 +273,7 @@ main .content {
   text-transform: lowercase;
   font-weight: 400;
   font-size: 4em;
+  line-height: 0.9;
 }
 .work-title h5 {
   font-size: 1em;
