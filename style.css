@@ -114,22 +114,22 @@ h3 {
   margin: 0;
 }
 a {
-  color: #723a12;
+  color: #880808;
   transition: color 0.2s ease;
-  text-decoration-color: #a5846c;
+  text-decoration-color: #d3a3a3;
   text-underline-offset: 3px;
   transition: text-decoration-color 0.2s ease;
 }
 a:hover {
-  color: rgb(142, 69, 17);
-  text-decoration-color: #bba28f;
+  color: #b13434;
+  text-decoration-color: #dfbdbd;
 }
 p {
   padding: 0 0 1em;
   margin: 0;
 }
 .fleuron-container {
-  padding: 8em 0 0 0;
+  padding: 2em 0 4em 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -158,36 +158,47 @@ p {
   letter-spacing: -0.02em;
   padding: 0;
   margin: 0;
-  line-height: 1.1;
+  line-height: 1.05;
 }
 .hero__subtitle {
   text-align: right;
   font-style: italic;
-  font-size: 1.2em;
-  padding: 0;
-  margin: 0;
-}
-.hero__subtitle p {
-  padding: 0;
-  margin: 0;
+  font-size: 1.333em;
+  padding: 0.25em 0 0 0;
+  margin: 0 -2em 0 0;
+  color: #880808;
 }
 
 /* Main */
 main {
   display: flex;
-  max-width: 920px;
+  max-width: 940px;
   margin: 0 auto 0 10%;
-  gap: 3em;
   padding: 0 0 3em 0;
+  justify-content: space-between;
 }
 main .aside {
-  flex-basis: 20%;
+  flex-basis: 28%;
+}
+main .aside__subtle {
+  color: #667;
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.3;
+}
+main .aside a {
+  color: #667;
+  text-decoration-color: #dcdce3;
+}
+main .aside a:hover {
+  color: #880808;
+  text-decoration-color: #dfbdbd;
 }
 main .content {
-  flex-basis: 80%;
+  flex-basis: 68%;
 }
 .content-title {
-  border-top: 1px solid #9191a4;
+  border-top: 2px solid #dfe0e8;
 }
 .content-title h2 {
   font-style: italic;
@@ -197,25 +208,25 @@ main .content {
   margin: 0;
 }
 .title {
-  font-size: 1.2em;
-  line-height: 1.3;
   font-weight: 400;
   margin: 0;
   padding: 0 0 1em;
 }
 .title__first-letter {
-  font-size: 1.2em;
+  font-size: 1.333em;
   font-family: "Heliotrope Caps", sans-serif;
-  line-height: 1.4;
+  line-height: 1.25;
   margin: 0;
   padding: 0;
+  vertical-align: baseline;
 }
 .title__intro {
-  font-size: 0.9em;
   font-family: "Heliotrope Caps", sans-serif;
-  line-height: 1.4;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
   margin: 0;
   padding: 0;
+  vertical-align: baseline;
 }
 
 /* Homepage */
