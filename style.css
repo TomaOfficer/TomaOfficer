@@ -100,6 +100,16 @@
   font-display: swap;
 }
 
+/* Heliotrope 6 Caps */
+@font-face {
+  font-family: "Heliotrope 6 Caps";
+  src: url("assets/fonts/Heliotrope6Caps/heliotrope_6_caps_regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Base styles */
 body {
   padding: 4em 20px 8em 20px;
@@ -256,22 +266,63 @@ main .content {
 .work-title {
   padding: 0 0 2em 0;
   margin: 0;
+  text-align: center;
+}
+.work-title h1 {
+  font-family: "Heliotrope Caps", sans-serif;
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 4em;
 }
 .work-title h5 {
   font-size: 1em;
   font-family: "Heliotrope Caps", sans-serif;
   font-weight: 400;
   letter-spacing: -0.02em;
-  margin: 0;
+  text-transform: lowercase;
+  margin: 0 0 0 0;
   padding: 0;
-  vertical-align: baseline;
+  line-height: 1;
+}
+.work-title__subtitle-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+.work-title p {
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+.work-title__scSmall {
+  font-size: 0.8em;
+  font-family: "Heliotrope Caps", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+}
+.work-title__scLarge {
+  font-size: 1em;
+  font-family: "Heliotrope Caps", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+}
+.work-title__italic {
+  font-style: italic !important;
+  font-size: 1.1em;
+}
+.work-title__italicSmall {
+  font-size: 0.8em;
+  font-style: italic !important;
 }
 .work-title__divider {
-  width: 100%;
+  width: 60%;
   height: 1px;
-  display: inline-block;
+  display: block;
   background-color: #dcdce3;
-  margin: 0.5em 0;
+  margin: 0.5em auto 0;
 }
 /* Homepage */
 .tfo-logo {
@@ -801,6 +852,9 @@ blockquote cite {
   }
   .showcase__rightCol {
     margin: 0 2em;
+  }
+  .work-title h1 {
+    font-size: 3.2em;
   }
   .work-with-me-main {
     grid-template-columns: 1fr;
