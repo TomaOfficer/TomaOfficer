@@ -100,6 +100,16 @@
   font-display: swap;
 }
 
+/* Heliotrope 6 Caps */
+@font-face {
+  font-family: "Heliotrope 6 Caps";
+  src: url("assets/fonts/Heliotrope6Caps/heliotrope_6_caps_regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Base styles */
 body {
   padding: 4em 20px 8em 20px;
@@ -173,6 +183,7 @@ p {
   padding: 0;
   margin: 0;
   line-height: 1.05;
+  font-style: normal;
 }
 .hero__subtitle {
   text-align: right;
@@ -186,16 +197,19 @@ p {
 /* Main */
 main {
   display: flex;
-  max-width: 940px;
-  margin: 0 auto 0 10%;
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 0 0 3em 0;
   justify-content: space-between;
 }
 main p:last-child {
   padding-bottom: 0;
 }
+main .aside-back {
+  flex-basis: 22%;
+}
 main .aside {
-  flex-basis: 28%;
+  flex-basis: 22%;
 }
 main .aside__subtle {
   color: #667;
@@ -214,7 +228,7 @@ main .aside a:hover {
   text-decoration-color: #dfbdbd;
 }
 main .content {
-  flex-basis: 68%;
+  flex-basis: 48%;
 }
 .content-title {
   border-top: 2px solid #dfe0e8;
@@ -248,6 +262,69 @@ main .content {
   vertical-align: baseline;
 }
 
+/* Work Projects */
+.work-title {
+  padding: 0 0 2em 0;
+  margin: 0;
+  text-align: center;
+}
+.work-title h1 {
+  font-family: "Heliotrope Caps", sans-serif;
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 4em;
+  line-height: 0.9;
+}
+.work-title h5 {
+  font-size: 1em;
+  font-family: "Heliotrope Caps", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+  margin: 0 0 0 0;
+  padding: 0;
+  line-height: 1;
+}
+.work-title__subtitle-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+.work-title p {
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+.work-title__scSmall {
+  font-size: 0.8em;
+  font-family: "Heliotrope Caps", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+}
+.work-title__scLarge {
+  font-size: 1em;
+  font-family: "Heliotrope Caps", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+}
+.work-title__italic {
+  font-style: italic !important;
+  font-size: 1.1em;
+}
+.work-title__italicSmall {
+  font-size: 0.8em;
+  font-style: italic !important;
+}
+.work-title__divider {
+  width: 60%;
+  height: 1px;
+  display: block;
+  background-color: #dcdce3;
+  margin: 0.5em auto 0;
+}
 /* Homepage */
 .tfo-logo {
   width: 70px;
@@ -717,10 +794,15 @@ blockquote cite {
 }
 
 /* Media Queries */
-@media (max-width: 900px) {
+@media (max-width: 1135px) {
   main {
     margin: 0;
+    max-width: 620px;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 0 0 3em;
   }
+
   .hero h2 {
     font-size: 3.2em;
   }
@@ -752,11 +834,7 @@ blockquote cite {
   .hero h2 {
     font-size: 2.777em;
   }
-  main {
-    flex-direction: column;
-    padding: 0 0 3em;
-    margin: 0;
-  }
+
   main .aside__content {
     margin-top: 1.5em;
     padding: 0.3rem 0.5rem;
@@ -775,6 +853,9 @@ blockquote cite {
   }
   .showcase__rightCol {
     margin: 0 2em;
+  }
+  .work-title h1 {
+    font-size: 3.2em;
   }
   .work-with-me-main {
     grid-template-columns: 1fr;
