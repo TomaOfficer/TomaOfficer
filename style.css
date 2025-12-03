@@ -183,15 +183,18 @@ main {
 main .aside {
   flex-basis: 20%;
 }
-main .aside h2 {
-  padding: 0;
-  margin: 0;
-  font-family: "Heliotrope Caps", sans-serif;
-  text-transform: lowercase;
-  font-size: 1em;
-}
 main .content {
   flex-basis: 80%;
+}
+.content-title {
+  border-top: 1px solid #9191a4;
+}
+.content-title h2 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.777em;
+  padding: 0 0 2em 0;
+  margin: 0;
 }
 .title {
   font-size: 1.2em;
@@ -222,7 +225,27 @@ main .content {
 }
 .showcase {
   display: flex;
-  gap: 1em;
+  padding: 0 0 2em;
+  justify-content: space-between;
+}
+.showcase__leftCol {
+  flex-basis: 40%;
+  padding: 0 2em 0 0;
+}
+.showcase__title {
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+.showcase__subtitle {
+  color: #667;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8em;
+  line-height: 1.3;
+}
+.showcase__rightCol {
+  flex-basis: 60%;
 }
 .showcase__card {
   text-decoration: none;
