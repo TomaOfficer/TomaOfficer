@@ -742,10 +742,15 @@ blockquote cite {
 }
 
 /* Media Queries */
-@media (max-width: 900px) {
+@media (max-width: 1135px) {
   main {
     margin: 0;
+    max-width: 620px;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 0 0 3em;
   }
+
   .hero h2 {
     font-size: 3.2em;
   }
@@ -777,11 +782,7 @@ blockquote cite {
   .hero h2 {
     font-size: 2.777em;
   }
-  main {
-    flex-direction: column;
-    padding: 0 0 3em;
-    margin: 0;
-  }
+
   main .aside__content {
     margin-top: 1.5em;
     padding: 0.3rem 0.5rem;
