@@ -279,9 +279,10 @@ main .content {
   font-weight: 400;
   font-size: 4em;
   line-height: 0.9;
+  letter-spacing: -0.03em;
 }
 .work-title h5 {
-  font-size: 1em;
+  font-size: 0.8em;
   font-family: "Heliotrope Caps", sans-serif;
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -296,7 +297,7 @@ main .content {
   gap: 0.25em;
 }
 .work-title p {
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 0;
   margin: 0;
   line-height: 1;
