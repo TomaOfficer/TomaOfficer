@@ -167,7 +167,7 @@ p {
 .hero {
   max-width: 920px;
   margin: 0 auto;
-  padding: 0 0 2em 0;
+  padding: 0 0 1em 0;
 }
 .hero h1 {
   font-weight: 400;
@@ -196,6 +196,7 @@ p {
 .illustration-thomas {
   width: 100%;
   height: auto;
+  padding: 0 0 2em 0;
 }
 
 /* Main */
