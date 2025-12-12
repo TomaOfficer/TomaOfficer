@@ -322,14 +322,12 @@ main .content {
 .showcase-list {
   max-width: 1600px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.333em;
   padding: 0 0 4em 0;
 }
 .showcase-list-item {
-  flex-basis: 45%;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -804,11 +802,6 @@ blockquote cite {
     text-align: left;
   }
 }
-@media (max-width: 1005px) {
-  .showcase-list-item {
-    flex-basis: 44%;
-  }
-}
 @media (max-width: 847px) {
   body {
     font-size: 18px;
@@ -841,8 +834,8 @@ blockquote cite {
     flex-direction: column;
     gap: 1.5em;
   }
-  .showcase-list-item {
-    flex-basis: 100%;
+  .showcase-list {
+    grid-template-columns: 1fr;
   }
   .work-title h1 {
     font-size: 3.2em;
