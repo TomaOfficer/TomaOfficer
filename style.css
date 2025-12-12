@@ -164,13 +164,21 @@ p {
 
 /* Hero */
 .hero {
-  padding: 4em 0;
-  max-width: 1200px;
+  padding: 6em 0 3em;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 .hero h1 {
   font-size: 4em;
+  line-height: 1em;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+}
+.hero-highlight {
+  font-style: italic;
+  color: #880808;
 }
 
 /* Main */
@@ -318,6 +326,7 @@ main .content {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1.333em;
+  padding: 0 0 4em 0;
 }
 .showcase-list-item {
   flex-basis: 45%;
@@ -391,7 +400,7 @@ main .content {
 header {
   position: fixed;
   left: 50%;
-  bottom: 1.5em;
+  top: 1.5em;
   transform: translateX(-50%);
   font-family: "Heliotrope", sans-serif;
   font-size: 17px;
@@ -795,12 +804,18 @@ blockquote cite {
     text-align: left;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 1005px) {
+  .showcase-list-item {
+    flex-basis: 44%;
+  }
+}
+@media (max-width: 847px) {
   body {
     font-size: 18px;
   }
   header {
     padding: 0.4em 0.9em;
+    top: auto;
     bottom: 1em;
   }
   header nav {
@@ -808,6 +823,9 @@ blockquote cite {
   }
   header nav a {
     padding: 0.2em 0.6em;
+  }
+  .hero h1 {
+    font-size: 3.2em;
   }
   .hero h2 {
     font-size: 2.777em;
@@ -823,8 +841,8 @@ blockquote cite {
     flex-direction: column;
     gap: 1.5em;
   }
-  .showcase__rightCol {
-    margin: 0 2em;
+  .showcase-list-item {
+    flex-basis: 100%;
   }
   .work-title h1 {
     font-size: 3.2em;
