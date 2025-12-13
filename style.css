@@ -153,23 +153,30 @@ p {
 }
 /* Hero */
 .hero {
-  padding: 6em 0 3em;
-  max-width: 1400px;
+  padding: 8em 0 3em;
+  max-width: 680px;
   margin: 0 auto;
 }
-
 .hero h1 {
-  font-size: 4em;
-  line-height: 1em;
-  font-weight: bolder;
-  padding: 0;
-  margin: 0;
+  font-size: 1.777em;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 0 0.25em;
 }
-.hero-highlight {
+.hero h2 {
+  font-size: 1em;
   font-style: italic;
-  color: #880808;
+  text-align: center;
+  font-weight: 400;
+  padding: 0 0 1em;
 }
-
+.hero__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 1em;
+}
 /* Main */
 main {
   display: flex;
@@ -226,6 +233,31 @@ main .content {
   margin: 0;
   padding: 0;
   vertical-align: baseline;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 680px;
+  padding: 1em 0 4em 0;
+  margin: 0 auto;
+  border-top: 1px solid #dcdce3;
+  font-size: 0.8em;
+}
+footer p {
+  margin: 0;
+  padding: 0;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  display: inline-block;
+  margin: 0 0.5em;
 }
 
 /* Work Projects */
@@ -294,7 +326,7 @@ main .content {
 }
 
 .showcase-list {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -308,7 +340,7 @@ main .content {
   justify-content: space-between;
   min-height: 200px;
   padding: 0.75em;
-  border: 1px solid #dcdce3;
+  background-color: #222;
   border-radius: 2px;
 }
 .showcase-list-item__row {
@@ -330,6 +362,7 @@ main .content {
   font-family: "Heliotrope Caps", sans-serif;
   text-transform: lowercase;
   font-size: 1.333em;
+  color: #fff;
   line-height: 1.2;
   padding: 0;
   margin: 0;
@@ -338,6 +371,7 @@ main .content {
   display: flex;
   flex-direction: column;
   gap: 0.17em;
+  color: #fff;
 }
 .showcase-list-item__org {
   font-family: "Heliotrope Caps", sans-serif;
@@ -347,6 +381,7 @@ main .content {
   padding: 0;
   font-weight: bolder;
   margin: 0;
+  color: #fff;
 }
 .showcase-list-item__role {
   font-style: italic;
@@ -354,6 +389,7 @@ main .content {
   padding: 0;
   line-height: 1;
   margin: 0;
+  color: #fff;
 }
 
 .showcase-list-item__time {
@@ -361,6 +397,7 @@ main .content {
   font-size: 0.8em;
   padding: 0;
   margin: 0;
+  color: #fff;
 }
 .showcase-list-item img {
   width: 50px;
