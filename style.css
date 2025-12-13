@@ -151,17 +151,6 @@ p {
   padding: 0 0 1em;
   margin: 0;
 }
-.fleuron-container {
-  padding: 2em 0 4em 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.fleuron {
-  flex-basis: 18%;
-  max-width: 18%;
-}
-
 /* Hero */
 .hero {
   padding: 6em 0 3em;
@@ -216,16 +205,6 @@ main .aside a:hover {
 }
 main .content {
   flex-basis: 52%;
-}
-.content-title {
-  border-top: 2px solid #dfe0e8;
-}
-.content-title h2 {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 1.777em;
-  padding: 0 0 2em 0;
-  margin: 0;
 }
 .title {
   font-weight: 400;
@@ -313,11 +292,6 @@ main .content {
   background-color: #dcdce3;
   margin: 0.5em auto 0;
 }
-/* Homepage */
-.tfo-logo {
-  width: 70px;
-  height: auto;
-}
 
 .showcase-list {
   max-width: 1400px;
@@ -334,7 +308,6 @@ main .content {
   justify-content: space-between;
   min-height: 200px;
   padding: 0.75em;
-  border-radius: 1em;
   border: 1px solid #dcdce3;
   border-radius: 2px;
 }
@@ -436,57 +409,35 @@ header nav a.active {
 }
 
 /* Work With Me */
-.work-with-me-main {
-  max-width: 860px;
-  margin: 6em auto 0 auto;
-  padding: 4em 0;
-  display: grid;
-  grid-template-columns: 2fr 4fr;
-  gap: 3em;
-  align-items: start;
-}
-.work-with-me-header {
-  text-align: right;
-}
-.work-with-me-content {
-  max-width: 100%;
-}
-main > section h3,
-.work-with-me-content section h3 {
+main > section h3 {
   font-size: 1.2em;
   font-weight: 500;
   margin: 1.5em 0 0.5em 0;
   color: #12141f;
 }
-main > section ul,
-.work-with-me-content section ul {
+main > section ul {
   list-style: none;
   padding: 0;
   margin: 1em 0;
 }
-main > section ul li,
-.work-with-me-content section ul li {
+main > section ul li {
   line-height: 1.7;
   color: #12141f;
   padding-left: 1.5em;
   position: relative;
   margin-bottom: 0.5em;
 }
-main > section ul li::before,
-.work-with-me-content section ul li::before {
+main > section ul li::before {
   content: "→";
   position: absolute;
   left: 0;
   color: #8a8b9f;
   font-weight: 300;
 }
-main > section ul li strong,
-.work-with-me-content section ul li strong {
+main > section ul li strong {
   font-weight: 500;
   color: #12141f;
 }
-
-/* Work With Me */
 .service__description {
   font-weight: 400;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -627,41 +578,6 @@ blockquote cite {
     Ubuntu, Cantarell, sans-serif;
   font-size: 15px;
 }
-.work-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.work-list li {
-  line-height: 1.7;
-  color: #12141f;
-  padding-left: 1.5em;
-  position: relative;
-}
-.work-list li::before {
-  content: "→";
-  position: absolute;
-  left: 0;
-  color: #8a8b9f;
-  font-weight: 300;
-}
-.work-list li strong {
-  font-weight: 500;
-  color: #12141f;
-}
-.work-list li a {
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-.work-list li a:hover {
-  color: #4a4d5f;
-}
-.work-list li a strong {
-  transition: color 0.2s ease;
-}
-.work-list li a:hover strong {
-  color: #4a4d5f;
-}
 /* Lightbox styles */
 .lightbox {
   position: fixed;
@@ -744,34 +660,6 @@ blockquote cite {
 .lightbox-close:hover {
   opacity: 0.7;
 }
-.coming-soon-banner {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
-  font-size: 15px;
-  background-color: #fef3c7;
-  border: 1px solid #fbbf24;
-  border-radius: 8px;
-  padding: 1.25em 1.5em;
-  margin: 0 0 2em 0;
-  text-align: center;
-}
-.coming-soon-banner p {
-  margin: 0;
-  padding: 0;
-  color: #92400e;
-}
-.coming-soon-banner p:first-child {
-  font-weight: 600;
-  font-size: 1.05em;
-  letter-spacing: 0.02em;
-  margin-bottom: 0.25em;
-}
-.coming-soon-banner p:last-child {
-  font-weight: 400;
-  font-size: 0.9em;
-  color: #78350f;
-  opacity: 0.85;
-}
 
 /* Media Queries */
 @media (max-width: 1135px) {
@@ -781,25 +669,6 @@ blockquote cite {
     margin: 0 auto;
     flex-direction: column;
     padding: 0 0 3em;
-  }
-  main .aside__content {
-    margin-top: 1.5em;
-    padding: 0.3rem 0.5rem;
-    border: 1px solid #dcdce3;
-    border-left: 3px solid #dcdce3;
-  }
-  .hero h2 {
-    font-size: 3.2em;
-  }
-  .work-with-me-main {
-    grid-template-columns: 1fr;
-    gap: 2em;
-    max-width: 600px;
-    padding: 3em 0;
-  }
-  .work-with-me-header {
-    position: static;
-    text-align: left;
   }
 }
 @media (max-width: 847px) {
@@ -820,64 +689,17 @@ blockquote cite {
   .hero h1 {
     font-size: 3.2em;
   }
-  .hero h2 {
-    font-size: 2.777em;
-  }
-
-  .content-title h2 {
-    padding: 0 0 1em 0;
-  }
-  .hero__subtitle {
-    margin: 0;
-  }
-  .showcase {
-    flex-direction: column;
-    gap: 1.5em;
-  }
   .showcase-list {
     grid-template-columns: 1fr;
   }
   .work-title h1 {
     font-size: 3.2em;
   }
-  .work-with-me-main {
-    grid-template-columns: 1fr;
-    gap: 1.5em;
-    margin: 5em auto 0 auto;
-    padding: 2em 0;
-    max-width: 100%;
-  }
-  .work-with-me-header {
-    position: static;
-    text-align: left;
-  }
-  .work-with-me-header h1 {
-    font-size: 1.2em;
-    padding: 0 0 0.15em;
-  }
-  .work-with-me-header h2 {
-    font-size: 0.9em;
-  }
-  .work-with-me-header p {
-    font-size: 15px;
-    line-height: 1.5em;
-  }
-  .work-with-me-content {
-    padding: 0;
-  }
-  .work-with-me-content section {
-    padding: 0 0 2em 0;
-  }
-  .work-with-me-content section h2 {
-    font-size: 1.25em;
-    margin: 1.5em 0 0.75em 0;
-  }
   h3.section-header {
     font-size: 0.9em;
     margin: 1.5em 0 0.5em 0;
   }
-  main > section h3,
-  .work-with-me-content section h3 {
+  main > section h3 {
     font-size: 1.1em;
     margin: 1.25em 0 0.5em 0;
   }
