@@ -10,100 +10,177 @@
     />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="assets/tfo-favicon.ico" type="image/x-icon" />
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 8em 0 3em;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+        margin-bottom: 4em;
+      }
+      .row-left {
+        flex-basis: 35%;
+      }
+      .row-right {
+        flex-basis: 50%;
+      }
+      .row-left h1 {
+        font-size: 1.777em;
+        font-weight: bold;
+        margin: 0;
+        padding: 0 0 0.25em;
+      }
+      .row-left h2 {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+      }
+      .row-right img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 1em;
+      }
+      .row-left h3 {
+        font-size: 1.333em;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+      }
+      .work-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .work-list li {
+        margin-bottom: 1.5em;
+      }
+      .work-list li:last-child {
+        margin-bottom: 0;
+      }
+      .work-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5em;
+        padding: 0.5em 0.75em;
+        background-color: #222;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #fff;
+        margin-bottom: 0.5em;
+        transition: background-color 0.2s ease;
+      }
+      .work-btn:hover {
+        background-color: #444;
+        color: #fff;
+      }
+      .work-btn img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+      }
+      .work-btn span {
+        font-family: "Heliotrope Caps", sans-serif;
+        text-transform: lowercase;
+        font-size: 1em;
+      }
+      .work-explainer {
+        font-size: 0.9em;
+        color: #555;
+        margin: 0;
+        padding: 0;
+      }
+      @media (max-width: 600px) {
+        .container {
+          padding: 6em 0 3em;
+        }
+        .row {
+          flex-direction: column;
+          gap: 1em;
+          margin-bottom: 3em;
+        }
+        .row-left,
+        .row-right {
+          flex-basis: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
       <nav>
-        <a href="index.html" class="active">Work</a>
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
       </nav>
     </header>
 
-    <div class="hero">
-      <h1>Thomas F. Officer</h1>
-      <h2>Design Engineer</h2>
-      <img
-        src="assets/illustration-thomas.png"
-        alt="Thomas F. Officer"
-        class="hero__image"
-      />
-      <p class="title">
-        <span class="title__first-letter">w</span
-        ><span class="title__intro">elcome i'm thomas,</span> a product designer
-        who works across marketing, design, and development.
-      </p>
-      <p>
-        I work like a cofounder—with high-agency and accountability. I'm
-        self-taught and proudly use every tool at my disposal, especially AI.
-      </p>
-      <p>
-        I've had a meandering career, working in startups since graduating law
-        school in 2012. I've cofounded 3x companies; one was acquired in 2021.
-      </p>
+    <div class="container">
+      <div class="row">
+        <div class="row-left">
+          <h1>Thomas F. Officer</h1>
+          <h2>Design Engineer</h2>
+        </div>
+        <div class="row-right">
+          <img
+            src="assets/illustration-thomas.png"
+            alt="Thomas F. Officer"
+          />
+          <p class="title">
+            <span class="title__first-letter">w</span
+            ><span class="title__intro">elcome i'm thomas,</span> a product designer
+            who works across marketing, design, and development.
+          </p>
+          <p>
+            I work like a cofounder—with high-agency and accountability. I'm
+            self-taught and proudly use every tool at my disposal, especially AI.
+          </p>
+          <p>
+            I've had a meandering career, working in startups since graduating law
+            school in 2012. I've cofounded 3x companies; one was acquired in 2021.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-left">
+          <h3>Work</h3>
+        </div>
+        <div class="row-right">
+          <ul class="work-list">
+            <li>
+              <a href="work/echo.html" class="work-btn">
+                <img src="assets/work/logo-echo.png" alt="Echo" />
+                <span>Echo</span>
+              </a>
+              <p class="work-explainer">
+                Getting my ass kicked building a B2C product for the first time
+              </p>
+            </li>
+            <li>
+              <a href="work/afterpattern.html" class="work-btn">
+                <img src="assets/work/logo-afterpattern.png" alt="Afterpattern" />
+                <span>Afterpattern</span>
+              </a>
+              <p class="work-explainer">App builder for lawyers</p>
+            </li>
+            <li>
+              <a href="work/blueridgelabs.html" class="work-btn">
+                <img src="assets/work/logo-brl.png" alt="Blue Ridge Labs" />
+                <span>Blue Ridge Labs</span>
+              </a>
+              <p class="work-explainer">Lawyer marketplace</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <div class="showcase-list">
-      <a href="work/echo.html" class="showcase-list-item">
-        <p class="showcase-list-item__title">
-          Getting my ass kicked building a B2C product for the first time
-        </p>
-        <div class="showcase-list-item__row">
-          <div class="showcase-list-item__row__leftCol">
-            <img
-              src="assets/work/logo-echo.png"
-              class="showcase-list-item__image-logo"
-              alt="Echo"
-            />
-            <div class="showcase-list-item__org-and-role">
-              <p class="showcase-list-item__org">Echo</p>
-              <p class="showcase-list-item__role">Cofounder</p>
-            </div>
-          </div>
-          <div class="showcase-list-item__row__rightCol">
-            <p class="showcase-list-item__time">2024-2025</p>
-          </div>
-        </div>
-      </a>
-
-      <a href="work/afterpattern.html" class="showcase-list-item">
-        <p class="showcase-list-item__title">App builder for lawyers</p>
-        <div class="showcase-list-item__row">
-          <div class="showcase-list-item__row__leftCol">
-            <img
-              src="assets/work/logo-afterpattern.png"
-              class="showcase-list-item__image-logo"
-              alt="Afterpattern"
-            />
-            <div class="showcase-list-item__org-and-role">
-              <p class="showcase-list-item__org">Afterpattern</p>
-              <p class="showcase-list-item__role">Cofounder</p>
-            </div>
-          </div>
-          <div class="showcase-list-item__row__rightCol">
-            <p class="showcase-list-item__time">2016-2021</p>
-          </div>
-        </div>
-      </a>
-      <a href="work/blueridgelabs.html" class="showcase-list-item">
-        <p class="showcase-list-item__title">Lawyer marketplace</p>
-        <div class="showcase-list-item__row">
-          <div class="showcase-list-item__row__leftCol">
-            <img
-              src="assets/work/logo-brl.png"
-              class="showcase-list-item__image-logo"
-              alt="Blue Ridge Labs"
-            />
-            <div class="showcase-list-item__org-and-role">
-              <p class="showcase-list-item__org">Blue Ridge Labs</p>
-              <p class="showcase-list-item__role">Design Fellow</p>
-            </div>
-          </div>
-          <div class="showcase-list-item__row__rightCol">
-            <p class="showcase-list-item__time">2016</p>
-          </div>
-        </div>
-      </a>
-    </div>
     <footer>
       <div class="footer__leftCol">
         <p>
