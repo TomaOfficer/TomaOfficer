@@ -157,44 +157,66 @@ p {
   margin: 0 auto;
   padding: 8em 0 3em;
 }
-.row {
+.section {
   display: flex;
   justify-content: space-between;
   gap: 2em;
   margin-bottom: 3em;
 }
-.row:last-child {
+.section:last-child {
   margin-bottom: 0;
 }
-.row-left {
+.section-label {
   flex-basis: 35%;
 }
-.row-right {
+.section-content {
   flex-basis: 50%;
 }
-.row-left h1 {
+.section-label h1 {
   font-size: 1.777em;
   font-weight: bold;
   margin: 0;
   padding: 0 0 0.25em;
 }
-.row-left h2 {
+.section-label h2 {
   font-style: italic;
   font-weight: 400;
   font-size: 1em;
   margin: 0;
   padding: 0;
 }
-.row-left h3 {
+.section-label h3 {
   font-size: 1.333em;
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
-.row-left img {
+
+/* Hero Section (Home) */
+.hero-identity {
+  flex-basis: 35%;
+}
+.hero-identity h1 {
+  font-size: 1.777em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 0.25em;
+  text-align: left;
+}
+.hero-identity h2 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+  padding: 0 0 1em;
+}
+.hero-identity img {
   width: 100%;
   height: auto;
   display: block;
+}
+.hero-bio {
+  flex-basis: 50%;
 }
 
 /* Work List (Home) */
@@ -773,13 +795,15 @@ blockquote cite {
   .container {
     padding: 6em 0 3em;
   }
-  .row {
+  .section {
     flex-direction: column;
     gap: 1em;
     margin-bottom: 2.5em;
   }
-  .row-left,
-  .row-right {
+  .section-label,
+  .section-content,
+  .hero-identity,
+  .hero-bio {
     flex-basis: 100%;
   }
 }
