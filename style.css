@@ -952,7 +952,7 @@ blockquote cite {
 }
 
 /* Media Queries */
-@media (max-width: 600px) {
+@media (max-width: 780px) {
   .container {
     padding: 6em 0 3em;
   }
@@ -966,6 +966,9 @@ blockquote cite {
   .hero-identity,
   .hero-bio {
     flex-basis: 100%;
+  }
+  .section-label {
+    text-align: left;
   }
 }
 @media (min-width: 848px) {
