@@ -329,7 +329,7 @@ p {
   font-size: 1.777em;
   font-weight: bold;
   margin: 0;
-  padding: 0 0 0.25em;
+  padding: 0;
 }
 .section-label h2 {
   font-style: italic;
@@ -867,6 +867,11 @@ blockquote cite {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;
   font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+.about_interviews li {
+  margin-bottom: 0.5em;
 }
 /* Lightbox styles */
 .lightbox {
