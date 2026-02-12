@@ -977,15 +977,16 @@ blockquote cite {
 }
 .resume-section {
   margin-bottom: 1.5em;
-  padding-top: 1em;
+  padding-top: 0.25em;
   border-top: 1px solid #333;
 }
 .resume-section-title {
-  font-family: "Concourse Caps", sans-serif;
+  font-family: "Concourse 6 Caps", "Concourse Caps", sans-serif;
   font-size: 0.85em;
+  text-transform: lowercase;
   font-weight: 400;
-  letter-spacing: 0.08em;
-  margin: 0 0 1.25em;
+  letter-spacing: 0.02em;
+  margin: 0 0 1em;
   padding: 0;
   color: #333;
 }
@@ -1005,16 +1006,17 @@ blockquote cite {
   flex: 1;
 }
 .resume-company {
-  font-family: "Heliotrope", sans-serif;
-  font-size: 1em;
+  font-family: "Heliotrope 6", sans-serif;
+  font-size: 0.9em;
   font-weight: 400;
+  letter-spacing: 0.02em;
   margin: 0;
   padding: 0;
   line-height: 1.3;
 }
 .resume-role {
   font-family: "Heliotrope", sans-serif;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-style: italic;
   font-weight: 300;
   margin: 0;
@@ -1024,7 +1026,7 @@ blockquote cite {
 }
 .resume-date {
   font-family: "Heliotrope", sans-serif;
-  font-size: 0.95em;
+  font-size: 0.8em;
   font-weight: 400;
   color: #333;
   white-space: nowrap;
