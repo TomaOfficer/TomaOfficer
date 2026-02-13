@@ -953,14 +953,13 @@ blockquote cite {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.25em;
+  gap: 0.5em;
 }
 .resume-contact {
-  font-family: "Concourse", sans-serif;
+  font-family: "Concourse 4 caps", sans-serif;
   font-size: 0.7em;
   font-weight: normal;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
   line-height: 1.4em;
   color: #333;
   display: flex;
@@ -977,12 +976,12 @@ blockquote cite {
 }
 .resume-section {
   margin-bottom: 1.5em;
-  padding-top: 0.25em;
+  padding-top: 1px;
   border-top: 1px solid #333;
 }
 .resume-section-title {
   font-family: "Concourse 6 Caps", "Concourse Caps", sans-serif;
-  font-size: 0.85em;
+  font-size: 16px;
   text-transform: lowercase;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -1026,8 +1025,8 @@ blockquote cite {
   line-height: 1.3;
 }
 .resume-date {
-  font-family: "Heliotrope", sans-serif;
-  font-size: 0.8em;
+  font-family: "concourse 4 caps", sans-serif;
+  font-size: 0.7em;
   font-weight: 400;
   color: #333;
   white-space: nowrap;
@@ -1041,9 +1040,11 @@ blockquote cite {
   font-size: 0.9em;
   font-weight: 300;
   line-height: 1.5;
+  max-width: 85%;
 }
 .resume-bullets li {
   margin-bottom: 0.15em;
+  line-height: 1.4em;
 }
 .resume-bullets li:last-child {
   margin-bottom: 0;
