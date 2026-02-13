@@ -1163,4 +1163,7 @@ blockquote cite {
   main {
     padding-top: 2em;
   }
+  .resume {
+    padding: 4em 0;
+  }
 }
