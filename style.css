@@ -930,7 +930,7 @@ blockquote cite {
   background-color: #fff;
 }
 .resume {
-  max-width: 680px;
+  max-width: 620px;
   margin: 0 auto;
   padding: 4em 20px;
 }
@@ -976,7 +976,6 @@ blockquote cite {
 }
 .resume-section {
   margin-bottom: 1.5em;
-  padding-top: 1px;
   border-top: 1px solid #333;
 }
 .resume-section-title {
@@ -990,7 +989,7 @@ blockquote cite {
   color: #333;
 }
 .resume-item {
-  margin-bottom: 1.25em;
+  margin-bottom: 1em;
 }
 .resume-item:last-child {
   margin-bottom: 0;
@@ -1037,13 +1036,13 @@ blockquote cite {
   margin: 0;
   padding: 0 0 0 1.25em;
   font-family: "Heliotrope", sans-serif;
-  font-size: 0.9em;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
   max-width: 85%;
 }
 .resume-bullets li {
-  margin-bottom: 0.15em;
+  margin-bottom: 0.5em;
   line-height: 1.4em;
 }
 .resume-bullets li:last-child {
