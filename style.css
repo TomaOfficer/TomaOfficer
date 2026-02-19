@@ -488,6 +488,25 @@ main .content {
   vertical-align: baseline;
 }
 
+/* Site Header (non-index pages) */
+.site-header {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1.5em 0 0;
+}
+.site-header a {
+  font-family: "Heliotrope Caps", sans-serif;
+  font-size: 0.9em;
+  text-transform: lowercase;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+.site-header a:hover {
+  text-decoration: underline;
+  text-decoration-color: #d3a3a3;
+  text-underline-offset: 3px;
+}
+
 /* Footer */
 footer {
   display: flex;
