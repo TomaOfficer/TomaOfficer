@@ -434,7 +434,7 @@ main {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2.5em 0;
+  padding: 1.5em 0;
   justify-content: space-between;
 }
 main p:last-child {
@@ -760,7 +760,7 @@ main > section ul li strong {
   font-weight: 500;
   letter-spacing: 0.025em;
   color: #6b6d7f;
-  margin: 0.5em 0 2em 0;
+  margin: 0.5em 0 1em 0;
   padding: 0;
 }
 blockquote {
@@ -788,7 +788,7 @@ blockquote cite {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5em;
-  margin: 2em 0;
+  margin: 1em 0 0 0;
 }
 .portfolio-grid > div {
   display: flex;
@@ -1146,8 +1146,8 @@ blockquote cite {
 }
 @media (min-width: 848px) {
   main:nth-of-type(1) {
-    padding-top: 3em;
-    padding-bottom: 0.5em;
+    padding-top: 2em;
+    padding-bottom: 0;
   }
 }
 @media (max-width: 1135px) {
@@ -1156,7 +1156,7 @@ blockquote cite {
     max-width: 620px;
     margin: 0 auto;
     flex-direction: column;
-    padding-bottom: 2em;
+    padding: 1em 0;
   }
 }
 @media (max-width: 847px) {
@@ -1182,7 +1182,7 @@ blockquote cite {
     margin: 1.25em 0 0.5em 0;
   }
   main {
-    padding-top: 1.5em;
+    padding-top: 1em;
   }
   .resume {
     padding: 4em 0;
