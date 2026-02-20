@@ -260,14 +260,88 @@
   font-display: swap;
 }
 
+/* ============================================
+   Theme Variables
+   ============================================ */
+:root {
+  /* Backgrounds */
+  --bg-primary: #faf9f5;
+  --bg-secondary: #fff;
+  --bg-card: #222;
+
+  /* Text */
+  --text-primary: #333;
+  --text-secondary: #667;
+  --text-muted: #888;
+  --text-subtle: #6b6d7f;
+  --text-on-card: #fff;
+
+  /* Links - Brand Maroon */
+  --link-color: #880808;
+  --link-hover: #b13434;
+  --link-underline: #d3a3a3;
+  --link-underline-hover: #dfbdbd;
+
+  /* Borders */
+  --border-primary: #dcdce3;
+  --border-secondary: #c2c2cc;
+  --border-muted: #bac1c1;
+  --border-rule: #999;
+
+  /* Shadows */
+  --shadow-soft: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.15);
+  --shadow-strong: rgba(0, 0, 0, 0.5);
+
+  /* Lightbox */
+  --lightbox-overlay: rgba(0, 0, 0, 0.75);
+  --lightbox-text: #fff;
+}
+
+/* Dark Theme */
+html.dark {
+  /* Backgrounds - Rich dark with subtle warmth */
+  --bg-primary: #1a1a1f;
+  --bg-secondary: #242429;
+  --bg-card: #2d2d35;
+
+  /* Text - Softer whites to reduce eye strain */
+  --text-primary: #e8e6e3;
+  --text-secondary: #a8a6a3;
+  --text-muted: #888886;
+  --text-subtle: #7a7a78;
+  --text-on-card: #e8e6e3;
+
+  /* Links - Warmer red for dark backgrounds */
+  --link-color: #d45454;
+  --link-hover: #e87878;
+  --link-underline: #8a4444;
+  --link-underline-hover: #a85858;
+
+  /* Borders - Subtle contrast */
+  --border-primary: #3a3a42;
+  --border-secondary: #4a4a52;
+  --border-muted: #333338;
+  --border-rule: #555;
+
+  /* Shadows - Deeper for dark mode */
+  --shadow-soft: rgba(0, 0, 0, 0.3);
+  --shadow-medium: rgba(0, 0, 0, 0.4);
+  --shadow-strong: rgba(0, 0, 0, 0.7);
+
+  /* Lightbox */
+  --lightbox-overlay: rgba(0, 0, 0, 0.85);
+  --lightbox-text: #e8e6e3;
+}
+
 /* Base styles */
 body {
   padding: 0 20px;
   font-family: "Heliotrope", sans-serif;
   line-height: 1.5;
   font-size: 21px;
-  color: #333;
-  background-color: #faf9f5;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
 }
 h1 {
   padding: 0 0 0.25em;
@@ -289,15 +363,15 @@ h3 {
   margin: 0;
 }
 a {
-  color: #880808;
+  color: var(--link-color);
   transition: color 0.2s ease;
-  text-decoration-color: #d3a3a3;
+  text-decoration-color: var(--link-underline);
   text-underline-offset: 3px;
   transition: text-decoration-color 0.2s ease;
 }
 a:hover {
-  color: #b13434;
-  text-decoration-color: #dfbdbd;
+  color: var(--link-hover);
+  text-decoration-color: var(--link-underline-hover);
 }
 p {
   padding: 0 0 1em;
@@ -398,7 +472,7 @@ p {
 }
 .work-explainer {
   font-size: 0.75em;
-  color: #888;
+  color: var(--text-muted);
   margin: 0;
   padding: 0;
 }
@@ -447,7 +521,7 @@ main .aside {
   flex-basis: 20%;
 }
 main .aside__subtle {
-  color: #667;
+  color: var(--text-secondary);
   font-size: 0.8em;
   font-weight: 300;
   line-height: 1.3;
@@ -455,12 +529,12 @@ main .aside__subtle {
   margin: 0;
 }
 main .aside a {
-  color: #667;
-  text-decoration-color: #dcdce3;
+  color: var(--text-secondary);
+  text-decoration-color: var(--border-primary);
 }
 main .aside a:hover {
-  color: #880808;
-  text-decoration-color: #dfbdbd;
+  color: var(--link-color);
+  text-decoration-color: var(--link-underline-hover);
 }
 main .content {
   flex-basis: 52%;
@@ -499,10 +573,10 @@ main .content {
   text-transform: lowercase;
   letter-spacing: -0.02em;
   text-decoration: none;
-  color: #667;
+  color: var(--text-secondary);
 }
 .site-header a:hover {
-  color: #880808;
+  color: var(--link-color);
 }
 
 /* Footer */
@@ -513,7 +587,7 @@ footer {
   max-width: 680px;
   padding: 1em 0 4em 0;
   margin: 3em auto 0;
-  border-top: 1px solid #dcdce3;
+  border-top: 1px solid var(--border-primary);
   font-size: 0.8em;
 }
 footer p {
@@ -543,14 +617,14 @@ footer ul li {
   font-size: 3.2em;
   line-height: 1;
   letter-spacing: 0.02em;
-  color: #222;
+  color: var(--text-primary);
   padding: 0;
   margin: 0;
 }
 .work-title__rule {
   width: 3em;
   height: 1px;
-  background-color: #999;
+  background-color: var(--border-rule);
   margin: 0.8em auto;
   display: block;
 }
@@ -560,20 +634,20 @@ footer ul li {
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: lowercase;
-  color: #555;
+  color: var(--text-secondary);
   margin: 0;
   padding: 0;
   line-height: 1.4;
 }
 .work-title__meta span {
-  color: #888;
+  color: var(--text-muted);
 }
 .work-title__description {
   font-family: "Heliotrope", sans-serif;
   font-style: italic;
   font-weight: 300;
   font-size: 1.1em;
-  color: #333;
+  color: var(--text-primary);
   margin: 0.6em 0 0;
   padding: 0;
   line-height: 1.3;
@@ -594,7 +668,7 @@ footer ul li {
   justify-content: space-between;
   min-height: 200px;
   padding: 0.75em;
-  background-color: #222;
+  background-color: var(--bg-card);
   border-radius: 2px;
 }
 .showcase-list-item__row {
@@ -604,7 +678,7 @@ footer ul li {
   align-items: end;
   padding: 0;
   margin-top: auto;
-  color: #333;
+  color: var(--text-primary);
 }
 .showcase-list-item__row__leftCol {
   display: flex;
@@ -616,7 +690,7 @@ footer ul li {
   font-family: "Heliotrope Caps", sans-serif;
   text-transform: lowercase;
   font-size: 1.333em;
-  color: #fff;
+  color: var(--text-on-card);
   line-height: 1.2;
   padding: 0;
   margin: 0;
@@ -625,7 +699,7 @@ footer ul li {
   display: flex;
   flex-direction: column;
   gap: 0.17em;
-  color: #fff;
+  color: var(--text-on-card);
 }
 .showcase-list-item__org {
   font-family: "Heliotrope Caps", sans-serif;
@@ -635,7 +709,7 @@ footer ul li {
   padding: 0;
   font-weight: bolder;
   margin: 0;
-  color: #fff;
+  color: var(--text-on-card);
 }
 .showcase-list-item__role {
   font-style: italic;
@@ -643,7 +717,7 @@ footer ul li {
   padding: 0;
   line-height: 1;
   margin: 0;
-  color: #fff;
+  color: var(--text-on-card);
 }
 
 .showcase-list-item__time {
@@ -651,7 +725,7 @@ footer ul li {
   font-size: 0.8em;
   padding: 0;
   margin: 0;
-  color: #fff;
+  color: var(--text-on-card);
 }
 .showcase-list-item img {
   width: 50px;
@@ -663,7 +737,7 @@ main > section h3 {
   font-size: 1.2em;
   font-weight: 500;
   margin: 1.5em 0 0.5em 0;
-  color: #12141f;
+  color: var(--text-primary);
 }
 main > section ul {
   list-style: none;
@@ -672,7 +746,7 @@ main > section ul {
 }
 main > section ul li {
   line-height: 1.7;
-  color: #12141f;
+  color: var(--text-primary);
   padding-left: 1.5em;
   position: relative;
   margin-bottom: 0.5em;
@@ -681,12 +755,12 @@ main > section ul li::before {
   content: "→";
   position: absolute;
   left: 0;
-  color: #8a8b9f;
+  color: var(--text-subtle);
   font-weight: 300;
 }
 main > section ul li strong {
   font-weight: 500;
-  color: #12141f;
+  color: var(--text-primary);
 }
 .service__description {
   font-weight: 400;
@@ -695,19 +769,19 @@ main > section ul li strong {
     Cantarell, sans-serif;
   font-size: 15px;
   line-height: 1.6em;
-  color: #6b6d7f;
+  color: var(--text-subtle);
   margin: 0;
   padding: 0;
 }
 .service__label {
   font-weight: 500;
-  color: #12141f;
+  color: var(--text-primary);
   margin: 0;
   padding: 0;
 }
 .service__divider {
   height: 1px;
-  background-color: #c2c2cc;
+  background-color: var(--border-secondary);
   margin: 2em 4em;
 }
 
@@ -718,8 +792,8 @@ main > section ul li strong {
   display: block;
   margin: 1.5em 0 0.25em 0;
   border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--shadow-soft);
+  box-shadow: 0 2px 8px var(--shadow-soft);
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease,
@@ -728,8 +802,8 @@ main > section ul li strong {
 }
 .portfolio-image:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px var(--shadow-medium);
+  border-color: var(--border-secondary);
 }
 .portfolio-caption {
   font-family:
@@ -739,20 +813,20 @@ main > section ul li strong {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.025em;
-  color: #6b6d7f;
+  color: var(--text-subtle);
   margin: 0.5em 0 1em 0;
   padding: 0;
 }
 blockquote {
   margin: 1em 0 1.5em;
   padding: 0 0 0 1.25em;
-  border-left: 2px solid #c2c2cc;
+  border-left: 2px solid var(--border-secondary);
   background-color: transparent;
 }
 blockquote p {
   font-size: 1em;
   font-style: italic;
-  color: #333;
+  color: var(--text-primary);
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -766,7 +840,7 @@ blockquote cite {
   font-size: 0.7em;
   text-transform: lowercase;
   letter-spacing: -0.01em;
-  color: #888;
+  color: var(--text-muted);
   font-style: normal;
   margin-top: 0.75em;
 }
@@ -802,7 +876,7 @@ blockquote cite {
   justify-content: space-between;
   align-items: flex-start;
   padding: 0.75em 0;
-  border-bottom: 1px solid #bac1c1;
+  border-bottom: 1px solid var(--border-muted);
 }
 .minimal-list li:last-child {
   border-bottom: none;
@@ -824,12 +898,12 @@ blockquote cite {
 }
 .minimal-list__employer {
   font-size: 0.85em;
-  color: #707070;
+  color: var(--text-muted);
   font-weight: 400;
 }
 .minimal-list time {
   font-size: 0.85em;
-  color: #707070;
+  color: var(--text-muted);
 }
 .about-header {
   margin: 0 0 2em 0;
@@ -873,7 +947,7 @@ blockquote cite {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: var(--lightbox-overlay);
   cursor: pointer;
 }
 .lightbox-content {
@@ -892,7 +966,7 @@ blockquote cite {
   height: auto;
   object-fit: contain;
   border-radius: 4px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 20px var(--shadow-strong);
 }
 .lightbox-caption {
   font-family:
@@ -903,7 +977,7 @@ blockquote cite {
   font-weight: 500;
   letter-spacing: 0.025em;
   margin-top: 1em;
-  color: #ffffff;
+  color: var(--lightbox-text);
   font-size: 15px;
   text-align: center;
   max-width: 600px;
@@ -915,7 +989,7 @@ blockquote cite {
   right: 0;
   background: none;
   border: none;
-  color: #ffffff;
+  color: var(--lightbox-text);
   font-size: 2.5em;
   line-height: 1;
   cursor: pointer;
@@ -934,7 +1008,7 @@ blockquote cite {
 
 /* Resume Page */
 .resume-page {
-  background-color: #fff;
+  background-color: var(--bg-secondary);
 }
 .resume {
   max-width: 620px;
@@ -968,7 +1042,7 @@ blockquote cite {
   font-weight: normal;
   text-transform: uppercase;
   line-height: 1.4em;
-  color: #333;
+  color: var(--text-primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -978,12 +1052,12 @@ blockquote cite {
   display: inline-block;
   width: 4px;
   height: 4px;
-  background-color: #333;
+  background-color: var(--text-primary);
   border-radius: 50%;
 }
 .resume-section {
   margin-bottom: 1.5em;
-  border-top: 1px solid #333;
+  border-top: 1px solid var(--text-primary);
 }
 .resume-section-title {
   font-family: "Concourse 6 Caps", "Concourse Caps", sans-serif;
@@ -993,7 +1067,7 @@ blockquote cite {
   letter-spacing: 0.02em;
   margin: 0 0 1em;
   padding: 0;
-  color: #333;
+  color: var(--text-primary);
 }
 .resume-item {
   margin-bottom: 1em;
@@ -1027,14 +1101,14 @@ blockquote cite {
   font-weight: 300;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: var(--text-primary);
   line-height: 1.3;
 }
 .resume-date {
   font-family: "concourse 4 caps", sans-serif;
   font-size: 0.7em;
   font-weight: 400;
-  color: #333;
+  color: var(--text-primary);
   white-space: nowrap;
   padding-left: 1em;
 }
@@ -1172,5 +1246,114 @@ blockquote cite {
   }
   .resume {
     padding: 4em 0;
+  }
+}
+
+/* ============================================
+   Theme Toggle Button
+   ============================================ */
+.theme-toggle {
+  position: fixed;
+  z-index: 9999;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px var(--shadow-soft);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px var(--shadow-medium);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.theme-toggle svg {
+  color: var(--text-primary);
+  transition: opacity 0.2s ease, transform 0.3s ease;
+}
+
+/* Icon visibility based on theme */
+.theme-toggle__sun {
+  display: block;
+}
+.theme-toggle__moon {
+  display: none;
+  position: absolute;
+}
+
+html.dark .theme-toggle__sun {
+  display: none;
+}
+html.dark .theme-toggle__moon {
+  display: block;
+}
+
+/* Desktop: Top-right positioning */
+@media (min-width: 769px) {
+  .theme-toggle {
+    top: 2rem;
+    right: 2rem;
+  }
+}
+
+/* Mobile: Fixed bottom-right toolbar */
+@media (max-width: 768px) {
+  .theme-toggle {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 56px;
+    height: 56px;
+  }
+
+  .theme-toggle svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* ============================================
+   View Transitions API Support
+   ============================================ */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+/* Fallback transition for browsers without View Transitions API */
+@supports not (view-transition-name: none) {
+  html {
+    transition: background-color 0.3s ease;
+  }
+
+  body,
+  a,
+  .theme-toggle {
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      border-color 0.3s ease;
   }
 }
