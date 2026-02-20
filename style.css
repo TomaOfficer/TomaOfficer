@@ -381,7 +381,7 @@ p {
 .container {
   max-width: 980px;
   margin: 0 auto;
-  padding: 8em 0 3em;
+  padding: 8em 0 1em;
 }
 .section {
   display: flex;
@@ -420,22 +420,24 @@ p {
 }
 
 /* Hero Section (Home) */
-.hero-identity {
-  flex-basis: 30%;
-  position: relative;
-}
-.hero-identity img {
-  width: 100%;
-  height: auto;
+.hero-section {
   display: block;
-  margin-top: -1.333em;
+  margin-bottom: 3em;
 }
 .hero-bio {
-  flex-basis: 65%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+.hero-portrait {
+  float: right;
+  width: 220px;
+  height: auto;
+  margin: 0 0 0.75em 1.5em;
+  shape-outside: margin-box;
 }
 .hero-title {
   text-align: center;
-  padding: 2em 0 3em;
+  padding: 1em 0 1em;
 }
 .hero-title h1 {
   font-size: 2.777em;
@@ -449,6 +451,84 @@ p {
 }
 .hero-title {
   font-size: 0.8em;
+}
+
+/* Portfolio Cards (Home) */
+.portfolio-section-label {
+  text-align: center;
+  padding: 0 0 1em;
+  margin: 0;
+}
+.portfolio-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.portfolio-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75em;
+}
+.portfolio-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1em 0;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+.portfolio-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-soft);
+  border-color: var(--border-muted);
+}
+.portfolio-card__logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  box-shadow: none;
+  filter: none;
+}
+.portfolio-card__title {
+  font-family: "Concourse 6", sans-serif;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+}
+.portfolio-card__subtitle {
+  font-family: "Heliotrope 4", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  text-align: center;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 780px) {
+  .portfolio-cards {
+    grid-template-columns: 1fr;
+    gap: 1em;
+    max-width: 300px;
+  }
+  .portfolio-card {
+    padding: 1.5em;
+  }
 }
 
 /* Work List (Home) */
@@ -1187,7 +1267,7 @@ blockquote cite {
 /* Media Queries */
 @media (max-width: 780px) {
   .container {
-    padding: 6em 0 3em;
+    padding: 6em 0 0;
   }
   .section {
     flex-direction: column;
@@ -1196,9 +1276,12 @@ blockquote cite {
   }
   .section-label,
   .section-content,
-  .hero-identity,
   .hero-bio {
     flex-basis: 100%;
+  }
+  .hero-portrait {
+    width: 160px;
+    margin: 0 0 0.5em 1em;
   }
   .section-label {
     text-align: left;
@@ -1283,7 +1366,9 @@ blockquote cite {
 
 .theme-toggle svg {
   color: var(--text-primary);
-  transition: opacity 0.2s ease, transform 0.3s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.3s ease;
 }
 
 /* Icon visibility based on theme */
