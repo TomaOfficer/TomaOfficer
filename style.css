@@ -420,22 +420,24 @@ p {
 }
 
 /* Hero Section (Home) */
-.hero-identity {
-  flex-basis: 30%;
-  position: relative;
-}
-.hero-identity img {
-  width: 100%;
-  height: auto;
+.hero-section {
   display: block;
-  margin-top: -1.333em;
+  margin-bottom: 3em;
 }
 .hero-bio {
-  flex-basis: 65%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+.hero-portrait {
+  float: right;
+  width: 220px;
+  height: auto;
+  margin: 0 0 0.75em 1.5em;
+  shape-outside: margin-box;
 }
 .hero-title {
   text-align: center;
-  padding: 2em 0 3em;
+  padding: 1em 0 1em;
 }
 .hero-title h1 {
   font-size: 2.777em;
@@ -1196,9 +1198,12 @@ blockquote cite {
   }
   .section-label,
   .section-content,
-  .hero-identity,
   .hero-bio {
     flex-basis: 100%;
+  }
+  .hero-portrait {
+    width: 160px;
+    margin: 0 0 0.5em 1em;
   }
   .section-label {
     text-align: left;
@@ -1283,7 +1288,9 @@ blockquote cite {
 
 .theme-toggle svg {
   color: var(--text-primary);
-  transition: opacity 0.2s ease, transform 0.3s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.3s ease;
 }
 
 /* Icon visibility based on theme */
