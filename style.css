@@ -422,7 +422,9 @@ p {
 /* Hero Section (Home) */
 .hero-section {
   display: block;
-  margin-bottom: 3em;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 8em 0 1em;
 }
 .hero-bio {
   max-width: 540px;
@@ -460,78 +462,80 @@ p {
   margin: 0;
 }
 .portfolio-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-.portfolio-card-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.75em;
+  gap: 0;
+  max-width: 540px;
+  margin: 0 auto;
 }
 .portfolio-card {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 1em 0;
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-primary);
-  border-radius: 8px;
+  gap: 0.5em;
+  padding: 0.75em 0;
+  border-bottom: 1px solid var(--border-primary);
   text-decoration: none;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+.portfolio-card:last-child {
+  border-bottom: none;
 }
 .portfolio-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px var(--shadow-soft);
-  border-color: var(--border-muted);
+  opacity: 0.7;
+}
+.portfolio-card__logo-box {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  background-color: #fff;
+  border: 1px solid var(--border-primary);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html.dark .portfolio-card__logo-box {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .portfolio-card__logo {
-  height: 60px;
+  height: 32px;
   width: auto;
   object-fit: contain;
   box-shadow: none;
   filter: none;
 }
 .portfolio-card__title {
-  font-family: "Concourse 6", sans-serif;
-  font-size: 17px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-primary);
+  font-family: "Concourse 6 Caps", sans-serif;
+  font-size: 21px;
+  text-transform: lowercase;
+  letter-spacing: -0.02em;
+
   margin: 0;
   padding: 0;
 }
 .portfolio-card__subtitle {
   font-family: "Heliotrope 4", sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-style: italic;
   letter-spacing: 0.02em;
-  text-align: center;
+  color: var(--text-primary);
   font-weight: 400;
-  color: var(--text-muted);
   margin: 0;
   padding: 0;
-}
-@media (max-width: 780px) {
-  .portfolio-cards {
-    grid-template-columns: 1fr;
-    gap: 1em;
-    max-width: 300px;
-  }
-  .portfolio-card {
-    padding: 1.5em;
-  }
+  margin-left: auto;
 }
 
 /* Work List (Home) */
+.experience-section {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 2em 0 0;
+}
 .work-list {
   list-style: none;
   margin: 0;
@@ -664,9 +668,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 680px;
+  max-width: 540px;
   padding: 1em 0 4em 0;
-  margin: 3em auto 0;
+  margin: 6em auto 0;
   border-top: 1px solid var(--border-primary);
   font-size: 0.8em;
 }
@@ -682,6 +686,13 @@ footer ul {
 footer ul li {
   display: inline-block;
   margin: 0 0.5em;
+}
+
+@media (max-width: 540px) {
+  footer {
+    flex-direction: column;
+    gap: 0.75em;
+  }
 }
 
 /* Work Projects - Case Study Headers */
@@ -956,7 +967,7 @@ blockquote cite {
   justify-content: space-between;
   align-items: flex-start;
   padding: 0.75em 0;
-  border-bottom: 1px solid var(--border-muted);
+  border-bottom: 1px solid var(--border-primary);
 }
 .minimal-list li:last-child {
   border-bottom: none;
@@ -989,16 +1000,38 @@ blockquote cite {
   margin: 0 0 2em 0;
   padding: 0;
 }
+.interviews-section {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 2em 0 0;
+}
 .about_interviews {
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell, sans-serif;
   font-size: 15px;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 .about_interviews li {
-  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.75em 0;
+  border-bottom: 1px solid var(--border-primary);
+}
+.about_interviews li:last-child {
+  border-bottom: none;
+}
+.about_interviews li a {
+  font-weight: 500;
+}
+.about_interviews li span {
+  font-size: 0.85em;
+  color: var(--text-muted);
+  white-space: nowrap;
+  padding-left: 1em;
 }
 /* Lightbox styles */
 .lightbox {
@@ -1088,7 +1121,7 @@ blockquote cite {
 
 /* Resume Page */
 .resume-page {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-primary);
 }
 .resume {
   max-width: 620px;
@@ -1267,6 +1300,9 @@ blockquote cite {
 /* Media Queries */
 @media (max-width: 780px) {
   .container {
+    padding: 6em 0 0;
+  }
+  .hero-section {
     padding: 6em 0 0;
   }
   .section {
