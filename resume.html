@@ -61,6 +61,28 @@
       </svg>
     </button>
 
+    <button
+      id="download-resume"
+      class="download-button"
+      aria-label="Download resume"
+      title="Download resume"
+    >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+        <polyline points="7 10 12 15 17 10" />
+        <line x1="12" y1="15" x2="12" y2="3" />
+      </svg>
+    </button>
+
     <a
       href="index.html"
       class="home-button"
@@ -280,5 +302,73 @@
     </footer>
 
     <script src="theme.js"></script>
+    <script>
+      document.getElementById('download-resume').addEventListener('click', function() {
+        const markdown = `# Thomas F. Officer
+
+Lee, New Hampshire
+thomas.officer@gmail.com | (603) 667-5760
+
+## Experience
+
+### Echo
+**Cofounder, Designer** | 2023—2025
+
+- Designed and shipped an AI-powered notebook for writers across web, iOS, Apple Watch, macOS, and MCP.
+- Conducted user research and implemented an AI-driven process for synthesizing that research into product decisions.
+- Used AI to move directly from product concept to production-ready pull requests, skipping traditional Figma prototypes.
+
+### NetDocuments
+**Principal Product Designer** | 2021—2023
+
+- Led the integration of Afterpattern in NetDocuments, a mature, legacy codebase.
+- Participated in early internal discussions around AI integration following the release of ChatGPT.
+- Helped launch the company's first shared UI component library.
+
+### Afterpattern
+**Cofounder, Designer** | 2016—2021
+
+- Led product design from initial concept through acquisition by NetDocuments.
+- Led front-end development across web and the Microsoft Word add-in.
+- Led user research and contributed to product strategy and roadmap as a cofounder.
+
+### Blue Ridge Labs @ Robin Hood
+**Design Fellow** | 2016
+
+- Led user research studying how low-income New Yorkers navigate legal problems.
+- Cofounded Afterpattern based on insights uncovered during the fellowship.
+
+## Education & Certificates
+
+### How to Build an AI Chatbot
+**Every.to** | 2023
+
+### VR & AR Design
+**MIT xPRO** | 2023
+
+### UX Apprenticeship
+**Thinkful** | 2016
+
+### Vermont Law School
+**Master of Laws (LLM), Magna Cum Laude** | 2012
+
+### University of Edinburgh School of Law
+**Bachelor of Law (LLB)** | 2011
+
+### Goucher College
+**BA, Philosophy & Religious Studies** | 2009
+`;
+
+        const blob = new Blob([markdown], { type: 'text/markdown' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'thomas-f-officer-resume.md';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      });
+    </script>
   </body>
 </html>
