@@ -456,10 +456,28 @@ p {
 }
 
 /* Portfolio Cards (Home) */
-.portfolio-section-label {
+.portfolio-section {
+  padding: 2em 0 0;
+}
+.portfolio-section-label h3 {
+  font-family: "Concourse 6 Caps", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
   text-align: center;
   padding: 0 0 1em;
   margin: 0;
+}
+.portfolio-section-label h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  margin: 0.6em auto 0;
+  border-top: 1px solid currentColor;
+  padding-top: 2px;
+  border-bottom: 1px solid currentColor;
+  height: 0;
 }
 .portfolio-cards {
   display: flex;
@@ -471,7 +489,7 @@ p {
 .portfolio-card {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.75em;
   padding: 0.75em 0;
   border-bottom: 1px solid var(--border-primary);
   text-decoration: none;
@@ -503,18 +521,16 @@ html.dark .portfolio-card__logo-box {
   justify-content: center;
 }
 .portfolio-card__logo {
-  height: 32px;
+  height: 40px;
   width: auto;
   object-fit: contain;
   box-shadow: none;
   filter: none;
 }
 .portfolio-card__title {
-  font-family: "Concourse 6 Caps", sans-serif;
-  font-size: 21px;
-  text-transform: lowercase;
-  letter-spacing: -0.02em;
-
+  font-family: "Heliotrope 6", sans-serif;
+  font-size: 24px;
+  color: var(--text-primary);
   margin: 0;
   padding: 0;
 }
@@ -534,7 +550,7 @@ html.dark .portfolio-card__logo-box {
 .experience-section {
   max-width: 540px;
   margin: 0 auto;
-  padding: 2em 0 0;
+  padding: 4em 0 2em;
 }
 .work-list {
   list-style: none;
@@ -621,7 +637,7 @@ main .aside a:hover {
   text-decoration-color: var(--link-underline-hover);
 }
 main .content {
-  flex-basis: 52%;
+  flex-basis: 58%;
 }
 .title {
   font-weight: 400;
@@ -695,7 +711,7 @@ footer ul li {
   }
 }
 
-/* Work Projects - Case Study Headers */
+/* Work Title - Legacy Case Study Headers */
 .work-title {
   padding: 0;
   margin: 0;
@@ -742,6 +758,44 @@ footer ul li {
   margin: 0.6em 0 0;
   padding: 0;
   line-height: 1.3;
+}
+
+/* Tile Section - Case Study Title */
+.title-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 6em 0 2em;
+}
+.title-section__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.title-section h1 {
+  font-family: "Heliotrope 6", sans-serif;
+  font-weight: 300;
+  font-size: 2.2em;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  padding: 0 0 0.25em;
+  margin: 0;
+}
+
+.title-section__description {
+  font-family: "Heliotrope", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.1em;
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  max-width: 400px;
+}
+@media (max-width: 847px) {
+  .title-section {
+    padding: 4em 0 1.5em;
+  }
 }
 
 .showcase-list {
@@ -876,6 +930,129 @@ main > section ul li strong {
   margin: 2em 4em;
 }
 
+/* Case Study Hero */
+.case-study-hero {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5em 0;
+}
+.case-study-hero__wrapper {
+  display: flex;
+  gap: 4em;
+}
+.case-study-hero__colLeft {
+  flex-basis: 35%;
+}
+.case-study-hero__colRight {
+  flex-basis: 65%;
+}
+.case-study-hero h3 {
+  font-family: "Concourse 4 Caps", sans-serif;
+  font-size: 1em;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0 0 0.25em;
+}
+.case-study-hero p {
+  margin: 0;
+  padding: 0 0 1.25em;
+}
+.case-study-hero__colLeft p:last-child,
+.case-study-hero__colRight p:last-child {
+  padding-bottom: 0;
+}
+.case-study-hero__meta {
+  font-family: "Heliotrope 4", sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 847px) {
+  .case-study-hero {
+    padding: 1em 0;
+  }
+  .case-study-hero__wrapper {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .case-study-hero__colLeft,
+  .case-study-hero__colRight {
+    flex-basis: 100%;
+  }
+}
+
+/* Case Study Highlight */
+.case-study-highlight {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5em 20px 0.25em;
+  text-align: center;
+}
+.case-study-highlight p {
+  font-family: "Heliotrope", sans-serif;
+  font-size: 1.777em;
+  line-height: 1.2;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 847px) {
+  .case-study-highlight p {
+    font-size: 1.333em;
+  }
+}
+
+/* Goals */
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+  margin-top: 0.5em;
+}
+.goal-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+}
+.goal-item__number {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Heliotrope", sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-top: 0.1em;
+}
+.goal-item__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.goal-item__text strong {
+  font-size: 1em;
+  color: var(--text-primary);
+}
+.goal-item__text span {
+  font-size: 1em;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
 /* Case Studies */
 .portfolio-image {
   width: 100%;
@@ -1003,7 +1180,7 @@ blockquote cite {
 .interviews-section {
   max-width: 540px;
   margin: 0 auto;
-  padding: 2em 0 0;
+  padding: 2em 0;
 }
 .about_interviews {
   font-family:
@@ -1349,7 +1526,8 @@ blockquote cite {
   .showcase-list {
     grid-template-columns: 1fr;
   }
-  .work-title h1 {
+  .work-title h1,
+  .tile-section h1 {
     font-size: 3.2em;
   }
   h3.section-header {
@@ -1441,6 +1619,85 @@ html.dark .theme-toggle__moon {
   }
 
   .theme-toggle svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* ============================================
+   Home Button (Case Study Pages)
+   ============================================ */
+.home-button {
+  position: fixed;
+  z-index: 9999;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px var(--shadow-soft);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.home-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px var(--shadow-medium);
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.home-button:active {
+  transform: scale(0.95);
+}
+
+.home-button svg {
+  color: var(--text-primary);
+  transition:
+    opacity 0.2s ease,
+    transform 0.3s ease;
+}
+
+.home-button--active {
+  background: var(--bg-primary);
+  box-shadow: none;
+  cursor: default;
+}
+
+.home-button--active svg {
+  color: var(--text-muted);
+}
+
+.home-button--active:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+@media (min-width: 769px) {
+  .home-button {
+    top: 2rem;
+    left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-button {
+    bottom: 1.5rem;
+    left: 1.5rem;
+    width: 56px;
+    height: 56px;
+  }
+
+  .home-button svg {
     width: 24px;
     height: 24px;
   }
