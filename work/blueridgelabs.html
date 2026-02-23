@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -58,25 +58,135 @@
       </svg>
     </button>
 
-    <header class="site-header">
-      <a href="../index.html">Thomas F. Officer</a>
-    </header>
+    <a
+      href="../index.html"
+      class="home-button"
+      aria-label="Back to home"
+      title="Back to home"
+    >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
+      </svg>
+    </a>
+
+    <!-- Title Section -->
+    <div class="title-section">
+      <div class="title-section__wrapper">
+        <h1>Blue Ridge Labs</h1>
+        <p class="title-section__description">
+          A social impact tech incubator focused on bridging the justice gap.
+        </p>
+      </div>
+    </div>
+
+    <!-- Case Study Hero -->
+    <div class="case-study-hero">
+      <div class="case-study-hero__wrapper">
+        <div class="case-study-hero__colLeft">
+          <h3>Role</h3>
+          <p class="case-study-hero__meta">Design Fellow, 2016</p>
+
+          <h3>Team</h3>
+          <p class="case-study-hero__meta">12 Fellows forming startup teams</p>
+
+          <h3>Platforms</h3>
+          <p class="case-study-hero__meta">Web App</p>
+        </div>
+        <div class="case-study-hero__colRight">
+          <h3>Overview</h3>
+          <p>
+            Blue Ridge Labs is a 5-month program to help entrepreneurs find
+            cofounders, build prototypes, and raise money. In 2016, the target
+            challenge was the justice gap: the staggering difference between the
+            need for, and the availability of, affordable legal services. This
+            is where I found my cofounders and built the first version of
+            Community.lawyer.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Highlight -->
+    <div class="case-study-highlight">
+      <div class="case-study-highlight__wrapper">
+        <p>
+          Built a referral network still used by 20,000+ people monthly to find
+          legal help.
+        </p>
+      </div>
+    </div>
+
+    <!-- Hero Image -->
     <main>
       <div class="aside-back"></div>
       <div class="content">
-        <div class="work-title">
-          <h1>Blue Ridge Labs</h1>
-          <span class="work-title__rule"></span>
-          <p class="work-title__meta">Design Fellow <span>·</span> 2016</p>
-          <p class="work-title__description">A social impact tech incubator</p>
+        <img
+          src="../assets/work/brl-showcase-team.png"
+          alt="Community.lawyer team 2016"
+          class="portfolio-image"
+        />
+        <p class="portfolio-caption">community.lawyer team 2016</p>
+      </div>
+      <div class="aside"></div>
+    </main>
+
+    <!-- Goals -->
+    <main>
+      <div class="aside-back"></div>
+      <div class="content">
+        <h3>Goals</h3>
+        <div class="goals-list">
+          <div class="goal-item">
+            <div class="goal-item__number">1</div>
+            <div class="goal-item__text">
+              <strong>Find affordable lawyers.</strong>
+              <span
+                >Help people who are "over income" for legal aid but can't
+                afford traditional legal services find affordable
+                representation.</span
+              >
+            </div>
+          </div>
+          <div class="goal-item">
+            <div class="goal-item__number">2</div>
+            <div class="goal-item__text">
+              <strong>Build a two-sided marketplace.</strong>
+              <span
+                >Connect clients seeking legal help with lawyers who can provide
+                services at accessible price points.</span
+              >
+            </div>
+          </div>
+          <div class="goal-item">
+            <div class="goal-item__number">3</div>
+            <div class="goal-item__text">
+              <strong>Modernize lawyer referral services.</strong>
+              <span
+                >Transform outdated phone-based bar association referral
+                services into modern web experiences.</span
+              >
+            </div>
+          </div>
         </div>
       </div>
       <div class="aside"></div>
     </main>
 
+    <!-- The Challenge -->
     <main>
       <div class="aside-back"></div>
       <div class="content">
+        <h3>The Challenge</h3>
         <blockquote>
           <p>Think the world doesn't need another selfie app?</p>
           <p>We agree.</p>
@@ -88,31 +198,15 @@
             >Blue Ridge Labs</a
           >
           with only 24 hours remaining before their Fellowship deadline closed.
-          The Fellowship is a 5 month program to help entrepreneurs find
-          cofounders, build prototypes, and raise money. The purpose is to
-          create new ventures that tackle the target challenge of the year. In
-          2016, the target challenge was the justice gap: the staggering
-          difference between the need for, and the availability of, affordable
-          legal services.
-        </p>
-        <p>
           What is it like to spend 5 months with talented strangers, surrounded
-          by whiteboards, bashing your head against a problem? That deserves its
-          own blog post. For now, let me say that it was chaos. Beautiful,
-          exciting, frustrating, and ultimately productive chaos.
+          by whiteboards, bashing your head against a problem? It was chaos.
+          Beautiful, exciting, frustrating, and ultimately productive chaos.
         </p>
         <p>
           My cofounders and I focused on the problem of finding an affordable
           lawyer once you've discovered that you're "over income" and therefore
           don't qualify for legal aid. We called it Community.lawyer.
         </p>
-        <img
-          src="../assets/work/brl-showcase-team.png"
-          alt="Community.lawyer team 2016"
-          class="portfolio-image"
-        />
-        <p class="portfolio-caption">community.lawyer team 2016</p>
-
         <div class="portfolio-grid">
           <div>
             <img
@@ -143,9 +237,11 @@
       <div class="aside"></div>
     </main>
 
+    <!-- The Pivot -->
     <main>
       <div class="aside-back"></div>
       <div class="content">
+        <h3>The Pivot</h3>
         <p>
           Community.lawyer was a two-sided marketplace, with clients on one side
           and lawyers on the other. Where would we get our roster of lawyers?
@@ -199,9 +295,11 @@
       <div class="aside"></div>
     </main>
 
+    <!-- Impact -->
     <main>
       <div class="aside-back"></div>
       <div class="content">
+        <h3>Impact</h3>
         <p>
           We grew very quickly to include as customers some of the largest bar
           associations in the country. Our network of referral platforms still
@@ -224,7 +322,9 @@
       <div class="footer__rightCol">
         <ul>
           <li>
-            <a href="https://www.linkedin.com/in/thomasofficer/" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/thomasofficer/" target="_blank"
+              >LinkedIn</a
+            >
           </li>
           <li>
             <a href="https://www.x.com/tomaofficer" target="_blank">Twitter</a>
