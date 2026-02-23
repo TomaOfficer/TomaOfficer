@@ -746,7 +746,7 @@ footer ul li {
 
 /* Tile Section - Case Study Title */
 .title-section {
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 6em 20px 2em;
 }
@@ -755,23 +755,16 @@ footer ul li {
   flex-direction: column;
 }
 .title-section h1 {
-  font-family: "Heliotrope Caps", sans-serif;
-  text-transform: lowercase;
+  font-family: "Heliotrope 6", sans-serif;
   font-weight: 300;
-  font-size: 3.2em;
+  font-size: 2.2em;
   line-height: 1;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
   color: var(--text-primary);
-  padding: 0;
+  padding: 0 0 0.25em;
   margin: 0;
 }
-.title-section__rule {
-  width: 3em;
-  height: 1px;
-  background-color: var(--border-rule);
-  margin: 0.8em 0;
-  display: block;
-}
+
 .title-section__description {
   font-family: "Heliotrope", sans-serif;
   font-style: italic;
@@ -781,6 +774,7 @@ footer ul li {
   margin: 0;
   padding: 0;
   line-height: 1.3;
+  max-width: 400px;
 }
 @media (max-width: 847px) {
   .title-section {
@@ -922,7 +916,7 @@ main > section ul li strong {
 
 /* Case Study Hero */
 .case-study-hero {
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 1.5em 20px;
 }
@@ -937,12 +931,12 @@ main > section ul li strong {
   flex-basis: 65%;
 }
 .case-study-hero h3 {
-  font-family: "Concourse 6 Caps", sans-serif;
-  font-size: 0.7em;
+  font-family: "Concourse 4 Caps", sans-serif;
+  font-size: 1em;
   text-transform: lowercase;
   letter-spacing: 0.02em;
   font-weight: 400;
-  color: var(--text-muted);
+  color: var(--text-primary);
   margin: 0;
   padding: 0 0 0.25em;
 }
@@ -953,6 +947,13 @@ main > section ul li strong {
 .case-study-hero__colLeft p:last-child,
 .case-study-hero__colRight p:last-child {
   padding-bottom: 0;
+}
+.case-study-hero__meta {
+  font-family: "Heliotrope 4", sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 @media (max-width: 847px) {
   .case-study-hero {
@@ -966,6 +967,27 @@ main > section ul li strong {
   .case-study-hero__colRight {
     flex-basis: 100%;
   }
+}
+
+/* Case Study Highlight */
+.case-study-highlight {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5em 20px 0.25em;
+  text-align: center;
+}
+.case-study-highlight p {
+  font-family: "Heliotrope", sans-serif;
+  font-size: 1.777em;
+  line-height: 1.2;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+}
+
+.case-study-highlight__wrapper {
 }
 
 /* Case Studies */
