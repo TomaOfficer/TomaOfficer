@@ -58,6 +58,28 @@
       </svg>
     </button>
 
+    <button
+      id="download-case-study"
+      class="download-button"
+      aria-label="Download case study"
+      title="Download case study"
+    >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+        <polyline points="7 10 12 15 17 10" />
+        <line x1="12" y1="15" x2="12" y2="3" />
+      </svg>
+    </button>
+
     <a
       href="../index.html"
       class="home-button"
@@ -330,5 +352,66 @@
 
     <script src="../lightbox.js"></script>
     <script src="../theme.js"></script>
+    <script>
+      document.getElementById('download-case-study').addEventListener('click', function() {
+        const markdown = `# Echo
+
+A startup venture to create an AI-native note-taking app for writers.
+
+## Role
+Cofounder, 2024-2025
+
+## Team
+2 cofounders + contractors
+
+## Platforms
+iOS, Apple Watch, Mac, Web App, Chrome Extension, MCP
+
+## Overview
+
+Echo is a note-taking tool for online writers to capture and develop their ideas. My cofounder and I pivoted into Echo after 5 months of tinkering with AI. We grew the team, shipped a multi-platform product, and built an audience of AI curious writers.
+
+**Highlight:** Shipped a multi-platform product across 6 platforms in under a year.
+
+## Goals
+
+1. **Capture ideas at the moment of inspiration.** Writers have ideas everywhere. Echo needed to be there when inspiration struck, whether on a walk, in the shower, or at the desk.
+
+2. **Transform voice notes into written drafts.** Most voice note apps let recordings pile up. Echo uses AI to transform raw voice memos into structured, editable text.
+
+3. **Meet writers where they are.** Different writers work in different environments. Echo needed to be multi-platform from the start.
+
+## Capture
+
+The core of Echo is frictionless voice capture. One tap to record, automatic transcription, and AI-powered organization. Writers can capture a thought in seconds without breaking their flow.
+
+## Develop
+
+Raw voice notes become structured drafts through AI assistance. Echo doesn't just transcribe - it helps writers expand, organize, and refine their ideas into publishable content.
+
+## Write
+
+The final step is turning developed ideas into finished pieces. Echo provides a distraction-free writing environment where writers can polish and export their work.
+
+## Multi-platform
+
+To meet users where they are, at the moment of inspiration, Echo had to be multi-platform. Echo can be found on iOS, Apple Watch, Mac, MCP, Web app, and Chrome Extension.
+
+## Marketing
+
+Marketing directly to consumers, I explored the depths of the idea that "first time founders focus on product, second time founders focus on marketing." I created content across TikTok, Instagram, YouTube, Substack, Medium, LinkedIn, and Reddit.
+`;
+
+        const blob = new Blob([markdown], { type: 'text/markdown' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'echo-case-study.md';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      });
+    </script>
   </body>
 </html>
