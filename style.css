@@ -1310,15 +1310,14 @@ blockquote cite {
   margin-bottom: 2em;
 }
 .resume-name {
-  font-family: "Concourse 4 Caps", "Concourse Caps", sans-serif;
   font-size: 1.777em;
-  font-weight: 400;
-  letter-spacing: 0.08em;
+  font-family: "Heliotrope Caps", sans-serif;
   text-transform: lowercase;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.035em;
+  line-height: 0.85;
+  font-weight: 400;
   margin: 0;
   padding: 0 0 0.25em;
-  line-height: 1;
 }
 .resume-contact-wrapper {
   display: flex;
