@@ -527,12 +527,21 @@ html.dark .portfolio-card__logo-box {
   box-shadow: none;
   filter: none;
 }
+.portfolio-card__title-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+  width: 100%;
+}
 .portfolio-card__title {
   font-family: "Heliotrope 6", sans-serif;
   font-size: 24px;
   color: var(--text-primary);
   margin: 0;
   padding: 0;
+  line-height: 1.2;
 }
 .portfolio-card__subtitle {
   font-family: "Heliotrope 4", sans-serif;
@@ -543,7 +552,19 @@ html.dark .portfolio-card__logo-box {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  margin-left: auto;
+  line-height: 1.2;
+}
+
+@media (max-width: 540px) {
+  .portfolio-section-label {
+    padding: 0 0 1em;
+  }
+  .portfolio-card__title-box {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    gap: 0;
+  }
 }
 
 /* Work List (Home) */
@@ -764,7 +785,7 @@ footer ul li {
 .title-section {
   max-width: 960px;
   margin: 0 auto;
-  padding: 6em 0 2em;
+  padding: 8em 20px 2em;
 }
 .title-section__wrapper {
   display: flex;
@@ -934,7 +955,7 @@ main > section ul li strong {
 .case-study-hero {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1.5em 0;
+  padding: 1.5em 20px;
 }
 .case-study-hero__wrapper {
   display: flex;
@@ -1723,7 +1744,7 @@ html.dark .theme-toggle__moon {
   }
   .download-button {
     top: 2rem;
-    left: 7rem;
+    left: 6rem;
   }
 }
 
