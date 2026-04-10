@@ -336,13 +336,21 @@ html.dark {
 
 /* Base styles */
 body {
-  padding: 0 20px;
+  padding: 0 3em;
   font-family: "Heliotrope", sans-serif;
   line-height: 1.5;
   font-size: 21px;
   color: var(--text-primary);
   background-color: var(--bg-primary);
+  margin: 0 auto;
 }
+
+@media (max-width: 1135px) {
+  body {
+    padding: 0 2em;
+  }
+}
+
 h1 {
   padding: 0 0 0.25em;
   line-height: 1.2;
@@ -424,14 +432,24 @@ p {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding: 8em 0 1em;
+  padding: 10em 0 1em;
+}
+.hero-bio p {
+  font-family: "Heliotrope", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 1.3em;
+  padding: 0;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+.hero-bio__name {
+  font-style: italic;
+  font-weight: bold;
 }
 .hero-portrait {
-  float: right;
   width: 220px;
   height: auto;
-  margin: 0 0 0.75em 1.5em;
-  shape-outside: margin-box;
 }
 
 /* Portfolio Cards (Home) */
@@ -1465,7 +1483,7 @@ blockquote cite {
     padding: 6em 0 0;
   }
   .hero-section {
-    padding: 6em 0 0;
+    padding: 8em 0 0;
   }
   .portfolio-section {
     padding: 2em 0 0;
@@ -1485,6 +1503,9 @@ blockquote cite {
   .section-content,
   .hero-bio {
     flex-basis: 100%;
+  }
+  .hero-bio p {
+    font-size: 1.5em;
   }
   .hero-portrait {
     width: 160px;
@@ -1512,7 +1533,7 @@ blockquote cite {
 @media (max-width: 847px) {
   body {
     font-size: 18px;
-    padding-bottom: 4em;
+    padding: 0 20px 4em;
   }
   .hero h1 {
     font-size: 3.2em;
