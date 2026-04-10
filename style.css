@@ -1645,61 +1645,51 @@ html.dark .theme-toggle__moon {
 }
 
 /* ============================================
-   Home Button (Case Study Pages)
+   Home Logo
    ============================================ */
-.home-button {
+.home-logo {
   position: fixed;
   z-index: 9999;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-primary);
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 8px var(--shadow-soft);
   text-decoration: none;
-  color: var(--text-primary);
-  transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
-.home-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px var(--shadow-medium);
-  color: var(--text-primary);
-  text-decoration: none;
+.home-logo:hover {
+  opacity: 0.7;
 }
 
-.home-button:active {
-  transform: scale(0.95);
+.home-logo img {
+  height: 24px;
+  width: auto;
+  display: block;
 }
 
-.home-button svg {
-  color: var(--text-primary);
-  transition:
-    opacity 0.2s ease,
-    transform 0.3s ease;
+/* Light mode: show black logo, hide white */
+.home-logo__light {
+  display: block;
 }
 
-.home-button--active {
-  background: var(--bg-primary);
-  box-shadow: none;
-  cursor: default;
+.home-logo__dark {
+  display: none;
 }
 
-.home-button--active svg {
-  color: var(--text-muted);
+/* Dark mode: show white logo, hide black */
+html.dark .home-logo__light {
+  display: none;
 }
 
-.home-button--active:hover {
-  transform: none;
-  box-shadow: none;
+html.dark .home-logo__dark {
+  display: block;
+}
+
+/* Disabled state for home page */
+.home-logo--active {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.home-logo--active:hover {
+  opacity: 0.4;
 }
 
 .download-button {
@@ -1738,7 +1728,7 @@ html.dark .theme-toggle__moon {
 }
 
 @media (min-width: 769px) {
-  .home-button {
+  .home-logo {
     top: 2rem;
     left: 2rem;
   }
@@ -1749,21 +1739,18 @@ html.dark .theme-toggle__moon {
 }
 
 @media (max-width: 768px) {
-  .home-button {
-    bottom: 1.5rem;
+  .home-logo {
+    top: 1.5rem;
     left: 1.5rem;
-    width: 56px;
-    height: 56px;
   }
 
-  .home-button svg {
-    width: 24px;
-    height: 24px;
+  .home-logo img {
+    height: 20px;
   }
 
   .download-button {
     bottom: 1.5rem;
-    left: 7rem;
+    left: 1.5rem;
     width: 56px;
     height: 56px;
   }
