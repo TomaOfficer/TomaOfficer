@@ -422,13 +422,9 @@ p {
 /* Hero Section (Home) */
 .hero-section {
   display: block;
-  max-width: 980px;
-  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
   padding: 8em 0 1em;
-}
-.hero-bio {
-  max-width: 540px;
-  margin: 0 auto;
 }
 .hero-portrait {
   float: right;
@@ -437,59 +433,41 @@ p {
   margin: 0 0 0.75em 1.5em;
   shape-outside: margin-box;
 }
-.hero-title {
-  text-align: center;
-  padding: 1em 0 1em;
-}
-.hero-title h1 {
-  font-size: 2.777em;
-  font-family: "Heliotrope Caps", sans-serif;
-  text-transform: lowercase;
-  letter-spacing: -0.035em;
-  line-height: 0.85;
-  font-weight: 400;
-  margin: 0;
-  padding: 0 0 0.25em;
-}
-.hero-title {
-  font-size: 0.8em;
-}
 
 /* Portfolio Cards (Home) */
 .portfolio-section {
+  box-sizing: border-box;
+  width: 100%;
   padding: 2em 0 0;
 }
 .portfolio-section-label h3 {
-  font-family: "Concourse 6 Caps", sans-serif;
-  font-size: 1em;
+  font-family: "Concourse 3 Caps", sans-serif;
+  font-size: 0.8em;
   font-weight: 400;
   letter-spacing: -0.02em;
   text-transform: lowercase;
-  text-align: center;
+  text-align: left;
   padding: 0 0 1em;
   margin: 0;
 }
-.portfolio-section-label h3::after {
-  content: "";
-  display: block;
-  width: 50px;
-  margin: 0.6em auto 0;
-  border-top: 1px solid currentColor;
-  padding-top: 2px;
-  border-bottom: 1px solid currentColor;
-  height: 0;
+.portfolio-section .section-content {
+  width: 100%;
+  max-width: none;
 }
 .portfolio-cards {
   display: flex;
   flex-direction: column;
   gap: 0;
-  max-width: 540px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  align-items: stretch;
 }
 .portfolio-card {
   display: flex;
   align-items: center;
   gap: 0.75em;
+  box-sizing: border-box;
+  width: 100%;
   padding: 0.75em 0;
   border-bottom: 1px solid var(--border-primary);
   text-decoration: none;
@@ -533,7 +511,8 @@ html.dark .portfolio-card__logo-box {
   align-items: center;
   justify-content: space-between;
   gap: 0.5em;
-  width: 100%;
+  flex: 1;
+  min-width: 0;
 }
 .portfolio-card__title {
   font-family: "Heliotrope 6", sans-serif;
@@ -562,15 +541,16 @@ html.dark .portfolio-card__logo-box {
   .portfolio-card__title-box {
     flex-direction: column;
     align-items: flex-start;
-    width: auto;
+    align-self: stretch;
+    width: 100%;
     gap: 0;
   }
 }
 
 /* Work List (Home) */
 .experience-section {
-  max-width: 540px;
-  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
   padding: 4em 0 2em;
 }
 .work-list {
@@ -660,27 +640,6 @@ main .aside a:hover {
 main .content {
   flex-basis: 58%;
 }
-.title {
-  font-weight: 400;
-  margin: 0;
-  padding: 0 0 1em;
-}
-.title__first-letter {
-  font-size: 1.333em;
-  font-family: "Heliotrope Caps", sans-serif;
-  line-height: 1.25;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-.title__intro {
-  font-family: "Heliotrope Caps", sans-serif;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
 
 /* Site Header (non-index pages) */
 .site-header {
@@ -705,10 +664,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 540px;
+  box-sizing: border-box;
+  width: 100%;
   padding: 1em 0 4em 0;
-  margin: 6em auto 0;
-  border-top: 1px solid var(--border-primary);
+  margin-top: 6em;
   font-size: 0.8em;
 }
 footer p {
@@ -728,7 +687,13 @@ footer ul li {
 @media (max-width: 540px) {
   footer {
     flex-direction: column;
+    align-items: flex-start;
     gap: 0.75em;
+    padding: 1em 0 4em 0;
+  }
+
+  footer ul li:first-child {
+    margin-left: 0;
   }
 }
 
@@ -1199,8 +1164,8 @@ blockquote cite {
   padding: 0;
 }
 .interviews-section {
-  max-width: 540px;
-  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
   padding: 2em 0;
 }
 .about_interviews {
@@ -1501,6 +1466,15 @@ blockquote cite {
   }
   .hero-section {
     padding: 6em 0 0;
+  }
+  .portfolio-section {
+    padding: 2em 0 0;
+  }
+  .experience-section {
+    padding: 4em 0 2em;
+  }
+  .interviews-section {
+    padding: 2em 0;
   }
   .section {
     flex-direction: column;
