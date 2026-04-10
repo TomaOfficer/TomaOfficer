@@ -432,23 +432,27 @@ p {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding: 10em 0 1em;
+  padding: 10em 0 4em;
 }
 .hero-bio p {
   font-family: "Heliotrope", sans-serif;
   font-weight: 300;
-  font-size: 2em;
-  line-height: 1.3em;
+  font-size: 2.222em;
+  line-height: 1.2em;
   padding: 0;
   margin: 0;
   letter-spacing: -0.02em;
 }
 .hero-bio__name {
   font-style: italic;
-  font-weight: bold;
+  font-family: "Heliotrope 6", sans-serif;
 }
+.hero-section__portrait-container {
+  text-align: right;
+}
+
 .hero-portrait {
-  width: 220px;
+  width: 260px;
   height: auto;
 }
 
@@ -613,13 +617,6 @@ html.dark .portfolio-card__logo-box {
   font-style: italic;
   text-align: center;
   font-weight: 400;
-  padding: 0 0 1em;
-}
-.hero__image {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
   padding: 0 0 1em;
 }
 /* Main */
@@ -1483,7 +1480,7 @@ blockquote cite {
     padding: 6em 0 0;
   }
   .hero-section {
-    padding: 8em 0 0;
+    padding: 8em 0 3em;
   }
   .portfolio-section {
     padding: 2em 0 0;
@@ -1506,10 +1503,11 @@ blockquote cite {
   }
   .hero-bio p {
     font-size: 1.5em;
+    line-height: 1.4em;
   }
   .hero-portrait {
-    width: 160px;
-    margin: 0 0 0.5em 1em;
+    width: 190px;
+    margin: 0.4em 0.65em 0.85em 2em;
   }
   .section-label {
     text-align: left;
