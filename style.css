@@ -317,17 +317,17 @@
 
 /* Dark Theme */
 html.dark {
-  /* Backgrounds - Rich dark with subtle warmth */
-  --bg-primary: #1a1a1f;
-  --bg-secondary: #242429;
-  --bg-card: #2d2d35;
+  /* Backgrounds - Soft charcoal with subtle warmth */
+  --bg-primary: #23242a;
+  --bg-secondary: #2c2e36;
+  --bg-card: #363844;
 
-  /* Text - Softer whites to reduce eye strain */
-  --text-primary: #e8e6e3;
-  --text-secondary: #a8a6a3;
-  --text-muted: #888886;
-  --text-subtle: #7a7a78;
-  --text-on-card: #e8e6e3;
+  /* Text - Soft, slightly warm grays */
+  --text-primary: #ece9e5;
+  --text-secondary: #bbb6b0;
+  --text-muted: #9a9490;
+  --text-subtle: #8a8581;
+  --text-on-card: #f1eeea;
 
   /* Links - Warmer red for dark backgrounds */
   --link-color: #d45454;
@@ -336,19 +336,19 @@ html.dark {
   --link-underline-hover: #a85858;
 
   /* Borders - Subtle contrast */
-  --border-primary: #3a3a42;
-  --border-secondary: #4a4a52;
-  --border-muted: #333338;
-  --border-rule: #555;
+  --border-primary: #4a4d5a;
+  --border-secondary: #5a5e6f;
+  --border-muted: #404352;
+  --border-rule: #6a6e80;
 
-  /* Shadows - Deeper for dark mode */
-  --shadow-soft: rgba(0, 0, 0, 0.3);
-  --shadow-medium: rgba(0, 0, 0, 0.4);
-  --shadow-strong: rgba(0, 0, 0, 0.7);
+  /* Shadows - A bit softer for lighter dark */
+  --shadow-soft: rgba(0, 0, 0, 0.22);
+  --shadow-medium: rgba(0, 0, 0, 0.32);
+  --shadow-strong: rgba(0, 0, 0, 0.55);
 
   /* Lightbox */
-  --lightbox-overlay: rgba(0, 0, 0, 0.85);
-  --lightbox-text: #e8e6e3;
+  --lightbox-overlay: rgba(0, 0, 0, 0.78);
+  --lightbox-text: #f1eeea;
 }
 
 /* Base styles */
@@ -1761,7 +1761,8 @@ html.dark .home-logo__dark {
   }
   .download-button {
     top: 2rem;
-    left: 6rem;
+    right: 6rem;
+    left: auto;
   }
 }
 
@@ -1777,7 +1778,8 @@ html.dark .home-logo__dark {
 
   .download-button {
     bottom: 1.5rem;
-    left: 1.5rem;
+    right: 6.25rem;
+    left: auto;
     width: 56px;
     height: 56px;
   }
