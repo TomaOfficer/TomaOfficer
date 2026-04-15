@@ -463,7 +463,7 @@ p {
 .hero-bio p {
   font-family: "Heliotrope", sans-serif;
   font-weight: 300;
-  font-size: 1.333em;
+  font-size: 1.2em;
   line-height: 1.3em;
   padding: 0 0 0.5em 0;
   margin: 0;
@@ -1519,10 +1519,13 @@ blockquote cite {
   .section-content,
   .hero-bio {
     flex-basis: 100%;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero-bio p {
-    font-size: 1.5em;
-    line-height: 1.4em;
+    font-size: 1.15em;
+    line-height: 1.45em;
   }
   .hero-portrait {
     width: 190px;
@@ -1532,6 +1535,16 @@ blockquote cite {
   }
   .section-label {
     text-align: left;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero-portrait {
+    padding-bottom: 1em;
+  }
+  .hero-bio p {
+    font-size: 1.05em;
+    line-height: 1.5em;
   }
 }
 @media (min-width: 848px) {
