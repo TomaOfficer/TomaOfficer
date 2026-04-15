@@ -103,7 +103,8 @@
 /* Heliotrope 6 */
 @font-face {
   font-family: "Heliotrope 6";
-  src: url("assets/fonts/Heliotrope6/heliotrope_6_regular.woff2") format("woff2");
+  src: url("assets/fonts/Heliotrope6/heliotrope_6_regular.woff2")
+    format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -450,26 +451,28 @@ p {
   width: 100%;
   padding: 10em 0 4em;
 }
+.hero-bio {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.hero-bio::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .hero-bio p {
   font-family: "Heliotrope", sans-serif;
   font-weight: 300;
-  font-size: 2.222em;
-  line-height: 1.2em;
-  padding: 0;
+  font-size: 1.333em;
+  line-height: 1.3em;
+  padding: 0 0 0.5em 0;
   margin: 0;
-  letter-spacing: -0.02em;
 }
-.hero-bio__name {
-  font-style: italic;
-  font-family: "Heliotrope 6", sans-serif;
-}
-.hero-section__portrait-container {
-  text-align: right;
-}
-
 .hero-portrait {
-  width: 260px;
+  width: 200px;
   height: auto;
+  float: right;
+  margin: 0.2em 0 0.85em 1.1em;
 }
 
 /* Portfolio Cards (Home) */
@@ -1523,7 +1526,9 @@ blockquote cite {
   }
   .hero-portrait {
     width: 190px;
-    margin: 0.4em 0.65em 0.85em 2em;
+    float: none;
+    display: block;
+    margin: 0.75em auto 1em;
   }
   .section-label {
     text-align: left;
