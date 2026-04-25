@@ -1620,9 +1620,12 @@ blockquote cite {
     padding: 6em 0 0;
   }
   .hero-section {
-    padding: 0 0 3em;
+    padding: 12em 0 3em;
     grid-template-columns: 1fr;
     gap: 2em;
+  }
+  .hero-bio__first-line {
+    font-size: 1.4em !important;
   }
   .portfolio-section {
     padding: 2em 0 0;
