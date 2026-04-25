@@ -447,13 +447,10 @@ p {
 /* Hero Section (Home) */
 
 .hero-section {
-  display: grid;
-  box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 680px;
   margin: 0 auto;
   padding: 8em 0 2em;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
-  gap: 4em;
+
   align-items: start;
 }
 .hero-bio {
@@ -461,13 +458,14 @@ p {
   margin: 0;
 }
 .hero-bio__first-line {
-  font-size: 1.5em !important;
-  line-height: 1.3em !important;
+  font-size: 1.6em !important;
+  line-height: 1.25em !important;
+  padding: 0 0 0.75em 0 !important;
 }
 .hero-bio__intro {
-  font-family: "Heliotrope 4 Caps", sans-serif;
+  font-family: "Heliotrope 6 Caps", sans-serif;
   text-transform: lowercase;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
 }
 .hero-bio::after {
   content: "";
@@ -477,9 +475,9 @@ p {
 .hero-bio p {
   font-family: "Heliotrope", sans-serif;
   font-weight: 300;
-  font-size: 1.1em;
-  line-height: 1.4em;
-  padding: 0 0 0.5em 0;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0 0 1em 0;
   margin: 0;
 }
 .hero-work {
@@ -488,9 +486,15 @@ p {
   gap: 0.75em;
 }
 
+.work-section {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .hero-work__grid {
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.95em;
 }
 
@@ -501,7 +505,7 @@ p {
   align-items: stretch;
   gap: 0.75em;
   padding: 0.85em;
-  border-radius: 10px;
+  border-radius: 2px;
   text-decoration: none;
   background: var(--bg-primary);
   border: 1px solid var(--border-primary);
@@ -575,7 +579,7 @@ p {
   margin: 0;
   padding: 0;
   color: var(--text-secondary);
-  max-width: 60%;
+  max-width: 80%;
 }
 
 html.dark .hero-work__card__logo {
@@ -707,7 +711,7 @@ html.dark .portfolio-card__logo-box {
   box-sizing: border-box;
   max-width: 620px;
   margin: 0 auto;
-  padding: 0;
+  padding: 2em 0;
 }
 .work-list {
   list-style: none;
