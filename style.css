@@ -447,7 +447,7 @@ p {
 /* Hero Section (Home) */
 
 .hero-section {
-  max-width: 680px;
+  max-width: 620px;
   margin: 0 auto;
   padding: 8em 0 2em;
 
@@ -458,7 +458,7 @@ p {
   margin: 0;
 }
 .hero-bio__first-line {
-  font-size: 1.6em !important;
+  font-size: 1.4em !important;
   line-height: 1.25em !important;
   padding: 0 0 0.75em 0 !important;
 }
@@ -476,7 +476,7 @@ p {
   font-family: "Heliotrope", sans-serif;
   font-weight: 300;
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1.4em;
   padding: 0 0 1em 0;
   margin: 0;
 }
@@ -1838,7 +1838,6 @@ html.dark .home-logo .home-logo__dark {
 /* Disabled state for home page */
 .home-logo--active {
   pointer-events: none;
-  opacity: 0.4;
 }
 
 .home-logo--active:hover {
