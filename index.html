@@ -8,97 +8,36 @@
       name="description"
       content="Product Designer, Developer, and Entrepreneur."
     />
-    <script>
-      (function () {
-        const theme =
-          localStorage.getItem("theme-preference") ||
-          (window.matchMedia("(prefers-color-scheme: dark)").matches
-            ? "dark"
-            : "light");
-        if (theme === "dark") document.documentElement.classList.add("dark");
-      })();
-    </script>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="assets/tfo-favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <!-- Theme Toggle Button -->
-    <button
-      id="theme-toggle"
-      class="theme-toggle"
-      aria-label="Toggle dark mode"
-      title="Toggle dark mode"
-    >
-      <svg
-        class="theme-toggle__sun"
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-      >
-        <circle cx="12" cy="12" r="5" />
-        <line x1="12" y1="1" x2="12" y2="3" />
-        <line x1="12" y1="21" x2="12" y2="23" />
-        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-        <line x1="1" y1="12" x2="3" y2="12" />
-        <line x1="21" y1="12" x2="23" y2="12" />
-        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-      </svg>
-      <svg
-        class="theme-toggle__moon"
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-      >
-        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-      </svg>
-    </button>
-
     <a
       href="index.html"
       class="home-logo home-logo--active"
       aria-label="Home"
       title="Home"
     >
-      <img
-        src="assets/tfo-brand-black.svg"
-        alt="TFO"
-        class="home-logo__light"
-      />
-      <img src="assets/tfo-brand-white.svg" alt="TFO" class="home-logo__dark" />
+      <img src="assets/tfo-brand-black.svg" alt="TFO" />
     </a>
 
     <div class="hero-section">
       <div class="hero-bio">
-        <p class="hero-bio__first-line">
-          <span class="hero-bio__intro">Thomas F. Officer</span>
-          is a product designer and lawyer based in New Hampshire.
+        <p>
+          <span class="hero-bio__intro">Thomas Officer</span>
+          is a product designer and lawyer based in New Hampshire. Combining
+          these disciplines, Thomas builds tools for legal professionals and the
+          people who rely on them.
         </p>
         <p>
-          Welcome. This is “Toma.” I use my legal background to design & build
-          tools for lawyers and the people who rely on them.
+          Thomas currently works on the AI Enablement team at NetDocuments. He
+          also writes about his experience helping lawyers build AI-native law
+          firms at Legal Tech Coach.
         </p>
         <p>
-          Currently, I work at NetDocuments and write at Legal Tech Coach. I
-          help lawyers imagine and create their own version of an AI-native law
-          firm.
-        </p>
-        <p>
-          Technology can humanize the practice of law. Make it easier and more
-          enjoyable to engage with the onslaught of information in modern
-          knowledge work, especially legal work.
-        </p>
-        <p>
-          As the rising tide of AI makes legal services more accessible, legal
-          expertise will become more valuable. It's never been a better time to
-          be a lawyer.
+          Thomas is the cofounder of Echo, an AI-native note-taking app for
+          writers, and Afterpattern, a no-code app builder for lawyers (acquired
+          by NetDocuments in 2021).
         </p>
       </div>
     </div>
@@ -252,7 +191,5 @@
         </ul>
       </div>
     </footer>
-
-    <script src="theme.js"></script>
   </body>
 </html>

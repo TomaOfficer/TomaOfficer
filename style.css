@@ -315,42 +315,6 @@
   --lightbox-text: #fff;
 }
 
-/* Dark Theme */
-html.dark {
-  /* Backgrounds - Soft charcoal with subtle warmth */
-  --bg-primary: #23242a;
-  --bg-secondary: #2c2e36;
-  --bg-card: #363844;
-
-  /* Text - Soft, slightly warm grays */
-  --text-primary: #ece9e5;
-  --text-secondary: #bbb6b0;
-  --text-muted: #9a9490;
-  --text-subtle: #8a8581;
-  --text-on-card: #f1eeea;
-
-  /* Links - Warmer red for dark backgrounds */
-  --link-color: #d45454;
-  --link-hover: #e87878;
-  --link-underline: #8a4444;
-  --link-underline-hover: #a85858;
-
-  /* Borders - Subtle contrast */
-  --border-primary: #4a4d5a;
-  --border-secondary: #5a5e6f;
-  --border-muted: #404352;
-  --border-rule: #6a6e80;
-
-  /* Shadows - A bit softer for lighter dark */
-  --shadow-soft: rgba(0, 0, 0, 0.22);
-  --shadow-medium: rgba(0, 0, 0, 0.32);
-  --shadow-strong: rgba(0, 0, 0, 0.55);
-
-  /* Lightbox */
-  --lightbox-overlay: rgba(0, 0, 0, 0.78);
-  --lightbox-text: #f1eeea;
-}
-
 /* Base styles */
 body {
   padding: 0 20px;
@@ -447,20 +411,14 @@ p {
 /* Hero Section (Home) */
 
 .hero-section {
-  max-width: 680px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 8em 0 2em;
-
+  padding: 6em 0 2em;
   align-items: start;
 }
 .hero-bio {
   max-width: none;
   margin: 0;
-}
-.hero-bio__first-line {
-  font-size: 1.6em !important;
-  line-height: 1.25em !important;
-  padding: 0 0 0.75em 0 !important;
 }
 .hero-bio__intro {
   font-family: "Heliotrope 6 Caps", sans-serif;
@@ -475,9 +433,10 @@ p {
 .hero-bio p {
   font-family: "Heliotrope", sans-serif;
   font-weight: 300;
-  font-size: 1em;
-  line-height: 1.5em;
-  padding: 0 0 1em 0;
+  font-size: 1.777em;
+  line-height: 1.3em;
+  padding: 0 0 0.75em 0;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 .hero-work {
@@ -582,15 +541,6 @@ p {
   max-width: 80%;
 }
 
-html.dark .hero-work__card__logo {
-  background: #fff;
-  border-color: #fff;
-}
-
-html.dark .hero-work__card__image {
-  background: #fff;
-}
-
 /* Portfolio Cards (Home) */
 .portfolio-section {
   box-sizing: border-box;
@@ -644,14 +594,6 @@ html.dark .hero-work__card__image {
   height: 52px;
   background-color: #fff;
   border: 1px solid var(--border-primary);
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-html.dark .portfolio-card__logo-box {
-  background-color: #fff;
-  border: 1px solid #fff;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -1620,13 +1562,11 @@ blockquote cite {
     padding: 6em 0 0;
   }
   .hero-section {
-    padding: 12em 0 3em;
+    padding: 6em 0 3em;
     grid-template-columns: 1fr;
     gap: 2em;
   }
-  .hero-bio__first-line {
-    font-size: 1.4em !important;
-  }
+
   .portfolio-section {
     padding: 2em 0 0;
   }
@@ -1658,10 +1598,6 @@ blockquote cite {
   .hero-work__grid {
     grid-template-columns: 1fr;
   }
-  .hero-bio p {
-    font-size: 1.15em;
-    line-height: 1.45em;
-  }
   .section-label {
     text-align: left;
   }
@@ -1669,8 +1605,8 @@ blockquote cite {
 
 @media (max-width: 540px) {
   .hero-bio p {
-    font-size: 1.05em;
-    line-height: 1.5em;
+    font-size: 1.2em;
+    line-height: 1.4em;
   }
 }
 @media (min-width: 848px) {
@@ -1720,84 +1656,6 @@ blockquote cite {
 }
 
 /* ============================================
-   Theme Toggle Button
-   ============================================ */
-.theme-toggle {
-  position: fixed;
-  z-index: 9999;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-primary);
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 8px var(--shadow-soft);
-  transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
-}
-
-.theme-toggle:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px var(--shadow-medium);
-}
-
-.theme-toggle:active {
-  transform: scale(0.95);
-}
-
-.theme-toggle svg {
-  color: var(--text-primary);
-  transition:
-    opacity 0.2s ease,
-    transform 0.3s ease;
-}
-
-/* Icon visibility based on theme */
-.theme-toggle__sun {
-  display: block;
-}
-.theme-toggle__moon {
-  display: none;
-  position: absolute;
-}
-
-html.dark .theme-toggle__sun {
-  display: none;
-}
-html.dark .theme-toggle__moon {
-  display: block;
-}
-
-/* Desktop: Top-right positioning */
-@media (min-width: 769px) {
-  .theme-toggle {
-    top: 2rem;
-    right: 2rem;
-  }
-}
-
-/* Mobile: Fixed bottom-right toolbar */
-@media (max-width: 768px) {
-  .theme-toggle {
-    bottom: 1.5rem;
-    right: 1.5rem;
-    width: 56px;
-    height: 56px;
-  }
-
-  .theme-toggle svg {
-    width: 24px;
-    height: 24px;
-  }
-}
-
-/* ============================================
    Home Logo
    ============================================ */
 .home-logo {
@@ -1817,28 +1675,9 @@ html.dark .theme-toggle__moon {
   display: block;
 }
 
-/* Light mode: show black logo, hide white */
-.home-logo .home-logo__light {
-  display: block;
-}
-
-.home-logo .home-logo__dark {
-  display: none;
-}
-
-/* Dark mode: show white logo, hide black */
-html.dark .home-logo .home-logo__light {
-  display: none;
-}
-
-html.dark .home-logo .home-logo__dark {
-  display: block;
-}
-
 /* Disabled state for home page */
 .home-logo--active {
   pointer-events: none;
-  opacity: 0.4;
 }
 
 .home-logo--active:hover {
@@ -1887,7 +1726,7 @@ html.dark .home-logo .home-logo__dark {
   }
   .download-button {
     top: 2rem;
-    right: 6rem;
+    right: 2rem;
     left: auto;
   }
 }
@@ -1904,7 +1743,7 @@ html.dark .home-logo .home-logo__dark {
 
   .download-button {
     bottom: 1.5rem;
-    right: 6.25rem;
+    right: 1.5rem;
     left: auto;
     width: 56px;
     height: 56px;
@@ -1913,38 +1752,5 @@ html.dark .home-logo .home-logo__dark {
   .download-button svg {
     width: 24px;
     height: 24px;
-  }
-}
-
-/* ============================================
-   View Transitions API Support
-   ============================================ */
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation: none;
-  mix-blend-mode: normal;
-}
-
-::view-transition-old(root) {
-  z-index: 1;
-}
-
-::view-transition-new(root) {
-  z-index: 9999;
-}
-
-/* Fallback transition for browsers without View Transitions API */
-@supports not (view-transition-name: none) {
-  html {
-    transition: background-color 0.3s ease;
-  }
-
-  body,
-  a,
-  .theme-toggle {
-    transition:
-      background-color 0.3s ease,
-      color 0.3s ease,
-      border-color 0.3s ease;
   }
 }
