@@ -411,7 +411,7 @@ p {
 /* Hero Section (Home) */
 
 .hero-section {
-  max-width: 980px;
+  max-width: 730px;
   margin: 0 auto;
   padding: 6em 0 2em;
   align-items: start;
@@ -421,23 +421,31 @@ p {
   margin: 0;
 }
 .hero-bio__intro {
-  font-family: "Heliotrope 6 Caps", sans-serif;
+  font-family: "Heliotrope 4 Caps", sans-serif;
   text-transform: lowercase;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
 }
-.hero-bio::after {
-  content: "";
-  display: table;
-  clear: both;
+.hero-bio__intro__name {
+  font-family: "Heliotrope 6 Caps", sans-serif;
+}
+.hero-bio p:first-child {
+  font-size: 1.45em;
+  line-height: 1.3em;
+  letter-spacing: 0;
+  max-width: 100%;
 }
 .hero-bio p {
   font-family: "Heliotrope", sans-serif;
   font-weight: 300;
-  font-size: 1.777em;
-  line-height: 1.3em;
+  font-size: 1.1em;
+  line-height: 1.5em;
   padding: 0 0 0.75em 0;
-  letter-spacing: -0.02em;
   margin: 0;
+  max-width: 620px;
+}
+.hero-bio__focus {
+  font-style: italic;
+  font-weight: 600;
 }
 .hero-work {
   display: flex;
@@ -446,7 +454,7 @@ p {
 }
 
 .work-section {
-  max-width: 860px;
+  max-width: 730px;
   margin: 0 auto;
   padding: 0;
 }
@@ -464,7 +472,7 @@ p {
   align-items: stretch;
   gap: 0.75em;
   padding: 0.85em;
-  border-radius: 2px;
+  border-radius: 8px;
   text-decoration: none;
   background: var(--bg-primary);
   border: 1px solid var(--border-primary);
@@ -651,7 +659,7 @@ p {
 /* Work List (Home) */
 .experience-section {
   box-sizing: border-box;
-  max-width: 620px;
+  max-width: 730px;
   margin: 0 auto;
   padding: 2em 0;
 }
@@ -760,7 +768,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  max-width: 620px;
+  max-width: 730px;
   margin: 0 auto;
   padding: 1em 0 4em 0;
   margin-top: 6em;
@@ -1261,7 +1269,7 @@ blockquote cite {
 }
 .interviews-section {
   box-sizing: border-box;
-  max-width: 620px;
+  max-width: 730px;
   margin: 0 auto;
   padding: 2em 0;
 }
