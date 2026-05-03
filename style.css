@@ -63,6 +63,88 @@
   font-display: swap;
 }
 
+/* Heliotrope 3 - Explicit font family */
+@font-face {
+  font-family: "Heliotrope 3";
+  src: url("assets/fonts/Heliotrope3/heliotrope_3_regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope 3";
+  src: url("assets/fonts/Heliotrope3/heliotrope_3_italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope 3";
+  src: url("assets/fonts/Heliotrope3/heliotrope_3_bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope 3";
+  src: url("assets/fonts/Heliotrope3/heliotrope_3_bold_italic.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Heliotrope 4 - Explicit font family */
+@font-face {
+  font-family: "Heliotrope 4";
+  src: url("assets/fonts/Heliotrope4/heliotrope_4_regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope 4";
+  src: url("assets/fonts/Heliotrope4/heliotrope_4_italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope 4";
+  src: url("assets/fonts/Heliotrope4/heliotrope_4_bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope 4";
+  src: url("assets/fonts/Heliotrope4/heliotrope_4_bold_italic.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Heliotrope 4 Caps - Explicit font family */
+@font-face {
+  font-family: "Heliotrope 4 Caps";
+  src: url("assets/fonts/Heliotrope4Caps/heliotrope_4_caps_regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heliotrope 4 Caps";
+  src: url("assets/fonts/Heliotrope4Caps/heliotrope_4_caps_bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Heliotrope Caps - Separate font family for caps variants */
 /* Heliotrope 4 Caps */
 @font-face {
@@ -456,7 +538,7 @@ p {
 .work-section {
   max-width: 730px;
   margin: 0 auto;
-  padding: 0;
+  padding: 2em 0;
 }
 
 .hero-work__grid {
@@ -527,26 +609,25 @@ p {
 
 .hero-work__card__title {
   min-width: 0;
-  font-family: "Concourse 4 Caps", sans-serif;
+  font-family: "Concourse 3 Caps", sans-serif;
   text-transform: lowercase;
   letter-spacing: -0.02em;
   font-size: 1em;
   line-height: 1.2;
   color: var(--text-primary);
   margin: 0;
-  padding: 2em 0 0.25em;
+  padding: 2.777em 0 0.25em;
 }
 
 .hero-work__card__description {
   font-family: "Heliotrope 3", sans-serif;
   font-style: italic;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: normal;
   line-height: 1.2em;
   margin: 0;
   padding: 0;
   color: var(--text-secondary);
-  max-width: 80%;
 }
 
 /* Portfolio Cards (Home) */
@@ -1037,7 +1118,7 @@ main > section ul li strong {
   flex-basis: 65%;
 }
 .case-study-hero h3 {
-  font-family: "Concourse 4 Caps", sans-serif;
+  font-family: "Concourse 3 Caps", sans-serif;
   font-size: 1em;
   text-transform: lowercase;
   letter-spacing: 0.02em;
@@ -1417,7 +1498,7 @@ blockquote cite {
   gap: 0.5em;
 }
 .resume-contact {
-  font-family: "Concourse 4 caps", sans-serif;
+  font-family: "Concourse 3 Caps", sans-serif;
   font-size: 0.7em;
   font-weight: normal;
   text-transform: uppercase;
