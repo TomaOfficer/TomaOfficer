@@ -371,7 +371,7 @@
   /* Text */
   --text-primary: #333;
   --text-secondary: #667;
-  --text-muted: #888;
+  --text-muted: #626573;
   --text-subtle: #6b6d7f;
   --text-on-card: #fff;
 
@@ -448,6 +448,12 @@ p {
   padding: 0 0 1em;
   margin: 0;
 }
+
+.home-main,
+.resume-main,
+.case-study-page {
+  display: block;
+}
 /* Two-Column Layout (Home & About) */
 .container {
   max-width: 980px;
@@ -510,10 +516,14 @@ p {
 .hero-bio__intro__name {
   font-family: "Heliotrope 6 Caps", sans-serif;
 }
-.hero-bio p:first-child {
+.hero-bio__headline {
+  font-family: "Heliotrope", sans-serif;
+  font-weight: 300;
   font-size: 1.45em;
   line-height: 1.3em;
   letter-spacing: 0;
+  padding: 0 0 0.75em 0;
+  margin: 0;
   max-width: 100%;
 }
 .hero-bio p {
@@ -636,6 +646,7 @@ p {
   width: 100%;
   padding: 2em 0 0;
 }
+.portfolio-section-label h2,
 .portfolio-section-label h3 {
   padding-bottom: 1em;
   margin-bottom: 0;
@@ -788,24 +799,24 @@ p {
   font-weight: 400;
   padding: 0 0 1em;
 }
-/* Main */
-main {
+/* Case study sections */
+.case-study-section {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.5em 0;
   justify-content: space-between;
 }
-main p:last-child {
+.case-study-section p:last-child {
   padding-bottom: 0;
 }
-main .aside-back {
+.case-study-section .aside-back {
   flex-basis: 20%;
 }
-main .aside {
+.case-study-section .aside {
   flex-basis: 20%;
 }
-main .aside__subtle {
+.case-study-section .aside__subtle {
   color: var(--text-secondary);
   font-size: 0.8em;
   font-weight: 300;
@@ -813,15 +824,15 @@ main .aside__subtle {
   padding: 0;
   margin: 0;
 }
-main .aside a {
+.case-study-section .aside a {
   color: var(--text-secondary);
   text-decoration-color: var(--border-primary);
 }
-main .aside a:hover {
+.case-study-section .aside a:hover {
   color: var(--link-color);
   text-decoration-color: var(--link-underline-hover);
 }
-main .content {
+.case-study-section .content {
   flex-basis: 58%;
 }
 
@@ -1117,13 +1128,23 @@ main > section ul li strong {
 .case-study-hero__colRight {
   flex-basis: 65%;
 }
-.case-study-hero h3 {
+.case-study-hero h2 {
   font-family: "Concourse 3 Caps", sans-serif;
   font-size: 1em;
   text-transform: lowercase;
   letter-spacing: 0.02em;
   font-weight: 400;
   color: var(--text-primary);
+  margin: 0;
+  padding: 0 0 0.25em;
+}
+
+.case-study-section h2 {
+  font-family: "Heliotrope", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
   margin: 0;
   padding: 0 0 0.25em;
 }
@@ -1566,7 +1587,7 @@ blockquote cite {
   line-height: 1.3;
 }
 .resume-date {
-  font-family: "concourse 4 caps", sans-serif;
+  font-family: "Concourse 3 Caps", sans-serif;
   font-size: 0.7em;
   font-weight: 400;
   color: var(--text-primary);
@@ -1693,19 +1714,20 @@ blockquote cite {
 }
 
 @media (max-width: 540px) {
+  .hero-bio__headline,
   .hero-bio p {
     font-size: 1.2em;
     line-height: 1.4em;
   }
 }
 @media (min-width: 848px) {
-  main:nth-of-type(1) {
+  .case-study-section:first-of-type {
     padding-top: 2em;
     padding-bottom: 0;
   }
 }
 @media (max-width: 1135px) {
-  main {
+  .case-study-section {
     margin: 0;
     max-width: 620px;
     margin: 0 auto;
@@ -1732,11 +1754,11 @@ blockquote cite {
     font-size: 0.9em;
     margin: 1.5em 0 0.5em 0;
   }
-  main > section h3 {
+  .case-study-section h2 {
     font-size: 1.1em;
     margin: 1.25em 0 0.5em 0;
   }
-  main {
+  .case-study-section {
     padding-top: 1em;
   }
   .resume {

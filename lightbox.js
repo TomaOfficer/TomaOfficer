@@ -13,6 +13,9 @@
       <p class="lightbox-caption"></p>
     </div>
   `;
+  lightbox.setAttribute('role', 'dialog');
+  lightbox.setAttribute('aria-modal', 'true');
+  lightbox.setAttribute('aria-label', 'Image preview');
   document.body.appendChild(lightbox);
 
   const lightboxOverlay = lightbox.querySelector('.lightbox-overlay');
@@ -20,29 +23,37 @@
   const lightboxImage = lightbox.querySelector('.lightbox-image');
   const lightboxCaption = lightbox.querySelector('.lightbox-caption');
   const lightboxClose = lightbox.querySelector('.lightbox-close');
+  let activeImage = null;
 
   // Get all portfolio images
   const portfolioImages = document.querySelectorAll('.portfolio-image');
 
   // Open lightbox
   function openLightbox(img, caption) {
-    lightboxImage.src = img.src;
+    activeImage = img;
+    lightboxImage.src = img.dataset.fullSrc || img.currentSrc || img.src;
     lightboxImage.alt = img.alt;
     lightboxCaption.textContent = caption || '';
     lightbox.classList.add('active');
     document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    lightboxClose.focus();
   }
 
   // Close lightbox
   function closeLightbox() {
     lightbox.classList.remove('active');
     document.body.style.overflow = ''; // Restore scrolling
+    if (activeImage) {
+      activeImage.focus();
+      activeImage = null;
+    }
   }
 
   // Add click handlers to all portfolio images
   portfolioImages.forEach(function(img) {
-    // Make images look clickable
-    img.style.cursor = 'pointer';
+    img.tabIndex = 0;
+    img.setAttribute('role', 'button');
+    img.setAttribute('aria-label', 'Open image: ' + img.alt);
     
     img.addEventListener('click', function() {
       // Find the caption (next sibling <p> with class portfolio-caption)
@@ -65,6 +76,13 @@
       
       openLightbox(img, caption);
     });
+
+    img.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        img.click();
+      }
+    });
   });
 
   // Close on overlay click
@@ -85,4 +103,3 @@
     e.stopPropagation();
   });
 })();
-
