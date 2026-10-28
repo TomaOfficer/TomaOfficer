@@ -651,6 +651,7 @@ p {
   padding-bottom: 1em;
   margin-bottom: 0;
   font-family: "Concourse 3 Caps", sans-serif;
+  font-style: normal;
   font-weight: 400;
   text-transform: lowercase;
   letter-spacing: -0.02em;
@@ -1131,6 +1132,7 @@ main > section ul li strong {
 .case-study-hero h2 {
   font-family: "Concourse 3 Caps", sans-serif;
   font-size: 1em;
+  font-style: normal;
   text-transform: lowercase;
   letter-spacing: 0.02em;
   font-weight: 400;
