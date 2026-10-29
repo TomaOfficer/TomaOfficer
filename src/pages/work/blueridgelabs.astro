@@ -1,0 +1,215 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HomeLogo from '../../components/HomeLogo.astro';
+import pages from '../../data/pages.json';
+import WorkImage from '../../components/WorkImage.astro';
+---
+<BaseLayout page={pages["work/blueridgelabs"]}>
+
+    <HomeLogo />
+
+    <main id="content" class="case-study-page">
+    <!-- Title Section -->
+    <div class="title-section">
+      <div class="title-section__wrapper">
+        <h1>Blue Ridge Labs</h1>
+        <p class="title-section__description">
+          Referral management for bar associations
+        </p>
+      </div>
+    </div>
+
+    <!-- Case Study Hero -->
+    <div class="case-study-hero">
+      <div class="case-study-hero__wrapper">
+        <div class="case-study-hero__colLeft">
+          <h2>Role</h2>
+          <p class="case-study-hero__meta">Design Fellow, 2016</p>
+
+          <h2>Team</h2>
+          <p class="case-study-hero__meta">12 Fellows forming startup teams</p>
+
+          <h2>Platforms</h2>
+          <p class="case-study-hero__meta">Web App</p>
+        </div>
+        <div class="case-study-hero__colRight">
+          <h2>Overview</h2>
+          <p>
+            Blue Ridge Labs is a 5-month program to help entrepreneurs find
+            cofounders, build prototypes, and raise money. In 2016, the target
+            challenge was the justice gap: the staggering difference between the
+            need for, and the availability of, affordable legal services. This
+            is where I found my cofounders and built the first version of
+            Community.lawyer.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Highlight -->
+    <div class="case-study-highlight">
+      <div class="case-study-highlight__wrapper">
+        <p>
+          Built a referral network still used by 20,000+ people monthly to find
+          legal help.
+        </p>
+      </div>
+    </div>
+
+    <!-- Hero Image -->
+    <section class="case-study-section">
+      <div class="aside-back"></div>
+      <div class="content">
+        <WorkImage name="brl-showcase-team.png" alt="Community.lawyer team 2016" class="portfolio-image" decoding="async" fetchpriority="high" sizes="(max-width: 1135px) calc(100vw - 40px), 696px" />
+        <p class="portfolio-caption">community.lawyer team 2016</p>
+      </div>
+      <div class="aside"></div>
+    </section>
+
+    <!-- Goals -->
+    <section class="case-study-section">
+      <div class="aside-back"></div>
+      <div class="content">
+        <h2>Goals</h2>
+        <div class="goals-list">
+          <div class="goal-item">
+            <div class="goal-item__number">1</div>
+            <div class="goal-item__text">
+              <strong>Find affordable lawyers.</strong>
+              <span
+                >Help people who are "over income" for legal aid but can't
+                afford traditional legal services find affordable
+                representation.</span
+              >
+            </div>
+          </div>
+          <div class="goal-item">
+            <div class="goal-item__number">2</div>
+            <div class="goal-item__text">
+              <strong>Build a two-sided marketplace.</strong>
+              <span
+                >Connect clients seeking legal help with lawyers who can provide
+                services at accessible price points.</span
+              >
+            </div>
+          </div>
+          <div class="goal-item">
+            <div class="goal-item__number">3</div>
+            <div class="goal-item__text">
+              <strong>Modernize lawyer referral services.</strong>
+              <span
+                >Transform outdated phone-based bar association referral
+                services into modern web experiences.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aside"></div>
+    </section>
+
+    <!-- The Challenge -->
+    <section class="case-study-section">
+      <div class="aside-back"></div>
+      <div class="content">
+        <h2>The Challenge</h2>
+        <blockquote>
+          <p>Think the world doesn't need another selfie app?</p>
+          <p>We agree.</p>
+          <cite>BRL 2016 Promotional Website</cite>
+        </blockquote>
+        <p>
+          I stumbled upon
+          <a href="https://www.labs.robinhood.org/" target="_blank" rel="noopener noreferrer">Blue Ridge Labs</a>
+          with only 24 hours remaining before their Fellowship deadline closed.
+          What is it like to spend 5 months with talented strangers, surrounded
+          by whiteboards, bashing your head against a problem? It was chaos.
+          Beautiful, exciting, frustrating, and ultimately productive chaos.
+        </p>
+        <p>
+          My cofounders and I focused on the problem of finding an affordable
+          lawyer once you've discovered that you're "over income" and therefore
+          don't qualify for legal aid. We called it Community.lawyer.
+        </p>
+        <div class="portfolio-grid">
+          <div>
+            <WorkImage name="brl-showcase-problem.png" alt="Problem statement" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc((100vw - 40px - 3em) / 3), 216px" />
+            <p class="portfolio-caption">problem statement</p>
+          </div>
+          <div>
+            <WorkImage name="brl-showcase-marketing.png" alt="V1 marketing materials" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc((100vw - 40px - 3em) / 3), 216px" />
+            <p class="portfolio-caption">v1 marketing materials</p>
+          </div>
+          <div>
+            <WorkImage name="brl-showcase-homepage.png" alt="Homepage draft" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc((100vw - 40px - 3em) / 3), 216px" />
+            <p class="portfolio-caption">homepage draft</p>
+          </div>
+        </div>
+      </div>
+      <div class="aside"></div>
+    </section>
+
+    <!-- The Pivot -->
+    <section class="case-study-section">
+      <div class="aside-back"></div>
+      <div class="content">
+        <h2>The Pivot</h2>
+        <p>
+          Community.lawyer was a two-sided marketplace, with clients on one side
+          and lawyers on the other. Where would we get our roster of lawyers?
+          What hack could we exploit to get a large roster of vetted lawyers
+          with as little effort as possible?
+        </p>
+        <p>
+          Our first pivot was moving away from trying to build our own roster of
+          lawyers towards partnering with those organizations that already had
+          them: bar associations.
+        </p>
+        <p>
+          Bar associations have lawyer referral services that traditionally
+          operate by phone. Their online experience was outdated. We offered
+          Community.lawyer as referral platform SaaS.
+        </p>
+        <WorkImage name="brl-showcase-boston.png" alt="Boston bar's community.lawyer website" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc(100vw - 40px), 696px" />
+        <p class="portfolio-caption">boston bar's community.lawyer website</p>
+
+        <div class="portfolio-grid">
+          <div>
+            <WorkImage name="brl-showcase-brochure.png" alt="V2 marketing materials" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc((100vw - 40px - 3em) / 3), 216px" />
+            <p class="portfolio-caption">v2 marketing materials</p>
+          </div>
+          <div>
+            <WorkImage name="brl-showcase-backend.png" alt="Lawyer-facing backend" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc((100vw - 40px - 3em) / 3), 216px" />
+            <p class="portfolio-caption">lawyer-facing backend</p>
+          </div>
+          <div>
+            <WorkImage name="brl-showcase-reports.png" alt="Admin-facing backend" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc((100vw - 40px - 3em) / 3), 216px" />
+            <p class="portfolio-caption">admin-facing backend</p>
+          </div>
+        </div>
+      </div>
+      <div class="aside"></div>
+    </section>
+
+    <!-- Impact -->
+    <section class="case-study-section">
+      <div class="aside-back"></div>
+      <div class="content">
+        <h2>Impact</h2>
+        <p>
+          We grew very quickly to include as customers some of the largest bar
+          associations in the country. Our network of referral platforms still
+          exists today and is used by over 20,000 people every month to find
+          legal help.
+        </p>
+      </div>
+      <div class="aside"></div>
+    </section>
+
+    </main>
+
+    
+
+    <script>import "../../scripts/lightbox.js";</script>
+  
+</BaseLayout>

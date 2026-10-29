@@ -1,0 +1,209 @@
+{
+  "index": {
+    "title": "Thomas F. Officer | AI Legal Product Designer & Developer",
+    "description": "Thomas F. Officer is a product designer, developer, lawyer, and entrepreneur building AI-native tools for legal professionals.",
+    "path": "/",
+    "type": "profile",
+    "image": "https://www.thomasofficer.com/assets/tfo-headshot-2024.png",
+    "imageAlt": "Portrait of Thomas F. Officer",
+    "card": "summary",
+    "fonts": [
+      "assets/fonts/Heliotrope4Caps/heliotrope_4_caps_regular.woff2",
+      "assets/fonts/Heliotrope6Caps/heliotrope_6_caps_regular.woff2",
+      "assets/fonts/Heliotrope3/heliotrope_3_regular.woff2"
+    ],
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://www.thomasofficer.com/#person",
+          "name": "Thomas F. Officer",
+          "alternateName": "Thomas Officer",
+          "url": "https://www.thomasofficer.com/",
+          "image": "https://www.thomasofficer.com/assets/tfo-headshot-2024.png",
+          "jobTitle": [
+            "Product Designer",
+            "Software Developer",
+            "Lawyer",
+            "Entrepreneur"
+          ],
+          "description": "Product designer, developer, lawyer, and entrepreneur building AI-native tools for legal professionals.",
+          "homeLocation": {
+            "@type": "Place",
+            "name": "New Hampshire"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/thomasofficer/",
+            "https://www.x.com/tomaofficer"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.thomasofficer.com/#website",
+          "name": "Thomas F. Officer",
+          "url": "https://www.thomasofficer.com/",
+          "description": "Portfolio and resume of Thomas F. Officer.",
+          "publisher": {
+            "@id": "https://www.thomasofficer.com/#person"
+          }
+        }
+      ]
+    }
+  },
+  "resume": {
+    "title": "Resume | Thomas F. Officer",
+    "description": "Resume of Thomas F. Officer, a product designer, developer, lawyer, and entrepreneur focused on AI-native legal technology.",
+    "path": "/resume",
+    "type": "profile",
+    "image": "https://www.thomasofficer.com/assets/tfo-headshot-2024.png",
+    "imageAlt": "Portrait of Thomas F. Officer",
+    "card": "summary",
+    "fonts": [
+      "assets/fonts/Heliotrope4Caps/heliotrope_4_caps_regular.woff2",
+      "assets/fonts/Concourse3Caps/concourse_3_caps_regular.woff2",
+      "assets/fonts/Heliotrope6/heliotrope_6_regular.woff2"
+    ],
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://www.thomasofficer.com/#person",
+          "name": "Thomas F. Officer",
+          "alternateName": "Thomas Officer",
+          "url": "https://www.thomasofficer.com/",
+          "image": "https://www.thomasofficer.com/assets/tfo-headshot-2024.png",
+          "jobTitle": [
+            "Product Designer",
+            "Software Developer",
+            "Lawyer",
+            "Entrepreneur"
+          ],
+          "description": "Product designer, developer, lawyer, and entrepreneur building AI-native tools for legal professionals.",
+          "homeLocation": {
+            "@type": "Place",
+            "name": "New Hampshire"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/thomasofficer/",
+            "https://www.x.com/tomaofficer"
+          ]
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://www.thomasofficer.com/resume#profile",
+          "url": "https://www.thomasofficer.com/resume",
+          "name": "Resume | Thomas F. Officer",
+          "description": "Resume of Thomas F. Officer.",
+          "about": {
+            "@id": "https://www.thomasofficer.com/#person"
+          }
+        }
+      ]
+    }
+  },
+  "work/echo": {
+    "title": "Echo Case Study | Thomas F. Officer",
+    "description": "Case study on Echo, an AI-native note-taking app for writers built by Thomas F. Officer across iOS, Apple Watch, Mac, web, Chrome extension, and MCP.",
+    "path": "/work/echo",
+    "type": "article",
+    "image": "https://www.thomasofficer.com/assets/work/echo-showcase-hero-2025.png",
+    "imageAlt": "Echo product landing page screenshot",
+    "card": "summary",
+    "fonts": [
+      "assets/fonts/Heliotrope6/heliotrope_6_regular.woff2",
+      "assets/fonts/Heliotrope3/heliotrope_3_italic.woff2",
+      "assets/fonts/Concourse3Caps/concourse_3_caps_regular.woff2"
+    ],
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "@id": "https://www.thomasofficer.com/work/echo#case-study",
+      "name": "Echo Case Study",
+      "headline": "Echo",
+      "url": "https://www.thomasofficer.com/work/echo",
+      "description": "AI-native note-taking app for writers.",
+      "image": "https://www.thomasofficer.com/assets/work/echo-showcase-hero-2025.png",
+      "author": {
+        "@id": "https://www.thomasofficer.com/#person"
+      },
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Echo"
+        }
+      ]
+    }
+  },
+  "work/afterpattern": {
+    "title": "Afterpattern Case Study | Thomas F. Officer",
+    "description": "Case study on Afterpattern, the no-code app builder for lawyers cofounded by Thomas F. Officer and acquired by NetDocuments in 2021.",
+    "path": "/work/afterpattern",
+    "type": "article",
+    "image": "https://www.thomasofficer.com/assets/work/ap-showcase-builder2021.png",
+    "imageAlt": "Afterpattern app builder screenshot",
+    "card": "summary",
+    "fonts": [
+      "assets/fonts/Heliotrope6/heliotrope_6_regular.woff2",
+      "assets/fonts/Heliotrope3/heliotrope_3_italic.woff2",
+      "assets/fonts/Concourse3Caps/concourse_3_caps_regular.woff2"
+    ],
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "@id": "https://www.thomasofficer.com/work/afterpattern#case-study",
+      "name": "Afterpattern Case Study",
+      "headline": "Afterpattern",
+      "url": "https://www.thomasofficer.com/work/afterpattern",
+      "description": "No-code app builder for lawyers.",
+      "image": "https://www.thomasofficer.com/assets/work/ap-showcase-builder2021.png",
+      "author": {
+        "@id": "https://www.thomasofficer.com/#person"
+      },
+      "about": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Afterpattern"
+        }
+      ]
+    }
+  },
+  "work/blueridgelabs": {
+    "title": "Blue Ridge Labs Case Study | Thomas F. Officer",
+    "description": "Case study on Blue Ridge Labs and Community.lawyer, a referral management platform for bar associations designed by Thomas F. Officer.",
+    "path": "/work/blueridgelabs",
+    "type": "article",
+    "image": "https://www.thomasofficer.com/assets/work/brl-showcase-team.png",
+    "imageAlt": "Community.lawyer team screenshot",
+    "card": "summary",
+    "fonts": [
+      "assets/fonts/Heliotrope6/heliotrope_6_regular.woff2",
+      "assets/fonts/Heliotrope3/heliotrope_3_italic.woff2",
+      "assets/fonts/Concourse3Caps/concourse_3_caps_regular.woff2"
+    ],
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "@id": "https://www.thomasofficer.com/work/blueridgelabs#case-study",
+      "name": "Blue Ridge Labs Case Study",
+      "headline": "Blue Ridge Labs",
+      "url": "https://www.thomasofficer.com/work/blueridgelabs",
+      "description": "Referral management for bar associations.",
+      "image": "https://www.thomasofficer.com/assets/work/brl-showcase-team.png",
+      "author": {
+        "@id": "https://www.thomasofficer.com/#person"
+      },
+      "about": [
+        {
+          "@type": "Organization",
+          "name": "Blue Ridge Labs"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Community.lawyer"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeLogo from '../components/HomeLogo.astro';
+import '../styles/writing.css';
+---
+<BaseLayout page={{title: 'Page not found | Thomas Officer', description: 'This page could not be found.', path: '/404', noindex: true}}>
+<HomeLogo /><main id="content" class="writing-page"><h1>Page not found</h1><p>Try <a href="/">home</a> or <a href="/writing">Writing</a>.</p></main>
+</BaseLayout>

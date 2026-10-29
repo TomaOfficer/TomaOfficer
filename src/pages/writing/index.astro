@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HomeLogo from '../../components/HomeLogo.astro';
+import { visiblePosts, dateLabel } from '../../lib/posts';
+import '../../styles/writing.css';
+const posts = await visiblePosts();
+const page = { title: 'Writing | Thomas F. Officer', description: 'Articles by Thomas Officer.', path: '/writing' };
+---
+<BaseLayout page={page}>
+<HomeLogo />
+<main id="content" class="writing-page">
+  <h1>Writing</h1>
+  {posts.length === 0 ? <p>No articles yet.</p> : <ul class="writing-list">
+    {posts.map(post => <li>
+      {post.data.draft && <span class="draft-label">Draft</span>}
+      <h2><a href={`/writing/${post.id}`}>{post.data.title}</a></h2>
+      <time datetime={post.data.pubDate.toISOString()}>{dateLabel(post.data.pubDate)}</time>
+      <p>{post.data.description}</p>
+    </li>)}
+  </ul>}
+</main>
+</BaseLayout>

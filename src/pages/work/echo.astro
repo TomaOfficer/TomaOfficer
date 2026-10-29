@@ -1,0 +1,212 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HomeLogo from '../../components/HomeLogo.astro';
+import pages from '../../data/pages.json';
+import WorkImage from '../../components/WorkImage.astro';
+---
+<BaseLayout page={pages["work/echo"]}>
+
+    <HomeLogo />
+
+    <main id="content" class="case-study-page">
+    <!-- Title Section -->
+    <div class="title-section">
+      <div class="title-section__wrapper">
+        <h1>Echo</h1>
+        <p class="title-section__description">
+          AI-native note-taking app for writers
+        </p>
+      </div>
+    </div>
+
+    <!-- Case Study Hero -->
+    <div class="case-study-hero">
+      <div class="case-study-hero__wrapper">
+        <div class="case-study-hero__colLeft">
+          <h2>Role</h2>
+          <p class="case-study-hero__meta">Cofounder, 2024-2025</p>
+
+          <h2>Team</h2>
+          <p class="case-study-hero__meta">2 cofounders + contractors</p>
+
+          <h2>Platforms</h2>
+          <p class="case-study-hero__meta">
+            iOS, Apple Watch, Mac, Web App, Chrome Extension, MCP
+          </p>
+        </div>
+        <div class="case-study-hero__colRight">
+          <h2>Overview</h2>
+          <p>
+            Echo is a note-taking tool for online writers to capture and develop
+            their ideas. My cofounder and I pivoted into Echo after 5 months of
+            tinkering with AI. We grew the team, shipped a multi-platform
+            product, and built an audience of AI curious writers.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Highlight -->
+    <div class="case-study-highlight">
+      <div class="case-study-highlight__wrapper">
+        <p>
+          Shipped a multi-platform product across 6 platforms in under a year.
+        </p>
+      </div>
+    </div>
+
+    <!-- Hero Image -->
+    <section class="case-study-section">
+      <div class="aside-back"></div>
+      <div class="content">
+        <WorkImage name="echo-showcase-hero-2025.png" alt="Echo Landing Page 2025" class="portfolio-image" decoding="async" fetchpriority="high" sizes="(max-width: 1135px) calc(100vw - 40px), 696px" />
+        <p class="portfolio-caption">landing page 2025</p>
+      </div>
+      <div class="aside"></div>
+    </section>
+
+    <!-- Goals -->
+    <section class="case-study-section">
+      <div class="aside-back"></div>
+      <div class="content">
+        <h2>Goals</h2>
+        <div class="goals-list">
+          <div class="goal-item">
+            <div class="goal-item__number">1</div>
+            <div class="goal-item__text">
+              <strong>Capture ideas at the moment of inspiration.</strong>
+              <span
+                >Writers have ideas everywhere. Echo needed to be there when
+                inspiration struck, whether on a walk, in the shower, or at the
+                desk.</span
+              >
+            </div>
+          </div>
+          <div class="goal-item">
+            <div class="goal-item__number">2</div>
+            <div class="goal-item__text">
+              <strong>Transform voice notes into written drafts.</strong>
+              <span
+                >Most voice note apps let recordings pile up. Echo uses AI to
+                transform raw voice memos into structured, editable text.</span
+              >
+            </div>
+          </div>
+          <div class="goal-item">
+            <div class="goal-item__number">3</div>
+            <div class="goal-item__text">
+              <strong>Meet writers where they are.</strong>
+              <span
+                >Different writers work in different environments. Echo needed
+                to be multi-platform from the start.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aside"></div>
+    </section>
+
+    <!-- Feature: Capture -->
+    <section class="case-study-section">
+      <div class="aside-back"></div>
+      <div class="content">
+        <h2>Capture</h2>
+        <p>
+          The core of Echo is frictionless voice capture. One tap to record,
+          automatic transcription, and AI-powered organization. Writers can
+          capture a thought in seconds without breaking their flow.
+        </p>
+        <WorkImage name="echo-showcase-feature1-2025.png" alt="Echo capture feature" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc(100vw - 40px), 696px" />
+        <p class="portfolio-caption">voice capture</p>
+      </div>
+      <div class="aside"></div>
+    </section>
+
+    <!-- Feature: Develop -->
+    <section class="case-study-section">
+      <div class="aside-back"></div>
+      <div class="content">
+        <h2>Develop</h2>
+        <p>
+          Raw voice notes become structured drafts through AI assistance. Echo
+          doesn't just transcribe - it helps writers expand, organize, and
+          refine their ideas into publishable content.
+        </p>
+        <WorkImage name="echo-showcase-feature2-2025.png" alt="Echo AI-assisted development" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc(100vw - 40px), 696px" />
+        <p class="portfolio-caption">AI-assisted development</p>
+      </div>
+      <div class="aside"></div>
+    </section>
+
+    <!-- Feature: Write -->
+    <section class="case-study-section">
+      <div class="aside-back"></div>
+      <div class="content">
+        <h2>Write</h2>
+        <p>
+          The final step is turning developed ideas into finished pieces. Echo
+          provides a distraction-free writing environment where writers can
+          polish and export their work.
+        </p>
+        <WorkImage name="echo-showcase-feature3-2025.png" alt="Echo writing feature" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc(100vw - 40px), 696px" />
+        <p class="portfolio-caption">writing environment</p>
+      </div>
+      <div class="aside"></div>
+    </section>
+
+    <!-- Multi-platform -->
+    <section class="case-study-section">
+      <div class="aside-back"></div>
+      <div class="content">
+        <h2>Multi-platform</h2>
+        <p>
+          To meet users where they are, at the moment of inspiration, Echo had
+          to be multi-platform. Echo can be found on iOS, Apple Watch, Mac, MCP,
+          Web app, and Chrome Extension.
+        </p>
+        <WorkImage name="echo-showcase-mobile-onboarding.png" alt="Echo mobile onboarding" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc(100vw - 40px), 696px" />
+        <p class="portfolio-caption">onboarding</p>
+
+        <div class="portfolio-grid">
+          <div>
+            <WorkImage name="echo-showcase-mobile.png" alt="Echo iOS app" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc((100vw - 40px - 3em) / 3), 216px" />
+            <p class="portfolio-caption">iOS app</p>
+          </div>
+          <div>
+            <WorkImage name="echo-showcase-webapp1.png" alt="Echo web dashboard" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc((100vw - 40px - 3em) / 3), 216px" />
+            <p class="portfolio-caption">web dashboard</p>
+          </div>
+          <div>
+            <WorkImage name="echo-showcase-webapp2.png" alt="Echo note details" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc((100vw - 40px - 3em) / 3), 216px" />
+            <p class="portfolio-caption">note details</p>
+          </div>
+        </div>
+      </div>
+      <div class="aside"></div>
+    </section>
+
+    <!-- Marketing -->
+    <section class="case-study-section">
+      <div class="aside-back"></div>
+      <div class="content">
+        <h2>Marketing</h2>
+        <p>
+          Marketing directly to consumers, I explored the depths of the idea
+          that "first time founders focus on product, second time founders focus
+          on marketing." I created content across TikTok, Instagram, YouTube,
+          Substack, Medium, LinkedIn, and Reddit.
+        </p>
+        <WorkImage name="echo-showcase-youtube.png" alt="Echo marketing on YouTube" class="portfolio-image" decoding="async" loading="lazy" sizes="(max-width: 1135px) calc(100vw - 40px), 696px" />
+        <p class="portfolio-caption">YouTube content</p>
+      </div>
+      <div class="aside"></div>
+    </section>
+
+    </main>
+
+    
+
+    <script>import "../../scripts/lightbox.js";</script>
+  
+</BaseLayout>

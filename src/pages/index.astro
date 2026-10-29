@@ -1,0 +1,187 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import pages from '../data/pages.json';
+---
+<BaseLayout page={pages["index"]}>
+
+    <a
+      href="/"
+      class="home-logo home-logo--active"
+      aria-label="Home"
+      title="Home"
+    >
+      <img src="/assets/tfo-brand-black.svg" alt="TFO" width="238" height="100" decoding="async" />
+    </a>
+
+    <main id="content" class="home-main">
+    <div class="hero-section">
+      <div class="hero-bio">
+        <h1 class="hero-bio__headline">
+          <span class="hero-bio__intro"
+            >I am
+            <span class="hero-bio__intro__name">Thomas Officer</span></span
+          >, a software designer &amp; developer, and lawyer, based in New
+          Hampshire.
+        </h1>
+        <p>
+          I build tools for legal professionals and the people who rely on them.
+          I'm exploring what an
+          <span class="hero-bio__focus">AI-native law firm</span> looks like,
+          and I believe in the potential of technology to make legal work more
+          satisfying and impactful.
+        </p>
+        <p>
+          I was born in France, raised in New Hampshire, and went to law school
+          in Scotland. I ride a Harley Davidson, read religiously, and enjoy
+          cooking for my friends and family.
+        </p>
+        <p>
+          You can find me on
+          <a href="https://www.linkedin.com/in/thomasofficer/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          and
+          <a href="https://www.x.com/tomaofficer" target="_blank" rel="noopener noreferrer">Twitter</a>.
+          Please don't hesitate to reach out.
+        </p>
+      </div>
+    </div>
+
+    <div class="work-section">
+      <div class="portfolio-section-label">
+        <h2>Selected Work</h2>
+      </div>
+      <div class="hero-work__grid">
+        <a href="/work/echo" class="hero-work__card">
+          <div class="hero-work__card__logo">
+            <img src="/assets/work/logo-echo.png" alt="Echo logo" width="100" height="100" decoding="async" />
+          </div>
+          <div>
+            <p class="hero-work__card__title">Echo</p>
+            <p class="hero-work__card__description">
+              AI-native note-taking app for writers.
+            </p>
+          </div>
+        </a>
+        <a href="/work/afterpattern" class="hero-work__card">
+          <div class="hero-work__card__logo">
+            <img
+              src="/assets/work/logo-afterpattern.png"
+              alt="Afterpattern logo" width="150" height="150" decoding="async" />
+          </div>
+          <div>
+            <p class="hero-work__card__title">Afterpattern</p>
+            <p class="hero-work__card__description">
+              No-code app builder for lawyers.
+            </p>
+          </div>
+        </a>
+        <a href="/work/blueridgelabs" class="hero-work__card">
+          <div class="hero-work__card__logo">
+            <img src="/assets/work/logo-brl.png" alt="Blue Ridge Labs logo" width="100" height="100" decoding="async" />
+          </div>
+          <div>
+            <p class="hero-work__card__title">Blue Ridge Labs</p>
+            <p class="hero-work__card__description">
+              Referral management for bar associations.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="experience-section">
+      <div class="portfolio-section-label">
+        <h2>Experience</h2>
+      </div>
+      <div class="section-content">
+        <ul class="minimal-list">
+          <li>
+            <div class="minimal-list__title">
+              <p class="minimal-list__role">AI Enablement</p>
+              <p class="minimal-list__employer">NetDocuments</p>
+            </div>
+            <time>Mar 2026 - Present</time>
+          </li>
+          <li>
+            <div class="minimal-list__title">
+              <p class="minimal-list__role">Cofounder, Designer</p>
+              <p class="minimal-list__employer">Echo</p>
+            </div>
+            <time>Feb 2024 - Nov 2025</time>
+          </li>
+          <li>
+            <div class="minimal-list__title">
+              <p class="minimal-list__role">Principal Product Designer</p>
+              <p class="minimal-list__employer">NetDocuments</p>
+            </div>
+            <time>2021 - 2023</time>
+          </li>
+          <li>
+            <div class="minimal-list__title">
+              <p class="minimal-list__role">Cofounder, Designer</p>
+              <p class="minimal-list__employer">Afterpattern (acquired)</p>
+            </div>
+            <time>2016 - 2021</time>
+          </li>
+          <li>
+            <div class="minimal-list__title">
+              <p class="minimal-list__role">Design Fellow</p>
+              <p class="minimal-list__employer">Blue Ridge Labs @ Robin Hood</p>
+            </div>
+            <time>2016</time>
+          </li>
+          <li>
+            <div class="minimal-list__title">
+              <p class="minimal-list__role">UX Designer</p>
+              <p class="minimal-list__employer">TFO Design Studio</p>
+            </div>
+            <time>2015 - 2016</time>
+          </li>
+          <li>
+            <div class="minimal-list__title">
+              <p class="minimal-list__role">Cofounder</p>
+              <p class="minimal-list__employer">ThroughCompany</p>
+            </div>
+            <time>2014 - 2015</time>
+          </li>
+          <li>
+            <div class="minimal-list__title">
+              <p class="minimal-list__role">Research Analyst</p>
+              <p class="minimal-list__employer">CrowdCheck</p>
+            </div>
+            <time>2013 - 2015</time>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="interviews-section">
+      <div class="portfolio-section-label">
+        <h2>Interviews</h2>
+      </div>
+      <ul class="about_interviews">
+        <li>
+          <a
+            href="https://youtu.be/Yw6gyOg9oGg?si=nIHq7ZmRjzeijFXi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >The Echo Entrepreneur</a
+          >
+          <span>Law Droid Podcast (2025)</span>
+        </li>
+        <li>
+          <a
+            href="https://legaltalknetwork.com/guests/thomas-officer/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >PatternBuilder Puts Firm Knowledge to Work</a
+          >
+          <span>Legal Talk Network (2023)</span>
+        </li>
+      </ul>
+    </div>
+
+    </main>
+
+    
+  
+</BaseLayout>
